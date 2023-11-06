@@ -27,7 +27,7 @@ input[type="radio"] {
 <link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-<button style = "font-size: 18px;", id="BinGuess", font-size = "16px", onclick = copy_clipboard_bin(this)>55555</button>
+<button style = "font-size: 18px;", id="BinGuess", font-size = "16px", onclick = copy_clipboard_bin(this)>55000</button>
 <button style = "font-size: 18px;", id="BinHigh", font-size = "16px", onclick = bin_result(1)>Higher</button>
 <button style = "font-size: 18px;", id="BinLow", font-size = "16px", onclick = bin_result(0)>Lower</button>
 <button style = "font-size: 18px;", id="BinReset", font-size = "16px", onclick = bin_reset()>Reset</button>
@@ -146,7 +146,7 @@ input[type="radio"] {
 
 var bin_maxValue = 99999;
 var bin_minValue = 9999;
-var bin_nextGuess = 55555;
+var bin_nextGuess = 55000;
 
 
 function permutateString(string) {
@@ -233,10 +233,10 @@ function bin_result(isHigher)
 function bin_reset()
 {
   guess = document.getElementById("BinGuess");
-  guess.textContent = "55555";
+  guess.textContent = "55000";
   bin_maxValue = 99999;
   bin_minValue = 9999;
-  bin_nextGuess = 55555;
+  bin_nextGuess = 55000;
 }
 //copy function, only work with numbers?
 function copy_clipboard(num) {
