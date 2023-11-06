@@ -20,10 +20,19 @@ input[type="radio"] {
   transform: scale(1);
 }
 </style>
-<center>Remember to start with 11111, move to 22222, etc., and always indicate whether your guess is higher or lower than the number!<br><br> You need to do this until you've found 5 correct digits.<br><br> Then guess the final guess, mark the digits and higher / lower, and try the possible answers!<br><br>You may click the buttons to copy the numbers to your clipboard.<br><br></center>
+<center>Remember to start with 11111, move to 22222, etc., and always indicate whether your guess is higher or lower than the number!<br>
+    <br> You need to do this until you've found 5 correct digits.<br>
+    <br> Then guess the final guess, mark the digits and higher / lower, and try the possible answers!<br>
+    <br>You may click the buttons to copy the numbers to your clipboard.<br><br></center>
 <link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
+<button style = "font-size: 18px;", id="BinGuess", font-size = "16px", onclick = copy_clipboard_bin(this)>55555</button>
+<button style = "font-size: 18px;", id="BinHigh", font-size = "16px", onclick = bin_result(1)>Higher</button>
+<button style = "font-size: 18px;", id="BinLow", font-size = "16px", onclick = bin_result(0)>Lower</button>
+<button style = "font-size: 18px;", id="BinReset", font-size = "16px", onclick = bin_reset()>Reset</button>
+
+
 <div class = "radio-container" onclick = "Update()";>
 <table>
   <tr>
@@ -135,6 +144,9 @@ input[type="radio"] {
 
 <script>
 
+var bin_maxValue = 99999;
+var bin_minValue = 9999;
+var bin_nextGuess = 55555;
 
 
 function permutateString(string) {
@@ -181,6 +193,50 @@ function createTable(arr) {
   table += '</table>';
   
   return table;
+}
+
+function copy_clipboard_bin(element)
+{
+  var copyText = document.createElement("textarea");
+  copyText.value = element.textContent.toString();
+
+  // Append the textarea element to the document
+  document.body.appendChild(copyText);
+
+  // Copy the text from the textarea to the clipboard
+  copyText.select();
+  document.execCommand("copy");
+
+  // Remove the temporary textarea
+  document.body.removeChild(copyText);
+}
+
+function bin_result(isHigher)
+{
+  elem = document.getElementById("BinGuess");
+  guess = parseInt(elem.textContent.toString());
+
+  if(isHigher)
+  {
+    bin_minValue = guess;
+  }
+  else
+  {
+    bin_maxValue = guess;
+  }
+  bin_nextGuess = Math.round(bin_minValue + ((bin_maxValue - bin_minValue)/2));
+  elem.textContent = bin_nextGuess;
+
+  copy_clipboard(bin_nextGuess);
+}
+
+function bin_reset()
+{
+  guess = document.getElementById("BinGuess");
+  guess.textContent = "55555";
+  bin_maxValue = 99999;
+  bin_minValue = 9999;
+  bin_nextGuess = 55555;
 }
 //copy function, only work with numbers?
 function copy_clipboard(num) {
