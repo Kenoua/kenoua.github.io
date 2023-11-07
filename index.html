@@ -27,9 +27,44 @@ input[type="radio"] {
 <link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-<button style = "font-size: 18px;", id="BinGuess", font-size = "16px", onclick = copy_clipboard_bin(this)>55000</button>
-<button style = "font-size: 18px;", id="BinHigh", font-size = "16px", onclick = bin_result(1)>Higher</button>
-<button style = "font-size: 18px;", id="BinLow", font-size = "16px", onclick = bin_result(0)>Lower</button>
+Next best guess : <button style = "font-size: 18px;", id="BinGuess", font-size = "16px", onclick = copy_clipboard_bin(this)>55000</button> Remaining possible guess: <label id="BinGuessRemain">90000</label>
+<table>
+  <tr>
+    <td>
+      <button style = "font-size: 18px;", id="BinHigh", font-size = "16px", onclick = bin_result(1,0)>Higher 0</button>
+    </td>
+    <td>
+      <button style = "font-size: 18px;", id="BinHigh", font-size = "16px", onclick = bin_result(1,1)>Higher 1</button>
+    </td>
+    <td>
+      <button style = "font-size: 18px;", id="BinHigh", font-size = "16px", onclick = bin_result(1,2)>Higher 2</button>
+    </td>
+    <td>
+      <button style = "font-size: 18px;", id="BinHigh", font-size = "16px", onclick = bin_result(1,3)>Higher 3</button>
+    </td>
+    <td>
+      <button style = "font-size: 18px;", id="BinHigh", font-size = "16px", onclick = bin_result(1,4)>Higher 4</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button style = "font-size: 18px;", id="BinLow", font-size = "16px", onclick = bin_result(0,0)>Lower 0</button>
+    </td>
+    <td>
+      <button style = "font-size: 18px;", id="BinLow", font-size = "16px", onclick = bin_result(0,1)>Lower 1</button>
+    </td>
+    <td>
+      <button style = "font-size: 18px;", id="BinLow", font-size = "16px", onclick = bin_result(0,2)>Lower 2</button>
+    </td>
+    <td>
+      <button style = "font-size: 18px;", id="BinLow", font-size = "16px", onclick = bin_result(0,3)>Lower 3</button>
+    </td>
+    <td>
+      <button style = "font-size: 18px;", id="BinLow", font-size = "16px", onclick = bin_result(0,4)>Lower 4</button>
+    </td>
+  </tr>
+</table>
+
 <button style = "font-size: 18px;", id="BinReset", font-size = "16px", onclick = bin_reset()>Reset</button>
 
 
@@ -40,6 +75,8 @@ input[type="radio"] {
     <th>0</th>
     <th>1</th>
     <th>2</th>
+
+
 	<th>3</th>
 	<th>4</th>
     <th>Higher</th>
@@ -145,8 +182,10 @@ input[type="radio"] {
 <script>
 
 var bin_maxValue = 99999;
-var bin_minValue = 9999;
+var bin_minValue = 10000;
 var bin_nextGuess = 55000;
+var bin_arrayGuess = [];
+var bin_arrayPrevGuesses = [];
 
 
 function permutateString(string) {
@@ -211,23 +250,83 @@ function copy_clipboard_bin(element)
   document.body.removeChild(copyText);
 }
 
-function bin_result(isHigher)
+function bin_result(isHigher, correctDigit)
 {
   elem = document.getElementById("BinGuess");
   guess = parseInt(elem.textContent.toString());
 
   if(isHigher)
   {
-    bin_minValue = guess;
+    bin_minValue = guess + 1;
   }
   else
   {
-    bin_maxValue = guess;
+    bin_maxValue = guess - 1;
   }
-  bin_nextGuess = Math.round(bin_minValue + ((bin_maxValue - bin_minValue)/2));
+  bin_buildGuessArray(correctDigit);
+  textGuess = document.getElementById("BinGuessRemain");
+  textGuess.textContent = bin_arrayGuess.length;
+  bin_nextGuess = bin_arrayGuess[Math.round(bin_arrayGuess.length/2)-1];
   elem.textContent = bin_nextGuess;
 
   copy_clipboard(bin_nextGuess);
+}
+
+function bin_buildGuessArray(correctDigit)
+{
+  if(bin_arrayGuess.length == 0 )
+  {
+    bin_arrayGuess = [];
+    for (let num = bin_minValue; num < bin_maxValue; num++) {
+      bin_arrayGuess.push(num);
+    }
+  }
+  //if(correctDigit == 0)
+ // {
+//    bin_arrayGuess = [];
+    //for (let num = bin_minValue; num < bin_maxValue; num++) {
+    //  bin_arrayGuess.push(num);
+  //  }
+//  }
+//  else
+ //{
+    var newArr = [];
+    var guessStr = bin_nextGuess.toString();
+    bin_arrayGuess.forEach(element => {
+      var correct = 0;
+
+      for (let index = 0; index < 5; index++) {
+        if(element.toString()[index] == guessStr[index])
+        {
+          correct++;
+        }
+        
+      }
+      if(correctDigit == 0)
+      {
+        if(correct==correctDigit)
+        {
+          if(element>=bin_minValue && element<=bin_maxValue)
+          {
+            newArr.push(element);
+          }
+        }   
+      }
+      else
+      {
+        if(correct>=correctDigit)
+        {
+          if(element>=bin_minValue && element<=bin_maxValue)
+          {
+            newArr.push(element);
+          }
+        }   
+      }
+
+    });
+    bin_arrayGuess = newArr;
+ // }
+
 }
 
 function bin_reset()
@@ -235,8 +334,11 @@ function bin_reset()
   guess = document.getElementById("BinGuess");
   guess.textContent = "55000";
   bin_maxValue = 99999;
-  bin_minValue = 9999;
+  bin_minValue = 10000;
   bin_nextGuess = 55000;
+  bin_arrayGuess = [];
+  textGuess = document.getElementById("BinGuessRemain");
+  textGuess.textContent = 90000;
 }
 //copy function, only work with numbers?
 function copy_clipboard(num) {
