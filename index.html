@@ -24,6 +24,7 @@ input[type="radio"] {
   Click on the 55000 button to copy the guess number<br>
   Paste your guess in the Guess the number Box.<br>
   Press the correct button according if the right answer is higher/lower and the number of correct digits.<br>
+  For example, if the correct number is higher and you have 2 correct numbers, you press Higher 2<br>
   This will update to the next best guess and automaticaly copy the guess in your clipboard.<br>
   Press Reset to reset yes yes
 
@@ -31,9 +32,32 @@ input[type="radio"] {
 <link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-Next best guess : <button style = "font-size: 18px;", id="BinGuess", font-size = "16px", onclick = copy_clipboard_bin(this)>55000</button> Remaining possible guess: <label id="BinGuessRemain">90000</label>
+Next best guess : <button style = "font-size: 18px;", id="BinGuess", font-size = "16px", onclick = copy_clipboard_bin(this)>55000</button> Remaining possible guess: <label id="BinGuessRemain">90000</label> Number of guesses:<label id="BinGuessDone">0</label>
 <table>
   <tr>
+    <td>
+      Number of correct digits
+    </td>
+    <td>
+      0
+    </td>
+    <td>
+      1
+    </td>
+    <td>
+      2
+    </td>
+    <td>
+      3
+    </td>
+    <td>
+      4
+    </td>
+  </tr>
+  <tr>
+    <td>
+      If the right answer is higer
+    </td>
     <td>
       <button style = "font-size: 18px;", id="BinHigh", font-size = "16px", onclick = bin_result(1,0)>Higher 0</button>
     </td>
@@ -51,6 +75,9 @@ Next best guess : <button style = "font-size: 18px;", id="BinGuess", font-size =
     </td>
   </tr>
   <tr>
+    <td>
+      If the right answer is lower
+    </td>
     <td>
       <button style = "font-size: 18px;", id="BinLow", font-size = "16px", onclick = bin_result(0,0)>Lower 0</button>
     </td>
@@ -80,53 +107,8 @@ var bin_minValue = 10000;
 var bin_nextGuess = 55000;
 var bin_arrayGuess = [];
 var bin_arrayPrevGuesses = [];
+var bin_nbOfGuesses = 0;
 
-
-function permutateString(string) {
-  // Thanks ChatGPT
-  // Base case: if the string is empty, no permutations can be generated
-  if (string.length === 0) return [''];
-
-  // Initialize an array to store permutations
-  const permutations = [];
-
-  // Iterate through each character of the string
-  for (let i = 0; i < string.length; i++) {
-    // Extract the current character
-    const char = string[i];
-
-    // Generate permutations of remaining characters (excluding current character)
-    const remainingChars = string.slice(0, i) + string.slice(i + 1);
-    const innerPermutations = permutateString(remainingChars);
-
-    // Append current character to each inner permutation
-    for (let j = 0; j < innerPermutations.length; j++) {
-      permutations.push(char + innerPermutations[j]);
-    }
-  }
-
-  return permutations;
-}
-
-function createTable(arr) {
-  let rows = Math.ceil(Math.sqrt(arr.length)/1.5);  // Calculate number of rows
-  let columns = Math.ceil(arr.length / rows); //Calculate number of columns
-  rows = 4;
-  columns = 6;
-  let table = '<table>';
-  for (let i = 0; i < rows; i++) {
-    table += '<tr>';
-    for (let j = 0; j < columns; j++) {
-      let index = i * columns + j;
-      let value = index < arr.length ? arr[index] : '';
-      table += `<td><button style = "font-size: 18px" onclick = copy_clipboard(${value})>${value}</button></td>`;
-    }
-    table += '</tr>';
-  }
-  table += '</table>';
-  
-  return table;
-}
 
 function copy_clipboard_bin(element)
 {
@@ -162,7 +144,9 @@ function bin_result(isHigher, correctDigit)
   textGuess.textContent = bin_arrayGuess.length;
   bin_nextGuess = bin_arrayGuess[Math.round(bin_arrayGuess.length/2)-1];
   elem.textContent = bin_nextGuess;
-
+  bin_nbOfGuesses++;
+  textGuessDone = document.getElementById("BinGuessDone");
+  textGuessDone.textContent = bin_nbOfGuesses;
   copy_clipboard(bin_nextGuess);
 }
 
