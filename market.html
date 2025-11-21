@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Market Viewer</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    .card { max-width: 700px; margin: auto; padding: 20px; border-radius: 16px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    input { padding: 8px; width: 100%; margin-bottom: 12px; border-radius: 8px; border: 1px solid #ccc; }
+    button { padding: 10px 16px; border: none; background: #4a60e8; color: white; border-radius: 10px; cursor: pointer; }
+    canvas { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Market Viewer</h2>
+    <input id="itemInput" placeholder="Enter item name..." />
+    <input type="file" id="fileInput" accept=".csv" />
+    <button onclick="loadData()">Load History</button>
+    <canvas id="chart"></canvas>
+  </div>
+
+  <script>
+    let chart;
+
+    async function loadData() {
+      const item = document.getElementById('itemInput').value.trim();
+      if (!item) return alert("Enter an item name");
+
+      const fileInput = document.getElementById('fileInput');
+      let parsed;
+
+      // If user provided a file
+      if (fileInput.files.length) {
+        const file = fileInput.files[0];
+        parsed = await new Promise(resolve => {
+          Papa.parse(file, {
+            header: true,
+            complete: results => resolve(results)
+          });
+        });
+      } else {
+        // Load CSV from server root
+        try {
+          const response = await fetch('Talon Market Master Vendor Data.csv');
+          const csvText = await response.text();
+          parsed = Papa.parse(csvText, { header: true });
+        } catch (err) {
+          console.error(err);
+          return alert("Could not load 'Talon Market Master Vendor Data.csv' from server root.");
+        }
+      }
+
+      const data = parsed.data;
+
+      const filtered = data.filter(row => row["item name"] && row["item name"].toLowerCase() === item.toLowerCase());
+
+      if (!filtered.length) {
+        alert("No data found for that item.");
+        return;
+      }
+
+      const labels = filtered.map(e => e.date);
+      const prices = filtered.map(e => Number(e.price));
+
+      if (chart) chart.destroy();
+
+      const ctx = document.getElementById('chart').getContext('2d');
+      chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels,
+          datasets: [{ label: item + ' Price', data: prices }]
+        }
+      });
+    }
+  </script>
+</body>
+</html>
