@@ -3,38 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Market Viewer</title>
+  <title>Talon Market Viewer by Mr Patate</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <style>
     body { font-family: sans-serif; padding: 20px; }
     .card { max-width: 700px; margin: auto; padding: 20px; border-radius: 16px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-    input { padding: 8px; width: 100%; margin-bottom: 12px; border-radius: 8px; border: 1px solid #ccc; }
+    input, select { padding: 8px; width: 100%; margin-bottom: 12px; border-radius: 8px; border: 1px solid #ccc; }
     button { padding: 10px 16px; border: none; background: #4a60e8; color: white; border-radius: 10px; cursor: pointer; }
     canvas { margin-top: 20px; }
+    .stats { margin-top: 12px; font-weight: bold; }
+    #fileContainer { display: none; margin-bottom: 12px; }
+    .checkbox-label { display: flex; align-items: center; margin-bottom: 12px; cursor: pointer; }
+    .checkbox-label input { margin-right: 8px; width: auto; }
   </style>
 </head>
 <body>
   <div class="card">
-    <h2>Market Viewer</h2>
+    <h2>Talon Market Viewer by Mr Patate</h2>
     <input id="itemInput" placeholder="Enter item name..." />
-    <input type="file" id="fileInput" accept=".csv" />
+    <label class="checkbox-label"><input type="checkbox" id="importCheck" onchange="toggleFileInput()"> Import new data file</label>
+    <div id="fileContainer">
+      <input type="file" id="fileInput" accept=".csv" />
+    </div>
+    <select id="monthFilter">
+      <option value="1">1 Month</option>
+      <option value="3">3 Months</option>
+      <option value="6">6 Months</option>
+    </select>
     <button onclick="loadData()">Load History</button>
     <canvas id="chart"></canvas>
+    <div id="stats" class="stats"></div>
   </div>
 
   <script>
     let chart;
 
+    function toggleFileInput() {
+      const container = document.getElementById('fileContainer');
+      container.style.display = document.getElementById('importCheck').checked ? 'block' : 'none';
+    }
+
+    function calculateStats(values) {
+      const sorted = [...values].sort((a,b) => a-b);
+      const min = sorted[0];
+      const max = sorted[sorted.length-1];
+      const sum = values.reduce((a,b) => a+b, 0);
+      const avg = sum / values.length;
+      const mid = Math.floor(sorted.length/2);
+      const median = sorted.length % 2 === 0 ? (sorted[mid-1]+sorted[mid])/2 : sorted[mid];
+      return {min, max, avg, median};
+    }
+
+    function formatNumber(num) {
+      return num.toLocaleString();
+    }
+
+    function filterByMonths(data, months) {
+      const cutoff = new Date();
+      cutoff.setMonth(cutoff.getMonth() - Number(months));
+      return data.filter(row => new Date(row.date) >= cutoff);
+    }
+
     async function loadData() {
       const item = document.getElementById('itemInput').value.trim();
       if (!item) return alert("Enter an item name");
 
-      const fileInput = document.getElementById('fileInput');
+      const importCheck = document.getElementById('importCheck').checked;
       let parsed;
 
-      // If user provided a file
-      if (fileInput.files.length) {
+      if (importCheck) {
+        const fileInput = document.getElementById('fileInput');
+        if (!fileInput.files.length) return alert("Please select a CSV file to import.");
         const file = fileInput.files[0];
         parsed = await new Promise(resolve => {
           Papa.parse(file, {
@@ -43,7 +83,6 @@
           });
         });
       } else {
-        // Load CSV from server root
         try {
           const response = await fetch('Talon Market Master Vendor Data.csv');
           const csvText = await response.text();
@@ -54,17 +93,17 @@
         }
       }
 
-      const data = parsed.data;
+      const monthFilter = document.getElementById('monthFilter').value;
+      let data = parsed.data.filter(row => row["item name"] && row["item name"].toLowerCase() === item.toLowerCase());
+      data = filterByMonths(data, monthFilter);
 
-      const filtered = data.filter(row => row["item name"] && row["item name"].toLowerCase() === item.toLowerCase());
-
-      if (!filtered.length) {
-        alert("No data found for that item.");
+      if (!data.length) {
+        alert("No data found for that item and date range.");
         return;
       }
 
-      const labels = filtered.map(e => e.date);
-      const prices = filtered.map(e => Number(e.price));
+      const labels = data.map(e => e.date);
+      const prices = data.map(e => Number(e.price));
 
       if (chart) chart.destroy();
 
@@ -76,6 +115,10 @@
           datasets: [{ label: item + ' Price', data: prices }]
         }
       });
+
+      const stats = calculateStats(prices);
+      document.getElementById('stats').innerHTML =
+        `Min: ${formatNumber(stats.min)} | Max: ${formatNumber(stats.max)} | Avg: ${formatNumber(stats.avg.toFixed(2))} | Median: ${formatNumber(stats.median)}`;
     }
   </script>
 </body>
