@@ -16,6 +16,7 @@
     #fileContainer { display: none; margin-bottom: 12px; }
     .checkbox-label { display: flex; align-items: center; margin-bottom: 12px; cursor: pointer; }
     .checkbox-label input { margin-right: 8px; width: auto; }
+    #loading { display: none; margin-bottom: 12px; font-weight: bold; }
   </style>
 </head>
 <body>
@@ -32,6 +33,7 @@
       <option value="6">6 Months</option>
     </select>
     <button onclick="loadData()">Load History</button>
+    <div id="loading">Loading data, please wait...</div>
     <canvas id="chart"></canvas>
     <div id="stats" class="stats"></div>
   </div>
@@ -66,59 +68,64 @@
     }
 
     async function loadData() {
-      const item = document.getElementById('itemInput').value.trim();
-      if (!item) return alert("Enter an item name");
+      const loading = document.getElementById('loading');
+      loading.style.display = 'block';
 
-      const importCheck = document.getElementById('importCheck').checked;
-      let parsed;
+      try {
+        const item = document.getElementById('itemInput').value.trim();
+        if (!item) { loading.style.display = 'none'; return alert("Enter an item name"); }
 
-      if (importCheck) {
-        const fileInput = document.getElementById('fileInput');
-        if (!fileInput.files.length) return alert("Please select a CSV file to import.");
-        const file = fileInput.files[0];
-        parsed = await new Promise(resolve => {
-          Papa.parse(file, {
-            header: true,
-            complete: results => resolve(results)
+        const importCheck = document.getElementById('importCheck').checked;
+        let parsed;
+
+        if (importCheck) {
+          const fileInput = document.getElementById('fileInput');
+          if (!fileInput.files.length) { loading.style.display = 'none'; return alert("Please select a CSV file to import."); }
+          const file = fileInput.files[0];
+          parsed = await new Promise(resolve => {
+            Papa.parse(file, {
+              header: true,
+              complete: results => resolve(results)
+            });
           });
+        } else {
+          try {
+            const response = await fetch('Talon Market Master Vendor Data.csv');
+            const csvText = await response.text();
+            parsed = Papa.parse(csvText, { header: true });
+          } catch (err) {
+            console.error(err);
+            loading.style.display = 'none';
+            return alert("Could not load 'Talon Market Master Vendor Data.csv' from server root.");
+          }
+        }
+
+        const monthFilter = document.getElementById('monthFilter').value;
+        let data = parsed.data.filter(row => row["item name"] && row["item name"].toLowerCase() === item.toLowerCase());
+        data = filterByMonths(data, monthFilter);
+
+        if (!data.length) { loading.style.display = 'none'; return alert("No data found for that item and date range."); }
+
+        const labels = data.map(e => e.date);
+        const prices = data.map(e => Number(e.price));
+
+        if (chart) chart.destroy();
+
+        const ctx = document.getElementById('chart').getContext('2d');
+        chart = new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels,
+            datasets: [{ label: item + ' Price', data: prices }]
+          }
         });
-      } else {
-        try {
-          const response = await fetch('Talon Market Master Vendor Data.csv');
-          const csvText = await response.text();
-          parsed = Papa.parse(csvText, { header: true });
-        } catch (err) {
-          console.error(err);
-          return alert("Could not load 'Talon Market Master Vendor Data.csv' from server root.");
-        }
+
+        const stats = calculateStats(prices);
+        document.getElementById('stats').innerHTML =
+          `Min: ${formatNumber(stats.min)} | Max: ${formatNumber(stats.max)} | Avg: ${formatNumber(stats.avg.toFixed(2))} | Median: ${formatNumber(stats.median)}`;
+      } finally {
+        loading.style.display = 'none';
       }
-
-      const monthFilter = document.getElementById('monthFilter').value;
-      let data = parsed.data.filter(row => row["item name"] && row["item name"].toLowerCase() === item.toLowerCase());
-      data = filterByMonths(data, monthFilter);
-
-      if (!data.length) {
-        alert("No data found for that item and date range.");
-        return;
-      }
-
-      const labels = data.map(e => e.date);
-      const prices = data.map(e => Number(e.price));
-
-      if (chart) chart.destroy();
-
-      const ctx = document.getElementById('chart').getContext('2d');
-      chart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels,
-          datasets: [{ label: item + ' Price', data: prices }]
-        }
-      });
-
-      const stats = calculateStats(prices);
-      document.getElementById('stats').innerHTML =
-        `Min: ${formatNumber(stats.min)} | Max: ${formatNumber(stats.max)} | Avg: ${formatNumber(stats.avg.toFixed(2))} | Median: ${formatNumber(stats.median)}`;
     }
   </script>
 </body>
