@@ -61,7 +61,7 @@ font-weight: bold;
 <body>
   <div class="card">
     <h2>Talon Market Viewer by Mr Patate</h2>
-    <input id="itemInput" placeholder="Enter item name..." />
+    <input id="itemInput" placeholder="Enter item name or ID..." />
     <label class="checkbox-label"><input type="checkbox" id="importCheck" onchange="toggleFileInput()"> Import new data file</label>
     <div id="fileContainer">
       <input type="file" id="fileInput" accept=".csv" />
@@ -112,7 +112,8 @@ font-weight: bold;
 
       try {
         const item = document.getElementById('itemInput').value.trim();
-        if (!item) { loading.style.display = 'none'; return alert("Enter an item name"); }
+        if (!item) { loading.style.display = 'none'; return alert("Enter an item name or ID"); }
+        const isID = /^\d+$/.test(item);
 
         const importCheck = document.getElementById('importCheck').checked;
         let parsed;
@@ -140,7 +141,14 @@ font-weight: bold;
         }
 
         const monthFilter = document.getElementById('monthFilter').value;
-        let data = parsed.data.filter(row => row["item name"] && row["item name"].toLowerCase() === item.toLowerCase());
+        let data;
+        if (isID) {
+          data = parsed.data.filter(row => row["item id"] == item);
+        }
+        else{
+          data = parsed.data.filter(row => row["item name"] && row["item name"].toLowerCase() === item.toLowerCase());
+        }
+       
         data = filterByMonths(data, monthFilter);
 
         if (!data.length) { loading.style.display = 'none'; return alert("No data found for that item and date range."); }
@@ -151,11 +159,12 @@ font-weight: bold;
         if (chart) chart.destroy();
 
         const ctx = document.getElementById('chart').getContext('2d');
+        const itemname = data[0]["item name"];
         chart = new Chart(ctx, {
           type: 'line',
           data: {
             labels,
-            datasets: [{ label: item + ' Price', data: prices }]
+            datasets: [{ label: itemname + ' Price', data: prices }]
           }
         });
 
