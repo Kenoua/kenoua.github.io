@@ -7,16 +7,54 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <style>
-    body { font-family: sans-serif; padding: 20px; }
-    .card { max-width: 700px; margin: auto; padding: 20px; border-radius: 16px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-    input, select { padding: 8px; width: 100%; margin-bottom: 12px; border-radius: 8px; border: 1px solid #ccc; }
-    button { padding: 10px 16px; border: none; background: #4a60e8; color: white; border-radius: 10px; cursor: pointer; }
+body {
+font-family: 'Comic Sans MS', sans-serif;
+background: #f0f8ff url('https://media.discordapp.net/attachments/1309336848514027551/1441587174305828864/Greysuitcase-RubberDuckProjectSeoul01.png?ex=6922562d&is=692104ad&hm=d93e6875462e13961480d108a52950df05e22375af5e917351fe959e5c912099&=&format=webp&quality=lossless') no-repeat center center;
+background-size: cover; /* This stretches the image */
+color: #333;
+padding: 20px;
+}
+
+
+.card {
+max-width: 700px;
+margin: auto;
+padding: 20px;
+border-radius: 16px;
+background: #fffde7ab; /* light yellow */
+box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+border: 2px solid #fdd835; /* golden yellow */
+}
+
+
+input, select {
+padding: 8px;
+width: 100%;
+margin-bottom: 12px;
+border-radius: 8px;
+border: 2px solid #fdd835;
+background-color: #fff9c4;
+}
+
+
+button {
+padding: 10px 16px;
+border: none;
+background: #fbc02d;
+color: #333;
+border-radius: 10px;
+cursor: pointer;
+font-weight: bold;
+}
     canvas { margin-top: 20px; }
     .stats { margin-top: 12px; font-weight: bold; }
     #fileContainer { display: none; margin-bottom: 12px; }
     .checkbox-label { display: flex; align-items: center; margin-bottom: 12px; cursor: pointer; }
     .checkbox-label input { margin-right: 8px; width: auto; }
-    #loading { display: none; margin-bottom: 12px; font-weight: bold; }
+    #stats { margin-top: 12px; font-weight: bold; color: #00a2ff;}
+    #loading { display: none; margin-bottom: 12px; font-weight: bold; color: #006eff;}
+    button:hover { background: #fdd835;}
+
   </style>
 </head>
 <body>
@@ -51,7 +89,7 @@
       const min = sorted[0];
       const max = sorted[sorted.length-1];
       const sum = values.reduce((a,b) => a+b, 0);
-      const avg = sum / values.length;
+      const avg = Math.round(sum / values.length);
       const mid = Math.floor(sorted.length/2);
       const median = sorted.length % 2 === 0 ? (sorted[mid-1]+sorted[mid])/2 : sorted[mid];
       return {min, max, avg, median};
@@ -122,7 +160,7 @@
 
         const stats = calculateStats(prices);
         document.getElementById('stats').innerHTML =
-          `Min: ${formatNumber(stats.min)} | Max: ${formatNumber(stats.max)} | Avg: ${formatNumber(stats.avg.toFixed(2))} | Median: ${formatNumber(stats.median)}`;
+          `Min: ${formatNumber(stats.min)} | Max: ${formatNumber(stats.max)} | Avg: ${formatNumber(stats.avg)} | Median: ${formatNumber(stats.median)}`;
       } finally {
         loading.style.display = 'none';
       }
