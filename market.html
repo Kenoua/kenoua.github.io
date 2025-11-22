@@ -79,6 +79,7 @@ font-weight: bold;
 
   <script>
     let chart;
+    let parsed;
 
     function toggleFileInput() {
       const container = document.getElementById('fileContainer');
@@ -116,30 +117,30 @@ font-weight: bold;
         const isID = /^\d+$/.test(item);
 
         const importCheck = document.getElementById('importCheck').checked;
-        let parsed;
-
-        if (importCheck) {
-          const fileInput = document.getElementById('fileInput');
-          if (!fileInput.files.length) { loading.style.display = 'none'; return alert("Please select a CSV file to import."); }
-          const file = fileInput.files[0];
-          parsed = await new Promise(resolve => {
-            Papa.parse(file, {
-              header: true,
-              complete: results => resolve(results)
+        
+        if(parsed == undefined){
+          if (importCheck) {
+            const fileInput = document.getElementById('fileInput');
+            if (!fileInput.files.length) { loading.style.display = 'none'; return alert("Please select a CSV file to import."); }
+            const file = fileInput.files[0];
+            parsed = await new Promise(resolve => {
+              Papa.parse(file, {
+                header: true,
+                complete: results => resolve(results)
+              });
             });
-          });
-        } else {
-          try {
-            const response = await fetch('Talon Market Master Vendor Data.csv');
-            const csvText = await response.text();
-            parsed = Papa.parse(csvText, { header: true });
-          } catch (err) {
-            console.error(err);
-            loading.style.display = 'none';
-            return alert("Could not load 'Talon Market Master Vendor Data.csv' from server root.");
+          } else {
+            try {
+              const response = await fetch('Talon Market Master Vendor Data.csv');
+              const csvText = await response.text();
+              parsed = Papa.parse(csvText, { header: true });
+            } catch (err) {
+              console.error(err);
+              loading.style.display = 'none';
+              return alert("Could not load 'Talon Market Master Vendor Data.csv' from server root.");
+            }
           }
         }
-
         const monthFilter = document.getElementById('monthFilter').value;
         let data;
         if (isID) {
