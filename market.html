@@ -79,104 +79,178 @@ font-weight: bold;
   </div>
 
   <script>
-    let chart;
-    let parsed;
+  let chart;
+  let parsed;
 
-    function toggleFileInput() {
-      const container = document.getElementById('fileContainer');
-      container.style.display = document.getElementById('importCheck').checked ? 'block' : 'none';
-    }
+  function toggleFileInput() {
+    const container = document.getElementById('fileContainer');
+    container.style.display = document.getElementById('importCheck').checked ? 'block' : 'none';
+  }
 
-    function calculateStats(values) {
-      const sorted = [...values].sort((a,b) => a-b);
-      const min = sorted[0];
-      const max = sorted[sorted.length-1];
-      const sum = values.reduce((a,b) => a+b, 0);
-      const avg = Math.round(sum / values.length);
-      const mid = Math.floor(sorted.length/2);
-      const median = sorted.length % 2 === 0 ? (sorted[mid-1]+sorted[mid])/2 : sorted[mid];
-      return {min, max, avg, median};
-    }
+  function calculateStats(values) {
+    const sorted = [...values].sort((a,b) => a-b);
+    const min = sorted[0];
+    const max = sorted[sorted.length-1];
+    const sum = values.reduce((a,b) => a+b, 0);
+    const avg = Math.round(sum / values.length);
+    const mid = Math.floor(sorted.length/2);
+    const median = sorted.length % 2 === 0
+      ? (sorted[mid-1]+sorted[mid])/2
+      : sorted[mid];
+    return {min, max, avg, median};
+  }
 
-    function formatNumber(num) {
-      return num.toLocaleString();
-    }
+  function formatNumber(num) {
+    return num.toLocaleString();
+  }
 
-    function filterByMonths(data, months) {
-      const cutoff = new Date();
-      cutoff.setMonth(cutoff.getMonth() - Number(months));
-      return data.filter(row => new Date(row.date) >= cutoff);
-    }
+  function filterByMonths(data, months) {
+    const cutoff = new Date();
+    cutoff.setMonth(cutoff.getMonth() - Number(months));
+    return data.filter(row => new Date(row.date) >= cutoff);
+  }
 
-    async function loadData() {
-      const loading = document.getElementById('loading');
-      loading.style.display = 'block';
+  async function loadData() {
+    const loading = document.getElementById('loading');
+    loading.style.display = 'block';
 
-      try {
-        const item = document.getElementById('itemInput').value.trim();
-        if (!item) { loading.style.display = 'none'; return alert("Enter an item name or ID"); }
-        const isID = /^\d+$/.test(item);
+    try {
+      const item = document.getElementById('itemInput').value.trim();
+      if (!item) {
+        loading.style.display = 'none';
+        return alert("Enter an item name or ID");
+      }
 
-        const importCheck = document.getElementById('importCheck').checked;
-        
-        if(parsed == undefined){
-          if (importCheck) {
-            const fileInput = document.getElementById('fileInput');
-            if (!fileInput.files.length) { loading.style.display = 'none'; return alert("Please select a CSV file to import."); }
-            const file = fileInput.files[0];
-            parsed = await new Promise(resolve => {
-              Papa.parse(file, {
-                header: true,
-                complete: results => resolve(results)
-              });
+      const isID = /^\d+$/.test(item);
+      const importCheck = document.getElementById('importCheck').checked;
+
+      if (parsed === undefined) {
+        if (importCheck) {
+          const fileInput = document.getElementById('fileInput');
+          if (!fileInput.files.length) {
+            loading.style.display = 'none';
+            return alert("Please select a CSV file to import.");
+          }
+
+          const file = fileInput.files[0];
+          parsed = await new Promise(resolve => {
+            Papa.parse(file, {
+              header: true,
+              complete: results => resolve(results)
             });
-          } else {
-            try {
-              const response = await fetch('Talon Market Master Vendor Data.csv');
-              const csvText = await response.text();
-              parsed = Papa.parse(csvText, { header: true });
-            } catch (err) {
-              console.error(err);
-              loading.style.display = 'none';
-              return alert("Could not load 'Talon Market Master Vendor Data.csv' from server root.");
+          });
+        } else {
+          try {
+            const response = await fetch('Talon Market Master Vendor Data.csv');
+            const csvText = await response.text();
+            parsed = Papa.parse(csvText, { header: true });
+          } catch (err) {
+            console.error(err);
+            loading.style.display = 'none';
+            return alert("Could not load 'Talon Market Master Vendor Data.csv' from server root.");
+          }
+        }
+      }
+
+      const monthFilter = document.getElementById('monthFilter').value;
+
+      let data;
+      if (isID) {
+        data = parsed.data.filter(row => row["item id"] == item);
+      } else {
+        data = parsed.data.filter(
+          row => row["item name"] &&
+                 row["item name"].toLowerCase() === item.toLowerCase()
+        );
+      }
+
+      data = filterByMonths(data, monthFilter);
+
+      if (!data.length) {
+        loading.style.display = 'none';
+        return alert("No data found for that item and date range.");
+      }
+
+      // 🔹 Sort by date (important for line charts)
+      data.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+      // 🔹 Collect unique dates for the X axis
+      const labels = [...new Set(data.map(e => e.date))];
+
+      // 🔹 Group rows by Upgrade
+      const groupedByUpgrade = {};
+      for (const row of data) {
+        const upgrade = row.upgrade || 'Base';
+        if (!groupedByUpgrade[upgrade]) {
+          groupedByUpgrade[upgrade] = [];
+        }
+        groupedByUpgrade[upgrade].push(row);
+      }
+
+      const ctx = document.getElementById('chart').getContext('2d');
+      const itemname = data[0]["item name"];
+
+      // 🔹 Build one dataset per Upgrade
+      const colors = [
+        '#4CAF50', '#2196F3', '#FF9800',
+        '#E91E63', '#9C27B0', '#00BCD4'
+      ];
+
+      function generateColor(index, total) {
+        const hue = Math.round((index * 360) / total);
+        return `hsl(${hue}, 70%, 50%)`;
+      }
+
+      const datasets = Object.entries(groupedByUpgrade).map(
+        ([upgrade, rows], index) => ({
+          label: `${itemname} (${upgrade})`,
+          data: labels.map(date => {
+            const match = rows.find(r => r.date === date);
+            return match ? Number(match.price) : null;
+          }),
+          borderColor: colors[index % colors.length],
+          backgroundColor: colors[index % colors.length],
+          tension: 0.2,
+          spanGaps: true 
+        })
+      );
+
+      if (chart) chart.destroy();
+
+      chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels,
+          datasets
+        },
+        options: {
+          interaction: {
+            mode: 'nearest',
+            intersect: false
+          },
+          plugins: {
+            legend: {
+              display: true
             }
           }
         }
-        const monthFilter = document.getElementById('monthFilter').value;
-        let data;
-        if (isID) {
-          data = parsed.data.filter(row => row["item id"] == item);
-        }
-        else{
-          data = parsed.data.filter(row => row["item name"] && row["item name"].toLowerCase() === item.toLowerCase());
-        }
-       
-        data = filterByMonths(data, monthFilter);
+      });
 
-        if (!data.length) { loading.style.display = 'none'; return alert("No data found for that item and date range."); }
+      // 🔹 Stats across ALL upgrades (same behavior as before)
+      const allPrices = data.map(e => Number(e.price)).filter(n => !isNaN(n));
+      const stats = calculateStats(allPrices);
 
-        const labels = data.map(e => e.date);
-        const prices = data.map(e => Number(e.price));
+      document.getElementById('stats').innerHTML =
+        `Min: ${formatNumber(stats.min)} |
+         Max: ${formatNumber(stats.max)} |
+         Avg: ${formatNumber(stats.avg)} |
+         Median: ${formatNumber(stats.median)}`;
 
-        if (chart) chart.destroy();
-
-        const ctx = document.getElementById('chart').getContext('2d');
-        const itemname = data[0]["item name"];
-        chart = new Chart(ctx, {
-          type: 'line',
-          data: {
-            labels,
-            datasets: [{ label: itemname + ' Price', data: prices }]
-          }
-        });
-
-        const stats = calculateStats(prices);
-        document.getElementById('stats').innerHTML =
-          `Min: ${formatNumber(stats.min)} | Max: ${formatNumber(stats.max)} | Avg: ${formatNumber(stats.avg)} | Median: ${formatNumber(stats.median)}`;
-      } finally {
-        loading.style.display = 'none';
-      }
+    } finally {
+      loading.style.display = 'none';
     }
-  </script>
+  }
+</script>
+
 </body>
 </html>
