@@ -236,15 +236,25 @@ font-weight: bold;
           },
           plugins: {
             legend: {
-              display: true
-            },
+                onClick(e, legendItem, legend) {
+                // 1️⃣ Call the default Chart.js behavior
+                Chart.defaults.plugins.legend.onClick.call(
+                  this,
+                  e,
+                  legendItem,
+                  legend
+                );
+
+                // 2️⃣ Update stats based on visible datasets
+                updateStatsFromVisible(legend.chart);
+              }},
             tooltip: {
               callbacks: {
                 label(context) {
                   const point = context.raw; // 👈 your custom object
 
                   let lines = [
-                    `Price: ${point.y}`,
+                    `Price: ${point.y.toLocaleString()}`,
                     `Refine: ${point.refine}`
                   ];
 
@@ -268,20 +278,46 @@ font-weight: bold;
           }
         }
       });
-
-      // 🔹 Stats across ALL upgrades (same behavior as before)
-      const allPrices = data.map(e => Number(e.price)).filter(n => !isNaN(n));
-      const stats = calculateStats(allPrices);
-
-      document.getElementById('stats').innerHTML =
-        `Min: ${formatNumber(stats.min)} |
-         Max: ${formatNumber(stats.max)} |
-         Avg: ${formatNumber(stats.avg)} |
-         Median: ${formatNumber(stats.median)}`;
+      updateStatsFromVisible(chart);
 
     } finally {
       loading.style.display = 'none';
     }
+  }
+
+  function updateStatsFromVisible(chart) {
+    const values = [];
+
+    chart.data.datasets.forEach((ds, dsIndex) => {
+      if (chart.isDatasetVisible(dsIndex)) {
+        ds.data.forEach(point => {
+          if (point && point.y != null) {
+            values.push(point.y);
+          }
+        });
+      }
+    });
+
+    if (!values.length) {
+      document.getElementById('stats').innerHTML = 'No data';
+      return;
+    }
+
+    values.sort((a, b) => a - b);
+
+    const min = values[0];
+    const max = values[values.length - 1];
+    const avg = values.reduce((a, b) => a + b, 0) / values.length;
+    const median =
+      values.length % 2
+        ? values[(values.length - 1) / 2]
+        : (values[values.length / 2 - 1] + values[values.length / 2]) / 2;
+
+    document.getElementById('stats').innerHTML =
+      `Min: ${formatNumber(min)} |
+      Max: ${formatNumber(max)} |
+      Avg: ${formatNumber(avg)} |
+      Median: ${formatNumber(median)}`;
   }
 
   document.addEventListener('keydown', function (e) {
