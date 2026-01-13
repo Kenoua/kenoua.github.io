@@ -72,7 +72,7 @@ font-weight: bold;
       <option value="3">3 Months</option>
       <option value="6">6 Months</option>
     </select>
-    <button onclick="loadData()">Load History</button>
+    <button id="search" onclick="loadData()">Load History</button>
     <div id="loading">Loading data, please wait...</div>
     <canvas id="chart"></canvas>
     <div id="stats" class="stats"></div>
@@ -205,10 +205,15 @@ font-weight: bold;
       const datasets = Object.entries(groupedByUpgrade).map(
         ([upgrade, rows], index) => ({
           label: `${itemname} (${upgrade})`,
-          data: labels.map(date => {
-            const match = rows.find(r => r.date === date);
-            return match ? Number(match.price) : null;
-          }),
+          data: rows.map(r => ({
+            x: r.date,
+            y: Number(r.price),
+            card1: r["card 1"],
+            card2: r["card 2"],
+            card3: r["card 3"],
+            card4: r["card 4"],
+            refine: upgrade
+          })),
           borderColor: colors[index % colors.length],
           backgroundColor: colors[index % colors.length],
           tension: 0.2,
@@ -232,6 +237,33 @@ font-weight: bold;
           plugins: {
             legend: {
               display: true
+            },
+            tooltip: {
+              callbacks: {
+                label(context) {
+                  const point = context.raw; // 👈 your custom object
+
+                  let lines = [
+                    `Price: ${point.y}`,
+                    `Refine: ${point.refine}`
+                  ];
+
+                  if (point.card1) {
+                    lines.push(`Card 1: ${point.card1}`);
+                  }
+                  if (point.card2) {
+                    lines.push(`Card 2: ${point.card2}`);
+                  }
+                  if (point.card3) {
+                    lines.push(`Card 3: ${point.card3}`);
+                  }
+                  if (point.card4) {
+                    lines.push(`Card 4: ${point.card4}`);
+                  }
+
+                  return lines;
+                }
+              }
             }
           }
         }
@@ -251,6 +283,13 @@ font-weight: bold;
       loading.style.display = 'none';
     }
   }
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+      document.getElementById('search').click();
+    }
+  });
+
 </script>
 
 </body>
