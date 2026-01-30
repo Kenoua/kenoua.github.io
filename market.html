@@ -9,7 +9,7 @@
   <style>
 body {
 font-family: 'Comic Sans MS', sans-serif;
-background: #f0f8ff url('backgroundMarket.jpg') no-repeat center center;
+background: #f0f8ff url('Backgrounds/backgroundMarket1.jpg') no-repeat center center;
 background-size: cover; /* This stretches the image */
 background-position: center top;
 color: #333;
@@ -73,6 +73,7 @@ font-weight: bold;
       <option value="6">6 Months</option>
     </select>
     <button id="search" onclick="loadData()">Load History</button>
+    <button id="bgButton" onclick="changeBackground()" style="display:none;">Change background</button>
     <div id="loading">Loading data, please wait...</div>
     <canvas id="chart"></canvas>
     <div id="stats" class="stats"></div>
@@ -81,10 +82,21 @@ font-weight: bold;
   <script>
   let chart;
   let parsed;
+  let bgIndex = 2;
+  const maxBg = 15;
 
   function toggleFileInput() {
     const container = document.getElementById('fileContainer');
     container.style.display = document.getElementById('importCheck').checked ? 'block' : 'none';
+  }
+
+  function changeBackground() {
+    document.body.style.backgroundImage = `url('Backgrounds/backgroundMarket${bgIndex}.jpg')`;
+
+    bgIndex++;
+    if (bgIndex > maxBg) {
+      bgIndex = 1; // loop back to the first image
+    }
   }
 
   function calculateStats(values) {
@@ -111,11 +123,15 @@ font-weight: bold;
   }
 
   async function loadData() {
+    const item = document.getElementById('itemInput').value.trim();
+    if (item === "ChocoChonko") {
+      document.getElementById("bgButton").style.display = "inline-block";
+      return;
+    } 
     const loading = document.getElementById('loading');
     loading.style.display = 'block';
 
     try {
-      const item = document.getElementById('itemInput').value.trim();
       if (!item) {
         loading.style.display = 'none';
         return alert("Enter an item name or ID");
