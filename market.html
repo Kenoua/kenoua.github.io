@@ -27,6 +27,76 @@ box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 border: 2px solid #fdd835; /* golden yellow */
 }
 
+.layout-wrapper {
+  display: flex;
+  justify-content: center;   /* centers the whole block */
+  align-items: flex-start;
+  gap: 12px;                 /* space between main & history */
+  position: relative;
+  width: 100%;
+}
+
+/* MAIN MODULE — centered to viewport */
+.main-module {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+}
+
+/* HISTORY — anchored to main */
+.history-module {
+  position: absolute;
+  left: calc(50% + 300px + 50px); /* 300 = half of main width */
+  width: 240px;
+}
+
+.history-module ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history-module li {
+  margin-bottom: 8px;
+}
+
+.history-module li span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #fff9c4, #fff9c4);
+  border: 1px solid #ccc;
+
+  cursor: pointer;
+  font-weight: 600;
+
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+/* Hover = obvious */
+.history-module li span:hover {
+  background: linear-gradient(135deg, #fff9c4, #fff9c4);
+  transform: translateX(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Click feedback */
+.history-module li span:active {
+  transform: translateX(-2px) scale(0.98);
+}
+
+/* Keyboard accessibility */
+.history-module li span:focus {
+  outline: 3px solid #4a90e2;
+}
+
 
 input, select {
 padding: 8px;
@@ -60,23 +130,30 @@ font-weight: bold;
   </style>
 </head>
 <body>
-  <div class="card">
-    <h2>Talon Market Viewer by Mr Patate</h2>
-    <input id="itemInput" placeholder="Enter item name or ID..." />
-    <label class="checkbox-label"><input type="checkbox" id="importCheck" onchange="toggleFileInput()"> Import new data file</label>
-    <div id="fileContainer">
-      <input type="file" id="fileInput" accept=".csv" />
+  <div class="layout-wrapper">
+    <div class="card main-module">
+      <h2>Talon Market Viewer by Mr Patate</h2>
+      <input id="itemInput" placeholder="Enter item name or ID..." />
+      <label class="checkbox-label"><input type="checkbox" id="importCheck" onchange="toggleFileInput()"> Import new data file</label>
+      <div id="fileContainer">
+        <input type="file" id="fileInput" accept=".csv" />
+      </div>
+      <select id="monthFilter">
+        <option value="1">1 Month</option>
+        <option value="3">3 Months</option>
+        <option value="6">6 Months</option>
+      </select>
+      <button id="search" onclick="loadData()">Load History</button>
+      <button id="bgButton" onclick="changeBackground()" style="display:none;">Change background</button>
+      <div id="loading">Loading data, please wait...</div>
+      <canvas id="chart"></canvas>
+      <div id="stats" class="stats"></div>
     </div>
-    <select id="monthFilter">
-      <option value="1">1 Month</option>
-      <option value="3">3 Months</option>
-      <option value="6">6 Months</option>
-    </select>
-    <button id="search" onclick="loadData()">Load History</button>
-    <button id="bgButton" onclick="changeBackground()" style="display:none;">Change background</button>
-    <div id="loading">Loading data, please wait...</div>
-    <canvas id="chart"></canvas>
-    <div id="stats" class="stats"></div>
+    <div class="card history-module">
+      <h3>History - Click to search</h3>
+      <ul id="historyList"></ul>
+      <button onclick="clearHistory()">Clear</button>
+    </div>
   </div>
 
   <script>
@@ -84,6 +161,7 @@ font-weight: bold;
   let parsed;
   let bgIndex = 2;
   const maxBg = 15;
+  const history = JSON.parse(localStorage.getItem("searchHistory")) || [];
 
   function toggleFileInput() {
     const container = document.getElementById('fileContainer');
@@ -122,8 +200,41 @@ font-weight: bold;
     return data.filter(row => new Date(row.date) >= cutoff);
   }
 
-  async function loadData() {
-    const item = document.getElementById('itemInput').value.trim();
+  function addToHistory(item) {
+    // Prevent duplicates (move to top instead)
+    const index = history.indexOf(item);
+    if (index !== -1) history.splice(index, 1);
+
+    history.unshift(item); // newest first
+    if (history.length > 10) history.pop();
+    renderHistory();
+  }
+
+  function clearHistory() {
+  history.length = 0;
+  renderHistory();
+  }
+
+function renderHistory() {
+  const list = document.getElementById("historyList");
+  list.innerHTML = "";
+
+  history.forEach(item => {
+    const li = document.createElement("li");
+    const span = document.createElement("span");
+
+    span.textContent = `🔍 ${item}`;
+    span.tabIndex = 0;
+    span.onclick = () => loadData(item);
+
+    li.appendChild(span);
+    list.appendChild(li);
+  });
+  localStorage.setItem("searchHistory", JSON.stringify(history));
+}
+
+  async function loadData(valueFromHistory = null) {
+    const item = valueFromHistory ?? document.getElementById('itemInput').value.trim();
     if (item === "ChocoChonko") {
       document.getElementById("bgButton").style.display = "inline-block";
       return;
@@ -132,10 +243,11 @@ font-weight: bold;
     loading.style.display = 'block';
 
     try {
+      
       if (!item) {
         loading.style.display = 'none';
         return alert("Enter an item name or ID");
-      }
+      }    
 
       const isID = /^\d+$/.test(item);
       const importCheck = document.getElementById('importCheck').checked;
@@ -168,7 +280,7 @@ font-weight: bold;
           }
         }
       }
-
+ 
       const monthFilter = document.getElementById('monthFilter').value;
 
       let data;
@@ -186,6 +298,12 @@ font-weight: bold;
       if (!data.length) {
         loading.style.display = 'none';
         return alert("No data found for that item and date range.");
+      }
+
+      if (!valueFromHistory) {
+        addToHistory(item);
+      }else{
+        document.getElementById('itemInput').value = item;
       }
 
       // 🔹 Sort by date (important for line charts)
