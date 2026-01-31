@@ -163,6 +163,10 @@ font-weight: bold;
   const maxBg = 15;
   const history = JSON.parse(localStorage.getItem("searchHistory")) || [];
 
+  window.addEventListener("load", () => {
+    renderHistory();
+  });
+
   function toggleFileInput() {
     const container = document.getElementById('fileContainer');
     container.style.display = document.getElementById('importCheck').checked ? 'block' : 'none';
