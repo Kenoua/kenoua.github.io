@@ -69,7 +69,7 @@ border: 2px solid #fdd835; /* golden yellow */
   padding: 10px 12px;
   border-radius: 8px;
   background: linear-gradient(135deg, #fff9c4, #fff9c4);
-  border: 1px solid #ccc;
+  border: 2px solid #fdd835; /* golden yellow */
 
   cursor: pointer;
   font-weight: 600;
@@ -97,6 +97,26 @@ border: 2px solid #fdd835; /* golden yellow */
   outline: 3px solid #4a90e2;
 }
 
+#autocomplete {
+  border: 2px solid #fdd835; /* golden yellow */
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  background: linear-gradient(135deg, #fff9c4, #fff9c4);
+  width: 250px;
+  display: none;
+  z-index: 10;
+  border-radius: 8px;
+}
+
+.autocomplete-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.autocomplete-item:hover {
+  background: linear-gradient(135deg, #fff9c4, #fff9c4);
+}
 
 input, select {
 padding: 8px;
@@ -134,7 +154,8 @@ font-weight: bold;
   <div class="layout-wrapper">
     <div class="card main-module">
       <h2>Talon Market Viewer by Mr Patate</h2>
-      <input id="itemInput" placeholder="Enter item name or ID..." />
+      <input id="itemInput" placeholder="Enter item name or ID..." autocomplete="on"/>
+      <div id="autocomplete"></div>
       <label class="checkbox-label"><input type="checkbox" id="importCheck" onchange="toggleFileInput()"> Import new data file</label>
       <div id="fileContainer">
         <input type="file" id="fileInput" accept=".csv" />
@@ -158,14 +179,61 @@ font-weight: bold;
   </div>
 
   <script>
+  let autocompleteItems
   let chart;
   let parsed;
   let bgIndex = 2;
   const maxBg = 15;
   const history = JSON.parse(localStorage.getItem("searchHistory")) || [];
+  const input = document.getElementById("itemInput");
+  const box = document.getElementById("autocomplete");
 
   window.addEventListener("load", () => {
     renderHistory();
+    fetchData();
+  });
+
+  document.addEventListener("click", (e) => {
+  if (
+    !box.contains(e.target) &&
+    e.target !== input
+  ) {
+    box.style.display = "none";
+  }
+  });
+
+  input.addEventListener("input", () => {
+    const value = input.value.toLowerCase();
+    box.innerHTML = "";
+
+    if (!value) {
+      box.style.display = "none";
+      return;
+    }
+
+    const matches = autocompleteItems.filter(name =>
+      name.toLowerCase().includes(value)
+    );
+
+    if (!matches.length) {
+      box.style.display = "none";
+      return;
+    }
+
+    matches.forEach(name => {
+      const div = document.createElement("div");
+      div.className = "autocomplete-item";
+      div.textContent = name;
+
+      div.onclick = () => {
+        input.value = name;
+        box.style.display = "none";
+      };
+
+      box.appendChild(div);
+    });
+
+    box.style.display = "block";
   });
 
   function toggleFileInput() {
@@ -220,6 +288,28 @@ font-weight: bold;
   renderHistory();
   }
 
+  async function fetchData(){
+    try {
+      //const response = await fetch('Talon Market Master Vendor Data.csv');
+      const loading = document.getElementById('loading');
+      loading.style.display = 'block';
+      const response = await fetch('https://dl.dropboxusercontent.com/scl/fo/h0gduuuivf39r83k1k2bq/AKnKe6s8rV2SCfI-cRumOSE/Talon%20Market%20Master%20Vendor%20Data.csv?rlkey=6idfkjrm67xd16y328ji248lg&e=1&dl=1');
+      const csvText = await response.text();
+      parsed = Papa.parse(csvText, { header: true });
+      autocompleteItems = [...new Set(
+      parsed.data
+        .map(row => row["item name"]?.trim())
+        .filter(Boolean)
+      )];
+    } catch (err) {
+      console.error(err);
+      loading.style.display = 'none';
+      return alert("Could not load 'Talon Market Master Vendor Data.csv' from server root.");
+    }finally {
+      loading.style.display = 'none';
+    }
+  }
+
 function renderHistory() {
   const list = document.getElementById("historyList");
   list.innerHTML = "";
@@ -239,53 +329,19 @@ function renderHistory() {
 }
 
   async function loadData(valueFromHistory = null) {
+
     const item = valueFromHistory ?? document.getElementById('itemInput').value.trim();
     if (item === "ChocoChonko") {
       document.getElementById("bgButton").style.display = "inline-block";
       return;
     } 
-    const loading = document.getElementById('loading');
-    loading.style.display = 'block';
 
-    try {
-      
       if (!item) {
         loading.style.display = 'none';
         return alert("Enter an item name or ID");
       }    
 
       const isID = /^\d+$/.test(item);
-      const importCheck = document.getElementById('importCheck').checked;
-
-      if (parsed === undefined) {
-        if (importCheck) {
-          const fileInput = document.getElementById('fileInput');
-          if (!fileInput.files.length) {
-            loading.style.display = 'none';
-            return alert("Please select a CSV file to import.");
-          }
-
-          const file = fileInput.files[0];
-          parsed = await new Promise(resolve => {
-            Papa.parse(file, {
-              header: true,
-              complete: results => resolve(results)
-            });
-          });
-        } else {
-          try {
-            //const response = await fetch('Talon Market Master Vendor Data.csv');
-            const response = await fetch('https://dl.dropboxusercontent.com/scl/fo/h0gduuuivf39r83k1k2bq/AKnKe6s8rV2SCfI-cRumOSE/Talon%20Market%20Master%20Vendor%20Data.csv?rlkey=6idfkjrm67xd16y328ji248lg&e=1&dl=1');
-            const csvText = await response.text();
-            parsed = Papa.parse(csvText, { header: true });
-          } catch (err) {
-            console.error(err);
-            loading.style.display = 'none';
-            return alert("Could not load 'Talon Market Master Vendor Data.csv' from server root.");
-          }
-        }
-      }
- 
       const monthFilter = document.getElementById('monthFilter').value;
 
       let data;
@@ -419,9 +475,7 @@ function renderHistory() {
       });
       updateStatsFromVisible(chart);
 
-    } finally {
-      loading.style.display = 'none';
-    }
+    
   }
 
   function updateStatsFromVisible(chart) {
