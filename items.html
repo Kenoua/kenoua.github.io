@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quest item finder by Mr Patate</title>
+  <script src="questItemsDB.js"></script>
+  <style>
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  background: #f0f8ff url('Backgrounds/backgroundMarket16.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* The "Outer" Container */
+.main-module {
+  width: 600px;
+  height: 85vh; /* Fixed height so we can scroll inside it */
+  background: #fffde7ab;
+  border: 2px solid #fdd835;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column; /* Stacks Header, Search, then Grid */
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Header stays at the top */
+h2 { margin: 0 0 15px 0; color: #530020; }
+
+/* Wrapper for Search + Autocomplete */
+.search-container {
+  position: relative; /* This is key: keeps autocomplete anchored here */
+  width: 100%;
+}
+
+input#search {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #fdd835;
+  background: #fff9c4;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+/* The Scrollable Grid Area */
+#grid {
+  flex: 1; /* Tells the grid to take up ALL remaining space */
+  overflow-y: auto; /* Adds the scrollbar here */
+  margin-top: 15px;
+  padding-right: 10px;
+  border-radius: 8px;
+}
+
+/* The Floating Autocomplete */
+#autocomplete {
+  position: absolute;
+  top: 100%; /* Sits exactly under the input */
+  left: 0;
+  width: 100%;
+  background: #fff9c4;
+  border: 2px solid #fdd835;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  z-index: 999; /* Floats OVER the grid */
+  max-height: 250px;
+  overflow-y: auto;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  display: none;
+}
+
+/* Custom Scrollbar */
+#grid::-webkit-scrollbar { width: 8px; }
+#grid::-webkit-scrollbar-track { background: transparent; }
+#grid::-webkit-scrollbar-thumb { background: #fbc02d; border-radius: 10px; }
+
+/* Quest Card Styling */
+.quest-card {
+  background: #fff9c4;
+  border: 2px solid #fdd835;
+  border-left: 6px solid #fbc02d;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+/* Re-adding the hover effect for autocomplete items */
+.autocomplete-item {
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: background 0.2s ease; /* Makes the color fade in smoothly */
+  border-bottom: 1px solid rgba(253, 216, 53, 0.3); /* Subtle divider */
+}
+
+.autocomplete-item:last-child {
+  border-bottom: none; /* Remove divider for the last item */
+}
+
+/* This is the "hover" magic */
+.autocomplete-item:hover {
+  background: linear-gradient(135deg, #fdd835, #fff9c4);
+  color: #333;
+}
+
+/* Add this to make sure your icons and text are vertically aligned */
+.autocomplete-item small {
+  margin-right: 8px;
+  font-size: 1.1em;
+}
+
+  </style>
+<link rel="icon" type="image/png" href="floofIco.png">
+</head>
+<body>
+  <div class="main-module">
+    <h2>Is my item useful?</h2>
+    
+    <!-- Grouping search elements prevents layout shifting -->
+    <div class="search-container">
+      <input id="search" placeholder="Enter item name or ID..." autocomplete="off">
+      <div id="autocomplete"></div>
+    </div>
+
+    <!-- This area will scroll while the search stays put -->
+    <div id="grid"></div>
+  </div>
+
+<script>
+  // Ensure these are globally available (loaded from your .js files)
+  // ITEMS = [{ id: 500, name: "Choko Gangjeong" }, ...]
+  // QUESTS = [{ name: "Aegis Shield [1]", requirements: [...] }, ...]
+
+  const searchInput = document.getElementById("search");
+  const autocomplete = document.getElementById("autocomplete");
+  const grid = document.getElementById("grid");
+
+  // Helper to find Item Name from ID
+  function getItemName(id) {
+    const item = ITEMS.find(i => i.id === id);
+    return item ? item.name : `Unknown Item (${id})`;
+  }
+
+  // -----------------------
+  // AUTOCOMPLETE
+  // -----------------------
+searchInput.addEventListener("input", () => {
+    const value = searchInput.value.toLowerCase();
+    if (!value) {
+        autocomplete.style.display = "none";
+        return;
+    }
+
+    // 1. Filter Items (by Name or ID)
+    const itemResults = ITEMS.filter(i =>
+        i.name.toLowerCase().includes(value) || i.id.toString().includes(value)
+    ).slice(0, 5);
+
+    // 2. Filter Quests (by Name)
+    const questResults = QUESTS.filter(q =>
+        q.name.toLowerCase().includes(value)
+    ).slice(0, 5);
+
+    autocomplete.innerHTML = "";
+
+    // Add Item Suggestions
+    itemResults.forEach(item => {
+        const div = document.createElement("div");
+        div.className = "autocomplete-item";
+        div.innerHTML = `<small>📦</small> ${item.name} (ID:${item.id})`;
+        div.onclick = () => {
+            searchInput.value = item.name;
+            autocomplete.style.display = "none";
+            showQuests(item.id); // Search by Item ID
+        };
+        autocomplete.appendChild(div);
+    });
+
+    // Add Quest Suggestions
+    questResults.forEach(quest => {
+        const div = document.createElement("div");
+        div.className = "autocomplete-item";
+        div.style.borderLeft = "4px solid #fbc02d";
+        div.innerHTML = `<small>📜</small> <b>${quest.name}</b>`;
+        div.onclick = () => {
+            searchInput.value = quest.name;
+            autocomplete.style.display = "none";
+            displaySingleQuest(quest); // New function to show just this quest
+        };
+        autocomplete.appendChild(div);
+    });
+
+    autocomplete.style.display = (itemResults.length || questResults.length) ? "block" : "none";
+});
+
+
+  // -----------------------
+  // DISPLAY QUESTS
+  // -----------------------
+  function displaySingleQuest(quest) {
+    grid.innerHTML = ""; // Clear the grid
+    
+    // We reuse your existing card creation logic but just for one object
+    // You can call a modified version of your showQuests logic here
+    const card = renderQuestCard(quest, null); 
+    grid.appendChild(card);
+}
+
+// Optimization: Move your card creation logic into this reusable function
+function renderQuestCard(q, targetItemId) {
+    const card = document.createElement("div");
+    card.className = "quest-card";
+    card.style.marginBottom = "20px";
+    card.style.borderLeft = "6px solid #fbc02d";
+
+    const title = document.createElement("h3");
+    title.style.margin = "0 0 10px 0";
+    title.innerHTML = `<span style="font-size: 0.8em; color: #777;">[${q.category || 'Quest'}]</span> ${q.name}`;
+    card.appendChild(title);
+
+    if (q.requirements) {
+        const reqTitle = document.createElement("div");
+        reqTitle.style = "font-weight: bold; font-size: 0.9em; color: #d32f2f; margin-top: 10px;";
+        reqTitle.textContent = "Requirements:";
+        card.appendChild(reqTitle);
+        card.appendChild(createItemList(q.requirements, targetItemId, "#d32f2f"));
+    }
+
+    if (q.results) {
+        const resTitle = document.createElement("div");
+        resTitle.style = "font-weight: bold; font-size: 0.9em; color: #2e7d32; margin-top: 10px;";
+        resTitle.textContent = "Rewards:";
+        card.appendChild(resTitle);
+        card.appendChild(createItemList(q.results, targetItemId, "#2e7d32"));
+    }
+    return card;
+}
+
+  function showQuests(itemId) {
+    grid.innerHTML = "";
+    const matchingQuests = QUESTS.filter(q =>
+        (q.requirements && q.requirements.some(r => r.itemId === itemId)) ||
+        (q.results && q.results.some(res => res.itemId === itemId))
+    );
+
+    if (matchingQuests.length === 0) {
+        grid.innerHTML = "<p style='padding:10px; text-align:center;'>No quests found.</p>";
+        return;
+    }
+
+    matchingQuests.forEach(q => {
+        grid.appendChild(renderQuestCard(q, itemId));
+    });
+}
+
+
+// Helper function to build the item lists with clickable names
+function createItemList(items, targetId, highlightColor) {
+    const list = document.createElement("ul");
+    list.style = "list-style: none; padding: 0; margin: 5px 0 10px 0;";
+
+    items.forEach(item => {
+        const li = document.createElement("li");
+        li.style = "padding: 5px 0; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center;";
+        
+        const name = getItemName(item.itemId);
+        const isTarget = item.itemId === targetId;
+        
+        // Container for Name + ID
+        const nameContainer = document.createElement("span");
+        nameContainer.style.cursor = "pointer";
+        nameContainer.style.flexGrow = "1";
+
+        // The Item Name
+        const nameSpan = document.createElement("span");
+        nameSpan.textContent = name;
+        if (isTarget) {
+            nameSpan.style.fontWeight = "bold";
+            nameSpan.style.color = highlightColor;
+        }
+
+        // The Item ID (Small and gray)
+        const idSpan = document.createElement("span");
+        idSpan.textContent = ` (ID: ${item.itemId})`;
+        idSpan.style.fontSize = "0.8em";
+        idSpan.style.color = "#888";
+        idSpan.style.marginLeft = "5px";
+
+        nameContainer.appendChild(nameSpan);
+        nameContainer.appendChild(idSpan);
+
+        // Hover effect for the whole block
+        nameContainer.onmouseover = () => nameSpan.style.textDecoration = "underline";
+        nameContainer.onmouseout = () => nameSpan.style.textDecoration = "none";
+
+        // CLICK ACTION: Search for this item
+        nameContainer.onclick = () => {
+            searchInput.value = name; 
+            showQuests(item.itemId);
+            grid.scrollTo(0, 0);
+        };
+
+        const qtySpan = document.createElement("span");
+        qtySpan.style.fontWeight = "bold";
+        qtySpan.style.minWidth = "60px";
+        qtySpan.style.textAlign = "right";
+        qtySpan.textContent = `x${item.quantity.toLocaleString()}`;
+
+        li.appendChild(nameContainer);
+        li.appendChild(qtySpan);
+        list.appendChild(li);
+    });
+    return list;
+}
+
+  // Close autocomplete when clicking outside
+  document.addEventListener("click", e => {
+    if (!searchInput.contains(e.target) && !autocomplete.contains(e.target)) {
+        autocomplete.style.display = "none";
+    }
+  });
+
+  </script>
+</body>
+</html>
