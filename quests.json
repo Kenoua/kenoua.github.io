@@ -1,0 +1,3863 @@
+[
+  {
+    "name": "Aegis Shield [1]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 2128, "quantity": 1},
+      {"itemId": 2133, "quantity": 1},
+      {"itemId": 2153, "quantity": 1},
+      {"itemId": 2615, "quantity": 1},
+      {"itemId": 4066, "quantity": 1},
+      {"itemId": 4032, "quantity": 1},
+      {"itemId": 4124, "quantity": 1},
+      {"itemId": 6223, "quantity": 100},
+      {"itemId": 714, "quantity": 12},
+      {"itemId": 7108, "quantity": 10},
+      {"itemId": 1, "quantity": 100000000}
+    ],
+    "results": [
+      {"itemId": 2150, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Artemis Bow [3]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 1720, "quantity": 1},
+      {"itemId": 1722, "quantity": 1},
+      {"itemId": 18110, "quantity": 1},
+      {"itemId": 2671, "quantity": 1},
+      {"itemId": 1766, "quantity": 1},
+      {"itemId": 4368, "quantity": 2},
+      {"itemId": 4390, "quantity": 1},
+      {"itemId": 6393, "quantity": 500},
+      {"itemId": 701, "quantity": 15},
+      {"itemId": 22007, "quantity": 1},
+      {"itemId": 6326, "quantity": 5},
+      {"itemId": 1, "quantity": 100000000}
+    ],
+    "results": [
+      {"itemId": 1745, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Belmont Whip [3]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 1985, "quantity": 1},
+      {"itemId": 1964, "quantity": 1},
+      {"itemId": 1976, "quantity": 1},
+      {"itemId": 1979, "quantity": 1},
+      {"itemId": 1980, "quantity": 1},
+      {"itemId": 2614, "quantity": 1},
+      {"itemId": 4246, "quantity": 2},
+      {"itemId": 4315, "quantity": 1},
+      {"itemId": 7510, "quantity": 20},
+      {"itemId": 7451, "quantity": 5},
+      {"itemId": 1, "quantity": 100000000}
+    ],
+    "results": [
+      {"itemId": 1990, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Blade of Angels [3]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 1244, "quantity": 1},
+      {"itemId": 13039, "quantity": 1},
+      {"itemId": 1246, "quantity": 1},
+      {"itemId": 1148, "quantity": 1},
+      {"itemId": 18720, "quantity": 1},
+      {"itemId": 4075, "quantity": 1},
+      {"itemId": 4067, "quantity": 1},
+      {"itemId": 4394, "quantity": 1},
+      {"itemId": 6319, "quantity": 200},
+      {"itemId": 7292, "quantity": 20},
+      {"itemId": 7566, "quantity": 5},
+      {"itemId": 1, "quantity": 100000000}
+    ],
+    "results": [
+      {"itemId": 1190, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Djinn [3]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 1306, "quantity": 1},
+      {"itemId": 1363, "quantity": 1},
+      {"itemId": 16010, "quantity": 1},
+      {"itemId": 16000, "quantity": 1},
+      {"itemId": 4468, "quantity": 1},
+      {"itemId": 4101, "quantity": 2},
+      {"itemId": 7443, "quantity": 75},
+      {"itemId": 12040, "quantity": 10},
+      {"itemId": 7020, "quantity": 1},
+      {"itemId": 6022, "quantity": 5},
+      {"itemId": 1, "quantity": 100000000}
+    ],
+    "results": [
+      {"itemId": 1320, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Electric Guitar [3]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 1912, "quantity": 1},
+      {"itemId": 1908, "quantity": 1},
+      {"itemId": 1922, "quantity": 1},
+      {"itemId": 1930, "quantity": 1},
+      {"itemId": 1926, "quantity": 1},
+      {"itemId": 18538, "quantity": 1},
+      {"itemId": 4264, "quantity": 1},
+      {"itemId": 4381, "quantity": 2},
+      {"itemId": 707, "quantity": 100},
+      {"itemId": 7297, "quantity": 20},
+      {"itemId": 22008, "quantity": 5},
+      {"itemId": 1, "quantity": 100000000}
+    ],
+    "results": [
+      {"itemId": 1913, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Evangelist [3]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 1540, "quantity": 1},
+      {"itemId": 1647, "quantity": 1},
+      {"itemId": 2327, "quantity": 1},
+      {"itemId": 5093, "quantity": 1},
+      {"itemId": 4024, "quantity": 2},
+      {"itemId": 4443, "quantity": 1},
+      {"itemId": 6257, "quantity": 150},
+      {"itemId": 1009, "quantity": 75},
+      {"itemId": 7295, "quantity": 30},
+      {"itemId": 7036, "quantity": 10},
+      {"itemId": 1, "quantity": 100000000}
+    ],
+    "results": [
+      {"itemId": 1549, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Eversong Greaves [1]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 22014, "quantity": 1},
+      {"itemId": 2421, "quantity": 1},
+      {"itemId": 2412, "quantity": 1},
+      {"itemId": 2530, "quantity": 1},
+      {"itemId": 2544, "quantity": 1},
+      {"itemId": 4472, "quantity": 1},
+      {"itemId": 4043, "quantity": 2},
+      {"itemId": 7440, "quantity": 100},
+      {"itemId": 6223, "quantity": 100},
+      {"itemId": 22017, "quantity": 1},
+      {"itemId": 968, "quantity": 10},
+      {"itemId": 1, "quantity": 100000000}
+    ],
+    "results": [
+      {"itemId": 2480, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Ghostdancer Staff [3]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 1615, "quantity": 1},
+      {"itemId": 1620, "quantity": 1},
+      {"itemId": 1629, "quantity": 1},
+      {"itemId": 1643, "quantity": 1},
+      {"itemId": 4303, "quantity": 1},
+      {"itemId": 4438, "quantity": 2},
+      {"itemId": 7939, "quantity": 50},
+      {"itemId": 7340, "quantity": 10},
+      {"itemId": 7297, "quantity": 20},
+      {"itemId": 7169, "quantity": 10},
+      {"itemId": 1, "quantity": 100000000}
+    ],
+    "results": [
+      {"itemId": 1651, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Hira Shurikat [4]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 13303, "quantity": 1},
+      {"itemId": 13300, "quantity": 1},
+      {"itemId": 13302, "quantity": 1},
+      {"itemId": 13304, "quantity": 1},
+      {"itemId": 4058, "quantity": 2},
+      {"itemId": 4476, "quantity": 1},
+      {"itemId": 6319, "quantity": 250},
+      {"itemId": 6224, "quantity": 1000},
+      {"itemId": 7293, "quantity": 10},
+      {"itemId": 22013, "quantity": 5},
+      {"itemId": 1, "quantity": 100000000}
+    ],
+    "results": [
+      {"itemId": 13320, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Mjolnir [3]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 1368, "quantity": 1},
+      {"itemId": 1385, "quantity": 1},
+      {"itemId": 1524, "quantity": 1},
+      {"itemId": 1384, "quantity": 1},
+      {"itemId": 989, "quantity": 1},
+      {"itemId": 4072, "quantity": 1},
+      {"itemId": 4057, "quantity": 1},
+      {"itemId": 4098, "quantity": 1},
+      {"itemId": 6090, "quantity": 300},
+      {"itemId": 996, "quantity": 150},
+      {"itemId": 22010, "quantity": 5},
+      {"itemId": 22010, "quantity": 5},
+      {"itemId": 1, "quantity": 100000000}
+    ],
+    "results": [
+      {"itemId": 1530, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Nibelungen [3]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 1483, "quantity": 1},
+      {"itemId": 1435, "quantity": 1},
+      {"itemId": 1413, "quantity": 1},
+      {"itemId": 1139, "quantity": 1},
+      {"itemId": 4358, "quantity": 2},
+      {"itemId": 4389, "quantity": 1},
+      {"itemId": 7048, "quantity": 50},
+      {"itemId": 7019, "quantity": 2},
+      {"itemId": 7109, "quantity": 1},
+      {"itemId": 22006, "quantity": 5},
+      {"itemId": 1, "quantity": 100000000}
+    ],
+    "results": [
+      {"itemId": 1430, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Scouter [1]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 1531, "quantity": 1},
+      {"itemId": 5001, "quantity": 1},
+      {"itemId": 2659, "quantity": 1},
+      {"itemId": 2660, "quantity": 1},
+      {"itemId": 2661, "quantity": 1},
+      {"itemId": 2662, "quantity": 1},
+      {"itemId": 4421, "quantity": 1},
+      {"itemId": 4401, "quantity": 2},
+      {"itemId": 6223, "quantity": 100},
+      {"itemId": 969, "quantity": 25},
+      {"itemId": 22016, "quantity": 5},
+      {"itemId": 1, "quantity": 100000000}
+    ],
+    "results": [
+      {"itemId": 5600, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Sherwood Bow [3]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 18111, "quantity": 1},
+      {"itemId": 18109, "quantity": 1},
+      {"itemId": 1719, "quantity": 1},
+      {"itemId": 2747, "quantity": 1},
+      {"itemId": 4102, "quantity": 2},
+      {"itemId": 4426, "quantity": 1},
+      {"itemId": 7441, "quantity": 100},
+      {"itemId": 7289, "quantity": 75},
+      {"itemId": 7018, "quantity": 1},
+      {"itemId": 22012, "quantity": 5},
+      {"itemId": 1, "quantity": 100000000}
+    ],
+    "results": [
+      {"itemId": 1746, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Staff of Magi [3]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 2004, "quantity": 1},
+      {"itemId": 1473, "quantity": 1},
+      {"itemId": 1646, "quantity": 1},
+      {"itemId": 2680, "quantity": 4},
+      {"itemId": 4409, "quantity": 2},
+      {"itemId": 4416, "quantity": 1},
+      {"itemId": 6395, "quantity": 500},
+      {"itemId": 1007, "quantity": 10},
+      {"itemId": 7290, "quantity": 30},
+      {"itemId": 7513, "quantity": 5},
+      {"itemId": 1, "quantity": 100000000}
+    ],
+    "results": [
+      {"itemId": 1650, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Suiken [3]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 1816, "quantity": 1},
+      {"itemId": 1813, "quantity": 1},
+      {"itemId": 1802, "quantity": 1},
+      {"itemId": 5158, "quantity": 1},
+      {"itemId": 7017, "quantity": 1},
+      {"itemId": 4378, "quantity": 1},
+      {"itemId": 4063, "quantity": 2},
+      {"itemId": 7158, "quantity": 500},
+      {"itemId": 7295, "quantity": 30},
+      {"itemId": 22009, "quantity": 1},
+      {"itemId": 7300, "quantity": 20},
+      {"itemId": 1, "quantity": 100000000}
+    ],
+    "results": [
+      {"itemId": 1840, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Tome of Ymir [3]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 1560, "quantity": 1},
+      {"itemId": 1565, "quantity": 1},
+      {"itemId": 1557, "quantity": 1},
+      {"itemId": 2161, "quantity": 1},
+      {"itemId": 2109, "quantity": 1},
+      {"itemId": 4219, "quantity": 2},
+      {"itemId": 4382, "quantity": 1},
+      {"itemId": 738, "quantity": 100},
+      {"itemId": 1006, "quantity": 75},
+      {"itemId": 7211, "quantity": 10},
+      {"itemId": 1, "quantity": 100000000}
+    ],
+    "results": [
+      {"itemId": 1590, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Twin Fang [4]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 18774, "quantity": 1},
+      {"itemId": 1291, "quantity": 1},
+      {"itemId": 1266, "quantity": 1},
+      {"itemId": 1284, "quantity": 1},
+      {"itemId": 2746, "quantity": 1},
+      {"itemId": 4035, "quantity": 1},
+      {"itemId": 4360, "quantity": 2},
+      {"itemId": 7023, "quantity": 30},
+      {"itemId": 6089, "quantity": 200},
+      {"itemId": 7024, "quantity": 2},
+      {"itemId": 22011, "quantity": 5},
+      {"itemId": 1, "quantity": 100000000}
+    ],
+    "results": [
+      {"itemId": 1290, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Brisingamen [1]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 2621, "quantity": 4},
+      {"itemId": 2622, "quantity": 4},
+      {"itemId": 2623, "quantity": 4},
+      {"itemId": 2624, "quantity": 4},
+      {"itemId": 2625, "quantity": 4},
+      {"itemId": 2626, "quantity": 4},
+      {"itemId": 1, "quantity": 120000000}
+    ],
+    "results": [
+      {"itemId": 2630, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Megingjard",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 2650, "quantity": 1},
+      {"itemId": 2254, "quantity": 1},
+      {"itemId": 4028, "quantity": 1},
+      {"itemId": 4079, "quantity": 1},
+      {"itemId": 4008, "quantity": 1},
+      {"itemId": 4122, "quantity": 1},
+      {"itemId": 4019, "quantity": 1},
+      {"itemId": 4091, "quantity": 1},
+      {"itemId": 2601, "quantity": 10},
+      {"itemId": 2621, "quantity": 10},
+      {"itemId": 1, "quantity": 150000000}
+    ],
+    "results": [
+      {"itemId": 2629, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Sleipnir [1]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 2410, "quantity": 1},
+      {"itemId": 2412, "quantity": 1},
+      {"itemId": 1, "quantity": 50000000}
+    ],
+    "results": [
+      {"itemId": 8049, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Valkyrie Helm [1]",
+    "category": "SQI",
+    "requirements": [
+      {"itemId": 2254, "quantity": 1},
+      {"itemId": 5074, "quantity": 1},
+      {"itemId": 5025, "quantity": 1},
+      {"itemId": 2258, "quantity": 1},
+      {"itemId": 10006, "quantity": 1},
+      {"itemId": 5081, "quantity": 1},
+      {"itemId": 5017, "quantity": 1},
+      {"itemId": 1, "quantity": 130000000}
+    ],
+    "results": [
+      {"itemId": 8048, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Sleipnir",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 2406, "quantity": 1},
+      {"itemId": 4107, "quantity": 1},
+      {"itemId": 4097, "quantity": 1},
+      {"itemId": 4100, "quantity": 1},
+      {"itemId": 985, "quantity": 100},
+      {"itemId": 999, "quantity": 100},
+      {"itemId": 1, "quantity": 10000000}
+    ],
+    "results": [
+      {"itemId": 2410, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Aegis shield bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 959, "quantity": 450},
+      {"itemId": 7149, "quantity": 320},
+      {"itemId": 20205, "quantity": 1},
+      {"itemId": 1, "quantity": 1000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Aegis shield bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7161, "quantity": 410},
+      {"itemId": 916, "quantity": 310},
+      {"itemId": 20205, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Aegis shield bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7323, "quantity": 250},
+      {"itemId": 918, "quantity": 490},
+      {"itemId": 20205, "quantity": 1},
+      {"itemId": 1, "quantity": 1200000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Aegis shield bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1043, "quantity": 270},
+      {"itemId": 7065, "quantity": 370},
+      {"itemId": 20205, "quantity": 1},
+      {"itemId": 1, "quantity": 1600000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Aegis shield bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1053, "quantity": 350},
+      {"itemId": 1096, "quantity": 490},
+      {"itemId": 20205, "quantity": 1},
+      {"itemId": 1, "quantity": 1200000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Aegis shield bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1099, "quantity": 440},
+      {"itemId": 941, "quantity": 490},
+      {"itemId": 20205, "quantity": 1},
+      {"itemId": 1, "quantity": 1700000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Aegis shield bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7262, "quantity": 340},
+      {"itemId": 916, "quantity": 350},
+      {"itemId": 20205, "quantity": 1},
+      {"itemId": 1, "quantity": 1500000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Aegis shield bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7511, "quantity": 420},
+      {"itemId": 7219, "quantity": 410},
+      {"itemId": 20205, "quantity": 1},
+      {"itemId": 1, "quantity": 1800000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Aegis shield bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7220, "quantity": 310},
+      {"itemId": 936, "quantity": 300},
+      {"itemId": 20205, "quantity": 1},
+      {"itemId": 1, "quantity": 1700000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Aegis shield bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 955, "quantity": 270},
+      {"itemId": 928, "quantity": 410},
+      {"itemId": 20205, "quantity": 1},
+      {"itemId": 1, "quantity": 1500000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Artemis Bow bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 937, "quantity": 420},
+      {"itemId": 7512, "quantity": 350},
+      {"itemId": 20204, "quantity": 1},
+      {"itemId": 1, "quantity": 1800000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Artemis Bow bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7094, "quantity": 250},
+      {"itemId": 7225, "quantity": 460},
+      {"itemId": 20204, "quantity": 1},
+      {"itemId": 1, "quantity": 1000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Artemis Bow bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1036, "quantity": 390},
+      {"itemId": 1028, "quantity": 350},
+      {"itemId": 20204, "quantity": 1},
+      {"itemId": 1, "quantity": 1900000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Artemis Bow bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7096, "quantity": 280},
+      {"itemId": 7563, "quantity": 280},
+      {"itemId": 20204, "quantity": 1},
+      {"itemId": 1, "quantity": 1900000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Artemis Bow bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7053, "quantity": 320},
+      {"itemId": 7197, "quantity": 460},
+      {"itemId": 20204, "quantity": 1},
+      {"itemId": 1, "quantity": 1500000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Artemis Bow bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7038, "quantity": 270},
+      {"itemId": 7123, "quantity": 350},
+      {"itemId": 20204, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Artemis Bow bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7221, "quantity": 270},
+      {"itemId": 7122, "quantity": 480},
+      {"itemId": 20204, "quantity": 1},
+      {"itemId": 1, "quantity": 1900000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Artemis Bow bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7753, "quantity": 260},
+      {"itemId": 1022, "quantity": 330},
+      {"itemId": 20204, "quantity": 1},
+      {"itemId": 1, "quantity": 1100000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Artemis Bow bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1026, "quantity": 430},
+      {"itemId": 7054, "quantity": 450},
+      {"itemId": 20204, "quantity": 1},
+      {"itemId": 1, "quantity": 1100000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Artemis Bow bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7568, "quantity": 310},
+      {"itemId": 932, "quantity": 260},
+      {"itemId": 20204, "quantity": 1},
+      {"itemId": 1, "quantity": 1600000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Belmont Whip bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7068, "quantity": 350},
+      {"itemId": 6041, "quantity": 270},
+      {"itemId": 20211, "quantity": 1},
+      {"itemId": 1, "quantity": 1100000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Belmont Whip bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7215, "quantity": 500},
+      {"itemId": 922, "quantity": 310},
+      {"itemId": 20211, "quantity": 1},
+      {"itemId": 1, "quantity": 1200000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Belmont Whip bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7006, "quantity": 420},
+      {"itemId": 7320, "quantity": 270},
+      {"itemId": 20211, "quantity": 1},
+      {"itemId": 1, "quantity": 1600000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Belmont Whip bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7001, "quantity": 450},
+      {"itemId": 7222, "quantity": 460},
+      {"itemId": 20211, "quantity": 1},
+      {"itemId": 1, "quantity": 1700000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Belmont Whip bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7156, "quantity": 400},
+      {"itemId": 931, "quantity": 310},
+      {"itemId": 20211, "quantity": 1},
+      {"itemId": 1, "quantity": 1200000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Belmont Whip bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7193, "quantity": 260},
+      {"itemId": 7012, "quantity": 260},
+      {"itemId": 20211, "quantity": 1},
+      {"itemId": 1, "quantity": 1900000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Belmont Whip bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1067, "quantity": 400},
+      {"itemId": 7111, "quantity": 370},
+      {"itemId": 20211, "quantity": 1},
+      {"itemId": 1, "quantity": 1900000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Belmont Whip bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1057, "quantity": 390},
+      {"itemId": 1023, "quantity": 250},
+      {"itemId": 20211, "quantity": 1},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Belmont Whip bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7002, "quantity": 330},
+      {"itemId": 1048, "quantity": 330},
+      {"itemId": 20211, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Belmont Whip bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7164, "quantity": 300},
+      {"itemId": 7219, "quantity": 370},
+      {"itemId": 20211, "quantity": 1},
+      {"itemId": 1, "quantity": 1600000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Blade of Angels bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1055, "quantity": 410},
+      {"itemId": 7195, "quantity": 440},
+      {"itemId": 20212, "quantity": 1},
+      {"itemId": 1, "quantity": 1900000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Blade of Angels bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7512, "quantity": 280},
+      {"itemId": 7159, "quantity": 400},
+      {"itemId": 20212, "quantity": 1},
+      {"itemId": 1, "quantity": 1700000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Blade of Angels bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7064, "quantity": 350},
+      {"itemId": 1063, "quantity": 320},
+      {"itemId": 20212, "quantity": 1},
+      {"itemId": 1, "quantity": 1700000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Blade of Angels bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7322, "quantity": 340},
+      {"itemId": 7116, "quantity": 340},
+      {"itemId": 20212, "quantity": 1},
+      {"itemId": 1, "quantity": 1800000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Blade of Angels bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 966, "quantity": 290},
+      {"itemId": 913, "quantity": 400},
+      {"itemId": 20212, "quantity": 1},
+      {"itemId": 1, "quantity": 1100000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Blade of Angels bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1056, "quantity": 390},
+      {"itemId": 7168, "quantity": 340},
+      {"itemId": 20212, "quantity": 1},
+      {"itemId": 1, "quantity": 1100000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Blade of Angels bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7265, "quantity": 400},
+      {"itemId": 7153, "quantity": 440},
+      {"itemId": 20212, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Blade of Angels bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 942, "quantity": 490},
+      {"itemId": 945, "quantity": 390},
+      {"itemId": 20212, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Blade of Angels bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7150, "quantity": 450},
+      {"itemId": 7172, "quantity": 270},
+      {"itemId": 20212, "quantity": 1},
+      {"itemId": 1, "quantity": 1400000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Blade of Angels bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7115, "quantity": 400},
+      {"itemId": 7299, "quantity": 480},
+      {"itemId": 20212, "quantity": 1},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Djinn bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 961, "quantity": 370},
+      {"itemId": 1026, "quantity": 300},
+      {"itemId": 20209, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Djinn bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1035, "quantity": 280},
+      {"itemId": 7197, "quantity": 370},
+      {"itemId": 20209, "quantity": 1},
+      {"itemId": 1, "quantity": 1500000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Djinn bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 924, "quantity": 430},
+      {"itemId": 7150, "quantity": 450},
+      {"itemId": 20209, "quantity": 1},
+      {"itemId": 1, "quantity": 1900000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Djinn bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7030, "quantity": 340},
+      {"itemId": 7340, "quantity": 460},
+      {"itemId": 20209, "quantity": 1},
+      {"itemId": 1, "quantity": 1800000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Djinn bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7007, "quantity": 390},
+      {"itemId": 7217, "quantity": 310},
+      {"itemId": 20209, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Djinn bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 938, "quantity": 300},
+      {"itemId": 1016, "quantity": 410},
+      {"itemId": 20209, "quantity": 1},
+      {"itemId": 1, "quantity": 1700000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Djinn bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7212, "quantity": 420},
+      {"itemId": 7752, "quantity": 300},
+      {"itemId": 20209, "quantity": 1},
+      {"itemId": 1, "quantity": 1600000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Djinn bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7301, "quantity": 380},
+      {"itemId": 7100, "quantity": 270},
+      {"itemId": 20209, "quantity": 1},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Djinn bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1044, "quantity": 480},
+      {"itemId": 7027, "quantity": 280},
+      {"itemId": 20209, "quantity": 1},
+      {"itemId": 1, "quantity": 1200000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Djinn bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7223, "quantity": 480},
+      {"itemId": 7198, "quantity": 460},
+      {"itemId": 20209, "quantity": 1},
+      {"itemId": 1, "quantity": 1600000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Electric Guitar bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7121, "quantity": 450},
+      {"itemId": 1020, "quantity": 450},
+      {"itemId": 20210, "quantity": 1},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Electric Guitar bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1000, "quantity": 350},
+      {"itemId": 7225, "quantity": 480},
+      {"itemId": 20210, "quantity": 1},
+      {"itemId": 1, "quantity": 1900000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Electric Guitar bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7312, "quantity": 490},
+      {"itemId": 1040, "quantity": 310},
+      {"itemId": 20210, "quantity": 1},
+      {"itemId": 1, "quantity": 1600000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Electric Guitar bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7118, "quantity": 270},
+      {"itemId": 1045, "quantity": 300},
+      {"itemId": 20210, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Electric Guitar bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7009, "quantity": 340},
+      {"itemId": 1042, "quantity": 450},
+      {"itemId": 20210, "quantity": 1},
+      {"itemId": 1, "quantity": 1800000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Electric Guitar bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7263, "quantity": 360},
+      {"itemId": 935, "quantity": 460},
+      {"itemId": 20210, "quantity": 1},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Electric Guitar bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7188, "quantity": 310},
+      {"itemId": 7005, "quantity": 290},
+      {"itemId": 20210, "quantity": 1},
+      {"itemId": 1, "quantity": 1200000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Electric Guitar bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 939, "quantity": 350},
+      {"itemId": 7071, "quantity": 250},
+      {"itemId": 20210, "quantity": 1},
+      {"itemId": 1, "quantity": 1700000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Electric Guitar bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1098, "quantity": 390},
+      {"itemId": 7561, "quantity": 290},
+      {"itemId": 20210, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Electric Guitar bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7107, "quantity": 480},
+      {"itemId": 7317, "quantity": 410},
+      {"itemId": 20210, "quantity": 1},
+      {"itemId": 1, "quantity": 1700000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Evangelist bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7209, "quantity": 290},
+      {"itemId": 7004, "quantity": 460},
+      {"itemId": 20201, "quantity": 1},
+      {"itemId": 1, "quantity": 1700000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Evangelist bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7152, "quantity": 280},
+      {"itemId": 7799, "quantity": 470},
+      {"itemId": 20201, "quantity": 1},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Evangelist bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7098, "quantity": 370},
+      {"itemId": 962, "quantity": 430},
+      {"itemId": 20201, "quantity": 1},
+      {"itemId": 1, "quantity": 1700000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Evangelist bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7200, "quantity": 300},
+      {"itemId": 7567, "quantity": 380},
+      {"itemId": 20201, "quantity": 1},
+      {"itemId": 1, "quantity": 1900000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Evangelist bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 916, "quantity": 430},
+      {"itemId": 954, "quantity": 420},
+      {"itemId": 20201, "quantity": 1},
+      {"itemId": 1, "quantity": 1400000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Evangelist bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7149, "quantity": 330},
+      {"itemId": 1035, "quantity": 300},
+      {"itemId": 20201, "quantity": 1},
+      {"itemId": 1, "quantity": 1200000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Evangelist bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7158, "quantity": 400},
+      {"itemId": 7266, "quantity": 390},
+      {"itemId": 20201, "quantity": 1},
+      {"itemId": 1, "quantity": 1800000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Evangelist bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7218, "quantity": 410},
+      {"itemId": 7095, "quantity": 460},
+      {"itemId": 20201, "quantity": 1},
+      {"itemId": 1, "quantity": 1900000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Evangelist bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7315, "quantity": 320},
+      {"itemId": 1034, "quantity": 390},
+      {"itemId": 20201, "quantity": 1},
+      {"itemId": 1, "quantity": 1600000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Evangelist bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 953, "quantity": 470},
+      {"itemId": 7155, "quantity": 420},
+      {"itemId": 20201, "quantity": 1},
+      {"itemId": 1, "quantity": 1600000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Eversong Greaves bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 951, "quantity": 370},
+      {"itemId": 7798, "quantity": 410},
+      {"itemId": 20215, "quantity": 1},
+      {"itemId": 1, "quantity": 1800000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Eversong Greaves bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 926, "quantity": 310},
+      {"itemId": 967, "quantity": 460},
+      {"itemId": 20215, "quantity": 1},
+      {"itemId": 1, "quantity": 1600000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Eversong Greaves bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7205, "quantity": 420},
+      {"itemId": 1095, "quantity": 490},
+      {"itemId": 20215, "quantity": 1},
+      {"itemId": 1, "quantity": 1100000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Eversong Greaves bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 963, "quantity": 350},
+      {"itemId": 1045, "quantity": 260},
+      {"itemId": 20215, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Eversong Greaves bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7320, "quantity": 410},
+      {"itemId": 950, "quantity": 390},
+      {"itemId": 20215, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Eversong Greaves bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7340, "quantity": 420},
+      {"itemId": 7031, "quantity": 310},
+      {"itemId": 20215, "quantity": 1},
+      {"itemId": 1, "quantity": 1200000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Eversong Greaves bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7347, "quantity": 430},
+      {"itemId": 1094, "quantity": 280},
+      {"itemId": 20215, "quantity": 1},
+      {"itemId": 1, "quantity": 1000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Eversong Greaves bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1033, "quantity": 440},
+      {"itemId": 7168, "quantity": 310},
+      {"itemId": 20215, "quantity": 1},
+      {"itemId": 1, "quantity": 1600000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Eversong Greaves bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7013, "quantity": 500},
+      {"itemId": 7117, "quantity": 260},
+      {"itemId": 20215, "quantity": 1},
+      {"itemId": 1, "quantity": 1400000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Eversong Greaves bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1027, "quantity": 420},
+      {"itemId": 7100, "quantity": 450},
+      {"itemId": 20215, "quantity": 1},
+      {"itemId": 1, "quantity": 1800000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Ghostdancer Staff bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 949, "quantity": 430},
+      {"itemId": 958, "quantity": 340},
+      {"itemId": 20216, "quantity": 1},
+      {"itemId": 1, "quantity": 1200000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Ghostdancer Staff bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7117, "quantity": 310},
+      {"itemId": 7564, "quantity": 320},
+      {"itemId": 20216, "quantity": 1},
+      {"itemId": 1, "quantity": 1700000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Ghostdancer Staff bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 6023, "quantity": 340},
+      {"itemId": 943, "quantity": 310},
+      {"itemId": 20216, "quantity": 1},
+      {"itemId": 1, "quantity": 1000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Ghostdancer Staff bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 6020, "quantity": 290},
+      {"itemId": 943, "quantity": 310},
+      {"itemId": 20216, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Ghostdancer Staff bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7216, "quantity": 440},
+      {"itemId": 939, "quantity": 360},
+      {"itemId": 20216, "quantity": 1},
+      {"itemId": 1, "quantity": 1400000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Ghostdancer Staff bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7071, "quantity": 370},
+      {"itemId": 7188, "quantity": 360},
+      {"itemId": 20216, "quantity": 1},
+      {"itemId": 1, "quantity": 1000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Ghostdancer Staff bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7269, "quantity": 270},
+      {"itemId": 948, "quantity": 450},
+      {"itemId": 20216, "quantity": 1},
+      {"itemId": 1, "quantity": 1000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Ghostdancer Staff bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 944, "quantity": 480},
+      {"itemId": 7345, "quantity": 420},
+      {"itemId": 20216, "quantity": 1},
+      {"itemId": 1, "quantity": 1800000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Ghostdancer Staff bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7266, "quantity": 470},
+      {"itemId": 7116, "quantity": 260},
+      {"itemId": 20216, "quantity": 1},
+      {"itemId": 1, "quantity": 1800000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Ghostdancer Staff bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 941, "quantity": 420},
+      {"itemId": 950, "quantity": 290},
+      {"itemId": 20216, "quantity": 1},
+      {"itemId": 1, "quantity": 1500000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Hira Shurikat bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7194, "quantity": 300},
+      {"itemId": 7205, "quantity": 440},
+      {"itemId": 20214, "quantity": 1},
+      {"itemId": 1, "quantity": 1400000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Hira Shurikat bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7751, "quantity": 310},
+      {"itemId": 6021, "quantity": 310},
+      {"itemId": 20214, "quantity": 1},
+      {"itemId": 1, "quantity": 1100000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Hira Shurikat bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1061, "quantity": 270},
+      {"itemId": 949, "quantity": 440},
+      {"itemId": 20214, "quantity": 1},
+      {"itemId": 1, "quantity": 1400000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Hira Shurikat bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7186, "quantity": 390},
+      {"itemId": 7027, "quantity": 350},
+      {"itemId": 20214, "quantity": 1},
+      {"itemId": 1, "quantity": 1400000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Hira Shurikat bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 904, "quantity": 390},
+      {"itemId": 903, "quantity": 420},
+      {"itemId": 20214, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Hira Shurikat bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7069, "quantity": 330},
+      {"itemId": 956, "quantity": 380},
+      {"itemId": 20214, "quantity": 1},
+      {"itemId": 1, "quantity": 1100000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Hira Shurikat bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1016, "quantity": 430},
+      {"itemId": 7315, "quantity": 390},
+      {"itemId": 20214, "quantity": 1},
+      {"itemId": 1, "quantity": 1900000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Hira Shurikat bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7317, "quantity": 300},
+      {"itemId": 7325, "quantity": 270},
+      {"itemId": 20214, "quantity": 1},
+      {"itemId": 1, "quantity": 1800000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Hira Shurikat bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 931, "quantity": 490},
+      {"itemId": 1027, "quantity": 280},
+      {"itemId": 20214, "quantity": 1},
+      {"itemId": 1, "quantity": 1200000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Hira Shurikat bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1066, "quantity": 300},
+      {"itemId": 7125, "quantity": 470},
+      {"itemId": 20214, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Mjolnir bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 936, "quantity": 390},
+      {"itemId": 7158, "quantity": 480},
+      {"itemId": 20203, "quantity": 1},
+      {"itemId": 1, "quantity": 1100000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Mjolnir bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 946, "quantity": 420},
+      {"itemId": 955, "quantity": 330},
+      {"itemId": 20203, "quantity": 1},
+      {"itemId": 1, "quantity": 1900000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Mjolnir bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7165, "quantity": 280},
+      {"itemId": 7189, "quantity": 330},
+      {"itemId": 20203, "quantity": 1},
+      {"itemId": 1, "quantity": 1900000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Mjolnir bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1034, "quantity": 300},
+      {"itemId": 7216, "quantity": 300},
+      {"itemId": 20203, "quantity": 1},
+      {"itemId": 1, "quantity": 1000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Mjolnir bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7798, "quantity": 380},
+      {"itemId": 7047, "quantity": 280},
+      {"itemId": 20203, "quantity": 1},
+      {"itemId": 1, "quantity": 1500000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Mjolnir bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7752, "quantity": 420},
+      {"itemId": 7166, "quantity": 430},
+      {"itemId": 20203, "quantity": 1},
+      {"itemId": 1, "quantity": 1200000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Mjolnir bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7172, "quantity": 380},
+      {"itemId": 7165, "quantity": 480},
+      {"itemId": 20203, "quantity": 1},
+      {"itemId": 1, "quantity": 1500000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Mjolnir bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1041, "quantity": 370},
+      {"itemId": 7198, "quantity": 340},
+      {"itemId": 20203, "quantity": 1},
+      {"itemId": 1, "quantity": 1900000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Mjolnir bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7210, "quantity": 410},
+      {"itemId": 940, "quantity": 430},
+      {"itemId": 20203, "quantity": 1},
+      {"itemId": 1, "quantity": 1100000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Mjolnir bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1054, "quantity": 440},
+      {"itemId": 938, "quantity": 450},
+      {"itemId": 20203, "quantity": 1},
+      {"itemId": 1, "quantity": 1500000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Nibelungen bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1031, "quantity": 290},
+      {"itemId": 1021, "quantity": 280},
+      {"itemId": 20200, "quantity": 1},
+      {"itemId": 1, "quantity": 1400000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Nibelungen bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7263, "quantity": 270},
+      {"itemId": 7004, "quantity": 410},
+      {"itemId": 20200, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Nibelungen bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1022, "quantity": 290},
+      {"itemId": 7568, "quantity": 490},
+      {"itemId": 20200, "quantity": 1},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Nibelungen bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 932, "quantity": 290},
+      {"itemId": 1037, "quantity": 490},
+      {"itemId": 20200, "quantity": 1},
+      {"itemId": 1, "quantity": 1200000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Nibelungen bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1057, "quantity": 410},
+      {"itemId": 1048, "quantity": 320},
+      {"itemId": 20200, "quantity": 1},
+      {"itemId": 1, "quantity": 1200000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Nibelungen bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 6021, "quantity": 380},
+      {"itemId": 7158, "quantity": 470},
+      {"itemId": 20200, "quantity": 1},
+      {"itemId": 1, "quantity": 1700000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Nibelungen bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1023, "quantity": 490},
+      {"itemId": 7121, "quantity": 390},
+      {"itemId": 20200, "quantity": 1},
+      {"itemId": 1, "quantity": 1600000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Nibelungen bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7202, "quantity": 290},
+      {"itemId": 7203, "quantity": 490},
+      {"itemId": 20200, "quantity": 1},
+      {"itemId": 1, "quantity": 1400000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Nibelungen bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7192, "quantity": 410},
+      {"itemId": 7561, "quantity": 430},
+      {"itemId": 20200, "quantity": 1},
+      {"itemId": 1, "quantity": 1700000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Nibelungen bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 930, "quantity": 430},
+      {"itemId": 7507, "quantity": 430},
+      {"itemId": 20200, "quantity": 1},
+      {"itemId": 1, "quantity": 1200000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Scouter bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7163, "quantity": 330},
+      {"itemId": 7221, "quantity": 370},
+      {"itemId": 20213, "quantity": 1},
+      {"itemId": 1, "quantity": 1400000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Scouter bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7125, "quantity": 320},
+      {"itemId": 7321, "quantity": 390},
+      {"itemId": 20213, "quantity": 1},
+      {"itemId": 1, "quantity": 1000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Scouter bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1094, "quantity": 260},
+      {"itemId": 966, "quantity": 300},
+      {"itemId": 20213, "quantity": 1},
+      {"itemId": 1, "quantity": 1900000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Scouter bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 917, "quantity": 270},
+      {"itemId": 7167, "quantity": 370},
+      {"itemId": 20213, "quantity": 1},
+      {"itemId": 1, "quantity": 1100000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Scouter bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7153, "quantity": 290},
+      {"itemId": 7298, "quantity": 380},
+      {"itemId": 20213, "quantity": 1},
+      {"itemId": 1, "quantity": 1800000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Scouter bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7065, "quantity": 500},
+      {"itemId": 7043, "quantity": 280},
+      {"itemId": 20213, "quantity": 1},
+      {"itemId": 1, "quantity": 1400000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Scouter bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1018, "quantity": 260},
+      {"itemId": 953, "quantity": 490},
+      {"itemId": 20213, "quantity": 1},
+      {"itemId": 1, "quantity": 1000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Scouter bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7112, "quantity": 320},
+      {"itemId": 7003, "quantity": 420},
+      {"itemId": 20213, "quantity": 1},
+      {"itemId": 1, "quantity": 1100000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Scouter bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 6071, "quantity": 280},
+      {"itemId": 901, "quantity": 400},
+      {"itemId": 20213, "quantity": 1},
+      {"itemId": 1, "quantity": 1800000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Scouter bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7264, "quantity": 410},
+      {"itemId": 7171, "quantity": 490},
+      {"itemId": 20213, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Sherwood Bow bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7124, "quantity": 470},
+      {"itemId": 7212, "quantity": 460},
+      {"itemId": 20208, "quantity": 1},
+      {"itemId": 1, "quantity": 1000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Sherwood Bow bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 947, "quantity": 440},
+      {"itemId": 7511, "quantity": 370},
+      {"itemId": 20208, "quantity": 1},
+      {"itemId": 1, "quantity": 1200000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Sherwood Bow bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 6041, "quantity": 350},
+      {"itemId": 7110, "quantity": 470},
+      {"itemId": 20208, "quantity": 1},
+      {"itemId": 1, "quantity": 1000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Sherwood Bow bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 948, "quantity": 270},
+      {"itemId": 942, "quantity": 280},
+      {"itemId": 20208, "quantity": 1},
+      {"itemId": 1, "quantity": 1200000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Sherwood Bow bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7157, "quantity": 310},
+      {"itemId": 1037, "quantity": 280},
+      {"itemId": 20208, "quantity": 1},
+      {"itemId": 1, "quantity": 1200000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Sherwood Bow bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1024, "quantity": 310},
+      {"itemId": 7002, "quantity": 330},
+      {"itemId": 20208, "quantity": 1},
+      {"itemId": 1, "quantity": 1600000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Sherwood Bow bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7214, "quantity": 500},
+      {"itemId": 7208, "quantity": 280},
+      {"itemId": 20208, "quantity": 1},
+      {"itemId": 1, "quantity": 1400000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Sherwood Bow bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1012, "quantity": 430},
+      {"itemId": 945, "quantity": 340},
+      {"itemId": 20208, "quantity": 1},
+      {"itemId": 1, "quantity": 1500000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Sherwood Bow bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1068, "quantity": 340},
+      {"itemId": 920, "quantity": 380},
+      {"itemId": 20208, "quantity": 1},
+      {"itemId": 1, "quantity": 1100000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Sherwood Bow bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7003, "quantity": 310},
+      {"itemId": 918, "quantity": 330},
+      {"itemId": 20208, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Staff of Magi bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 928, "quantity": 330},
+      {"itemId": 908, "quantity": 380},
+      {"itemId": 20202, "quantity": 1},
+      {"itemId": 1, "quantity": 1700000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Staff of Magi bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7099, "quantity": 470},
+      {"itemId": 1060, "quantity": 360},
+      {"itemId": 20202, "quantity": 1},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Staff of Magi bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 907, "quantity": 470},
+      {"itemId": 1013, "quantity": 460},
+      {"itemId": 20202, "quantity": 1},
+      {"itemId": 1, "quantity": 1500000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Staff of Magi bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7122, "quantity": 370},
+      {"itemId": 7195, "quantity": 380},
+      {"itemId": 20202, "quantity": 1},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Staff of Magi bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1021, "quantity": 360},
+      {"itemId": 1015, "quantity": 290},
+      {"itemId": 20202, "quantity": 1},
+      {"itemId": 1, "quantity": 1100000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Staff of Magi bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7031, "quantity": 360},
+      {"itemId": 1055, "quantity": 490},
+      {"itemId": 20202, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Staff of Magi bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1015, "quantity": 350},
+      {"itemId": 7005, "quantity": 360},
+      {"itemId": 20202, "quantity": 1},
+      {"itemId": 1, "quantity": 1900000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Staff of Magi bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7187, "quantity": 400},
+      {"itemId": 7098, "quantity": 340},
+      {"itemId": 20202, "quantity": 1},
+      {"itemId": 1, "quantity": 1200000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Staff of Magi bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7201, "quantity": 260},
+      {"itemId": 907, "quantity": 500},
+      {"itemId": 20202, "quantity": 1},
+      {"itemId": 1, "quantity": 1100000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Staff of Magi bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7286, "quantity": 420},
+      {"itemId": 913, "quantity": 260},
+      {"itemId": 20202, "quantity": 1},
+      {"itemId": 1, "quantity": 1800000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Suiken bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 6032, "quantity": 270},
+      {"itemId": 1042, "quantity": 340},
+      {"itemId": 20206, "quantity": 1},
+      {"itemId": 1, "quantity": 1600000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Suiken bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 960, "quantity": 420},
+      {"itemId": 1056, "quantity": 450},
+      {"itemId": 20206, "quantity": 1},
+      {"itemId": 1, "quantity": 1000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Suiken bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7567, "quantity": 370},
+      {"itemId": 1044, "quantity": 400},
+      {"itemId": 20206, "quantity": 1},
+      {"itemId": 1, "quantity": 1100000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Suiken bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7093, "quantity": 280},
+      {"itemId": 7009, "quantity": 420},
+      {"itemId": 20206, "quantity": 1},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Suiken bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 954, "quantity": 360},
+      {"itemId": 1038, "quantity": 380},
+      {"itemId": 20206, "quantity": 1},
+      {"itemId": 1, "quantity": 1700000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Suiken bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 915, "quantity": 350},
+      {"itemId": 7298, "quantity": 360},
+      {"itemId": 20206, "quantity": 1},
+      {"itemId": 1, "quantity": 1100000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Suiken bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1064, "quantity": 280},
+      {"itemId": 7270, "quantity": 420},
+      {"itemId": 20206, "quantity": 1},
+      {"itemId": 1, "quantity": 1200000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Suiken bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7323, "quantity": 470},
+      {"itemId": 7043, "quantity": 360},
+      {"itemId": 20206, "quantity": 1},
+      {"itemId": 1, "quantity": 1500000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Suiken bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7111, "quantity": 380},
+      {"itemId": 1063, "quantity": 320},
+      {"itemId": 20206, "quantity": 1},
+      {"itemId": 1, "quantity": 1100000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Suiken bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 957, "quantity": 470},
+      {"itemId": 7201, "quantity": 490},
+      {"itemId": 20206, "quantity": 1},
+      {"itemId": 1, "quantity": 1600000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Tome of Ymir bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7762, "quantity": 480},
+      {"itemId": 7345, "quantity": 280},
+      {"itemId": 20207, "quantity": 1},
+      {"itemId": 1, "quantity": 1600000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Tome of Ymir bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 940, "quantity": 370},
+      {"itemId": 7220, "quantity": 440},
+      {"itemId": 20207, "quantity": 1},
+      {"itemId": 1, "quantity": 1900000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Tome of Ymir bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7213, "quantity": 370},
+      {"itemId": 1064, "quantity": 350},
+      {"itemId": 20207, "quantity": 1},
+      {"itemId": 1, "quantity": 1700000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Tome of Ymir bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7119, "quantity": 340},
+      {"itemId": 7151, "quantity": 360},
+      {"itemId": 20207, "quantity": 1},
+      {"itemId": 1, "quantity": 1800000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Tome of Ymir bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7217, "quantity": 420},
+      {"itemId": 7096, "quantity": 460},
+      {"itemId": 20207, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Tome of Ymir bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7012, "quantity": 310},
+      {"itemId": 7162, "quantity": 420},
+      {"itemId": 20207, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Tome of Ymir bonus",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7095, "quantity": 300},
+      {"itemId": 967, "quantity": 440},
+      {"itemId": 20207, "quantity": 1},
+      {"itemId": 1, "quantity": 1400000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Tome of Ymir bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7063, "quantity": 290},
+      {"itemId": 1012, "quantity": 380},
+      {"itemId": 20207, "quantity": 1},
+      {"itemId": 1, "quantity": 1100000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Tome of Ymir bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7319, "quantity": 440},
+      {"itemId": 901, "quantity": 320},
+      {"itemId": 20207, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Tome of Ymir bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7222, "quantity": 500},
+      {"itemId": 960, "quantity": 310},
+      {"itemId": 20207, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Twin Fang bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7267, "quantity": 390},
+      {"itemId": 7126, "quantity": 340},
+      {"itemId": 20217, "quantity": 1},
+      {"itemId": 1, "quantity": 1600000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Twin Fang bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7565, "quantity": 370},
+      {"itemId": 7053, "quantity": 450},
+      {"itemId": 20217, "quantity": 1},
+      {"itemId": 1, "quantity": 1900000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Twin Fang bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7207, "quantity": 380},
+      {"itemId": 951, "quantity": 400},
+      {"itemId": 20217, "quantity": 1},
+      {"itemId": 1, "quantity": 1800000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Twin Fang bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 1019, "quantity": 400},
+      {"itemId": 1043, "quantity": 420},
+      {"itemId": 20217, "quantity": 1},
+      {"itemId": 1, "quantity": 1300000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Twin Fang bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7097, "quantity": 410},
+      {"itemId": 7564, "quantity": 470},
+      {"itemId": 20217, "quantity": 1},
+      {"itemId": 1, "quantity": 1500000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Twin Fang bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7120, "quantity": 350},
+      {"itemId": 961, "quantity": 420},
+      {"itemId": 20217, "quantity": 1},
+      {"itemId": 1, "quantity": 1680000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Twin Fang bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 920, "quantity": 350},
+      {"itemId": 7163, "quantity": 310},
+      {"itemId": 20217, "quantity": 1},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Twin Fang bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7190, "quantity": 290},
+      {"itemId": 1013, "quantity": 460},
+      {"itemId": 20217, "quantity": 1},
+      {"itemId": 1, "quantity": 1600000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Twin Fang bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7318, "quantity": 500},
+      {"itemId": 7156, "quantity": 390},
+      {"itemId": 20217, "quantity": 1},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Twin Fang bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
+      {"itemId": 7799, "quantity": 360},
+      {"itemId": 947, "quantity": 250},
+      {"itemId": 20217, "quantity": 1},
+      {"itemId": 1, "quantity": 1600000}
+    ],
+    "results": []
+  },
+  {
+    "name": "Betty",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 1068, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Barren Trunk",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 1068, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Bear's Footskin",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 948, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Black Bear Skin",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 7161, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Blue Hair",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 1034, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Brigan",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 7054, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Cyfar",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 7053, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Decayed Nail",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 957, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Dry Sand",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 7264, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Earthworm Peeling",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 1055, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Elder Pixie's Moustache",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 1040, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Feather",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 949, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Fig Leaf",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 7298, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Fish Tail",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 1023, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Flexible Tube",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 7325, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Honey Pot",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 7121, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Horn",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 947, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Horrendous Hair",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 1048, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Horseshoe",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 944, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Huge Leaf",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 7198, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Insect Feeler",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 928, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Jubilee",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 7312, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Lantern",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 1041, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Little Evil Horn",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 1038, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Manacles",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 1098, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Mane",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 1028, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Maneater Root",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 1033, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Mantis Scythe",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 1031, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Moth Dust",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 1057, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Mud Lump",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 7004, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Nose Ring",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 941, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Ogre Tooth",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 7002, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Oil Paper",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 7151, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Old Pick",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 7318, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Orc Claw",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 1043, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Orc's Fang",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 922, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Peco Peco Feather",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 7101, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Piece of Bamboo",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 7150, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Porcupine Quill",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 1027, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Raccoon Leaf",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 945, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Round Shell",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 1096, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Shell",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 935, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Skel-Bone",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 932, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Snail's Shell",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 946, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Solid Shell",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 943, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Sprout",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 7193, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Sticky Mucus",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 938, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Stone Heart",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 953, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Strange Steel Piece",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 7167, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Thin Trunk",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 7186, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Tough Scalelike Stem",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 7012, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Wing of Red Bat",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 7006, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Worn-out Prison Uniform",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 1099, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Zenorc Fang",
+    "category": "Betty",
+    "requirements": [
+      {"itemId": 1044, "quantity": "10-20"}
+    ],
+    "results": []
+  },
+  {
+    "name": "Temporal Boots (Str)",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 6607, "quantity": 25},
+      {"itemId": 6223, "quantity": 50},
+      {"itemId": 6224, "quantity": 25},
+      {"itemId": 2425, "quantity": 1},
+      {"itemId": 6608, "quantity": 30},
+      {"itemId": 1004, "quantity": 20},
+      {"itemId": 7939, "quantity": 20}
+    ],
+    "results": [
+      {"itemId": 22100, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Temporal Boots (Agi)",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 6607, "quantity": 25},
+      {"itemId": 6223, "quantity": 50},
+      {"itemId": 6224, "quantity": 25},
+      {"itemId": 2425, "quantity": 1},
+      {"itemId": 6608, "quantity": 30},
+      {"itemId": 6086, "quantity": 50},
+      {"itemId": 6087, "quantity": 30}
+    ],
+    "results": [
+      {"itemId": 22104, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Temporal Boots (Vit)",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 6607, "quantity": 25},
+      {"itemId": 6223, "quantity": 50},
+      {"itemId": 6224, "quantity": 25},
+      {"itemId": 2425, "quantity": 1},
+      {"itemId": 6608, "quantity": 30},
+      {"itemId": 7326, "quantity": 50},
+      {"itemId": 6395, "quantity": 100}
+    ],
+    "results": [
+      {"itemId": 22101, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Temporal Boots (Dex)",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 6607, "quantity": 25},
+      {"itemId": 6223, "quantity": 50},
+      {"itemId": 6224, "quantity": 25},
+      {"itemId": 2425, "quantity": 1},
+      {"itemId": 6608, "quantity": 30},
+      {"itemId": 6088, "quantity": 50},
+      {"itemId": 7938, "quantity": 100}
+    ],
+    "results": [
+      {"itemId": 22102, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Temporal Boots (Int)",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 6607, "quantity": 25},
+      {"itemId": 6223, "quantity": 50},
+      {"itemId": 6224, "quantity": 25},
+      {"itemId": 2425, "quantity": 1},
+      {"itemId": 6608, "quantity": 30},
+      {"itemId": 6023, "quantity": 50},
+      {"itemId": 6559, "quantity": 50}
+    ],
+    "results": [
+      {"itemId": 22103, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Temporal Boots (Luk)",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 6607, "quantity": 25},
+      {"itemId": 6223, "quantity": 50},
+      {"itemId": 6224, "quantity": 25},
+      {"itemId": 2425, "quantity": 1},
+      {"itemId": 6608, "quantity": 30},
+      {"itemId": 6089, "quantity": 50},
+      {"itemId": 6032, "quantity": 80}
+    ],
+    "results": [
+      {"itemId": 22105, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Temporal enchantment 1",
+    "category": "Enchantment",
+    "requirements": [
+      {"itemId": 6608, "quantity": 400},
+      {"itemId": 6607, "quantity": 10}
+    ],
+    "results": []
+  },
+  {
+    "name": "Temporal enchantment 2 (random)",
+    "category": "Enchantment",
+    "requirements": [
+      {"itemId": 6607, "quantity": 25},
+      {"itemId": 6755, "quantity": 50}
+    ],
+    "results": []
+  },
+  {
+    "name": "Temporal enchantment 2 (guaranteed)",
+    "category": "Enchantment",
+    "requirements": [
+      {"itemId": 6607, "quantity": 185},
+      {"itemId": 6755, "quantity": 375}
+    ],
+    "results": []
+  },
+  {
+    "name": "Temporal enchantment Final",
+    "category": "Enchantment",
+    "requirements": [
+      {"itemId": 6607, "quantity": 100},
+      {"itemId": 6223, "quantity": 200},
+      {"itemId": 6224, "quantity": 100},
+      {"itemId": 2421, "quantity": 1},
+      {"itemId": 7566, "quantity": 15},
+      {"itemId": "Any Temporal Boots", "quantity": 1},
+      {"itemId": 6755, "quantity": "100/125/150/175/200"},
+      {"itemId": 1, "quantity": 20000000},
+      {"itemId": 8049, "quantity": 1}
+    ],
+    "results": []
+  },
+  {
+    "name": "Cooking Str 1",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 940, "quantity": 5},
+      {"itemId": 7031, "quantity": 1},
+      {"itemId": 7457, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12041, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Str 2",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 918, "quantity": 20},
+      {"itemId": 511, "quantity": 10},
+      {"itemId": 508, "quantity": 10},
+      {"itemId": 7454, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12042, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Str 3",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 7031, "quantity": 1},
+      {"itemId": 511, "quantity": 10},
+      {"itemId": 7286, "quantity": 5},
+      {"itemId": 517, "quantity": 4},
+      {"itemId": 7455, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12043, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Str 4",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 507, "quantity": 3},
+      {"itemId": 508, "quantity": 2},
+      {"itemId": 511, "quantity": 3},
+      {"itemId": 568, "quantity": 1},
+      {"itemId": 517, "quantity": 5},
+      {"itemId": 7453, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12044, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Str 5",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 518, "quantity": 2},
+      {"itemId": 516, "quantity": 10},
+      {"itemId": 7457, "quantity": 1},
+      {"itemId": 515, "quantity": 3},
+      {"itemId": 577, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12045, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Str 6",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 518, "quantity": 2},
+      {"itemId": 508, "quantity": 1},
+      {"itemId": 954, "quantity": 20},
+      {"itemId": 517, "quantity": 10},
+      {"itemId": 522, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12071, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Str 7",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 7098, "quantity": 1},
+      {"itemId": 1003, "quantity": 2},
+      {"itemId": 1019, "quantity": 15},
+      {"itemId": 509, "quantity": 10},
+      {"itemId": 517, "quantity": 10},
+      {"itemId": 7455, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12072, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Str 8",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 948, "quantity": 20},
+      {"itemId": 521, "quantity": 2},
+      {"itemId": 520, "quantity": 1},
+      {"itemId": 515, "quantity": 10},
+      {"itemId": 1062, "quantity": 10},
+      {"itemId": 7454, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12073, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Str 9",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 1050, "quantity": 40},
+      {"itemId": 548, "quantity": 10},
+      {"itemId": 1003, "quantity": 2},
+      {"itemId": 511, "quantity": 30},
+      {"itemId": 1024, "quantity": 10},
+      {"itemId": 7482, "quantity": 1},
+      {"itemId": 7455, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12074, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Str 10",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 1015, "quantity": 20},
+      {"itemId": 970, "quantity": 1},
+      {"itemId": 606, "quantity": 2},
+      {"itemId": 526, "quantity": 5},
+      {"itemId": 505, "quantity": 2},
+      {"itemId": 7482, "quantity": 1},
+      {"itemId": 7455, "quantity": 1},
+      {"itemId": 610, "quantity": 10}
+    ],
+    "results": [
+      {"itemId": 12075, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Vit 1",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 960, "quantity": 10},
+      {"itemId": 511, "quantity": 10},
+      {"itemId": 503, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12051, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Vit 2",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 966, "quantity": 10},
+      {"itemId": 951, "quantity": 5},
+      {"itemId": 956, "quantity": 5},
+      {"itemId": 579, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12052, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Vit 3",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 966, "quantity": 20},
+      {"itemId": 961, "quantity": 10},
+      {"itemId": 518, "quantity": 1},
+      {"itemId": 7453, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12053, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Vit 4",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 962, "quantity": 30},
+      {"itemId": 509, "quantity": 10},
+      {"itemId": 7194, "quantity": 10},
+      {"itemId": 7031, "quantity": 1},
+      {"itemId": 1024, "quantity": 20}
+    ],
+    "results": [
+      {"itemId": 12054, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Vit 5",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 553, "quantity": 20},
+      {"itemId": 508, "quantity": 10},
+      {"itemId": 511, "quantity": 20},
+      {"itemId": 7455, "quantity": 1},
+      {"itemId": 7456, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12055, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Vit 6",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 7188, "quantity": 20},
+      {"itemId": 1033, "quantity": 10},
+      {"itemId": 921, "quantity": 20},
+      {"itemId": 518, "quantity": 2},
+      {"itemId": 581, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12081, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Vit 7",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 1023, "quantity": 10},
+      {"itemId": 521, "quantity": 5},
+      {"itemId": 1028, "quantity": 10},
+      {"itemId": 579, "quantity": 2},
+      {"itemId": 537, "quantity": 10},
+      {"itemId": 7453, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12082, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Vit 8",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 7298, "quantity": 20},
+      {"itemId": 622, "quantity": 5},
+      {"itemId": 517, "quantity": 20},
+      {"itemId": 1062, "quantity": 10},
+      {"itemId": 7454, "quantity": 1},
+      {"itemId": 577, "quantity": 2}
+    ],
+    "results": [
+      {"itemId": 12083, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Vit 9",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 7123, "quantity": 10},
+      {"itemId": 1037, "quantity": 20},
+      {"itemId": 526, "quantity": 6},
+      {"itemId": 632, "quantity": 1},
+      {"itemId": 7455, "quantity": 1},
+      {"itemId": 610, "quantity": 3},
+      {"itemId": 7456, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12084, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Vit 10",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 929, "quantity": 10},
+      {"itemId": 608, "quantity": 1},
+      {"itemId": 605, "quantity": 2},
+      {"itemId": 950, "quantity": 10},
+      {"itemId": 609, "quantity": 10},
+      {"itemId": 621, "quantity": 2},
+      {"itemId": 934, "quantity": 10},
+      {"itemId": 7455, "quantity": 2}
+    ],
+    "results": [
+      {"itemId": 12085, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Int 1",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 514, "quantity": 3},
+      {"itemId": 501, "quantity": 2}
+    ],
+    "results": [
+      {"itemId": 12046, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Int 2",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 510, "quantity": 5},
+      {"itemId": 507, "quantity": 10},
+      {"itemId": 508, "quantity": 10}
+    ],
+    "results": [
+      {"itemId": 12047, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Int 3",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 518, "quantity": 2},
+      {"itemId": 509, "quantity": 10},
+      {"itemId": 7452, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12048, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Int 4",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 578, "quantity": 10},
+      {"itemId": 568, "quantity": 4},
+      {"itemId": 582, "quantity": 10},
+      {"itemId": 970, "quantity": 2},
+      {"itemId": 514, "quantity": 5}
+    ],
+    "results": [
+      {"itemId": 12049, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Int 5",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 505, "quantity": 1},
+      {"itemId": 970, "quantity": 2},
+      {"itemId": 568, "quantity": 2},
+      {"itemId": 522, "quantity": 4},
+      {"itemId": 7452, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12050, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Int 6",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 533, "quantity": 3},
+      {"itemId": 921, "quantity": 20},
+      {"itemId": 970, "quantity": 1},
+      {"itemId": 581, "quantity": 3},
+      {"itemId": 7456, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12076, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Int 7",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 526, "quantity": 4},
+      {"itemId": 518, "quantity": 2},
+      {"itemId": 509, "quantity": 5},
+      {"itemId": 520, "quantity": 10},
+      {"itemId": 7452, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12077, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Int 8",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 576, "quantity": 4},
+      {"itemId": 520, "quantity": 10},
+      {"itemId": 521, "quantity": 10},
+      {"itemId": 526, "quantity": 6},
+      {"itemId": 610, "quantity": 3},
+      {"itemId": 7452, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12078, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Int 9",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 582, "quantity": 10},
+      {"itemId": 970, "quantity": 5},
+      {"itemId": 526, "quantity": 4},
+      {"itemId": 505, "quantity": 2},
+      {"itemId": 521, "quantity": 10},
+      {"itemId": 610, "quantity": 10},
+      {"itemId": 7452, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12079, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Int 10",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 1033, "quantity": 10},
+      {"itemId": 510, "quantity": 10},
+      {"itemId": 707, "quantity": 1},
+      {"itemId": 521, "quantity": 5},
+      {"itemId": 526, "quantity": 5},
+      {"itemId": 568, "quantity": 5},
+      {"itemId": 576, "quantity": 5},
+      {"itemId": 607, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12080, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Dex 1",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 518, "quantity": 1},
+      {"itemId": 514, "quantity": 2},
+      {"itemId": 501, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12061, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Dex 2",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 7182, "quantity": 10},
+      {"itemId": 539, "quantity": 1},
+      {"itemId": 519, "quantity": 1},
+      {"itemId": 736, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12062, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Dex 3",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 582, "quantity": 5},
+      {"itemId": 578, "quantity": 5},
+      {"itemId": 512, "quantity": 5},
+      {"itemId": 513, "quantity": 5},
+      {"itemId": 7452, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12063, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Dex 4",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 580, "quantity": 5},
+      {"itemId": 548, "quantity": 10},
+      {"itemId": 508, "quantity": 10},
+      {"itemId": 519, "quantity": 15},
+      {"itemId": 517, "quantity": 1},
+      {"itemId": 7453, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12064, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Dex 5",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 520, "quantity": 2},
+      {"itemId": 521, "quantity": 3},
+      {"itemId": 7100, "quantity": 10},
+      {"itemId": 7198, "quantity": 6},
+      {"itemId": 7453, "quantity": 1},
+      {"itemId": 7452, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12065, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Dex 6",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 7164, "quantity": 20},
+      {"itemId": 539, "quantity": 10},
+      {"itemId": 548, "quantity": 10},
+      {"itemId": 620, "quantity": 5},
+      {"itemId": 519, "quantity": 10},
+      {"itemId": 7453, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12091, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Dex 7",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 708, "quantity": 5},
+      {"itemId": 609, "quantity": 5},
+      {"itemId": 619, "quantity": 2},
+      {"itemId": 580, "quantity": 10},
+      {"itemId": 7453, "quantity": 1},
+      {"itemId": 522, "quantity": 5}
+    ],
+    "results": [
+      {"itemId": 12092, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Dex 8",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 526, "quantity": 2},
+      {"itemId": 578, "quantity": 10},
+      {"itemId": 548, "quantity": 10},
+      {"itemId": 580, "quantity": 10},
+      {"itemId": 517, "quantity": 5},
+      {"itemId": 7455, "quantity": 1},
+      {"itemId": 7453, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12093, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Dex 9",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 619, "quantity": 5},
+      {"itemId": 582, "quantity": 10},
+      {"itemId": 578, "quantity": 10},
+      {"itemId": 634, "quantity": 1},
+      {"itemId": 533, "quantity": 5},
+      {"itemId": 970, "quantity": 2},
+      {"itemId": 7456, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12094, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Dex 10",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 607, "quantity": 1},
+      {"itemId": 7066, "quantity": 10},
+      {"itemId": 7119, "quantity": 10},
+      {"itemId": 526, "quantity": 4},
+      {"itemId": 970, "quantity": 5},
+      {"itemId": 576, "quantity": 2},
+      {"itemId": 710, "quantity": 1},
+      {"itemId": 645, "quantity": 3}
+    ],
+    "results": [
+      {"itemId": 12095, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Agi 1",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 908, "quantity": 10},
+      {"itemId": 1024, "quantity": 1},
+      {"itemId": 577, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12056, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Agi 2",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 577, "quantity": 1},
+      {"itemId": 7454, "quantity": 1},
+      {"itemId": 1062, "quantity": 5},
+      {"itemId": 515, "quantity": 3}
+    ],
+    "results": [
+      {"itemId": 12057, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Agi 3",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 962, "quantity": 10},
+      {"itemId": 548, "quantity": 10},
+      {"itemId": 549, "quantity": 5},
+      {"itemId": 7453, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12058, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Agi 4",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 7066, "quantity": 10},
+      {"itemId": 577, "quantity": 3},
+      {"itemId": 7455, "quantity": 1},
+      {"itemId": 515, "quantity": 10},
+      {"itemId": 1062, "quantity": 10}
+    ],
+    "results": [
+      {"itemId": 12059, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Agi 5",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 7006, "quantity": 20},
+      {"itemId": 520, "quantity": 10},
+      {"itemId": 507, "quantity": 10},
+      {"itemId": 1062, "quantity": 20},
+      {"itemId": 7482, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12060, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Agi 6",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 568, "quantity": 20},
+      {"itemId": 7286, "quantity": 20},
+      {"itemId": 567, "quantity": 20},
+      {"itemId": 7453, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12086, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Agi 7",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 7003, "quantity": 10},
+      {"itemId": 521, "quantity": 10},
+      {"itemId": 508, "quantity": 10},
+      {"itemId": 1062, "quantity": 10},
+      {"itemId": 515, "quantity": 10},
+      {"itemId": 7452, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12087, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Agi 8",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 606, "quantity": 1},
+      {"itemId": 520, "quantity": 10},
+      {"itemId": 1062, "quantity": 10},
+      {"itemId": 515, "quantity": 10},
+      {"itemId": 7455, "quantity": 1},
+      {"itemId": 517, "quantity": 10}
+    ],
+    "results": [
+      {"itemId": 12088, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Agi 9",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 526, "quantity": 5},
+      {"itemId": 711, "quantity": 20},
+      {"itemId": 508, "quantity": 5},
+      {"itemId": 509, "quantity": 10},
+      {"itemId": 507, "quantity": 5},
+      {"itemId": 517, "quantity": 10},
+      {"itemId": 7454, "quantity": 4}
+    ],
+    "results": [
+      {"itemId": 12089, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Agi 10",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 904, "quantity": 20},
+      {"itemId": 7125, "quantity": 20},
+      {"itemId": 606, "quantity": 2},
+      {"itemId": 621, "quantity": 3},
+      {"itemId": 526, "quantity": 10},
+      {"itemId": 610, "quantity": 3},
+      {"itemId": 7455, "quantity": 1},
+      {"itemId": 7482, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12090, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Luk 1",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 942, "quantity": 5},
+      {"itemId": 7031, "quantity": 1},
+      {"itemId": 7457, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12066, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Luk 2",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 531, "quantity": 1},
+      {"itemId": 534, "quantity": 2},
+      {"itemId": 533, "quantity": 1},
+      {"itemId": 620, "quantity": 2}
+    ],
+    "results": [
+      {"itemId": 12067, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Luk 3",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 549, "quantity": 10},
+      {"itemId": 633, "quantity": 1},
+      {"itemId": 516, "quantity": 10},
+      {"itemId": 7453, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12068, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Luk 4",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 1054, "quantity": 10},
+      {"itemId": 945, "quantity": 10},
+      {"itemId": 509, "quantity": 10},
+      {"itemId": 579, "quantity": 5},
+      {"itemId": 7453, "quantity": 2}
+    ],
+    "results": [
+      {"itemId": 12069, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Luk 5",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 904, "quantity": 20},
+      {"itemId": 1042, "quantity": 10},
+      {"itemId": 7198, "quantity": 10},
+      {"itemId": 7031, "quantity": 2},
+      {"itemId": 7457, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12070, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Luk 6",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 903, "quantity": 5},
+      {"itemId": 1015, "quantity": 5},
+      {"itemId": 705, "quantity": 10},
+      {"itemId": 1061, "quantity": 10},
+      {"itemId": 704, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12096, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Luk 7",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 936, "quantity": 10},
+      {"itemId": 951, "quantity": 5},
+      {"itemId": 7194, "quantity": 10},
+      {"itemId": 966, "quantity": 10},
+      {"itemId": 517, "quantity": 5},
+      {"itemId": 581, "quantity": 10}
+    ],
+    "results": [
+      {"itemId": 12097, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Luk 8",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 578, "quantity": 10},
+      {"itemId": 7298, "quantity": 10},
+      {"itemId": 577, "quantity": 5},
+      {"itemId": 7452, "quantity": 1},
+      {"itemId": 7456, "quantity": 2},
+      {"itemId": 7454, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12098, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Luk 9",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 702, "quantity": 1},
+      {"itemId": 605, "quantity": 2},
+      {"itemId": 606, "quantity": 2},
+      {"itemId": 970, "quantity": 2},
+      {"itemId": 526, "quantity": 6},
+      {"itemId": 531, "quantity": 10},
+      {"itemId": 7456, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12099, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cooking Luk 10",
+    "category": "Cooking",
+    "requirements": [
+      {"itemId": 1022, "quantity": 10},
+      {"itemId": 706, "quantity": 2},
+      {"itemId": 1033, "quantity": 10},
+      {"itemId": 7100, "quantity": 10},
+      {"itemId": 709, "quantity": 2},
+      {"itemId": 610, "quantity": 4},
+      {"itemId": 7454, "quantity": 1},
+      {"itemId": 7452, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 12100, "quantity": 1}
+    ]
+  }
+]

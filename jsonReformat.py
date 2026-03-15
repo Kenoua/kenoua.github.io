@@ -26,20 +26,20 @@ def reformat_quest_json_readable(filename):
 
         # Construction du bloc de la quête
         entry =  '  {\n'
-        entry += f'    "name": "{quest.get("name", "")}",\n'
-        entry += f'    "category": "{quest.get("category", "")}",\n'
+        entry += f'    name: "{quest.get("name", "")}",\n'
+        entry += f'    category: "{quest.get("category", "")}",\n'
         
         # Requirements
         if req_list:
-            entry += f'    "requirements": [\n{req_string}\n    ],\n'
+            entry += f'    requirements: [\n{req_string}\n    ],\n'
         else:
-            entry += '    "requirements": [],\n'
+            entry += '    requirements: [],\n'
             
         # Results
         if res_list:
-            entry += f'    "results": [\n{res_string}\n    ]\n'
+            entry += f'    results: [\n{res_string}\n    ]\n'
         else:
-            entry += '    "results": []\n'
+            entry += '    results: []\n'
             
         entry += '  }'
         formatted_entries.append(entry)

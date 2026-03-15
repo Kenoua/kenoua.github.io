@@ -96,7 +96,7 @@ class QuestLoggerApp:
         else:
             messagebox.showwarning("Error", "Select an item and enter quantity.")
 
-        def save_json(self):
+    def save_json(self):
         name = self.quest_entry.get().strip()
         if not name or not (self.item_requirements or self.item_results):
             messagebox.showerror("Error", "Name and at least one item required.")
