@@ -27,6 +27,7 @@ const ITEMS = [
 { id: 523 , name: "Holy Water" },
 { id: 525 , name: "Panacea" },
 { id: 526 , name: "Royal Jelly" },
+{ id: 528 , name: "Monster's Feed" },
 { id: 529 , name: "Candy" },
 { id: 530 , name: "Candy Cane" },
 { id: 531 , name: "Apple Juice" },
@@ -82,6 +83,7 @@ const ITEMS = [
 { id: 583 , name: "Ketupat Sayur" },
 { id: 584 , name: "Fish Cake Soup" },
 { id: 585 , name: "Brusti" },
+{ id: 586 , name: "Mother's Cake" },
 { id: 587 , name: "Red Prickly Fruit" },
 { id: 588 , name: "Spaghetti" },
 { id: 589 , name: "Pizza" },
@@ -262,6 +264,7 @@ const ITEMS = [
 { id: 919 , name: "Animal Skin" },
 { id: 920 , name: "Wolf Claw" },
 { id: 921 , name: "Mushroom Spore" },
+{ id: 922 , name: "Orc's Fang" },
 { id: 923 , name: "Evil Horn" },
 { id: 924 , name: "Powder of Butterfly" },
 { id: 925 , name: "Bill of Birds" },
@@ -277,12 +280,15 @@ const ITEMS = [
 { id: 937 , name: "Venom Canine" },
 { id: 938 , name: "Sticky Mucus" },
 { id: 939 , name: "Bee Sting" },
+{ id: 940 , name: "Grasshopper's Leg" },
 { id: 941 , name: "Nose Ring" },
 { id: 942 , name: "Yoyo Tail" },
 { id: 943 , name: "Solid Shell" },
 { id: 944 , name: "Horseshoe" },
 { id: 945 , name: "Raccoon Leaf" },
+{ id: 946 , name: "Snail's Shell" },
 { id: 947 , name: "Horn" },
+{ id: 948 , name: "Bear's Footskin" },
 { id: 949 , name: "Feather" },
 { id: 950 , name: "Heart of Mermaid" },
 { id: 951 , name: "Fin" },
@@ -363,6 +369,7 @@ const ITEMS = [
 { id: 1027 , name: "Porcupine Quill" },
 { id: 1028 , name: "Mane" },
 { id: 1029 , name: "Tiger Skin" },
+{ id: 1030 , name: "Tiger's Footskin" },
 { id: 1031 , name: "Mantis Scythe" },
 { id: 1032 , name: "Maneater Blossom" },
 { id: 1033 , name: "Maneater Root" },
@@ -372,9 +379,11 @@ const ITEMS = [
 { id: 1037 , name: "Dragon Tail" },
 { id: 1038 , name: "Little Evil Horn" },
 { id: 1039 , name: "Little Evil Wing" },
+{ id: 1040 , name: "Elder Pixie's Moustache" },
 { id: 1041 , name: "Lantern" },
 { id: 1042 , name: "Bug Leg" },
 { id: 1043 , name: "Orc Claw" },
+{ id: 1044 , name: "Zenorc's Fang" },
 { id: 1045 , name: "Cultish Masque" },
 { id: 1046 , name: "Scorpion Nipper" },
 { id: 1047 , name: "Dead Medusa" },
@@ -392,6 +401,7 @@ const ITEMS = [
 { id: 1059 , name: "Fabric" },
 { id: 1060 , name: "Golden Hair" },
 { id: 1061 , name: "Witch Starsand" },
+{ id: 1062 , name: "Jack o' Pumpkin" },
 { id: 1063 , name: "Fang" },
 { id: 1064 , name: "Reins" },
 { id: 1065 , name: "Trap" },
@@ -462,6 +472,7 @@ const ITEMS = [
 { id: 1131 , name: "Ice Falchion" },
 { id: 1132 , name: "Edge" },
 { id: 1133 , name: "Fireblend" },
+{ id: 1134 , name: "Caesar's Sword" },
 { id: 1135 , name: "Cutlus" },
 { id: 1136 , name: "Solar Sword" },
 { id: 1137 , name: "Excalibur" },
@@ -501,6 +512,7 @@ const ITEMS = [
 { id: 1172 , name: "Claymore[2]" },
 { id: 1173 , name: "Refined Muramasa" },
 { id: 1174 , name: "Refined Executioner" },
+{ id: 1175 , name: "Atroce's Blade[1]" },
 { id: 1176 , name: "Muscle Cutter[2]" },
 { id: 1177 , name: "Muramash" },
 { id: 1178 , name: "Schweizersabel[2]" },
@@ -508,6 +520,8 @@ const ITEMS = [
 { id: 1180 , name: "Dragon Slayer[2]" },
 { id: 1181 , name: "Tegron[2]" },
 { id: 1182 , name: "Bloody Eater[2]" },
+{ id: 1183 , name: "Brave Assaulter's Katzbalger" },
+{ id: 1184 , name: "Valorous Assaulter's Katzbalger" },
 { id: 1185 , name: "Violet Fear[2]" },
 { id: 1186 , name: "Invoker Of Death[2]" },
 { id: 1187 , name: "Glorious Claymore" },
@@ -570,6 +584,7 @@ const ITEMS = [
 { id: 1246 , name: "Cinquedea[2]" },
 { id: 1247 , name: "Kindle Dagger" },
 { id: 1248 , name: "Obsidian Dagger" },
+{ id: 1249 , name: "Fisherman's Dagger" },
 { id: 1250 , name: "Jur[2]" },
 { id: 1251 , name: "Jur[3]" },
 { id: 1252 , name: "Katar[1]" },
@@ -582,11 +597,13 @@ const ITEMS = [
 { id: 1259 , name: "Katar of Piercing Wind" },
 { id: 1260 , name: "Sharpened Legbone of Ghoul" },
 { id: 1261 , name: "Infiltrator" },
+{ id: 1262 , name: "Loki's Nail" },
 { id: 1263 , name: "Unholy Touch" },
 { id: 1264 , name: "Specialty Jur[4]" },
 { id: 1265 , name: "Bloody Roar" },
 { id: 1266 , name: "Infiltrator[1]" },
 { id: 1267 , name: "Refined Infiltrator" },
+{ id: 1268 , name: "Ogre's Toenail[1]" },
 { id: 1269 , name: "Inverse Scale" },
 { id: 1270 , name: "Drill Katar[1]" },
 { id: 1271 , name: "Bloody Blades[2]" },
@@ -624,6 +641,7 @@ const ITEMS = [
 { id: 1310 , name: "Glorious Cleaver" },
 { id: 1311 , name: "Berchel Axe[2]" },
 { id: 1312 , name: "Orcish Axe" },
+{ id: 1313 , name: "Traveler's Axe" },
 { id: 1314 , name: "Tomahawk" },
 { id: 1315 , name: "Light Epsilon" },
 { id: 1320 , name: "Djinn[3]" },
@@ -723,11 +741,13 @@ const ITEMS = [
 { id: 1466 , name: "Crescent Scythe" },
 { id: 1467 , name: "Bill Guisarme" },
 { id: 1468 , name: "Zephyrus" },
+{ id: 1469 , name: "Longinus's Spear" },
 { id: 1470 , name: "Brionac" },
 { id: 1471 , name: "Hellfire" },
 { id: 1472 , name: "Soul Staff" },
 { id: 1473 , name: "Wizardry Staff" },
 { id: 1474 , name: "Gae Bolg" },
+{ id: 1475 , name: "Equestrian's Spear" },
 { id: 1476 , name: "Crescent Scythe[1]" },
 { id: 1477 , name: "Phantom Spear" },
 { id: 1478 , name: "Ahlspiess" },
@@ -776,7 +796,9 @@ const ITEMS = [
 { id: 1530 , name: "Mjolnir[3]" },
 { id: 1531 , name: "Wrench" },
 { id: 1532 , name: "Stunner[2]" },
+{ id: 1533 , name: "Warrior's Balmung" },
 { id: 1534 , name: "Refined Wrench" },
+{ id: 1535 , name: "Hollgrehenn's Hammer[1]" },
 { id: 1536 , name: "Good Morning Star" },
 { id: 1537 , name: "Refined Quadrille" },
 { id: 1538 , name: "Spike[2]" },
@@ -799,9 +821,12 @@ const ITEMS = [
 { id: 1555 , name: "Book of the Blazing Sun" },
 { id: 1556 , name: "Book of Gust of Wind" },
 { id: 1557 , name: "Book of the Apocalypse" },
+{ id: 1558 , name: "Girl's Diary[1]" },
 { id: 1559 , name: "Legacy of Dragon" },
+{ id: 1560 , name: "Sage's Diary[2]" },
 { id: 1561 , name: "Hardcover Book[1]" },
 { id: 1562 , name: "Battlefield Textbook[1]" },
+{ id: 1563 , name: "Refined Sage's Diary" },
 { id: 1564 , name: "Giant Encyclopedia[2]" },
 { id: 1565 , name: "Book of the Dead[2]" },
 { id: 1566 , name: "Diary Of Great Basil" },
@@ -841,12 +866,23 @@ const ITEMS = [
 { id: 1614 , name: "Wand of Occult" },
 { id: 1615 , name: "Evil Bone Wand" },
 { id: 1616 , name: "Wing Staff" },
+{ id: 1617 , name: "Survivor's Rod" },
+{ id: 1618 , name: "Survivor's Rod[1]" },
+{ id: 1619 , name: "Survivor's Rod" },
+{ id: 1620 , name: "Survivor's Rod[1]" },
+{ id: 1621 , name: "Hypnotist's Staff[1]" },
+{ id: 1622 , name: "Hypnotist's Staff[2]" },
 { id: 1623 , name: "Refined Mighty Staff" },
+{ id: 1624 , name: "Lich's Bone Wand[2]" },
 { id: 1625 , name: "Staff of Recovery" },
 { id: 1626 , name: "Staff of Piercing" },
 { id: 1627 , name: "Staffy" },
+{ id: 1628 , name: "Refined Survivor's Rod" },
+{ id: 1629 , name: "Gentleman's Cane[1]" },
 { id: 1630 , name: "Radiant Wisdom" },
 { id: 1631 , name: "Holy Stick[1]" },
+{ id: 1632 , name: "Warlock's Magic Wand" },
+{ id: 1633 , name: "Warlock's Battle Wand" },
 { id: 1634 , name: "Strong Recovery Wand" },
 { id: 1635 , name: "Speedy Recovery Wand" },
 { id: 1636 , name: "Dark Thorn Staff" },
@@ -858,12 +894,14 @@ const ITEMS = [
 { id: 1642 , name: "Staff Of Darkness" },
 { id: 1643 , name: "Withered Branch Staff" },
 { id: 1644 , name: "Staff of Piercing" },
+{ id: 1645 , name: "Lich's Bone Wand[2]" },
 { id: 1646 , name: "Lacrima Stick[2]" },
 { id: 1647 , name: "Croce Staff[1]" },
 { id: 1648 , name: "Staff Of Ord" },
 { id: 1649 , name: "Laphine Staff" },
 { id: 1650 , name: "Staff Of Magi[3]" },
 { id: 1651 , name: "Ghostdancer Staff[3]" },
+{ id: 1652 , name: "Traveler's Staff" },
 { id: 1653 , name: "Staff of Healing" },
 { id: 1654 , name: "Mental Stick[1]" },
 { id: 1655 , name: "North Pole Wand" },
@@ -888,6 +926,7 @@ const ITEMS = [
 { id: 1715 , name: "Arbalest[2]" },
 { id: 1716 , name: "Gakkung Bow[2]" },
 { id: 1718 , name: "Hunter Bow" },
+{ id: 1719 , name: "Roguemaster's Bow" },
 { id: 1720 , name: "Rudra Bow" },
 { id: 1721 , name: "Repeating Crossbow[1]" },
 { id: 1722 , name: "Ballista" },
@@ -902,8 +941,10 @@ const ITEMS = [
 { id: 1731 , name: "Freezing Bow[1]" },
 { id: 1732 , name: "Earthen Bow[1]" },
 { id: 1733 , name: "Gale Bow[1]" },
+{ id: 1734 , name: "Orc Archer's Bow" },
 { id: 1735 , name: "Kkakkung" },
 { id: 1736 , name: "Double Bound[3]" },
+{ id: 1737 , name: "Ixion's Wings[1]" },
 { id: 1738 , name: "Valorous Battle CrossBow" },
 { id: 1739 , name: "Brave Battle CrossBow" },
 { id: 1740 , name: "Nepentis Bow[2]" },
@@ -970,6 +1011,7 @@ const ITEMS = [
 { id: 1827 , name: "Glorious Fist" },
 { id: 1828 , name: "Monk Knuckle" },
 { id: 1829 , name: "Fist" },
+{ id: 1830 , name: "Sura's Rampage[2]" },
 { id: 1831 , name: "Eden Group Knuckle I" },
 { id: 1840 , name: "Suiken[3]" },
 { id: 1901 , name: "Violin[3]" },
@@ -986,6 +1028,7 @@ const ITEMS = [
 { id: 1912 , name: "Gumoongoh[2]" },
 { id: 1913 , name: "Electric Guitar[3]" },
 { id: 1914 , name: "Burning Passion Guitar" },
+{ id: 1915 , name: "Loner's Guitar" },
 { id: 1916 , name: "Green Acre Guitar" },
 { id: 1917 , name: "Gentle Breeze Guitar" },
 { id: 1918 , name: "Oriental Lute" },
@@ -1022,11 +1065,13 @@ const ITEMS = [
 { id: 1967 , name: "Gaia Whip" },
 { id: 1968 , name: "Skipping Rope" },
 { id: 1969 , name: "Blade Whip" },
+{ id: 1970 , name: "Queen's Whip" },
 { id: 1971 , name: "Electric Wire" },
 { id: 1972 , name: "Electric Eel[2]" },
 { id: 1973 , name: "Foot of the Sea Witch[1]" },
 { id: 1974 , name: "Carrot Whip" },
 { id: 1975 , name: "Queen Is Whip" },
+{ id: 1976 , name: "Queen's Whip[2]" },
 { id: 1977 , name: "Valorous Battle Lariat" },
 { id: 1978 , name: "Brave Battle Lariat" },
 { id: 1979 , name: "Stem Of Nepentis[2]" },
@@ -1061,6 +1106,7 @@ const ITEMS = [
 { id: 2112 , name: "Novice Guard" },
 { id: 2113 , name: "Novice Shield[1]" },
 { id: 2114 , name: "Stone Buckler[1]" },
+{ id: 2115 , name: "Valkyrja's Shield[1]" },
 { id: 2116 , name: "Angelic Guard[1]" },
 { id: 2117 , name: "Arm Guard" },
 { id: 2118 , name: "Arm Guard[1]" },
@@ -1068,6 +1114,7 @@ const ITEMS = [
 { id: 2120 , name: "Improved Arm Guard[1]" },
 { id: 2121 , name: "Memory Book[1]" },
 { id: 2122 , name: "Platinum Shield" },
+{ id: 2123 , name: "Orlean's Server[1]" },
 { id: 2124 , name: "Thorn Shield[1]" },
 { id: 2125 , name: "Strong Shield[1]" },
 { id: 2126 , name: "Old Shield" },
@@ -1081,6 +1128,7 @@ const ITEMS = [
 { id: 2134 , name: "Naga Scale Shield[1]" },
 { id: 2135 , name: "Shadow Guard[1]" },
 { id: 2136 , name: "Cracked Buckler" },
+{ id: 2137 , name: "Neo Valkyrja's Shield" },
 { id: 2138 , name: "Bradium Shield[1]" },
 { id: 2139 , name: "Flame Thrower" },
 { id: 2140 , name: "Energy Rune Guard[1]" },
@@ -1208,6 +1256,8 @@ const ITEMS = [
 { id: 2302 , name: "Cotton Shirt[1]" },
 { id: 2303 , name: "Jacket" },
 { id: 2304 , name: "Jacket[1]" },
+{ id: 2305 , name: "Adventurer's Suit" },
+{ id: 2306 , name: "Adventurer's Suit[1]" },
 { id: 2307 , name: "Mantle" },
 { id: 2308 , name: "Mantle[1]" },
 { id: 2309 , name: "Coat" },
@@ -1219,12 +1269,15 @@ const ITEMS = [
 { id: 2315 , name: "Chain Mail[1]" },
 { id: 2316 , name: "Full Plate" },
 { id: 2317 , name: "Full Plate[1]" },
+{ id: 2318 , name: "Lord's Clothes[1]" },
 { id: 2319 , name: "Glittering Jacket[1]" },
 { id: 2320 , name: "Formal Suit[1]" },
 { id: 2321 , name: "Silk Robe" },
 { id: 2322 , name: "Silk Robe[1]" },
 { id: 2323 , name: "Scapulare" },
 { id: 2324 , name: "Scapulare[1]" },
+{ id: 2325 , name: "Saint's Robe" },
+{ id: 2326 , name: "Saint's Robe[1]" },
 { id: 2327 , name: "Holy Robe" },
 { id: 2328 , name: "Wooden Mail" },
 { id: 2329 , name: "Wooden Mail[1]" },
@@ -1242,17 +1295,29 @@ const ITEMS = [
 { id: 2341 , name: "Legion Plate Armor" },
 { id: 2342 , name: "Legion Plate Armor[1]" },
 { id: 2343 , name: "Robe of Cast" },
+{ id: 2344 , name: "Lucius's Fierce Armor of Volcano" },
+{ id: 2345 , name: "Lucius's Fierce Armor of Volcano[1]" },
+{ id: 2346 , name: "Saphien's Armor of Ocean" },
+{ id: 2347 , name: "Saphien's Armor of Ocean[1]" },
+{ id: 2348 , name: "Aebecee's Raging Typhoon Armor" },
+{ id: 2349 , name: "Aebecee's Raging Typhoon Armor[1]" },
 { id: 2350 , name: "Claytos Cracking Earth Armor" },
 { id: 2351 , name: "Claytos Cracking Earth Armor[1]" },
 { id: 2352 , name: "Tattered Novice Ninja Suit" },
+{ id: 2353 , name: "Odin's Blessing[1]" },
+{ id: 2354 , name: "Goibne's Armor" },
 { id: 2355 , name: "Angelic Protection[1]" },
 { id: 2356 , name: "Blessed Holy Robe[1]" },
+{ id: 2357 , name: "Valkyrja's Armor[1]" },
+{ id: 2358 , name: "Angel's Dress" },
 { id: 2359 , name: "Ninja Suit[1]" },
 { id: 2360 , name: "Robe of Cast[1]" },
 { id: 2364 , name: "Meteor Plate[1]" },
+{ id: 2365 , name: "Orlean's Uniform[1]" },
 { id: 2366 , name: "Divine Clothes[1]" },
 { id: 2367 , name: "Sniping Suit[1]" },
 { id: 2368 , name: "Golden Armor" },
+{ id: 2369 , name: "Freya's Clothes" },
 { id: 2370 , name: "Used Mage Coat" },
 { id: 2371 , name: "Pantie[1]" },
 { id: 2372 , name: "Mage Coat[1]" },
@@ -1262,6 +1327,8 @@ const ITEMS = [
 { id: 2376 , name: "Assaulter Plate[1]" },
 { id: 2377 , name: "Elite Engineer Armor[1]" },
 { id: 2378 , name: "Assassin Robe[1]" },
+{ id: 2379 , name: "Warlock's Battle Robe[1]" },
+{ id: 2380 , name: "Medic's Robe[1]" },
 { id: 2381 , name: "Elite Archer Suit[1]" },
 { id: 2382 , name: "Elite Shooter Suit[1]" },
 { id: 2383 , name: "Brynhildr" },
@@ -1297,12 +1364,18 @@ const ITEMS = [
 { id: 2414 , name: "Novice Slippers" },
 { id: 2415 , name: "Bunny Slipper[1]" },
 { id: 2416 , name: "Novice Shoes[1]" },
+{ id: 2417 , name: "Fricco's Shoes" },
+{ id: 2418 , name: "Vidar's Boots" },
+{ id: 2419 , name: "Goibne's Greaves" },
+{ id: 2420 , name: "Angel's Reincarnation[1]" },
+{ id: 2421 , name: "Valkyrja's Shoes[1]" },
 { id: 2422 , name: "High Quality Sandals[1]" },
 { id: 2423 , name: "Variant Shoes" },
 { id: 2424 , name: "Tidal Shoes[1]" },
 { id: 2425 , name: "Black Leather Boots" },
 { id: 2426 , name: "Shadow Walk[1]" },
 { id: 2427 , name: "Golden Shoes" },
+{ id: 2428 , name: "Freya's Boots" },
 { id: 2429 , name: "Iron Shoes 01" },
 { id: 2430 , name: "Iron Shoes 02" },
 { id: 2431 , name: "Valley Shoes" },
@@ -1312,10 +1385,12 @@ const ITEMS = [
 { id: 2435 , name: "Battle Greaves[1]" },
 { id: 2436 , name: "Combat Boots[1]" },
 { id: 2437 , name: "Battle Boots[1]" },
+{ id: 2438 , name: "Cat's Paw" },
 { id: 2439 , name: "Refresh Shoes" },
 { id: 2440 , name: "Sprint Shoes[1]" },
 { id: 2441 , name: "Beach Sandals" },
 { id: 2442 , name: "Red Stocking Boots" },
+{ id: 2443 , name: "Fisher's Boots" },
 { id: 2444 , name: "Glorious Shoes" },
 { id: 2445 , name: "Glorious Popularized Shoes" },
 { id: 2446 , name: "Glorious Mass-Production Shoes" },
@@ -1347,6 +1422,7 @@ const ITEMS = [
 { id: 2506 , name: "Manteau[1]" },
 { id: 2507 , name: "Ancient Cape" },
 { id: 2508 , name: "Ragamuffin Manteau" },
+{ id: 2509 , name: "Survivor's Manteau" },
 { id: 2510 , name: "Somber Novice Hood" },
 { id: 2511 , name: "Skeleton Manteau" },
 { id: 2512 , name: "Novice Manteau[1]" },
@@ -1354,19 +1430,30 @@ const ITEMS = [
 { id: 2514 , name: "Pauldron[1]" },
 { id: 2515 , name: "Eagle Wing[1]" },
 { id: 2516 , name: "Falcon Muffler" },
+{ id: 2517 , name: "Vali's Manteau" },
+{ id: 2518 , name: "Morpheus's Shawl" },
+{ id: 2519 , name: "Morrigane's Manteau" },
+{ id: 2520 , name: "Goibne's Spaulders" },
 { id: 2521 , name: "Angelic Cardigan[1]" },
 { id: 2522 , name: "Undershirt" },
 { id: 2523 , name: "Undershirt[1]" },
+{ id: 2524 , name: "Valkyrja's Manteau[1]" },
 { id: 2525 , name: "Ancient Cape[1]" },
 { id: 2526 , name: "Coat of Dragon Scale" },
+{ id: 2527 , name: "Dragon's Breath[1]" },
 { id: 2528 , name: "Wool Scarf[1]" },
 { id: 2529 , name: "Crest of the Rider" },
 { id: 2530 , name: "Crest of the Rider[1]" },
 { id: 2531 , name: "Wolfheiden[1]" },
 { id: 2532 , name: "Mithril Magic Manteau[1]" },
+{ id: 2533 , name: "Freya's Manteau" },
 { id: 2534 , name: "Ruffler" },
+{ id: 2535 , name: "Refined Survivor's Manteau" },
 { id: 2536 , name: "Skin of Ventoss[1]" },
 { id: 2537 , name: "Diablos Manteau[1]" },
+{ id: 2538 , name: "Captain's Manteau[1]" },
+{ id: 2539 , name: "Commander's Manteau[1]" },
+{ id: 2540 , name: "Sheriff's Manteau[1]" },
 { id: 2541 , name: "Aesprika" },
 { id: 2542 , name: "Naght Sieger Flame Manteau[1]" },
 { id: 2543 , name: "Silf Manteau" },
@@ -1376,6 +1463,7 @@ const ITEMS = [
 { id: 2547 , name: "Cheap Undershirt" },
 { id: 2548 , name: "Neo Muffler" },
 { id: 2549 , name: "Glorious Muffler" },
+{ id: 2550 , name: "Fisher's Muffler" },
 { id: 2551 , name: "Crest of the Rider[1]" },
 { id: 2552 , name: "Mithril Magic Manteau[1]" },
 { id: 2553 , name: "Dragon Manteau[1]" },
@@ -1387,6 +1475,7 @@ const ITEMS = [
 { id: 2563 , name: "Upgrade Manteau[1]" },
 { id: 2564 , name: "Feral Tail" },
 { id: 2565 , name: "Beach Towel[1]" },
+{ id: 2568 , name: "Loki's Muffler" },
 { id: 2571 , name: "Eden Group Manteau II" },
 { id: 2576 , name: "Heroic Backpack[1]" },
 { id: 2582 , name: "Salvage Cape" },
@@ -1408,6 +1497,8 @@ const ITEMS = [
 { id: 2614 , name: "Eye of Dullahan" },
 { id: 2615 , name: "Safety Ring" },
 { id: 2616 , name: "Critical Ring" },
+{ id: 2617 , name: "Celebrant's Mitten" },
+{ id: 2618 , name: "Matyr's Leash" },
 { id: 2619 , name: "Bow Thimble" },
 { id: 2620 , name: "Thief Ring" },
 { id: 2621 , name: "Ring[1]" },
@@ -1429,10 +1520,17 @@ const ITEMS = [
 { id: 2639 , name: "Occult Incense" },
 { id: 2640 , name: "Kafra Ring" },
 { id: 2641 , name: "Fashion Hip Sack" },
+{ id: 2642 , name: "Serin's Gold Ring" },
+{ id: 2643 , name: "Serin's Gold Ring" },
 { id: 2644 , name: "The Sign" },
 { id: 2645 , name: "Moonlight Ring" },
 { id: 2646 , name: "Bunch of Carnations" },
 { id: 2647 , name: "Nile Rose[1]" },
+{ id: 2648 , name: "Morpheus's Ring" },
+{ id: 2649 , name: "Morpheus's Bracelet" },
+{ id: 2650 , name: "Morrigane's Belt" },
+{ id: 2651 , name: "Morrigane's Pendant" },
+{ id: 2652 , name: "Goddess of Fortune's Cursed Brooch" },
 { id: 2653 , name: "Sacrifice Ring" },
 { id: 2654 , name: "Shinobi Sash" },
 { id: 2655 , name: "Bloodied Shackle Ball" },
@@ -1447,13 +1545,16 @@ const ITEMS = [
 { id: 2664 , name: "Belcarf" },
 { id: 2665 , name: "Exorcising Ring" },
 { id: 2666 , name: "Lantern of Hope" },
+{ id: 2667 , name: "Renown Archer's Gloves" },
 { id: 2668 , name: "Woman Glory" },
 { id: 2669 , name: "RJC Necklace[1]" },
 { id: 2670 , name: "Ring of Longing" },
 { id: 2671 , name: "Bow Thimble[1]" },
 { id: 2672 , name: "3rd Anniversary Celebration Ring" },
+{ id: 2673 , name: "Warrior's Shining Ring" },
 { id: 2674 , name: "Ring of Honor" },
 { id: 2675 , name: "Lord Ring" },
+{ id: 2676 , name: "Hunter's Earring" },
 { id: 2677 , name: "Spiritual Ring" },
 { id: 2678 , name: "Ring Of Flame Lord" },
 { id: 2679 , name: "Ring Of Resonance" },
@@ -1478,6 +1579,7 @@ const ITEMS = [
 { id: 2698 , name: "Refined Vesper Core 03" },
 { id: 2699 , name: "Refined Vesper Core 04" },
 { id: 2700 , name: "Seal of Red Silk" },
+{ id: 2701 , name: "Orlean's Gloves[1]" },
 { id: 2702 , name: "Horn of the Buffalo[1]" },
 { id: 2703 , name: "Expert Ring[1]" },
 { id: 2704 , name: "Golden Accessories" },
@@ -1488,6 +1590,7 @@ const ITEMS = [
 { id: 2709 , name: "5th Anniversary Coin" },
 { id: 2710 , name: "Refined Bloodied Shackle Ball" },
 { id: 2711 , name: "Refined Spiritual Ring" },
+{ id: 2712 , name: "Collector's Edition Book" },
 { id: 2713 , name: "Accomplishment Certificate" },
 { id: 2714 , name: "Small Book Pendant[1]" },
 { id: 2715 , name: "Skull Ring[1]" },
@@ -1502,6 +1605,7 @@ const ITEMS = [
 { id: 2724 , name: "Medal of Honor (Archer)" },
 { id: 2725 , name: "Medal of Honor (Merchant)" },
 { id: 2726 , name: "Feather of Icarus" },
+{ id: 2727 , name: "Renown Archer's Scarf" },
 { id: 2728 , name: "Cursed Hand[1]" },
 { id: 2729 , name: "Diablos Ring[1]" },
 { id: 2730 , name: "Continental Guard Seal[1]" },
@@ -1518,6 +1622,7 @@ const ITEMS = [
 { id: 2741 , name: "All In One Ring" },
 { id: 2743 , name: "Angelic Ring" },
 { id: 2744 , name: "Sprint Ring" },
+{ id: 2745 , name: "Pinguicura's Corsage[1]" },
 { id: 2746 , name: "Cold Heart" },
 { id: 2747 , name: "Black Cat" },
 { id: 2748 , name: "Cursed Star" },
@@ -1552,9 +1657,11 @@ const ITEMS = [
 { id: 2778 , name: "Shaman Earring" },
 { id: 2779 , name: "Dark Knight Belt A" },
 { id: 2780 , name: "Dark Knight Glove A" },
+{ id: 2781 , name: "Aumdura's Benefit[1]" },
 { id: 2782 , name: "Ring Of Wisdom" },
 { id: 2783 , name: "Eye Ring[1]" },
 { id: 2784 , name: "O Holy Night" },
+{ id: 2785 , name: "Orlean's Gloves[1]" },
 { id: 2786 , name: "Spiritual Ring" },
 { id: 2787 , name: "Waterdrop Brooch[1]" },
 { id: 2788 , name: "Bradium Earring[1]" },
@@ -1607,6 +1714,7 @@ const ITEMS = [
 { id: 2858 , name: "Pendant Of Guardian" },
 { id: 2872 , name: "Cat Gamer Token" },
 { id: 2873 , name: "Cat Hand Glove[1]" },
+{ id: 2892 , name: "Assassin's Glove[1]" },
 { id: 2899 , name: "Sound Amplifier[1]" },
 { id: 2907 , name: "Buwaya Agimat Tattoo" },
 { id: 2910 , name: "Bakonawa Agimat Tattoo" },
@@ -1917,6 +2025,7 @@ const ITEMS = [
 { id: 4287 , name: "Kapha Card" },
 { id: 4288 , name: "Carat Card" },
 { id: 4289 , name: "Caterpillar Card" },
+{ id: 4290 , name: "Cat o' Nine Tails Card" },
 { id: 4291 , name: "Kobold Leader Card" },
 { id: 4292 , name: "Kobold Archer Card" },
 { id: 4293 , name: "Cookie Card" },
@@ -2334,6 +2443,7 @@ const ITEMS = [
 { id: 4858 , name: "Special LUK" },
 { id: 4859 , name: "FLEE+1" },
 { id: 4860 , name: "FLEE+3" },
+{ id: 4875 , name: "Bear's Power" },
 { id: 4876 , name: "Runaway Magic" },
 { id: 4877 , name: "Speed of Light" },
 { id: 4878 , name: "Muscle Fool" },
@@ -2393,12 +2503,14 @@ const ITEMS = [
 { id: 5003 , name: "Joker Jester" },
 { id: 5004 , name: "Oxygen Mask" },
 { id: 5005 , name: "Gas Mask" },
+{ id: 5006 , name: "Machoman's Glasses" },
 { id: 5007 , name: "Grand Circlet" },
 { id: 5008 , name: "Puppy Love" },
 { id: 5009 , name: "Safety Helmet" },
 { id: 5010 , name: "Indian Fillet" },
 { id: 5011 , name: "Aerial" },
 { id: 5012 , name: "Ph.D Hat" },
+{ id: 5013 , name: "Lord Kaho's Horn" },
 { id: 5014 , name: "Fin Helm" },
 { id: 5015 , name: "Egg Shell" },
 { id: 5016 , name: "Boys Cap" },
@@ -2486,12 +2598,14 @@ const ITEMS = [
 { id: 5098 , name: "Tiger Mask" },
 { id: 5099 , name: "Neko Mimi" },
 { id: 5100 , name: "Sales Banner" },
+{ id: 5101 , name: "Takius's Blindfold" },
 { id: 5102 , name: "Blank Eyes" },
 { id: 5103 , name: "Sunflower Hairpin" },
 { id: 5104 , name: "Dark Blinder" },
 { id: 5105 , name: "2nd Anniversary Hat" },
 { id: 5106 , name: "Party Hat" },
 { id: 5107 , name: "Crunch Toast" },
+{ id: 5108 , name: "Renown Detective's Cap[1]" },
 { id: 5109 , name: "Red Bonnet" },
 { id: 5110 , name: "Baby Pacifier" },
 { id: 5111 , name: "Galapago Cap" },
@@ -2505,12 +2619,21 @@ const ITEMS = [
 { id: 5119 , name: "Super Novice Hat[1]" },
 { id: 5120 , name: "Bucket Hat[1]" },
 { id: 5121 , name: "Zherlthsh Mask" },
+{ id: 5122 , name: "Magni's Cap" },
+{ id: 5123 , name: "Ulle's Cap[1]" },
+{ id: 5124 , name: "Frigg's Circlet" },
+{ id: 5125 , name: "Angel's Kiss[1]" },
+{ id: 5126 , name: "Morpheus's Hood" },
+{ id: 5127 , name: "Morrigane's Helm" },
+{ id: 5128 , name: "Goibne's Helm" },
 { id: 5129 , name: "Bird Nest" },
 { id: 5130 , name: "Lion Mask" },
 { id: 5131 , name: "Close Helmet" },
 { id: 5132 , name: "Angeling Hat" },
 { id: 5133 , name: "Sheep Hat" },
 { id: 5134 , name: "Pumpkin-Head" },
+{ id: 5135 , name: "Cyclop's Eye" },
+{ id: 5136 , name: "Louise's Santa Hat" },
 { id: 5137 , name: "Alice Doll[1]" },
 { id: 5138 , name: "Magic Eyes" },
 { id: 5139 , name: "Hibiscus" },
@@ -2528,6 +2651,9 @@ const ITEMS = [
 { id: 5151 , name: "Note Headphones[1]" },
 { id: 5152 , name: "Phoenix Crown" },
 { id: 5153 , name: "Angeling Hairpin" },
+{ id: 5154 , name: "Father's Sunglasses" },
+{ id: 5155 , name: "Father's White Moustache" },
+{ id: 5156 , name: "Father's Mask" },
 { id: 5157 , name: "Orc Helm[1]" },
 { id: 5158 , name: "Monk Hat[1]" },
 { id: 5159 , name: "Golden Gear[1]" },
@@ -2555,8 +2681,10 @@ const ITEMS = [
 { id: 5181 , name: "Helm of Darkness[1]" },
 { id: 5182 , name: "Puppy Hat" },
 { id: 5183 , name: "Nest Hat" },
+{ id: 5184 , name: "Captain's Hat" },
 { id: 5185 , name: "Laurel Crown[1]" },
 { id: 5186 , name: "Decorative Geographer" },
+{ id: 5187 , name: "Maiden's Twin Ribbon[1]" },
 { id: 5188 , name: "Wandering Minstrel Hat" },
 { id: 5189 , name: "Autumn Leaves" },
 { id: 5190 , name: "Independence Memorial Hat[1]" },
@@ -2573,6 +2701,8 @@ const ITEMS = [
 { id: 5201 , name: "Party Hat" },
 { id: 5202 , name: "Fantastic Pumpkin Hat" },
 { id: 5203 , name: "Tongue Mask" },
+{ id: 5204 , name: "Rudolph's Nose" },
+{ id: 5205 , name: "Emperor's Laurel Crown" },
 { id: 5206 , name: "White Petal" },
 { id: 5207 , name: "Angel Blessing" },
 { id: 5208 , name: "Rideword Hat[1]" },
@@ -2625,6 +2755,7 @@ const ITEMS = [
 { id: 5255 , name: "Poring Tower" },
 { id: 5256 , name: "Valkyrie Feather Band[1]" },
 { id: 5257 , name: "Soul Ring" },
+{ id: 5258 , name: "Dokebi's Wig[1]" },
 { id: 5259 , name: "Elephant Hat" },
 { id: 5260 , name: "Cookie Hat" },
 { id: 5261 , name: "Silver Tiara" },
@@ -2664,6 +2795,7 @@ const ITEMS = [
 { id: 5295 , name: "Golden Bandana" },
 { id: 5296 , name: "Drooping Nine Tail[1]" },
 { id: 5297 , name: "Soul Wing[1]" },
+{ id: 5298 , name: "Dokebi's Wig[1]" },
 { id: 5299 , name: "Pagdayaw[1]" },
 { id: 5300 , name: "Bullock Helm" },
 { id: 5301 , name: "Victory Hairband" },
@@ -2671,14 +2803,18 @@ const ITEMS = [
 { id: 5303 , name: "Flower Crown" },
 { id: 5304 , name: "Executioner Hood[1]" },
 { id: 5305 , name: "Pirate Dagger" },
+{ id: 5306 , name: "Freya's Crown" },
+{ id: 5307 , name: "Carmen Miranda's Hat" },
 { id: 5308 , name: "Brazil National Flag Hat[1]" },
 { id: 5309 , name: "Wool Mask" },
 { id: 5310 , name: "Shining Electric Bulb Hairband[1]" },
 { id: 5311 , name: "Large Hibiscus[1]" },
+{ id: 5312 , name: "Ayothaya King's Hat[1]" },
 { id: 5313 , name: "Diadem[1]" },
 { id: 5314 , name: "Hockey Mask" },
 { id: 5315 , name: "Observer" },
 { id: 5316 , name: "Umbrella Hat" },
+{ id: 5317 , name: "Fisherman's Hat" },
 { id: 5318 , name: "Poring Party Hat" },
 { id: 5319 , name: "Hello Mother Hat" },
 { id: 5320 , name: "Sacred Palma" },
@@ -2710,6 +2846,7 @@ const ITEMS = [
 { id: 5346 , name: "Gf Recruiter Hat" },
 { id: 5347 , name: "Ph.D Hat[1]" },
 { id: 5348 , name: "Big Ribbon[1]" },
+{ id: 5349 , name: "Boy's Cap[1]" },
 { id: 5350 , name: "Pirate Bandana[1]" },
 { id: 5351 , name: "Sunflower[1]" },
 { id: 5352 , name: "Poporing Cap" },
@@ -2720,7 +2857,9 @@ const ITEMS = [
 { id: 5357 , name: "Wings Of Victory" },
 { id: 5358 , name: "Peco-Peco Ears" },
 { id: 5359 , name: "Ship Captain Hat[1]" },
+{ id: 5360 , name: "Whikebine's Black Cat Ears" },
 { id: 5361 , name: "Gangster Scarf" },
+{ id: 5362 , name: "Ninja's Scroll" },
 { id: 5363 , name: "Helm Of Abyss[1]" },
 { id: 5364 , name: "Evil Snake Lord Hat[1]" },
 { id: 5365 , name: "Magnolia Hat[1]" },
@@ -2735,6 +2874,7 @@ const ITEMS = [
 { id: 5374 , name: "Baphomet Horns" },
 { id: 5375 , name: "Orc Hero Headdress[1]" },
 { id: 5376 , name: "Flying Evil Wing[1]" },
+{ id: 5377 , name: "Gentleman's Pipe" },
 { id: 5378 , name: "Bunny Top Hat" },
 { id: 5379 , name: "Balloon Hat[1]" },
 { id: 5380 , name: "Fish Head Hat" },
@@ -2743,6 +2883,7 @@ const ITEMS = [
 { id: 5383 , name: "Hunter Hat[1]" },
 { id: 5384 , name: "Event Twin Pompom" },
 { id: 5385 , name: "Yoyo Hat" },
+{ id: 5386 , name: "New Year's Hat" },
 { id: 5387 , name: "Nekomimi Kafra Headband[1]" },
 { id: 5388 , name: "Snake Head Hat[1]" },
 { id: 5389 , name: "Angel Of Ghost" },
@@ -2792,6 +2933,8 @@ const ITEMS = [
 { id: 5433 , name: "Golden Laurel" },
 { id: 5434 , name: "Coca Cola Can Hat[1]" },
 { id: 5435 , name: "Red Minstrel Hat[1]" },
+{ id: 5436 , name: "Bride's Flower Crown" },
+{ id: 5437 , name: "Heaven Maiden's Flower[1]" },
 { id: 5438 , name: "Green Ribbon" },
 { id: 5439 , name: "Red Ribbon" },
 { id: 5440 , name: "Blue Ribbon" },
@@ -2800,7 +2943,10 @@ const ITEMS = [
 { id: 5443 , name: "Cherub Hat[1]" },
 { id: 5444 , name: "Red Comb" },
 { id: 5445 , name: "Lollipop" },
+{ id: 5446 , name: "Cat's Footprint Hairpin[1]" },
 { id: 5447 , name: "Frog Hat" },
+{ id: 5448 , name: "Loner's Box(A)[1]" },
+{ id: 5449 , name: "Loner's Box(B)[1]" },
 { id: 5450 , name: "Solar Hat" },
 { id: 5451 , name: "RWC 2008 Dragon Helm Gold" },
 { id: 5452 , name: "RWC 2008 Dragon Helm Silver" },
@@ -2830,6 +2976,7 @@ const ITEMS = [
 { id: 5476 , name: "Grand Peco Hairband" },
 { id: 5477 , name: "Brazilian Flag Hat[1]" },
 { id: 5478 , name: "Classic Hat[1]" },
+{ id: 5479 , name: "Shaman's Coif" },
 { id: 5480 , name: "Feather Of Bizofnil" },
 { id: 5481 , name: "Hermose Cap[1]" },
 { id: 5482 , name: "Dark Knight Mask A" },
@@ -2843,6 +2990,7 @@ const ITEMS = [
 { id: 5490 , name: "Anubis Hat" },
 { id: 5491 , name: "Bandit Hat[1]" },
 { id: 5492 , name: "Student Cap" },
+{ id: 5493 , name: "Ulle's Cap" },
 { id: 5494 , name: "Sphinx Hat" },
 { id: 5495 , name: "Power Of Thor[1]" },
 { id: 5496 , name: "Dice Hat" },
@@ -2850,6 +2998,7 @@ const ITEMS = [
 { id: 5498 , name: "Wandering Wolf Hat" },
 { id: 5499 , name: "Pizza Hat" },
 { id: 5500 , name: "Ice Cream Hat" },
+{ id: 5501 , name: "Pirate's Pride" },
 { id: 5502 , name: "Necromancer Hood[1]" },
 { id: 5503 , name: "Magic Rabbit Hat" },
 { id: 5504 , name: "RO 5th Wedding Anniversary" },
@@ -2881,6 +3030,7 @@ const ITEMS = [
 { id: 5530 , name: "Crow Hat[1]" },
 { id: 5531 , name: "Baby Dragon Hat[1]" },
 { id: 5532 , name: "Pirate Dagger" },
+{ id: 5533 , name: "Emperor's Laurel Crown[1]" },
 { id: 5534 , name: "Fox Hat" },
 { id: 5535 , name: "Side Cap" },
 { id: 5536 , name: "Spare Card" },
@@ -2926,6 +3076,7 @@ const ITEMS = [
 { id: 5576 , name: "Wine Cup" },
 { id: 5577 , name: "Dark Knight Mask B" },
 { id: 5578 , name: "Voyage Hat" },
+{ id: 5579 , name: "Wanderer's Sakkat[1]" },
 { id: 5580 , name: "Indonesia Beret" },
 { id: 5581 , name: "Cancer Diadem" },
 { id: 5582 , name: "Cancer Crown" },
@@ -2938,6 +3089,7 @@ const ITEMS = [
 { id: 5589 , name: "Leo Diadem" },
 { id: 5590 , name: "Poring Cake Hat" },
 { id: 5591 , name: "Desert Prince[1]" },
+{ id: 5592 , name: "Sigrun's Wings" },
 { id: 5593 , name: "Rabbit Bonnet[1]" },
 { id: 5594 , name: "Donut In Mouth" },
 { id: 5595 , name: "Eye Of Juno" },
@@ -2990,6 +3142,7 @@ const ITEMS = [
 { id: 5688 , name: "2009 Love Dad" },
 { id: 5689 , name: "Ant Queen Crown" },
 { id: 5690 , name: "Red Wing Hat[1]" },
+{ id: 5691 , name: "Sailor's Bandana" },
 { id: 5692 , name: "Sea Cat Hat" },
 { id: 5693 , name: "NoFear Underwear" },
 { id: 5694 , name: "NoFear Headband" },
@@ -3015,6 +3168,7 @@ const ITEMS = [
 { id: 5756 , name: "Wind Whisper[1]" },
 { id: 5757 , name: "Reissue Schmitz Helm[1]" },
 { id: 5758 , name: "Resting Swan[1]" },
+{ id: 5759 , name: "Noah's Hat[1]" },
 { id: 5760 , name: "Driver Band[1]" },
 { id: 5761 , name: "Sloth Hat[1]" },
 { id: 5762 , name: "Duneyrr Helm" },
@@ -3056,6 +3210,7 @@ const ITEMS = [
 { id: 5803 , name: "Love Flower Hat" },
 { id: 5804 , name: "Pirate Eye Bandage" },
 { id: 5805 , name: "Victorious Coronet" },
+{ id: 5806 , name: "Natalie's Poet Hat" },
 { id: 5807 , name: "October Fest Cap" },
 { id: 5808 , name: "Dark Bashilrium[1]" },
 { id: 5809 , name: "Boom Boom Hat" },
@@ -3065,11 +3220,13 @@ const ITEMS = [
 { id: 5813 , name: "Red Ph.D Hat" },
 { id: 5815 , name: "Classic Hat[1]" },
 { id: 5816 , name: "Purple Cowboy Hat[1]" },
+{ id: 5817 , name: "Valentine's Emblem" },
 { id: 5818 , name: "Carnival Hat" },
 { id: 5819 , name: "Carnival Circlet" },
 { id: 5820 , name: "Black Elven Ears" },
 { id: 5821 , name: "Golden Tulip" },
 { id: 5822 , name: "Chicken Of Love Hat" },
+{ id: 5824 , name: "April Fool's Day Hat" },
 { id: 5826 , name: "Helm Of Valkyrie" },
 { id: 5827 , name: "Book File Hat" },
 { id: 5828 , name: "Gold Ring Of Honor" },
@@ -3159,6 +3316,7 @@ const ITEMS = [
 { id: 6071 , name: "Broken Sword" },
 { id: 6072 , name: "Feather Of Bizofnil" },
 { id: 6073 , name: "Mane Of Dragon" },
+{ id: 6074 , name: "Bazett's Order" },
 { id: 6075 , name: "Crystal Tears" },
 { id: 6076 , name: "Portable Toolbox" },
 { id: 6077 , name: "Rough Mineral" },
@@ -3238,6 +3396,7 @@ const ITEMS = [
 { id: 6151 , name: "Huge Bradium" },
 { id: 6152 , name: "Crystal Shine" },
 { id: 6153 , name: "Special Exchange Ticket" },
+{ id: 6154 , name: "Hisui's Horn" },
 { id: 6155 , name: "Member Card" },
 { id: 6156 , name: "Approval Report" },
 { id: 6157 , name: "Poring Exchange Ticket" },
@@ -3283,6 +3442,7 @@ const ITEMS = [
 { id: 6197 , name: "Spell Book (Thunder Storm)" },
 { id: 6198 , name: "Spell Book (Jupitel Thunder)" },
 { id: 6199 , name: "Spell Book (Water Ball)" },
+{ id: 6200 , name: "Spell Book (Heaven's Drive)" },
 { id: 6201 , name: "Spell Book (Earth Spike)" },
 { id: 6202 , name: "Spell Book (Earth Strain)" },
 { id: 6203 , name: "Spell Book (Chain Lightning)" },
@@ -3300,6 +3460,7 @@ const ITEMS = [
 { id: 6215 , name: "Tear Gas" },
 { id: 6216 , name: "Oil Bottle" },
 { id: 6217 , name: "Mandragora Flowerpot" },
+{ id: 6218 , name: "Dieshin's Delivery Box" },
 { id: 6219 , name: "Eden Group Mark" },
 { id: 6220 , name: "Mysterious Dyestuffs" },
 { id: 6221 , name: "Mystic Leaf Cat Ball" },
@@ -3340,6 +3501,7 @@ const ITEMS = [
 { id: 6257 , name: "Ice Crystal" },
 { id: 6258 , name: "Comodo Tropical Fruit" },
 { id: 6259 , name: "Drosera Tentacle" },
+{ id: 6260 , name: "Petite's Tail" },
 { id: 6261 , name: "Fine Noodles" },
 { id: 6262 , name: "Cool Gravy" },
 { id: 6263 , name: "Coconut Fruit" },
@@ -3348,10 +3510,13 @@ const ITEMS = [
 { id: 6266 , name: "Key Of Deception" },
 { id: 6267 , name: "Key Of Illusion" },
 { id: 6268 , name: "Key Of Pleasure" },
+{ id: 6269 , name: "A Master's Brush" },
 { id: 6270 , name: "A Picture Of Maestro Song" },
 { id: 6271 , name: "Receipt" },
 { id: 6272 , name: "Seed For Experiment" },
 { id: 6273 , name: "Seed For Experiment" },
+{ id: 6274 , name: "Saint's Clothing Piece" },
+{ id: 6275 , name: "King's Shield" },
 { id: 6276 , name: "Clear Reagent" },
 { id: 6277 , name: "Red Reagent" },
 { id: 6278 , name: "Black Reagent" },
@@ -3380,6 +3545,7 @@ const ITEMS = [
 { id: 6301 , name: "event" },
 { id: 6302 , name: "GM Handwriting" },
 { id: 6303 , name: "Changed Hydra Ball" },
+{ id: 6304 , name: "Proof Of Sapha's Honor" },
 { id: 6305 , name: "Frozen Piece Of Skin" },
 { id: 6306 , name: "Hard Bloodstain" },
 { id: 6307 , name: "Cursed Magical Stone" },
@@ -3452,6 +3618,8 @@ const ITEMS = [
 { id: 6380 , name: "Mora Coin" },
 { id: 6381 , name: "Field Shovel" },
 { id: 6382 , name: "Urn" },
+{ id: 6383 , name: "Lope's Clue" },
+{ id: 6384 , name: "Lope's Ring" },
 { id: 6385 , name: "Research Tool Bag" },
 { id: 6386 , name: "Bath Water Sample" },
 { id: 6387 , name: "Teeth Sample" },
@@ -3477,6 +3645,7 @@ const ITEMS = [
 { id: 6420 , name: "C Class Coin" },
 { id: 6421 , name: "D Class Coin" },
 { id: 6422 , name: "E Class Coin" },
+{ id: 6423 , name: "Seagod's Anger" },
 { id: 6426 , name: "Poor Can" },
 { id: 6427 , name: "Poor Can Sack" },
 { id: 6428 , name: "Adventure Card A" },
@@ -3487,6 +3656,7 @@ const ITEMS = [
 { id: 6433 , name: "Cleaning Brush" },
 { id: 6434 , name: "Fixing Kit" },
 { id: 6435 , name: "Fresh Fruit" },
+{ id: 6436 , name: "Seagod's Protection" },
 { id: 6437 , name: "Scaraba Perfume" },
 { id: 6442 , name: "Octopus Hunting Stick" },
 { id: 6451 , name: "Unidentified Fish" },
@@ -3499,6 +3669,7 @@ const ITEMS = [
 { id: 6489 , name: "Cats Invest Certificate" },
 { id: 6493 , name: "Makibishi" },
 { id: 6495 , name: "Eden Merit Badge" },
+{ id: 6496 , name: "Tikbalang's Thick Spine" },
 { id: 6497 , name: "Lesser Agimat" },
 { id: 6498 , name: "Jejellopy" },
 { id: 6499 , name: "Ancient Grudge" },
@@ -3523,6 +3694,9 @@ const ITEMS = [
 { id: 6518 , name: "Buwaya Doll" },
 { id: 6519 , name: "Collected Sample" },
 { id: 6520 , name: "Lost Belongings" },
+{ id: 6523 , name: "Piece of Bakonawa's Spirit" },
+{ id: 6524 , name: "Piece of Bangungot's Spirit" },
+{ id: 6525 , name: "Piece of Buwaya's Spirit" },
 { id: 6539 , name: "Old Left Lapine" },
 { id: 6540 , name: "Golden Leaf" },
 { id: 6541 , name: "Avant Research Data" },
@@ -3586,11 +3760,15 @@ const ITEMS = [
 { id: 7014 , name: "Old Portrait" },
 { id: 7015 , name: "Memory Bookmark" },
 { id: 7016 , name: "Bent Spoon" },
+{ id: 7017 , name: "Executioner's Mitten" },
 { id: 7018 , name: "Young Twig" },
+{ id: 7019 , name: "Loki's Whispers" },
+{ id: 7020 , name: "Mother's Nightmare" },
 { id: 7021 , name: "Foolishness of the Blind" },
 { id: 7022 , name: "Old Hilt" },
 { id: 7023 , name: "Blade of Darkness" },
 { id: 7024 , name: "Bloody Edge" },
+{ id: 7025 , name: "Lucifer's Lament" },
 { id: 7026 , name: "Key of the Clock Tower" },
 { id: 7027 , name: "Key of the Underground" },
 { id: 7028 , name: "Invite for Duel" },
@@ -3612,6 +3790,7 @@ const ITEMS = [
 { id: 7044 , name: "Vigorgra" },
 { id: 7045 , name: "Magic Paint" },
 { id: 7046 , name: "Cart Parts" },
+{ id: 7047 , name: "Alice's Apron" },
 { id: 7048 , name: "Talon of Griffon" },
 { id: 7049 , name: "Stone" },
 { id: 7050 , name: "Cotton Mat" },
@@ -3637,12 +3816,15 @@ const ITEMS = [
 { id: 7070 , name: "Broken Shell" },
 { id: 7071 , name: "Tattered Clothes" },
 { id: 7072 , name: "Old Shuriken" },
+{ id: 7073 , name: "Freya's Jewel" },
+{ id: 7074 , name: "Thor's Gauntlets" },
 { id: 7075 , name: "Iron Maiden" },
 { id: 7076 , name: "Wheel of the Unknown" },
 { id: 7077 , name: "Silver Ornament" },
 { id: 7078 , name: "Wrath of Valkyrie" },
 { id: 7079 , name: "Feather of Angel Wing" },
 { id: 7080 , name: "Cat Tread" },
+{ id: 7081 , name: "Woman's Moustache" },
 { id: 7082 , name: "Root of Stone" },
 { id: 7083 , name: "Spirit of Fish" },
 { id: 7084 , name: "Sputum of Bird" },
@@ -3709,6 +3891,7 @@ const ITEMS = [
 { id: 7145 , name: "Ragnarok T-shirt" },
 { id: 7146 , name: "Vacation Ticket" },
 { id: 7147 , name: "Jasmine" },
+{ id: 7148 , name: "Mother's Letter" },
 { id: 7149 , name: "Yellow Plate" },
 { id: 7150 , name: "Piece of Bamboo" },
 { id: 7151 , name: "Oil Paper" },
@@ -3740,6 +3923,7 @@ const ITEMS = [
 { id: 7177 , name: "Crumb of Sobbing Starlight" },
 { id: 7178 , name: "Sobbing Starlight" },
 { id: 7179 , name: "Proof of Donation" },
+{ id: 7180 , name: "Hahn Sukbong's Recommendation" },
 { id: 7181 , name: "Receipt" },
 { id: 7182 , name: "Cacao" },
 { id: 7183 , name: "Letter from Sister" },
@@ -3822,6 +4006,7 @@ const ITEMS = [
 { id: 7260 , name: "Mystic Orb" },
 { id: 7261 , name: "Mystic Orb" },
 { id: 7262 , name: "Folding Fan of Cat Ghost" },
+{ id: 7263 , name: "Cat's Eye" },
 { id: 7264 , name: "Dry Sand" },
 { id: 7265 , name: "Dragon Horn" },
 { id: 7266 , name: "Denture from Dragon Mask" },
@@ -3862,13 +4047,16 @@ const ITEMS = [
 { id: 7301 , name: "Tassel" },
 { id: 7302 , name: "Krathong" },
 { id: 7303 , name: "Straw Rice Bag" },
+{ id: 7304 , name: "Witch's Spell Scroll" },
 { id: 7305 , name: "Symbol of the Nine Realms" },
 { id: 7306 , name: "Piece of Spirit" },
 { id: 7307 , name: "Spiritual Whispers" },
+{ id: 7308 , name: "Witch's Tonic" },
 { id: 7309 , name: "Crow Wing" },
 { id: 7310 , name: "Free Ticket for Peco Ride" },
 { id: 7311 , name: "Free Ticket for Flyship" },
 { id: 7312 , name: "Jubilee" },
+{ id: 7313 , name: "Witch's Medal" },
 { id: 7314 , name: "The Sign" },
 { id: 7315 , name: "Dark Crystal Fragment" },
 { id: 7316 , name: "Insect Leg" },
@@ -3900,10 +4088,12 @@ const ITEMS = [
 { id: 7343 , name: "Sealed File Folder" },
 { id: 7344 , name: "Shinokas Case File" },
 { id: 7345 , name: "Handcuffs" },
+{ id: 7346 , name: "Ymir's Heart Piece" },
 { id: 7347 , name: "Research Chart" },
 { id: 7348 , name: "Membership Card" },
 { id: 7349 , name: "Archive Permit" },
 { id: 7350 , name: "Pass" },
+{ id: 7351 , name: "Friend's Diary" },
 { id: 7352 , name: "Transparent Plate Green" },
 { id: 7353 , name: "Transparent Plate Red" },
 { id: 7354 , name: "Transparent Plate Orange" },
@@ -3995,6 +4185,7 @@ const ITEMS = [
 { id: 7440 , name: "Red Feather" },
 { id: 7441 , name: "Blue Feather" },
 { id: 7442 , name: "Cursed Seal" },
+{ id: 7443 , name: "Three-Headed Dragon's Head" },
 { id: 7444 , name: "Treasure Box" },
 { id: 7445 , name: "Green Bijou" },
 { id: 7446 , name: "Blue Bijou" },
@@ -4051,11 +4242,17 @@ const ITEMS = [
 { id: 7497 , name: "Metal Fragment" },
 { id: 7498 , name: "Rosimier Mansion Keys" },
 { id: 7499 , name: "Family Portrait" },
+{ id: 7500 , name: "Woman's Portrait" },
+{ id: 7501 , name: "K.H's Letter" },
+{ id: 7502 , name: "James's Note" },
+{ id: 7503 , name: "Man's Portrait" },
 { id: 7504 , name: "Power Device" },
 { id: 7505 , name: "Toy Key" },
 { id: 7506 , name: "Black Keycard" },
 { id: 7507 , name: "Solid Iron Piece" },
+{ id: 7508 , name: "Allysia's Ring" },
 { id: 7509 , name: "Luxurious Keycard" },
+{ id: 7510 , name: "Valhalla's Flower" },
 { id: 7511 , name: "Rune of the Darkness" },
 { id: 7512 , name: "Burnt Part" },
 { id: 7513 , name: "Pocket Watch" },
@@ -4063,6 +4260,7 @@ const ITEMS = [
 { id: 7515 , name: "Marvelous Medal" },
 { id: 7516 , name: "Green Keycard" },
 { id: 7517 , name: "Gold Coin" },
+{ id: 7518 , name: "Women's Medal" },
 { id: 7519 , name: "Handsel" },
 { id: 7520 , name: "Please Be Rich" },
 { id: 7521 , name: "Burning Stone" },
@@ -4115,6 +4313,7 @@ const ITEMS = [
 { id: 7568 , name: "White Mask" },
 { id: 7569 , name: "Hammer of Wind" },
 { id: 7570 , name: "Temple Lottery Ticket" },
+{ id: 7571 , name: "Bruspetti's Diary" },
 { id: 7572 , name: "Ashy Necklace" },
 { id: 7573 , name: "Sparkling Necklace" },
 { id: 7574 , name: "Freezing Snow Powder" },
@@ -4127,12 +4326,17 @@ const ITEMS = [
 { id: 7581 , name: "Celebration Document" },
 { id: 7582 , name: "Jewel of Destruction" },
 { id: 7583 , name: "Evil Mind" },
+{ id: 7584 , name: "Guard's First Proof" },
+{ id: 7585 , name: "Guard's Second Proof" },
+{ id: 7586 , name: "Guard's Third Proof" },
+{ id: 7587 , name: "Guard's Fourth Proof" },
 { id: 7588 , name: "IPOD Coupon" },
 { id: 7589 , name: "Lettered Moon Snack 01" },
 { id: 7590 , name: "Lettered Moon Snack 02" },
 { id: 7591 , name: "Lettered Moon Snack 03" },
 { id: 7592 , name: "Lettered Moon Snack 04" },
 { id: 7593 , name: "Lettered Moon Snack 05" },
+{ id: 7594 , name: "Sonia's Letter" },
 { id: 7595 , name: "Special Sword" },
 { id: 7596 , name: "Special Shield" },
 { id: 7597 , name: "Magic Stone" },
@@ -4229,10 +4433,13 @@ const ITEMS = [
 { id: 7756 , name: "Sealed Book" },
 { id: 7757 , name: "Mithril" },
 { id: 7758 , name: "Star Crystal" },
+{ id: 7759 , name: "Geologist's Report" },
+{ id: 7760 , name: "Baba Yaga's Book" },
 { id: 7761 , name: "Magic Gourd Bottle" },
 { id: 7762 , name: "Pestle" },
 { id: 7763 , name: "Prickle" },
 { id: 7764 , name: "High Strength Adhesive" },
+{ id: 7765 , name: "Baba Yaga's Secret Medicine" },
 { id: 7766 , name: "Bok Choy" },
 { id: 7767 , name: "Chung E Cake" },
 { id: 7768 , name: "Squid" },
@@ -4262,10 +4469,16 @@ const ITEMS = [
 { id: 7792 , name: "Old" },
 { id: 7793 , name: "Golden Apple" },
 { id: 7794 , name: "The Crow of Destiny" },
+{ id: 7795 , name: "Mammi's Photo Album" },
+{ id: 7796 , name: "Author's Autograph" },
+{ id: 7797 , name: "Author's Memo" },
 { id: 7798 , name: "Fragment of Darkness" },
 { id: 7799 , name: "Crystal of Darkness" },
 { id: 7800 , name: "Golden Charm Apple" },
+{ id: 7801 , name: "Girl's Letter" },
 { id: 7802 , name: "Signature Notebook" },
+{ id: 7803 , name: "Beginner's Field Manual" },
+{ id: 7805 , name: "Brown Jenoss's Family Ring" },
 { id: 7806 , name: "God Anvil" },
 { id: 7807 , name: "God Mineral" },
 { id: 7808 , name: "God Hammer" },
@@ -4273,8 +4486,12 @@ const ITEMS = [
 { id: 7810 , name: "Symbol of Richness" },
 { id: 7811 , name: "Anvil" },
 { id: 7812 , name: "Symbol of Bravery" },
+{ id: 7813 , name: "Red Jenoss's Family Ring" },
+{ id: 7814 , name: "Green Jenoss's Family Ring" },
+{ id: 7815 , name: "Blue Jenoss's Family Ring" },
 { id: 7816 , name: "Symbol of Faith" },
 { id: 7817 , name: "Symbol of Peace" },
+{ id: 7818 , name: "Jessur's Necklace" },
 { id: 7819 , name: "Nokia 5300" },
 { id: 7820 , name: "Piece of Morocc Skin" },
 { id: 7821 , name: "Green Apple" },
@@ -4287,12 +4504,16 @@ const ITEMS = [
 { id: 7828 , name: "Valor Coin" },
 { id: 7829 , name: "Glory Coin" },
 { id: 7830 , name: "Goddess Tear" },
+{ id: 7831 , name: "Valkyrie's Token" },
 { id: 7832 , name: "Brynhild Armor Piece" },
+{ id: 7833 , name: "Hero's Remains" },
+{ id: 7834 , name: "Andvari's Ring" },
 { id: 7835 , name: "Dusk Glow" },
 { id: 7836 , name: "Dawn Essence" },
 { id: 7837 , name: "Cold Moonlight" },
 { id: 7838 , name: "Hazy Starlight" },
 { id: 7839 , name: "Crystal Key" },
+{ id: 7840 , name: "Valkyrie's Gift" },
 { id: 7841 , name: "Stained Piece Of Paper" },
 { id: 7842 , name: "Torn Piece Of Paper" },
 { id: 7843 , name: "Old Piece Of Paper" },
@@ -4308,6 +4529,7 @@ const ITEMS = [
 { id: 7853 , name: "iPod nano Raffle Ticket" },
 { id: 7854 , name: "Comodo Festival Ticket" },
 { id: 7855 , name: "Heart" },
+{ id: 7856 , name: "Girl's Bouquet" },
 { id: 7857 , name: "Hand-made Kitty Doll" },
 { id: 7858 , name: "Dragonball Yellow" },
 { id: 7859 , name: "Game Ticket" },
@@ -4329,7 +4551,9 @@ const ITEMS = [
 { id: 7875 , name: "Pirate Treasure" },
 { id: 7876 , name: "Golden Key" },
 { id: 7877 , name: "Red Ring" },
+{ id: 7878 , name: "Lusalka's Hair" },
 { id: 7879 , name: "Golden Thread" },
+{ id: 7880 , name: "Baba Yaga's Silver Spoon" },
 { id: 7881 , name: "Mystery Magic Book" },
 { id: 7882 , name: "Sharp Branch" },
 { id: 7883 , name: "Wooden Flute" },
@@ -4356,8 +4580,10 @@ const ITEMS = [
 { id: 7905 , name: "Rok Star Badge" },
 { id: 7906 , name: "Poppy Wreath" },
 { id: 7907 , name: "Bobbin Of Goddess" },
+{ id: 7908 , name: "Louise's Beauty Coupon" },
 { id: 7909 , name: "Stolen Cookie" },
 { id: 7910 , name: "Stolen Candy" },
+{ id: 7911 , name: "Yulia's Hat" },
 { id: 7912 , name: "Portable Snowman Machine" },
 { id: 7913 , name: "Battle Test Certificate" },
 { id: 7914 , name: "Ancient Language Document" },
@@ -4366,11 +4592,13 @@ const ITEMS = [
 { id: 7917 , name: "Magic Potion" },
 { id: 7918 , name: "Fragment Of Memory" },
 { id: 7919 , name: "Festival Ticket" },
+{ id: 7920 , name: "He's Arsenal" },
 { id: 7921 , name: "Essence Of Dragon" },
 { id: 7922 , name: "RWC Voucher Items" },
 { id: 7923 , name: "Krathong" },
 { id: 7928 , name: "Brazil National Flag" },
 { id: 7929 , name: "Gold Coin" },
+{ id: 7930 , name: "Devil's Cattle Ring" },
 { id: 7931 , name: "Poison Kit" },
 { id: 7932 , name: "Poison Herb Nerium" },
 { id: 7933 , name: "Poison Herb Rantana" },
@@ -4414,6 +4642,7 @@ const ITEMS = [
 { id: 7971 , name: "Unwritten Letter2" },
 { id: 7972 , name: "Oath Day Letter" },
 { id: 7973 , name: "Eternal Eggs" },
+{ id: 7974 , name: "Misty's Illusion Piece" },
 { id: 7975 , name: "Cupid Choco" },
 { id: 7976 , name: "Gf Magic Coin" },
 { id: 7977 , name: "Hunting Medal Badge" },
@@ -4458,6 +4687,7 @@ const ITEMS = [
 { id: 8017 , name: "Teddybear Kaho" },
 { id: 8018 , name: "Evil Wing Kaho" },
 { id: 8019 , name: "Kafra Band Kaho" },
+{ id: 8020 , name: "Boy's Cap Kaho" },
 { id: 8021 , name: "Majestic Goat Kaho" },
 { id: 8022 , name: "Bone Helm Kaho" },
 { id: 8023 , name: "Panda Hat Kaho" },
@@ -4542,8 +4772,10 @@ const ITEMS = [
 { id: 8105 , name: "Blue Fish Kaho" },
 { id: 8106 , name: "Beret Kaho" },
 { id: 8107 , name: "Helm Of Darkness Kaho" },
+{ id: 8108 , name: "Morrigane's Helm Kaho" },
 { id: 8109 , name: "Minstrel Kaho" },
 { id: 8110 , name: "Note Headphones Kaho" },
+{ id: 8111 , name: "Ulle's Kaho" },
 { id: 8112 , name: "Twin Ribbon Kaho" },
 { id: 8113 , name: "Elephant Hat Kaho" },
 { id: 8114 , name: "Chef Hat Kaho" },
@@ -4553,6 +4785,8 @@ const ITEMS = [
 { id: 8118 , name: "Feather Beret Kaho" },
 { id: 8119 , name: "Judge Hat Kaho" },
 { id: 8120 , name: "Magic Eyes Kaho" },
+{ id: 8121 , name: "Morpheus' Hood Kaho" },
+{ id: 8122 , name: "Frigg's Circlet Kaho" },
 { id: 8123 , name: "Giant Band Aid Kaho" },
 { id: 8124 , name: "Nest Hat Kaho" },
 { id: 8125 , name: "Captain Kaho" },
@@ -4560,6 +4794,7 @@ const ITEMS = [
 { id: 8127 , name: "Laurel Crown Kaho" },
 { id: 8128 , name: "Pirate Bandana Kaho" },
 { id: 8129 , name: "Brazilian Party Hat Kaho" },
+{ id: 8130 , name: "Angel's Kiss Kaho" },
 { id: 8131 , name: "Coronet Kaho" },
 { id: 8132 , name: "Puppy Hat Kaho" },
 { id: 8133 , name: "Angeling Pin Kaho" },
@@ -4627,13 +4862,17 @@ const ITEMS = [
 { id: 8196 , name: "Pirate Dagger Bell" },
 { id: 8197 , name: "Fish Head Hat Kaho" },
 { id: 8198 , name: "Balloon Hat Kaho" },
+{ id: 8199 , name: "Ninja's Scroll Bell" },
 { id: 8200 , name: "Orc Hero Headdress Kaho" },
 { id: 8201 , name: "Orc Helm Kaho" },
+{ id: 8202 , name: "Hyuke's Black Cat Ears Kaho" },
 { id: 8203 , name: "Bread Envelope Hat Kaho" },
 { id: 8204 , name: "Pagdayaw Kaho" },
 { id: 8205 , name: "Bone Head Kaho" },
 { id: 8206 , name: "Gas Mask Bell" },
+{ id: 8207 , name: "Bride's Flower Crown Kaho" },
 { id: 8208 , name: "Yellow Bandana Kaho" },
+{ id: 8209 , name: "Shaman's Coif Kaho" },
 { id: 8210 , name: "Raccoon Hat Kaho" },
 { id: 8211 , name: "Shark Hat Kaho" },
 { id: 8212 , name: "Necromancer Hood Kaho" },
@@ -4650,14 +4889,17 @@ const ITEMS = [
 { id: 8223 , name: "Noble Hat Kaho" },
 { id: 8224 , name: "Wandering Wolf Hat Kaho" },
 { id: 8225 , name: "Wind Milestone Kaho" },
+{ id: 8226 , name: "Gentleman's Pipe Bell" },
 { id: 8227 , name: "Grand Peco Hairband Kaho" },
 { id: 8228 , name: "Gangster Scarf Bell" },
 { id: 8229 , name: "Old Valkyrie Helm Kaho" },
 { id: 8230 , name: "A-yam Kaho" },
 { id: 8231 , name: "Large Hibiscus Kaho" },
+{ id: 8232 , name: "Wanderer's Sakkat Kaho" },
 { id: 8233 , name: "King Tiger Doll Kaho" },
 { id: 8234 , name: "Aries Crown Kaho" },
 { id: 8235 , name: "Katyusha Flower Kaho" },
+{ id: 8236 , name: "Sigrun's Wings[1]" },
 { id: 8237 , name: "Ice Ear Wing[1]" },
 { id: 8238 , name: "Filir Wings[1]" },
 { id: 8239 , name: "Hawk Eye[1]" },
@@ -4708,6 +4950,7 @@ const ITEMS = [
 { id: 8284 , name: "Apple of Archer Kaho" },
 { id: 8285 , name: "Dragon Wing Kaho" },
 { id: 8286 , name: "Carnival Hat Kaho" },
+{ id: 8287 , name: "Pirate's Pride Kaho" },
 { id: 8288 , name: "Imp Hat Kaho" },
 { id: 8289 , name: "Pink Pajamas Hat Kaho" },
 { id: 8290 , name: "Heart Wing Hairband Kaho" },
@@ -4737,7 +4980,9 @@ const ITEMS = [
 { id: 8314 , name: "Aqua Balloon Hat Kaho" },
 { id: 8315 , name: "Capricorn Diadem Kaho" },
 { id: 8316 , name: "Strawberry Hat Kaho" },
+{ id: 8317 , name: "Asgard's Blessing Kaho" },
 { id: 8318 , name: "Rose Of Crimson Bell" },
+{ id: 8319 , name: "Noah's Hat Kaho" },
 { id: 8320 , name: "Kerchief Kaho" },
 { id: 8321 , name: "Beer Hat Kaho" },
 { id: 8322 , name: "Magic Rabbit Hat Kaho" },
@@ -4749,6 +4994,7 @@ const ITEMS = [
 { id: 8328 , name: "Little Feather Hat Kaho" },
 { id: 8329 , name: "Injured Eyepatch[1]" },
 { id: 8330 , name: "Heart Eye Bandage[1]" },
+{ id: 8331 , name: "Black Devil's Mask[1]" },
 { id: 8332 , name: "Star Goggle[1]" },
 { id: 8333 , name: "Lord of the Dead Helm Kaho" },
 { id: 8334 , name: "Kobold Archer Cap Kaho" },
@@ -4762,6 +5008,7 @@ const ITEMS = [
 { id: 8342 , name: "Rainbow Kaho" },
 { id: 8343 , name: "SantaPoring Cap Kaho" },
 { id: 8344 , name: "Dark Knight Mask Kaho" },
+{ id: 8345 , name: "Ayothaya King's Hat Kaho" },
 { id: 8346 , name: "White Deviruchi Hat Kaho" },
 { id: 8347 , name: "Dragonfly Monocle[1]" },
 { id: 8348 , name: "Shutter Glasses[1]" },
@@ -4811,6 +5058,7 @@ const ITEMS = [
 { id: 8392 , name: "Splash Hat Kaho" },
 { id: 8393 , name: "Rabbit Bonnet Kaho" },
 { id: 8394 , name: "White School Hat Kaho" },
+{ id: 8395 , name: "Bride's Bow Kaho" },
 { id: 8396 , name: "Ignis Cap Kaho" },
 { id: 8397 , name: "Aqua Quartz Crown Kaho" },
 { id: 8398 , name: "Indian Feathers Kaho" },
@@ -4841,6 +5089,7 @@ const ITEMS = [
 { id: 8423 , name: "Evolved Demon Student Hat Kaho" },
 { id: 8424 , name: "Aquarius Diadem Kaho" },
 { id: 8425 , name: "Octopus Hat Kaho" },
+{ id: 8426 , name: "Gentleman's Hat Kaho" },
 { id: 8427 , name: "Mini Crown Kaho" },
 { id: 8428 , name: "Black Wool Hat Kaho" },
 { id: 8429 , name: "Sagittarius Diadem Kaho" },
@@ -4873,6 +5122,7 @@ const ITEMS = [
 { id: 8456 , name: "Mask Of Aegir[1]" },
 { id: 8457 , name: "Mask Of Gaia[1]" },
 { id: 8458 , name: "Wing Glasses[1]" },
+{ id: 8459 , name: "Takius's Blindfold[1]" },
 { id: 8460 , name: "Virgo Crown Kaho" },
 { id: 8461 , name: "I LOVE CHINA Kaho" },
 { id: 8462 , name: "Pinwheel Hairpin Kaho" },
@@ -4959,8 +5209,11 @@ const ITEMS = [
 { id: 8544 , name: "Yellow Side Ribbons[1]" },
 { id: 8545 , name: "Feather Shin Tilt Hat" },
 { id: 8546 , name: "Flapping Evil Marching Hat[1]" },
+{ id: 8547 , name: "Gentleman's Hat" },
 { id: 8549 , name: "Imperial Pride" },
+{ id: 8550 , name: "Lady's Splendor" },
 { id: 8551 , name: "Moogle Ball" },
+{ id: 8552 , name: "Valentine's Topper" },
 { id: 8553 , name: "Minor Old Valkyrie Helm[1]" },
 { id: 8554 , name: "German Captain Kaho" },
 { id: 8555 , name: "Blood Sucker Bell" },
@@ -4975,15 +5228,19 @@ const ITEMS = [
 { id: 8564 , name: "Drooping Panda Kaho" },
 { id: 8565 , name: "Rice Ball Hat Kaho" },
 { id: 8566 , name: "Taurus Diadem Kaho" },
+{ id: 8567 , name: "Loner's Box Kaho" },
 { id: 8568 , name: "Hat Kaho" },
 { id: 8569 , name: "Mr. Smile Bell" },
+{ id: 8570 , name: "Cat's Footprint Hairpin Kaho" },
 { id: 8571 , name: "Blazing Sun Kaho" },
 { id: 8572 , name: "Egg Shell Kaho" },
+{ id: 8573 , name: "Whikebine's Black Cat Ears Kaho" },
 { id: 8574 , name: "Nutshell Kaho" },
 { id: 8575 , name: "Drooping Domovoi Kaho" },
 { id: 8576 , name: "Elder Crown Kaho" },
 { id: 8577 , name: "Jack be Dandy Kaho" },
 { id: 8578 , name: "Classic Hat Kaho" },
+{ id: 8579 , name: "Carmen Miranda's Hat Kaho" },
 { id: 8580 , name: "Goat Horn Kaho" },
 { id: 8581 , name: "Aquaring Hat Kaho" },
 { id: 8582 , name: "Luxurious Wedding Veil Kaho" },
@@ -4993,12 +5250,14 @@ const ITEMS = [
 { id: 8586 , name: "Umbrella Hat Kaho" },
 { id: 8587 , name: "Hibiscus Kaho" },
 { id: 8588 , name: "Wandering Minstrel Hat Kaho" },
+{ id: 8589 , name: "Loner's Box (B) Kaho" },
 { id: 8590 , name: "Special Strawberry In Mouth Bell" },
 { id: 8591 , name: "Chicken Of Love Hat Kaho" },
 { id: 8592 , name: "Zaha Doll Hat Kaho" },
 { id: 8593 , name: "Love Dad Cap Kaho" },
 { id: 8594 , name: "Pipe Bell" },
 { id: 8595 , name: "RWC 2010 Indonesia Kaho" },
+{ id: 8596 , name: "Magician's Night Cap Kaho" },
 { id: 8597 , name: "Pizza Hat Kaho" },
 { id: 8598 , name: "Shining Sunflower Kaho" },
 { id: 8599 , name: "Dolor Hat Kaho" },
@@ -5030,6 +5289,7 @@ const ITEMS = [
 { id: 8813 , name: "Easter Ribbon" },
 { id: 8814 , name: "Rental Coin" },
 { id: 8815 , name: "Old Orange Box" },
+{ id: 8816 , name: "Old Dracula's Mix" },
 { id: 8817 , name: "Rekenber Voucher" },
 { id: 8830 , name: "Jewel Cutter" },
 { id: 8831 , name: "Oridecon Jewel Cutter" },
@@ -5067,6 +5327,7 @@ const ITEMS = [
 { id: 8864 , name: "Thanksgiving Pumpkin Pie" },
 { id: 8865 , name: "Thanksgiving Ale" },
 { id: 8866 , name: "Thanksgiving Pilgrim Hat" },
+{ id: 8872 , name: "Ashe's Armor Piece" },
 { id: 8873 , name: "Novice Strong Dagger[4]" },
 { id: 8874 , name: "Copper Coin" },
 { id: 8875 , name: "Bronze Coin" },
@@ -5074,6 +5335,13 @@ const ITEMS = [
 { id: 8877 , name: "Gold Coin" },
 { id: 8878 , name: "Platinum Coin" },
 { id: 8879 , name: "Diamond Coin" },
+{ id: 8880 , name: "GM Seiren's Condensed White Potion" },
+{ id: 8881 , name: "GM Sushi's Sushi" },
+{ id: 8882 , name: "BlackTalon's Dusk Glow" },
+{ id: 8883 , name: "GM Boreas' Jellopy" },
+{ id: 8884 , name: "GM Muui's TCG Card" },
+{ id: 8885 , name: "GM Shiris' Peco Peco Feather" },
+{ id: 8886 , name: "GM Howl's Yggdrasil Berry" },
 { id: 8887 , name: "Crystal Coin" },
 { id: 8888 , name: "Male Hairstyle Notes" },
 { id: 8889 , name: "Female Hairstyle Notes" },
@@ -5088,6 +5356,7 @@ const ITEMS = [
 { id: 8898 , name: "Cloth Napkin" },
 { id: 8899 , name: "Smelly Rag" },
 { id: 8900 , name: "Talon Coin" },
+{ id: 8901 , name: "Chiqita's Jewelry Box" },
 { id: 8902 , name: "Pumpkin Coin" },
 { id: 8903 , name: "Golden Pumpkin Coin" },
 { id: 8904 , name: "Trick Or Treat Bag" },
@@ -5110,7 +5379,10 @@ const ITEMS = [
 { id: 8922 , name: "Strange Piece Of Paper" },
 { id: 8923 , name: "Translated Document" },
 { id: 8924 , name: "Legend of Lord Kaho" },
+{ id: 8925 , name: "Fragment of Lord Kaho's Horns" },
+{ id: 8926 , name: "Reforged Lord Kaho's Horns" },
 { id: 8927 , name: "Spirit Box" },
+{ id: 8928 , name: "Lord Kaho's Spirit Essence" },
 { id: 8929 , name: "100 Talon Cash Ticket" },
 { id: 8930 , name: "Easter Egg" },
 { id: 8931 , name: "Golden Easter Egg" },
@@ -5135,8 +5407,12 @@ const ITEMS = [
 { id: 8950 , name: "Brandy" },
 { id: 8951 , name: "Spammers Heaven" },
 { id: 8952 , name: "Seductive Bathory" },
+{ id: 8953 , name: "Sting's Slap" },
 { id: 8954 , name: "Blossoming Geographer" },
 { id: 8955 , name: "Drip of Yggdrasil" },
+{ id: 8956 , name: "Venatu's Beep" },
+{ id: 8957 , name: "Myst Case's Surprise" },
+{ id: 8958 , name: "Matyr's Mix" },
 { id: 8959 , name: "50 Talon Cash Ticket" },
 { id: 8960 , name: "20 Talon Cash Ticket" },
 { id: 8961 , name: "Simple Pickaxe" },
@@ -5150,18 +5426,22 @@ const ITEMS = [
 { id: 8969 , name: "Hallo2k9 Silver Coin" },
 { id: 8970 , name: "Hallo2k9 Gold Coin" },
 { id: 8971 , name: "Mysterious Pendant" },
+{ id: 8972 , name: "Krispia's Key" },
 { id: 8973 , name: "Event Deviling Hat" },
 { id: 8974 , name: "Yellow Giftbox Piece" },
 { id: 8975 , name: "Blue Giftbox Piece" },
 { id: 8976 , name: "Green Giftbox Piece" },
 { id: 8977 , name: "Red Giftbox Piece" },
 { id: 8978 , name: "Christmas Giftbox" },
+{ id: 8979 , name: "Valkyrie's Feather" },
 { id: 8980 , name: "First Piece of Ballad" },
 { id: 8981 , name: "Second Piece of Ballad" },
 { id: 8982 , name: "Third Piece of Ballad" },
+{ id: 8983 , name: "Leonid's Ballad" },
 { id: 8984 , name: "Small Heart" },
 { id: 8985 , name: "Tough Rope" },
 { id: 8986 , name: "Waxy Red Candle" },
+{ id: 8987 , name: "Marco's Necklet" },
 { id: 8988 , name: "Kafra Wings Ring" },
 { id: 8989 , name: "Envelope of Photos" },
 { id: 8990 , name: "Surprise Box" },
@@ -5192,6 +5472,7 @@ const ITEMS = [
 { id: 10003 , name: "Transparent Head Protector" },
 { id: 10004 , name: "Pacifier" },
 { id: 10005 , name: "Wig" },
+{ id: 10006 , name: "Queen's Hair Ornament" },
 { id: 10007 , name: "Silk Ribbon" },
 { id: 10008 , name: "Punisher" },
 { id: 10009 , name: "Wild Flower" },
@@ -5205,6 +5486,7 @@ const ITEMS = [
 { id: 10017 , name: "Bark Shorts" },
 { id: 10018 , name: "Monkey Circlet" },
 { id: 10019 , name: "Red Scarf" },
+{ id: 10020 , name: "Grave Keeper's Sword" },
 { id: 10021 , name: "Circular Headgear" },
 { id: 10022 , name: "Gold Earring" },
 { id: 10023 , name: "Green Jewel Bag" },
@@ -5216,6 +5498,7 @@ const ITEMS = [
 { id: 10029 , name: "Jade Trinket" },
 { id: 10030 , name: "Summer Fan" },
 { id: 10031 , name: "Ring Of Death" },
+{ id: 10032 , name: "Queen's Coronet" },
 { id: 10033 , name: "Afro" },
 { id: 10034 , name: "Masked Ball" },
 { id: 10035 , name: "Spring" },
@@ -5240,6 +5523,7 @@ const ITEMS = [
 { id: 11008 , name: "Biographical Dictionary Copy Edition" },
 { id: 11009 , name: "Adventure Story Vol.2" },
 { id: 11010 , name: "Battlegrounds Catalog" },
+{ id: 11011 , name: "Varmunt's Note" },
 { id: 11012 , name: "Expedition Report" },
 { id: 11013 , name: "Expedition Report Vol1" },
 { id: 11014 , name: "Expedition Report Vol2" },
@@ -5340,8 +5624,10 @@ const ITEMS = [
 { id: 12128 , name: "Royal Cooking Kit" },
 { id: 12129 , name: "Fantastic Cooking Kit" },
 { id: 12130 , name: "Cookie Bag" },
+{ id: 12132 , name: "Santa's Bag" },
 { id: 12134 , name: "Red Envelope" },
 { id: 12135 , name: "Green Ale" },
+{ id: 12136 , name: "Women's Bundle" },
 { id: 12137 , name: "First Stage Prize" },
 { id: 12138 , name: "Second Stage Prize" },
 { id: 12139 , name: "Third Stage Prize" },
@@ -5389,6 +5675,8 @@ const ITEMS = [
 { id: 12181 , name: "Spearman Mercenary Summon Scroll Level 9" },
 { id: 12182 , name: "Spearman Mercenary Summon Scroll Level 10" },
 { id: 12183 , name: "Holy Arrow Quiver" },
+{ id: 12184 , name: "Mercenary's Red Potion" },
+{ id: 12185 , name: "Mercenary's Blue Potion" },
 { id: 12186 , name: "Old Red Box" },
 { id: 12187 , name: "Old Green Box" },
 { id: 12189 , name: "Old Red Box" },
@@ -5430,6 +5718,7 @@ const ITEMS = [
 { id: 12250 , name: "Steamed Tongue" },
 { id: 12251 , name: "Steamed Desert Scorpions" },
 { id: 12252 , name: "Dragon Breath Cocktail" },
+{ id: 12253 , name: "Hwergelmir's Tonic" },
 { id: 12254 , name: "Cooked Nine Tail" },
 { id: 12255 , name: "Immortal Stew" },
 { id: 12256 , name: "PRO Gift Box" },
@@ -5502,7 +5791,13 @@ const ITEMS = [
 { id: 12339 , name: "Treasure Edition Box" },
 { id: 12340 , name: "Chewy Rice Powder" },
 { id: 12341 , name: "Special Alloy Trap Box" },
+{ id: 12342 , name: "Manuk's Opportunity" },
+{ id: 12343 , name: "Manuk's Courage" },
+{ id: 12344 , name: "Pinguicula's Fruit Jam" },
+{ id: 12345 , name: "Luciola's Honey Herb Jam" },
 { id: 12346 , name: "Unripe Acorn" },
+{ id: 12348 , name: "Manuk's Faith" },
+{ id: 12349 , name: "Cornus's Tear" },
 { id: 12352 , name: "Dungeon Teleport Scroll 3" },
 { id: 12353 , name: "Small Jug" },
 { id: 12354 , name: "Buche De Noel" },
@@ -5524,6 +5819,7 @@ const ITEMS = [
 { id: 12370 , name: "Romance Of Girl" },
 { id: 12371 , name: "Lithograph Of Magic" },
 { id: 12372 , name: "Contract Of Hell" },
+{ id: 12373 , name: "Boy's Pure Heart" },
 { id: 12374 , name: "Ice Fireworks" },
 { id: 12375 , name: "Akaraje" },
 { id: 12376 , name: "Mysterious Can2" },
@@ -5774,6 +6070,7 @@ const ITEMS = [
 { id: 12742 , name: "Valentine Gift Box" },
 { id: 12743 , name: "Valentine Gift Box" },
 { id: 12744 , name: "Chocolate Box" },
+{ id: 12745 , name: "Valentine's Emblem Box" },
 { id: 12746 , name: "Destruction Scroll" },
 { id: 12747 , name: "Royal Scroll" },
 { id: 12748 , name: "Immune Scroll" },
@@ -5840,6 +6137,7 @@ const ITEMS = [
 { id: 13017 , name: "Ice Pick[1]" },
 { id: 13018 , name: "Sucsamad[1]" },
 { id: 13019 , name: "Ginnungagap[1]" },
+{ id: 13020 , name: "Warrior's Balmung" },
 { id: 13021 , name: "Refined Combat Knife" },
 { id: 13022 , name: "Refined Dagger of Counter" },
 { id: 13023 , name: "Refined Ashura" },
@@ -5871,6 +6169,7 @@ const ITEMS = [
 { id: 13049 , name: "Lacma[1]" },
 { id: 13050 , name: "Eden Group Dagger I" },
 { id: 13051 , name: "Eden Group Dagger II" },
+{ id: 13052 , name: "Traveler's Dagger" },
 { id: 13053 , name: "Gingerbread Stiletto" },
 { id: 13061 , name: "Black Wing[1]" },
 { id: 13062 , name: "Ancient Dagger" },
@@ -5882,6 +6181,7 @@ const ITEMS = [
 { id: 13078 , name: "Mikatsuki[2]" },
 { id: 13086 , name: "Goldsmithing Dagger[3]" },
 { id: 13089 , name: "FaceWorm Leg[4]" },
+{ id: 13090 , name: "Faceworm Queen's Leg[3]" },
 { id: 13100 , name: "Six Shooter[1]" },
 { id: 13101 , name: "Six Shooter[2]" },
 { id: 13102 , name: "Crimson Bolt[1]" },
@@ -5896,6 +6196,7 @@ const ITEMS = [
 { id: 13112 , name: "Eden Group Revolver I" },
 { id: 13113 , name: "Eden Group Revolver II" },
 { id: 13114 , name: "Eden Group Revolver III" },
+{ id: 13120 , name: "Heaven's Feather & Hell's Fire[2]" },
 { id: 13122 , name: "Altea & Ares[2]" },
 { id: 13150 , name: "Branch[3]" },
 { id: 13151 , name: "Cyclone[1]" },
@@ -5978,10 +6279,12 @@ const ITEMS = [
 { id: 13417 , name: "Glorious Rapier" },
 { id: 13418 , name: "Glorious Holy Avenger" },
 { id: 13419 , name: "Holy Saber" },
+{ id: 13420 , name: "Honglyun's Sword[1]" },
 { id: 13421 , name: "Roubel Sword[1]" },
 { id: 13422 , name: "Flamberge" },
 { id: 13423 , name: "Eden Group Saber I" },
 { id: 13424 , name: "Eden Group Saber II" },
+{ id: 13425 , name: "Traveler's Sword" },
 { id: 13431 , name: "Chrome Metal Sword[2]" },
 { id: 13434 , name: "Eden Group Saber III" },
 { id: 13440 , name: "Ceremonial Sword[2]" },
@@ -6039,6 +6342,7 @@ const ITEMS = [
 { id: 14345 , name: "Animal Scroll" },
 { id: 14363 , name: "Warm Heart Scroll" },
 { id: 14408 , name: "Solar Scroll" },
+{ id: 14466 , name: "Valentine's Emblem Box" },
 { id: 14469 , name: "Ox Tail Egg" },
 { id: 14500 , name: "Life Insurrance Certificate" },
 { id: 14508 , name: "Zeny Pet Egg Scroll" },
@@ -6072,6 +6376,7 @@ const ITEMS = [
 { id: 14545 , name: "Field Manual 300%" },
 { id: 14546 , name: "I Love You Firecracker" },
 { id: 14547 , name: "Whiteday Firecracker" },
+{ id: 14548 , name: "Valentine's Day Firecracker" },
 { id: 14549 , name: "Birthday Firecracker" },
 { id: 14550 , name: "Xmas Firecracker" },
 { id: 14569 , name: "Knife Goblin Ring" },
@@ -6089,10 +6394,12 @@ const ITEMS = [
 { id: 14591 , name: "WoE Teleport Scroll" },
 { id: 14592 , name: "JOB Battle Manual" },
 { id: 14595 , name: "Unsealed Magic Spell" },
+{ id: 14596 , name: "Pierre's Treasure Box" },
 { id: 14597 , name: "Phreeoni Scroll" },
 { id: 14598 , name: "Ghostring Scroll" },
 { id: 14599 , name: "Greed Scroll" },
 { id: 14600 , name: "Mental Potion" },
+{ id: 14601 , name: "Tyr's Blessing" },
 { id: 14602 , name: "Tao Gunka Scroll" },
 { id: 14603 , name: "Mistress Scroll" },
 { id: 14604 , name: "Orc Hero Scroll" },
@@ -6102,6 +6409,7 @@ const ITEMS = [
 { id: 14608 , name: "Manchu-Han Imperial Feast" },
 { id: 14609 , name: "Spoiled Cuisine" },
 { id: 15000 , name: "Bone Plate[1]" },
+{ id: 15001 , name: "Odin's Blessing" },
 { id: 15002 , name: "Rune Plate[1]" },
 { id: 15007 , name: "Guardian Robe" },
 { id: 15008 , name: "Armor Of Flame" },
@@ -6138,6 +6446,7 @@ const ITEMS = [
 { id: 16003 , name: "Carga Mace[2]" },
 { id: 16004 , name: "Eden Group Mace I" },
 { id: 16005 , name: "Eden Group Mace II" },
+{ id: 16006 , name: "Traveler's Mace" },
 { id: 16007 , name: "Ephemeral Mjolnir" },
 { id: 16008 , name: "Yule Mace" },
 { id: 16010 , name: "Red Ether Bag[1]" },
@@ -6222,6 +6531,7 @@ const ITEMS = [
 { id: 18547 , name: "Campus Festival Hat" },
 { id: 18548 , name: "Taini Cap" },
 { id: 18549 , name: "Butterfly Hairpin[1]" },
+{ id: 18550 , name: "Asgard's Blessing[1]" },
 { id: 18551 , name: "Galaxy Circlet[1]" },
 { id: 18553 , name: "Mini Tree" },
 { id: 18554 , name: "King Prawn Hat" },
@@ -6231,6 +6541,7 @@ const ITEMS = [
 { id: 18562 , name: "Bone Hat[1]" },
 { id: 18563 , name: "Heart Wing Hairband[1]" },
 { id: 18564 , name: "Love Piece" },
+{ id: 18565 , name: "St Patrick's Hat[1]" },
 { id: 18566 , name: "Nut Donut In Mouth" },
 { id: 18567 , name: "Stretched Nose" },
 { id: 18569 , name: "Soft Sheep Hat" },
@@ -6255,6 +6566,7 @@ const ITEMS = [
 { id: 18595 , name: "Ancient Horns[1]" },
 { id: 18596 , name: "Sprout Hat" },
 { id: 18597 , name: "Mercury Riser[1]" },
+{ id: 18599 , name: "Black Devil's Mask" },
 { id: 18600 , name: "Cat Ear Beret[1]" },
 { id: 18601 , name: "Red Pom Band[1]" },
 { id: 18602 , name: "Watermelon Bite" },
@@ -6283,6 +6595,7 @@ const ITEMS = [
 { id: 18633 , name: "Pink Poring Clip" },
 { id: 18634 , name: "Green Poring Clip" },
 { id: 18635 , name: "Blue Poring Clip" },
+{ id: 18636 , name: "Bride's Bow" },
 { id: 18638 , name: "Pomelo Hat[1]" },
 { id: 18639 , name: "Navy Hat[1]" },
 { id: 18640 , name: "Starfish Band[1]" },
@@ -6300,6 +6613,7 @@ const ITEMS = [
 { id: 18653 , name: "Deviruchi Headphones[1]" },
 { id: 18654 , name: "Secret Society Hood[1]" },
 { id: 18655 , name: "Dragonfly Monocle" },
+{ id: 18656 , name: "Witch's Pumpkin Hat" },
 { id: 18659 , name: "Boitata Hat" },
 { id: 18660 , name: "Indian Feathers[1]" },
 { id: 18661 , name: "Japanese Samurai Helmet[1]" },
@@ -6394,6 +6708,7 @@ const ITEMS = [
 { id: 18773 , name: "Advanced Fin Helm" },
 { id: 18774 , name: "Advanced Assassin Mask" },
 { id: 18775 , name: "Advanced Welding Mask" },
+{ id: 18776 , name: "Advanced Angel's Kiss[1]" },
 { id: 18778 , name: "Pink Bunny Band" },
 { id: 18779 , name: "RWC Crown Of Victory (1st)[1]" },
 { id: 18780 , name: "RWC Crown Of Victory (2nd)[1]" },
@@ -6402,6 +6717,7 @@ const ITEMS = [
 { id: 18786 , name: "Anemos Mask" },
 { id: 18789 , name: "Poison Spore Hat[1]" },
 { id: 18790 , name: "Rainbow Poring Hat[1]" },
+{ id: 18793 , name: "Magician's Night Cap[1]" },
 { id: 18796 , name: "RWC Crown Of Victory (8th)[1]" },
 { id: 18797 , name: "Blue Angel Wing[1]" },
 { id: 18798 , name: "Pink Angel Wing[1]" },
@@ -6486,6 +6802,7 @@ const ITEMS = [
 { id: 19522 , name: "Mini Crown" },
 { id: 19538 , name: "Full Moon" },
 { id: 19543 , name: "Oliver Wolf Hood Costume" },
+{ id: 19545 , name: "Boy's Cap Costume" },
 { id: 19546 , name: "Valkyrie Helm Costume" },
 { id: 19547 , name: "Deviruchi Hat Costume" },
 { id: 19548 , name: "Frog Hat Costume" },
@@ -6495,6 +6812,7 @@ const ITEMS = [
 { id: 19552 , name: "Romantic Flower Costume" },
 { id: 19554 , name: "Hahoe Mask Costume" },
 { id: 19577 , name: "10th Anniversary Poring Costume" },
+{ id: 19581 , name: "Adventurer's Hat Costume" },
 { id: 19589 , name: "Black Flying Angel Costume" },
 { id: 19649 , name: "White Cat Ear Costume" },
 { id: 19661 , name: "Sweet Bonnet Costume" },
@@ -6544,6 +6862,8 @@ const ITEMS = [
 { id: 20031 , name: "Xmas Rudolph Hairband" },
 { id: 20032 , name: "Snowflake Coin" },
 { id: 20033 , name: "Clump of Snow" },
+{ id: 20034 , name: "Snowman's Nose" },
+{ id: 20035 , name: "Snowman's Hat" },
 { id: 20036 , name: "Winter Scarf Brown" },
 { id: 20037 , name: "Winter Scarf Green" },
 { id: 20038 , name: "Winter Scarf Purple" },
@@ -6662,7 +6982,10 @@ const ITEMS = [
 { id: 20174 , name: "Winter Scarf Blue" },
 { id: 20175 , name: "Burning Crown" },
 { id: 20176 , name: "Friend Wanted Costume" },
+{ id: 20177 , name: "Valentine's Topper Costume" },
+{ id: 20178 , name: "Gentleman's Hat Costume" },
 { id: 20179 , name: "Lupercalia Ring" },
+{ id: 20180 , name: "Loner's Box Costume" },
 { id: 20181 , name: "Crown of Saint Costume" },
 { id: 20182 , name: "Butterfly Barrette Costume" },
 { id: 20183 , name: "Fancy Spring Hat Costume" },
@@ -6748,6 +7071,7 @@ const ITEMS = [
 { id: 20265 , name: "Ninja Scroll Of Tsunade Costume" },
 { id: 20266 , name: "Gryphon Hairband Costume" },
 { id: 20267 , name: "Gigant Helm Costume" },
+{ id: 20268 , name: "Lady's Feather Hat Costume" },
 { id: 20269 , name: "Sepia Cap Costume" },
 { id: 20270 , name: "Clock Tower Manager Headset Costume" },
 { id: 20271 , name: "Wind of the Prairie Costume" },
@@ -6847,6 +7171,7 @@ const ITEMS = [
 { id: 20414 , name: "Purple Waving Winter Scarf" },
 { id: 20415 , name: "Pink Waving Winter Scarf" },
 { id: 20416 , name: "White Waving Winter Scarf" },
+{ id: 20417 , name: "Santa's Bag Bound" },
 { id: 20419 , name: "Fortune of the Dog" },
 { id: 20420 , name: "Fortune of the Rabbit" },
 { id: 20421 , name: "Fortune of the Snake" },
@@ -6856,6 +7181,11 @@ const ITEMS = [
 { id: 20425 , name: "Santa Hairband Costume" },
 { id: 20426 , name: "Shrine Maiden Hat Costume" },
 { id: 20427 , name: "White Cat Hood Costume" },
+{ id: 20430 , name: "Monkey King's Helm" },
+{ id: 20431 , name: "Monkey King's Helm of Longevity" },
+{ id: 20432 , name: "Monkey King's Helm of Abundance" },
+{ id: 20433 , name: "Monkey King's Helm of Mischief" },
+{ id: 20434 , name: "Monkey King's Helm of Riches" },
 { id: 20435 , name: "9th Anniversary Celebration Costume" },
 { id: 20436 , name: "Very Cute Doll Hat Costume" },
 { id: 20437 , name: "Little Aquarium Costume" },
@@ -6897,7 +7227,9 @@ const ITEMS = [
 { id: 20473 , name: "Holy Sacrament Costume" },
 { id: 20474 , name: "Vicious Aura Costume [L]" },
 { id: 20475 , name: "Red Vicious Aura Costume [L]" },
+{ id: 20476 , name: "Old King's Crown Costume" },
 { id: 20477 , name: "Rosary Necklace Costume" },
+{ id: 20478 , name: "Celine's Ribbon Costume" },
 { id: 20479 , name: "Ribbon Of Sting Costume" },
 { id: 20480 , name: "White Wool Hat Costume" },
 { id: 20481 , name: "Peach Wool Hat Costume" },
@@ -6910,6 +7242,7 @@ const ITEMS = [
 { id: 20488 , name: "Happy Balloons Costume" },
 { id: 20489 , name: "Purple Crystal Tiara Costume" },
 { id: 20490 , name: "Wave Challenge Gift Box" },
+{ id: 20491 , name: "GM Gemini's Donut" },
 { id: 20492 , name: "Crimson GMC Gift Box" },
 { id: 20493 , name: "Cerulean GMC Gift Box" },
 { id: 20494 , name: "Saffron GMC Gift Box" },
@@ -6926,6 +7259,7 @@ const ITEMS = [
 { id: 20506 , name: "Soul Wing Costume" },
 { id: 20507 , name: "Puppy Hat Costume" },
 { id: 20508 , name: "Aqua Quartz Crown Costume" },
+{ id: 20509 , name: "Ayothaya King's Hat Costume" },
 { id: 20510 , name: "Pagdayaw Costume" },
 { id: 20511 , name: "Panda Hat Costume" },
 { id: 20512 , name: "Poring Hat Costume" },
@@ -6946,6 +7280,8 @@ const ITEMS = [
 { id: 20527 , name: "Poring Jelly" },
 { id: 20528 , name: "Glowing Golden Orb" },
 { id: 20529 , name: "Black Mushroom" },
+{ id: 20530 , name: "Gemini's Bell" },
+{ id: 20531 , name: "Baphomet's Shinbone" },
 { id: 20532 , name: "Dagger of Edda" },
 { id: 20533 , name: "Dagger of Edda Plans" },
 { id: 20534 , name: "2 Bronze Coin Ticket" },
@@ -6959,9 +7295,11 @@ const ITEMS = [
 { id: 20568 , name: "Old Purple Box Bound" },
 { id: 20569 , name: "Gift Box Bound" },
 { id: 20570 , name: "Old Blue Box Bound" },
+{ id: 20571 , name: "Ginnunggap's Gift" },
 { id: 20572 , name: "Saiyan Hair Kaho" },
 { id: 20573 , name: "Dragon Helm Gold Kaho" },
 { id: 20574 , name: "Rocket Helm Gold Kaho" },
+{ id: 20577 , name: "Beginner's Field Manual" },
 { id: 20578 , name: "Seppl Hat Costume" },
 { id: 20579 , name: "Survival Orb Costume [L]" },
 { id: 20580 , name: "Seraphim Coronet Costume" },
@@ -6978,6 +7316,7 @@ const ITEMS = [
 { id: 20591 , name: "Helmet of Orc Hero Costume" },
 { id: 20592 , name: "Amaretto" },
 { id: 20593 , name: "Sour Sidewinder" },
+{ id: 20594 , name: "Raydric's Tonic" },
 { id: 20595 , name: "Blank Upper Costume" },
 { id: 20596 , name: "Blank Middle Costume" },
 { id: 20597 , name: "Blank Lower Costume" },
@@ -7017,6 +7356,7 @@ const ITEMS = [
 { id: 20658 , name: "Flying Bats Costume" },
 { id: 20659 , name: "Bat Scarf Costume" },
 { id: 20660 , name: "Nekoring Hat Costume" },
+{ id: 20661 , name: "Captain's Hat Costume" },
 { id: 20662 , name: "Note Headphones Costume" },
 { id: 20663 , name: "White Piggy Bank Costume" },
 { id: 20664 , name: "Sakkat Costume" },
@@ -7067,6 +7407,7 @@ const ITEMS = [
 { id: 20710 , name: "Checkered Bandana Costume" },
 { id: 20711 , name: "Blue Rose Ornament Costume" },
 { id: 20712 , name: "Under Lamp Costume" },
+{ id: 20713 , name: "Pope's Crown Costume" },
 { id: 20714 , name: "Black Cat Hood Costume" },
 { id: 20715 , name: "Cat Ears Hat Costume" },
 { id: 20716 , name: "Poring Soap Pipe Costume" },
@@ -7126,9 +7467,11 @@ const ITEMS = [
 { id: 20773 , name: "War Princess Ribbon Costume" },
 { id: 20775 , name: "Box of Chocolates" },
 { id: 20776 , name: "Rainbow Star Costume" },
+{ id: 20777 , name: "I'm Watching You Costume" },
 { id: 20778 , name: "Tail Hat Costume" },
 { id: 20779 , name: "Flame Muffler Costume" },
 { id: 20780 , name: "Wolf Masquerade Costume" },
+{ id: 20781 , name: "Shura King's Pledge Costume" },
 { id: 20782 , name: "Cute Penguin Costume" },
 { id: 20783 , name: "Hanbok Bag" },
 { id: 20784 , name: "Deviruchi Hat Costume" },
@@ -7191,6 +7534,7 @@ const ITEMS = [
 { id: 20841 , name: "Warm Cat Muffler Costume" },
 { id: 20842 , name: "Blinking Eyes Costume" },
 { id: 20843 , name: "Black Magenta Ribbon Costume" },
+{ id: 20844 , name: "GM Lance's Bitter Tear" },
 { id: 20845 , name: "Fallen Angel Wing Ear Costume" },
 { id: 20846 , name: "Ghost Holiday Costume" },
 { id: 20847 , name: "Stole Of Angel Costume" },
@@ -7230,6 +7574,29 @@ const ITEMS = [
 { id: 20888 , name: "Fallen Angel Valletta Costume" },
 { id: 20889 , name: "Heart Card In Mouth Costume" },
 { id: 20890 , name: "Khalitzburg Helm Black Costume" },
+{ id: 20891 , name: "Venus' Love Box" },
+{ id: 20892 , name: "Radius' Blue Box" },
+{ id: 20893 , name: "Azul's Moosey Knapsack" },
+{ id: 20894 , name: "Zelda's Tri Box" },
+{ id: 20895 , name: "Mimi's Kitten Caboodle" },
+{ id: 20896 , name: "Spica's Starlight Box" },
+{ id: 20897 , name: "Rainbow's Pot of Gold" },
+{ id: 20898 , name: "Elixia's Flower Elysium" },
+{ id: 20899 , name: "Saen's Secret Stash" },
+{ id: 20900 , name: "Lance's Royal Hamper" },
+{ id: 20901 , name: "Phoenix's Nintendo Wii" },
+{ id: 20902 , name: "Sonder's Wonder Ponder Box" },
+{ id: 20903 , name: "Luna's Blazing Special" },
+{ id: 20904 , name: "Kuma's Honey Pot" },
+{ id: 20905 , name: "Seiren's Grand Chest" },
+{ id: 20906 , name: "Howl's Pandemonium Box" },
+{ id: 20907 , name: "Boreas' Doom Crate" },
+{ id: 20908 , name: "Shiris' Pouch of Quill" },
+{ id: 20909 , name: "Naus' Battlement Box" },
+{ id: 20910 , name: "Havoc's Pandora Box" },
+{ id: 20911 , name: "Cherri's Important Scrap Box" },
+{ id: 20912 , name: "Copal's Masquerade Box" },
+{ id: 20913 , name: "GM Saen's Blood Thirst" },
 { id: 20914 , name: "Punkish Cat Ears Costume" },
 { id: 20915 , name: "Diabolic Lapel Costume" },
 { id: 20916 , name: "False Ears Costume" },
@@ -7269,6 +7636,7 @@ const ITEMS = [
 { id: 20955 , name: "Magistrate Hat Costume" },
 { id: 20956 , name: "Power Of Thor Costume" },
 { id: 20957 , name: "Strawberry Hat Costume" },
+{ id: 20958 , name: "Bride's Flower Crown Costume" },
 { id: 20959 , name: "Fin Helm Costume" },
 { id: 20960 , name: "Love Birds Costume" },
 { id: 20961 , name: "Drooping Puppy Costume" },
@@ -7278,6 +7646,7 @@ const ITEMS = [
 { id: 20965 , name: "Puppy Ear Hat Costume" },
 { id: 20967 , name: "Blue Frill Ribbon Costume" },
 { id: 20968 , name: "Blue Rose Eyepatch Costume" },
+{ id: 20969 , name: "Idun's Green Apple Costume" },
 { id: 20970 , name: "Eleanor Yellow Wig Costume" },
 { id: 20971 , name: "Lolita Two Side Up Costume" },
 { id: 20972 , name: "Nidhogg White Wig Costume [U]" },
@@ -7329,6 +7698,7 @@ const ITEMS = [
 { id: 21018 , name: "Gemini Diadem Costume" },
 { id: 21019 , name: "Cancer Diadem Costume" },
 { id: 21020 , name: "BG Poison Bottle" },
+{ id: 21021 , name: "Mother's Kindness Costume" },
 { id: 21022 , name: "Morroc Kid Servant Costume [M]" },
 { id: 21023 , name: "Bouquet Hat Costume" },
 { id: 21024 , name: "Long Cat Ears Costume" },
@@ -7351,6 +7721,9 @@ const ITEMS = [
 { id: 21041 , name: "Protection Cloth Costume" },
 { id: 21042 , name: "Striking Hat Costume" },
 { id: 21043 , name: "Surpentarius Crown Costume" },
+{ id: 21044 , name: "TamTam's Crate Tier I" },
+{ id: 21045 , name: "TamTam's Crate Tier II" },
+{ id: 21046 , name: "TamTam's Crate Tier III" },
 { id: 21048 , name: "Magic Decoy Doll Costume" },
 { id: 21049 , name: "Chibi Beelzebub Hat Costume" },
 { id: 21050 , name: "I Love Games Costume" },
@@ -7446,6 +7819,8 @@ const ITEMS = [
 { id: 21146 , name: "Poporing Muffler Costume" },
 { id: 21147 , name: "Elephant Angel Costume [L]" },
 { id: 21148 , name: "Red Stocking Boots[1]" },
+{ id: 21149 , name: "Antonio's Coat[1]" },
+{ id: 21150 , name: "Antonio's Red Bag[1]" },
 { id: 21151 , name: "Der Meisterpinsel Costume" },
 { id: 21152 , name: "Dwarf Beard Costume" },
 { id: 21153 , name: "Long Fairy Hair Blonde Costume" },
@@ -7482,6 +7857,7 @@ const ITEMS = [
 { id: 21188 , name: "White Stole Costume" },
 { id: 21189 , name: "Yellow Stole Costume" },
 { id: 21190 , name: "Valkyrie Coin" },
+{ id: 21191 , name: "Valkyrie's Crown" },
 { id: 21192 , name: "Radiating Heart" },
 { id: 21193 , name: "Explosive Heart" },
 { id: 21194 , name: "Cold Heart" },
@@ -7503,6 +7879,7 @@ const ITEMS = [
 { id: 21210 , name: "[Visual] Resonate Aego Costume" },
 { id: 21211 , name: "Sleeping Sheep Costume [L]" },
 { id: 21212 , name: "Asgardian Tournament Entry" },
+{ id: 21213 , name: "Valkyrie's Hilt" },
 { id: 21214 , name: "White Clay Filler Costume" },
 { id: 21215 , name: "Alchemist Square Bag Costume [L]" },
 { id: 21216 , name: "Walking Desert Wolf Baby Costume [M]" },
@@ -7516,6 +7893,7 @@ const ITEMS = [
 { id: 21224 , name: "Poring On Shoulder Costume" },
 { id: 21225 , name: "Smiling Eyes Costume" },
 { id: 21226 , name: "Twin Cannon Costume" },
+{ id: 21227 , name: "Valkyrie's Effigy" },
 { id: 21228 , name: "Circus Token" },
 { id: 21229 , name: "Rabbit Food" },
 { id: 21230 , name: "White Rabbit Egg" },
@@ -7583,9 +7961,12 @@ const ITEMS = [
 { id: 21292 , name: "Halloween Poring Bag Costume" },
 { id: 21293 , name: "Thanatos Sword Costume" },
 { id: 21294 , name: "Mechanic Wing Costume" },
+{ id: 21295 , name: "[Visual] Whisper's Blessing Costume" },
 { id: 21298 , name: "Scorpio Crown Costume" },
 { id: 21299 , name: "Sagittarius Crown Costume" },
 { id: 21300 , name: "Capricon Crown Costume" },
+{ id: 21301 , name: "Wanderer's Sakkat Costume" },
+{ id: 21302 , name: "Valkyrie's Elixir" },
 { id: 21303 , name: "BG Kick Token" },
 { id: 21304 , name: "[Visual] Strange Lights Costume" },
 { id: 21305 , name: "[Visual] Falling Leaves Costume" },
@@ -7602,6 +7983,8 @@ const ITEMS = [
 { id: 21316 , name: "Driver Band Costume" },
 { id: 21317 , name: "Assassin Mask Costume" },
 { id: 21318 , name: "Bone Circlet Costume" },
+{ id: 21319 , name: "Adventurer's Backpack Costume" },
+{ id: 21320 , name: "[Visual] It's Snowing Costume" },
 { id: 21321 , name: "Concentration of Earth Costume" },
 { id: 21322 , name: "Gift of Panagia Costume" },
 { id: 21323 , name: "Phalanx Costume [M]" },
@@ -7674,11 +8057,13 @@ const ITEMS = [
 { id: 21397 , name: "Enforcer Cape[1]" },
 { id: 21398 , name: "Enforcer Shoes[1]" },
 { id: 21399 , name: "Elysian Herb" },
+{ id: 21400 , name: "Valkyrie's Aegis" },
 { id: 21413 , name: "Walking Baby Polar Bear Costume [M]" },
 { id: 21414 , name: "Camouflage Bunny Hood Costume" },
 { id: 21415 , name: "Secret Zipper Costume" },
 { id: 21416 , name: "Piamette Hairband Costume" },
 { id: 21417 , name: "Magic Rabbit Hat Costume" },
+{ id: 21418 , name: "Valkyrie's Lucent" },
 { id: 21419 , name: "Evil Scythe Costume" },
 { id: 21420 , name: "Brown Giant Cat Bag Costume" },
 { id: 21421 , name: "Sakura Wing Costume Costume" },
@@ -7686,10 +8071,22 @@ const ITEMS = [
 { id: 21423 , name: "Suit Collar Costume" },
 { id: 21424 , name: "Maiden Hat Costume" },
 { id: 21425 , name: "Bell Ribbon Costume" },
+{ id: 21426 , name: "Sigrun's Wings Costume" },
 { id: 21427 , name: "Red Glasses Costume" },
 { id: 21428 , name: "Blue Mage Hat Costume" },
+{ id: 21429 , name: "Carmen Miranda's Hat Costume" },
 { id: 21430 , name: "Imp Hat Costume" },
+{ id: 21431 , name: "Pirate's Pride Costume" },
 { id: 21433 , name: "Elysian Key" },
+{ id: 21434 , name: "Aqua's Saltwater Aquarium" },
+{ id: 21435 , name: "Blackstar's Autograph" },
+{ id: 21436 , name: "Creed's Hidden Cache" },
+{ id: 21437 , name: "Gowther's Universe Box" },
+{ id: 21438 , name: "Haru's Love Letter" },
+{ id: 21439 , name: "Xing's Bloody Skull Bag" },
+{ id: 21440 , name: "Alisa's Discount Coupon" },
+{ id: 21441 , name: "Mikzie's Mad Malice Box" },
+{ id: 21442 , name: "TamTam's Crate Tier IV" },
 { id: 21443 , name: "Blossom Relic Costume" },
 { id: 21444 , name: "Sword Relic Costume" },
 { id: 21445 , name: "Divine Relic Costume" },
@@ -7755,6 +8152,7 @@ const ITEMS = [
 { id: 21505 , name: "Angel Scarf Pink Costume" },
 { id: 21506 , name: "Angel Scarf White Costume" },
 { id: 21507 , name: "Sword Master Crown Costume" },
+{ id: 21508 , name: "Fallen Angel's Blessing Costume" },
 { id: 21509 , name: "Red Toy Syringe" },
 { id: 21510 , name: "Blue Toy Syringe" },
 { id: 21511 , name: "Gold Fox Ear Ribbon Costume" },
@@ -7785,12 +8183,18 @@ const ITEMS = [
 { id: 21536 , name: "Key of Insanity" },
 { id: 21537 , name: "Key of Despair" },
 { id: 21538 , name: "Key Fragment" },
+{ id: 21539 , name: "Thor's Sear" },
 { id: 21540 , name: "Blessed Veil Costume" },
 { id: 21541 , name: "Angel Ribbon Wing Costume" },
+{ id: 21542 , name: "Seraph's Circlet Blue Costume" },
+{ id: 21543 , name: "Seraph's Circlet Pink Costume" },
+{ id: 21544 , name: "Seraph's Circlet Red Costume" },
 { id: 21545 , name: "Blinking Sakura Princess Costume" },
 { id: 21546 , name: "Concentration of Darkness Costume" },
 { id: 21547 , name: "Frantic Look Costume" },
 { id: 21548 , name: "Sinister Horn Costume" },
+{ id: 21549 , name: "Starlight King's Crown Costume" },
+{ id: 21550 , name: "Starlight Queen's Crown Costume" },
 { id: 21551 , name: "Black Cat Backpack Costume" },
 { id: 21552 , name: "Leaf Umbrella Costume" },
 { id: 21553 , name: "Frog Hood Costume" },
@@ -7805,6 +8209,7 @@ const ITEMS = [
 { id: 21562 , name: "Protection Cloth Pink Costume" },
 { id: 21563 , name: "Royal Mantle Black Costume" },
 { id: 21564 , name: "Royal Mantle Winter Costume" },
+{ id: 21565 , name: "Reginleif's Ring" },
 { id: 21566 , name: "Satanic Bone Helm Costume" },
 { id: 21567 , name: "Apple of Archer Costume" },
 { id: 21568 , name: "Blue Hairband Costume" },
@@ -7830,7 +8235,9 @@ const ITEMS = [
 { id: 21588 , name: "Flying Katashiro Costume [L]" },
 { id: 21589 , name: "Camellia Ribbon Costume" },
 { id: 21590 , name: "Calabash Costume" },
+{ id: 21591 , name: "Broomrider's Broom Costume" },
 { id: 21592 , name: "Night Spell Broom Costume" },
+{ id: 21593 , name: "Broomrider's Hat Costume" },
 { id: 21594 , name: "Kitty Witch Hat Costume" },
 { id: 21595 , name: "Kitty Witch Hat Blue Costume" },
 { id: 21596 , name: "Kitty Witch Hat Red Costume" },
@@ -7924,6 +8331,9 @@ const ITEMS = [
 { id: 21685 , name: "Small Ribbons Green[1]" },
 { id: 21686 , name: "Small Ribbons Violet[1]" },
 { id: 21687 , name: "Small Ribbons White[1]" },
+{ id: 21688 , name: "Valkyrie's Amulet" },
+{ id: 21689 , name: "Valkyrie's Scroll" },
+{ id: 21690 , name: "Valkyrie's Squall" },
 { id: 21691 , name: "[Visual] Snow Powder Costume" },
 { id: 21692 , name: "Giant White Rabbit Costume" },
 { id: 21693 , name: "Coat On Back Costume" },
@@ -7972,6 +8382,7 @@ const ITEMS = [
 { id: 21736 , name: "Blossom Glasses Costume" },
 { id: 21737 , name: "Deviruchi Apron Costume" },
 { id: 21738 , name: "Glory Symbol Costume" },
+{ id: 21739 , name: "King's Twin Sword Costume" },
 { id: 21740 , name: "Poring Basket Costume" },
 { id: 21741 , name: "[Visual] Puriku Cap Costume" },
 { id: 21742 , name: "Puriku Doll Costume" },
@@ -7988,10 +8399,14 @@ const ITEMS = [
 { id: 21753 , name: "Waving Hair Bun Costume" },
 { id: 21754 , name: "Melon Headphones Costume" },
 { id: 21755 , name: "Blue Scuba Mask Costume" },
+{ id: 21756 , name: "King's Crown Costume" },
 { id: 21757 , name: "Professor Miniglasses Costume" },
 { id: 21758 , name: "Rebirth Circlet Costume" },
 { id: 21759 , name: "Adventure Cat Backpack Costume" },
 { id: 21760 , name: "[Visual] Kiel Hyre Spirit Costume" },
+{ id: 21761 , name: "Soleil's Sanguine Daydream" },
+{ id: 21762 , name: "Alura's Adornment" },
+{ id: 21763 , name: "Kite's Invitation Letter" },
 { id: 21764 , name: "Tasty Tree Branch" },
 { id: 21765 , name: "Vanaheim Gold" },
 { id: 21766 , name: "Samba Carnival Costume" },
@@ -8006,6 +8421,7 @@ const ITEMS = [
 { id: 21775 , name: "Niflheim Key Costume" },
 { id: 21776 , name: "Daehyon Sword Costume" },
 { id: 21777 , name: "Hooked Straw Hat Costume" },
+{ id: 21778 , name: "Astrologer's Hood Costume" },
 { id: 21779 , name: "Birthday Balloons Costume" },
 { id: 21780 , name: "Fish Cart Costume [L]" },
 { id: 21781 , name: "Fishbone Braid Hair Costume" },
@@ -8017,6 +8433,13 @@ const ITEMS = [
 { id: 21787 , name: "Tossing Noodle Costume" },
 { id: 21788 , name: "2021 Basic Summertime Box" },
 { id: 21789 , name: "2021 Pro Summertime Box" },
+{ id: 21790 , name: "Bobo's Boba" },
+{ id: 21791 , name: "Wolfchev's Nightcap" },
+{ id: 21792 , name: "Chepet's Match" },
+{ id: 21793 , name: "Dullahan's Ale" },
+{ id: 21794 , name: "Sippin' Galapagos" },
+{ id: 21795 , name: "Sleeper's Dream" },
+{ id: 21796 , name: "Mobster's Paradise" },
 { id: 21797 , name: "Bonus Summer Badge" },
 { id: 21798 , name: "CD In Mouth Costume" },
 { id: 21799 , name: "Katyusha Flower Costume" },
@@ -8124,6 +8547,7 @@ const ITEMS = [
 { id: 21904 , name: "Classy Blue Hair Costume" },
 { id: 21905 , name: "Fluffy Lovely Fox Costume [M]" },
 { id: 21906 , name: "Wolf Officer Hat Costume" },
+{ id: 21907 , name: "Prima's Diadem Costume" },
 { id: 21908 , name: "Inari Mask Costume" },
 { id: 21909 , name: "Stargazer Aura Costume [L]" },
 { id: 21910 , name: "Stargazer Scarf Costume" },
@@ -8143,6 +8567,7 @@ const ITEMS = [
 { id: 21924 , name: "Einherjar Mantle Costume" },
 { id: 21925 , name: "Faith Of Yggdrasil Costume" },
 { id: 21926 , name: "Guardian Helm Costume" },
+{ id: 21927 , name: "GM Spica's Star Badge" },
 { id: 21928 , name: "Love Piece Costume" },
 { id: 21929 , name: "Marin Crown Costume" },
 { id: 21930 , name: "Crushed Snowman Costume" },
@@ -8217,6 +8642,7 @@ const ITEMS = [
 { id: 21999 , name: "Backside Bell Ribbon Blue Costume" },
 { id: 22000 , name: "Witherless Rose" },
 { id: 22001 , name: "REACT Communicator" },
+{ id: 22002 , name: "Vanir's Ascension" },
 { id: 22003 , name: "Rune of Time" },
 { id: 22004 , name: "Rune of Vanaheim" },
 { id: 22005 , name: "Rune of Illusion" },
@@ -8229,6 +8655,7 @@ const ITEMS = [
 { id: 22012 , name: "Boitata Tree Branch" },
 { id: 22013 , name: "Broken Katana" },
 { id: 22014 , name: "Enhanced Variant Shoes[1]" },
+{ id: 22015 , name: "Advanced Angel's Reincarnation[1]" },
 { id: 22016 , name: "Piece of CPU" },
 { id: 22017 , name: "Gold Plating" },
 { id: 22018 , name: "Juperian Keycard" },
@@ -8251,6 +8678,7 @@ const ITEMS = [
 { id: 22508 , name: "Eden Group Mark" },
 { id: 22701 , name: "Pegasus Cotton Candy" },
 { id: 23000 , name: "Alpaca Hood Costume" },
+{ id: 23001 , name: "Rainbow Sigrun's Wings Costume" },
 { id: 23002 , name: "Fire Cartridge" },
 { id: 23003 , name: "Wind Cartridge" },
 { id: 23004 , name: "Earth Cartridge" },
@@ -8285,6 +8713,7 @@ const ITEMS = [
 { id: 28141 , name: "Guardian Knight Battle Axe[2]" },
 { id: 28200 , name: "End of the Horizon[1]" },
 { id: 28202 , name: "Southern Cross[1]" },
+{ id: 28484 , name: "Rebellion's Scarf[1]" },
 { id: 28485 , name: "Shinobi Sash[1]" },
 { id: 28502 , name: "Mob Scarf[1]" },
 { id: 28768 , name: "Platinum Dagger[3]" },
@@ -8528,6 +8957,11 @@ const ITEMS = [
 { id: 30237 , name: "[Visual] Dark Lord Cloak Costume" },
 { id: 30238 , name: "Lord of Death Shield Costume" },
 { id: 30239 , name: "Moonlight Bell Costume" },
+{ id: 30240 , name: "Quinn's Green Leaf Pudding" },
+{ id: 30241 , name: "Opanim's Fallen Feather" },
+{ id: 30242 , name: "Cydra's Magical Brush" },
+{ id: 30243 , name: "Shuzi's Nondescript Notebook" },
+{ id: 30244 , name: "Purveyor's Delivery Basket" },
 { id: 30245 , name: "Flower Crown Blue Costume" },
 { id: 30246 , name: "Flower Crown Red Costume" },
 { id: 30247 , name: "Flower Crown Yellow Costume" },
@@ -8706,6 +9140,7 @@ const ITEMS = [
 { id: 30454 , name: "Rachel & Abbey Storybook" },
 { id: 30455 , name: "Moving Island Storybook" },
 { id: 30456 , name: "Scaraba Hole Storybook" },
+{ id: 30457 , name: "Wolfchev's Laboratory Storybook" },
 { id: 30458 , name: "Nekomimi Cyber Headphone Yellow Costume" },
 { id: 30459 , name: "Ribbon Beret Costume" },
 { id: 30460 , name: "Rose Hair Blonde Costume" },
@@ -8914,6 +9349,7 @@ const ITEMS = [
 { id: 30663 , name: "Winter Tree Costume" },
 { id: 30664 , name: "Divine Dragonic Helm Costume" },
 { id: 30665 , name: "Leviathan Helm Costume" },
+{ id: 30666 , name: "Queen Anne's Revenge Costume" },
 { id: 30667 , name: "Scarlet Ear Costume" },
 { id: 30668 , name: "Hyper Novice Pony Blue Green Costume" },
 { id: 30669 , name: "Hyper Novice Pony Red Costume" },
@@ -9014,7 +9450,10 @@ const ITEMS = [
 { id: 30764 , name: "Valentine Crown Costume" },
 { id: 30765 , name: "Valentine Crown Blue Costume" },
 { id: 30766 , name: "Valentine Crown Purple Costume" },
+{ id: 30767 , name: "Reginleif's Elixir" },
+{ id: 30768 , name: "Prima's 'Granny' Pantie" },
 { id: 30769 , name: "Giant Teddy Bear Costume" },
+{ id: 30770 , name: "Valentine's Parfait Costume" },
 { id: 30771 , name: "Long Ribbon Twin Ponytails Costume" },
 { id: 30772 , name: "Long Twin Ponytails Costume" },
 { id: 30773 , name: "Maid Frills Costume" },
@@ -9037,6 +9476,7 @@ const ITEMS = [
 { id: 30790 , name: "Thanatos Dolor Mask Costume" },
 { id: 30791 , name: "Demi Freyja Wing Costume" },
 { id: 30792 , name: "Red Flower Hat Costume" },
+{ id: 30793 , name: "Astrologer's Hood Blue Costume" },
 { id: 30794 , name: "Bunbun Beret Costume" },
 { id: 30795 , name: "Bunbun Beret Blue Costume" },
 { id: 30796 , name: "Bunbun Beret Brown Costume" },
@@ -9093,6 +9533,7 @@ const ITEMS = [
 { id: 30848 , name: "Midgard Diadem Costume" },
 { id: 30849 , name: "Red Adventure Cap Costume" },
 { id: 30850 , name: "Twilight Helm Costume" },
+{ id: 30851 , name: "Specter's Crest Costume" },
 { id: 30852 , name: "Sharpshooter Hat Costume" },
 { id: 30853 , name: "Blue Magpie Wings Costume" },
 { id: 30854 , name: "Cerberus Devourer Costume" },
@@ -9104,6 +9545,7 @@ const ITEMS = [
 { id: 30860 , name: "Wonderful Long Ribbon Hair Costume" },
 { id: 30861 , name: "Wonderful Long Hair Costume" },
 { id: 30862 , name: "Midgard Insignia Costume" },
+{ id: 30863 , name: "Devil's Horns Costume" },
 { id: 30864 , name: "Kafra-Classified Elixir of Eternal Victory" },
 { id: 30865 , name: "Battle of the Nine Insignia" },
 { id: 30866 , name: "[Visual] Aurora On Clouds Costume" },
@@ -9187,12 +9629,6 @@ const QUESTS = [
                 "itemId": 1,
                 "quantity": 100000000
             }
-        ],
-        "results": [
-            {
-                "itemId": 2150,
-                "quantity": 1
-            }
         ]
     },
     {
@@ -9246,12 +9682,6 @@ const QUESTS = [
                 "itemId": 1,
                 "quantity": 100000000
             }
-        ],
-        "results": [
-            {
-                "itemId": 1745,
-                "quantity": 1
-            }
         ]
     },
     {
@@ -9300,12 +9730,6 @@ const QUESTS = [
             {
                 "itemId": 1,
                 "quantity": 100000000
-            }
-        ],
-        "results": [
-            {
-                "itemId": 1990,
-                "quantity": 1
             }
         ]
     },
@@ -9360,12 +9784,6 @@ const QUESTS = [
                 "itemId": 1,
                 "quantity": 100000000
             }
-        ],
-        "results": [
-            {
-                "itemId": 1190,
-                "quantity": 1
-            }
         ]
     },
     {
@@ -9414,12 +9832,6 @@ const QUESTS = [
             {
                 "itemId": 1,
                 "quantity": 100000000
-            }
-        ],
-        "results": [
-            {
-                "itemId": 1320,
-                "quantity": 1
             }
         ]
     },
@@ -9474,12 +9886,6 @@ const QUESTS = [
                 "itemId": 1,
                 "quantity": 100000000
             }
-        ],
-        "results": [
-            {
-                "itemId": 1913,
-                "quantity": 1
-            }
         ]
     },
     {
@@ -9528,12 +9934,6 @@ const QUESTS = [
             {
                 "itemId": 1,
                 "quantity": 100000000
-            }
-        ],
-        "results": [
-            {
-                "itemId": 1549,
-                "quantity": 1
             }
         ]
     },
@@ -9752,10 +10152,6 @@ const QUESTS = [
             {
                 "itemId": 996,
                 "quantity": 150
-            },
-            {
-                "itemId": 22010,
-                "quantity": 5
             },
             {
                 "itemId": 22010,
@@ -10380,6 +10776,4475 @@ const QUESTS = [
                 "quantity": 1
             }
         ]
+    },
+    {
+        "name": "Aegis shield bonus 1",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 959,
+                "quantity": 450
+            },
+            {
+                "itemId": 7149,
+                "quantity": 320
+            },
+            {
+                "itemId": 20205,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Aegis shield bonus 2",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7161,
+                "quantity": 410
+            },
+            {
+                "itemId": 916,
+                "quantity": 310
+            },
+            {
+                "itemId": 20205,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Aegis shield bonus 3",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7323,
+                "quantity": 250
+            },
+            {
+                "itemId": 918,
+                "quantity": 490
+            },
+            {
+                "itemId": 20205,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1200000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Aegis shield bonus 4",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1043,
+                "quantity": 270
+            },
+            {
+                "itemId": 7065,
+                "quantity": 370
+            },
+            {
+                "itemId": 20205,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1600000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Aegis shield bonus 5",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1053,
+                "quantity": 350
+            },
+            {
+                "itemId": 1096,
+                "quantity": 490
+            },
+            {
+                "itemId": 20205,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1200000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Aegis shield bonus 6",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1099,
+                "quantity": 440
+            },
+            {
+                "itemId": 941,
+                "quantity": 490
+            },
+            {
+                "itemId": 20205,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1700000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Aegis shield bonus 7",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7262,
+                "quantity": 340
+            },
+            {
+                "itemId": 916,
+                "quantity": 350
+            },
+            {
+                "itemId": 20205,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1500000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Aegis shield bonus 8",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7511,
+                "quantity": 420
+            },
+            {
+                "itemId": 7219,
+                "quantity": 410
+            },
+            {
+                "itemId": 20205,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1800000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Aegis shield bonus 9",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7220,
+                "quantity": 310
+            },
+            {
+                "itemId": 936,
+                "quantity": 300
+            },
+            {
+                "itemId": 20205,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1700000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Aegis shield bonus 10",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 955,
+                "quantity": 270
+            },
+            {
+                "itemId": 928,
+                "quantity": 410
+            },
+            {
+                "itemId": 20205,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1500000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Artemis Bow bonus 1",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 937,
+                "quantity": 420
+            },
+            {
+                "itemId": 7512,
+                "quantity": 350
+            },
+            {
+                "itemId": 20204,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1800000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Artemis Bow bonus 2",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7094,
+                "quantity": 250
+            },
+            {
+                "itemId": 7225,
+                "quantity": 460
+            },
+            {
+                "itemId": 20204,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Artemis Bow bonus 3",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1036,
+                "quantity": 390
+            },
+            {
+                "itemId": 1028,
+                "quantity": 350
+            },
+            {
+                "itemId": 20204,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1900000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Artemis Bow bonus 4",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7096,
+                "quantity": 280
+            },
+            {
+                "itemId": 7563,
+                "quantity": 280
+            },
+            {
+                "itemId": 20204,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1900000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Artemis Bow bonus 5",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7053,
+                "quantity": 320
+            },
+            {
+                "itemId": 7197,
+                "quantity": 460
+            },
+            {
+                "itemId": 20204,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1500000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Artemis Bow bonus 6",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7038,
+                "quantity": 270
+            },
+            {
+                "itemId": 7123,
+                "quantity": 350
+            },
+            {
+                "itemId": 20204,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Artemis Bow bonus 7",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7221,
+                "quantity": 270
+            },
+            {
+                "itemId": 7122,
+                "quantity": 480
+            },
+            {
+                "itemId": 20204,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1900000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Artemis Bow bonus 8",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7753,
+                "quantity": 260
+            },
+            {
+                "itemId": 1022,
+                "quantity": 330
+            },
+            {
+                "itemId": 20204,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1100000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Artemis Bow bonus 9",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1026,
+                "quantity": 430
+            },
+            {
+                "itemId": 7054,
+                "quantity": 450
+            },
+            {
+                "itemId": 20204,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1100000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Artemis Bow bonus 10",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7568,
+                "quantity": 310
+            },
+            {
+                "itemId": 932,
+                "quantity": 260
+            },
+            {
+                "itemId": 20204,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1600000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Belmont Whip bonus 1",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7068,
+                "quantity": 350
+            },
+            {
+                "itemId": 6041,
+                "quantity": 270
+            },
+            {
+                "itemId": 20211,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1100000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Belmont Whip bonus 2",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7215,
+                "quantity": 500
+            },
+            {
+                "itemId": 922,
+                "quantity": 310
+            },
+            {
+                "itemId": 20211,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1200000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Belmont Whip bonus 3",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7006,
+                "quantity": 420
+            },
+            {
+                "itemId": 7320,
+                "quantity": 270
+            },
+            {
+                "itemId": 20211,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1600000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Belmont Whip bonus 4",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7001,
+                "quantity": 450
+            },
+            {
+                "itemId": 7222,
+                "quantity": 460
+            },
+            {
+                "itemId": 20211,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1700000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Belmont Whip bonus 5",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7156,
+                "quantity": 400
+            },
+            {
+                "itemId": 931,
+                "quantity": 310
+            },
+            {
+                "itemId": 20211,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1200000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Belmont Whip bonus 6",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7193,
+                "quantity": 260
+            },
+            {
+                "itemId": 7012,
+                "quantity": 260
+            },
+            {
+                "itemId": 20211,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1900000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Belmont Whip bonus 7",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1067,
+                "quantity": 400
+            },
+            {
+                "itemId": 7111,
+                "quantity": 370
+            },
+            {
+                "itemId": 20211,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1900000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Belmont Whip bonus 8",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1057,
+                "quantity": 390
+            },
+            {
+                "itemId": 1023,
+                "quantity": 250
+            },
+            {
+                "itemId": 20211,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 2000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Belmont Whip bonus 9",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7002,
+                "quantity": 330
+            },
+            {
+                "itemId": 1048,
+                "quantity": 330
+            },
+            {
+                "itemId": 20211,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Belmont Whip bonus 10",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7164,
+                "quantity": 300
+            },
+            {
+                "itemId": 7219,
+                "quantity": 370
+            },
+            {
+                "itemId": 20211,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1600000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Blade of Angels bonus 1",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1055,
+                "quantity": 410
+            },
+            {
+                "itemId": 7195,
+                "quantity": 440
+            },
+            {
+                "itemId": 20212,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1900000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Blade of Angels bonus 2",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7512,
+                "quantity": 280
+            },
+            {
+                "itemId": 7159,
+                "quantity": 400
+            },
+            {
+                "itemId": 20212,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1700000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Blade of Angels bonus 3",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7064,
+                "quantity": 350
+            },
+            {
+                "itemId": 1063,
+                "quantity": 320
+            },
+            {
+                "itemId": 20212,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1700000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Blade of Angels bonus 4",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7322,
+                "quantity": 340
+            },
+            {
+                "itemId": 7116,
+                "quantity": 340
+            },
+            {
+                "itemId": 20212,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1800000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Blade of Angels bonus 5",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 966,
+                "quantity": 290
+            },
+            {
+                "itemId": 913,
+                "quantity": 400
+            },
+            {
+                "itemId": 20212,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1100000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Blade of Angels bonus 6",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1056,
+                "quantity": 390
+            },
+            {
+                "itemId": 7168,
+                "quantity": 340
+            },
+            {
+                "itemId": 20212,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1100000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Blade of Angels bonus 7",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7265,
+                "quantity": 400
+            },
+            {
+                "itemId": 7153,
+                "quantity": 440
+            },
+            {
+                "itemId": 20212,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Blade of Angels bonus 8",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 942,
+                "quantity": 490
+            },
+            {
+                "itemId": 945,
+                "quantity": 390
+            },
+            {
+                "itemId": 20212,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Blade of Angels bonus 9",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7150,
+                "quantity": 450
+            },
+            {
+                "itemId": 7172,
+                "quantity": 270
+            },
+            {
+                "itemId": 20212,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1400000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Blade of Angels bonus 10",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7115,
+                "quantity": 400
+            },
+            {
+                "itemId": 7299,
+                "quantity": 480
+            },
+            {
+                "itemId": 20212,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 2000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Djinn bonus 1",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 961,
+                "quantity": 370
+            },
+            {
+                "itemId": 1026,
+                "quantity": 300
+            },
+            {
+                "itemId": 20209,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Djinn bonus 2",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1035,
+                "quantity": 280
+            },
+            {
+                "itemId": 7197,
+                "quantity": 370
+            },
+            {
+                "itemId": 20209,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1500000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Djinn bonus 3",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 924,
+                "quantity": 430
+            },
+            {
+                "itemId": 7150,
+                "quantity": 450
+            },
+            {
+                "itemId": 20209,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1900000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Djinn bonus 4",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7030,
+                "quantity": 340
+            },
+            {
+                "itemId": 7340,
+                "quantity": 460
+            },
+            {
+                "itemId": 20209,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1800000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Djinn bonus 5",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7007,
+                "quantity": 390
+            },
+            {
+                "itemId": 7217,
+                "quantity": 310
+            },
+            {
+                "itemId": 20209,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Djinn bonus 6",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 938,
+                "quantity": 300
+            },
+            {
+                "itemId": 1016,
+                "quantity": 410
+            },
+            {
+                "itemId": 20209,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1700000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Djinn bonus 7",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7212,
+                "quantity": 420
+            },
+            {
+                "itemId": 7752,
+                "quantity": 300
+            },
+            {
+                "itemId": 20209,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1600000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Djinn bonus 8",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7301,
+                "quantity": 380
+            },
+            {
+                "itemId": 7100,
+                "quantity": 270
+            },
+            {
+                "itemId": 20209,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 2000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Djinn bonus 9",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1044,
+                "quantity": 480
+            },
+            {
+                "itemId": 7027,
+                "quantity": 280
+            },
+            {
+                "itemId": 20209,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1200000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Djinn bonus 10",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7223,
+                "quantity": 480
+            },
+            {
+                "itemId": 7198,
+                "quantity": 460
+            },
+            {
+                "itemId": 20209,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1600000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Electric Guitar bonus 1",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7121,
+                "quantity": 450
+            },
+            {
+                "itemId": 1020,
+                "quantity": 450
+            },
+            {
+                "itemId": 20210,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 2000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Electric Guitar bonus 2",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1000,
+                "quantity": 350
+            },
+            {
+                "itemId": 7225,
+                "quantity": 480
+            },
+            {
+                "itemId": 20210,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1900000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Electric Guitar bonus 3",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7312,
+                "quantity": 490
+            },
+            {
+                "itemId": 1040,
+                "quantity": 310
+            },
+            {
+                "itemId": 20210,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1600000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Electric Guitar bonus 4",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7118,
+                "quantity": 270
+            },
+            {
+                "itemId": 1045,
+                "quantity": 300
+            },
+            {
+                "itemId": 20210,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Electric Guitar bonus 5",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7009,
+                "quantity": 340
+            },
+            {
+                "itemId": 1042,
+                "quantity": 450
+            },
+            {
+                "itemId": 20210,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1800000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Electric Guitar bonus 6",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7263,
+                "quantity": 360
+            },
+            {
+                "itemId": 935,
+                "quantity": 460
+            },
+            {
+                "itemId": 20210,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 2000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Electric Guitar bonus 7",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7188,
+                "quantity": 310
+            },
+            {
+                "itemId": 7005,
+                "quantity": 290
+            },
+            {
+                "itemId": 20210,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1200000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Electric Guitar bonus 8",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 939,
+                "quantity": 350
+            },
+            {
+                "itemId": 7071,
+                "quantity": 250
+            },
+            {
+                "itemId": 20210,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1700000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Electric Guitar bonus 9",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1098,
+                "quantity": 390
+            },
+            {
+                "itemId": 7561,
+                "quantity": 290
+            },
+            {
+                "itemId": 20210,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Electric Guitar bonus 10",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7107,
+                "quantity": 480
+            },
+            {
+                "itemId": 7317,
+                "quantity": 410
+            },
+            {
+                "itemId": 20210,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1700000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Evangelist bonus 1",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7209,
+                "quantity": 290
+            },
+            {
+                "itemId": 7004,
+                "quantity": 460
+            },
+            {
+                "itemId": 20201,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1700000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Evangelist bonus 2",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7152,
+                "quantity": 280
+            },
+            {
+                "itemId": 7799,
+                "quantity": 470
+            },
+            {
+                "itemId": 20201,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 2000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Evangelist bonus 3",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7098,
+                "quantity": 370
+            },
+            {
+                "itemId": 962,
+                "quantity": 430
+            },
+            {
+                "itemId": 20201,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1700000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Evangelist bonus 4",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7200,
+                "quantity": 300
+            },
+            {
+                "itemId": 7567,
+                "quantity": 380
+            },
+            {
+                "itemId": 20201,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1900000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Evangelist bonus 5",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 916,
+                "quantity": 430
+            },
+            {
+                "itemId": 954,
+                "quantity": 420
+            },
+            {
+                "itemId": 20201,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1400000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Evangelist bonus 6",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7149,
+                "quantity": 330
+            },
+            {
+                "itemId": 1035,
+                "quantity": 300
+            },
+            {
+                "itemId": 20201,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1200000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Evangelist bonus 7",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7158,
+                "quantity": 400
+            },
+            {
+                "itemId": 7266,
+                "quantity": 390
+            },
+            {
+                "itemId": 20201,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1800000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Evangelist bonus 8",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7218,
+                "quantity": 410
+            },
+            {
+                "itemId": 7095,
+                "quantity": 460
+            },
+            {
+                "itemId": 20201,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1900000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Evangelist bonus 9",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7315,
+                "quantity": 320
+            },
+            {
+                "itemId": 1034,
+                "quantity": 390
+            },
+            {
+                "itemId": 20201,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1600000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Evangelist bonus 10",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 953,
+                "quantity": 470
+            },
+            {
+                "itemId": 7155,
+                "quantity": 420
+            },
+            {
+                "itemId": 20201,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1600000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Eversong Greaves bonus 1",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 951,
+                "quantity": 370
+            },
+            {
+                "itemId": 7798,
+                "quantity": 410
+            },
+            {
+                "itemId": 20215,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1800000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Eversong Greaves bonus 2",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 926,
+                "quantity": 310
+            },
+            {
+                "itemId": 967,
+                "quantity": 460
+            },
+            {
+                "itemId": 20215,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1600000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Eversong Greaves bonus 3",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7205,
+                "quantity": 420
+            },
+            {
+                "itemId": 1095,
+                "quantity": 490
+            },
+            {
+                "itemId": 20215,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1100000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Eversong Greaves bonus 4",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 963,
+                "quantity": 350
+            },
+            {
+                "itemId": 1045,
+                "quantity": 260
+            },
+            {
+                "itemId": 20215,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Eversong Greaves bonus 5",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7320,
+                "quantity": 410
+            },
+            {
+                "itemId": 950,
+                "quantity": 390
+            },
+            {
+                "itemId": 20215,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Eversong Greaves bonus 6",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7340,
+                "quantity": 420
+            },
+            {
+                "itemId": 7031,
+                "quantity": 310
+            },
+            {
+                "itemId": 20215,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1200000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Eversong Greaves bonus 7",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7347,
+                "quantity": 430
+            },
+            {
+                "itemId": 1094,
+                "quantity": 280
+            },
+            {
+                "itemId": 20215,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Eversong Greaves bonus 8",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1033,
+                "quantity": 440
+            },
+            {
+                "itemId": 7168,
+                "quantity": 310
+            },
+            {
+                "itemId": 20215,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1600000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Eversong Greaves bonus 9",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7013,
+                "quantity": 500
+            },
+            {
+                "itemId": 7117,
+                "quantity": 260
+            },
+            {
+                "itemId": 20215,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1400000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Eversong Greaves bonus 10",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1027,
+                "quantity": 420
+            },
+            {
+                "itemId": 7100,
+                "quantity": 450
+            },
+            {
+                "itemId": 20215,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1800000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Ghostdancer Staff bonus 1",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 949,
+                "quantity": 430
+            },
+            {
+                "itemId": 958,
+                "quantity": 340
+            },
+            {
+                "itemId": 20216,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1200000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Ghostdancer Staff bonus 2",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7117,
+                "quantity": 310
+            },
+            {
+                "itemId": 7564,
+                "quantity": 320
+            },
+            {
+                "itemId": 20216,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1700000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Ghostdancer Staff bonus 3",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 6023,
+                "quantity": 340
+            },
+            {
+                "itemId": 943,
+                "quantity": 310
+            },
+            {
+                "itemId": 20216,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Ghostdancer Staff bonus 4",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 6020,
+                "quantity": 290
+            },
+            {
+                "itemId": 943,
+                "quantity": 310
+            },
+            {
+                "itemId": 20216,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Ghostdancer Staff bonus 5",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7216,
+                "quantity": 440
+            },
+            {
+                "itemId": 939,
+                "quantity": 360
+            },
+            {
+                "itemId": 20216,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1400000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Ghostdancer Staff bonus 6",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7071,
+                "quantity": 370
+            },
+            {
+                "itemId": 7188,
+                "quantity": 360
+            },
+            {
+                "itemId": 20216,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Ghostdancer Staff bonus 7",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7269,
+                "quantity": 270
+            },
+            {
+                "itemId": 948,
+                "quantity": 450
+            },
+            {
+                "itemId": 20216,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Ghostdancer Staff bonus 8",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 944,
+                "quantity": 480
+            },
+            {
+                "itemId": 7345,
+                "quantity": 420
+            },
+            {
+                "itemId": 20216,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1800000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Ghostdancer Staff bonus 9",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7266,
+                "quantity": 470
+            },
+            {
+                "itemId": 7116,
+                "quantity": 260
+            },
+            {
+                "itemId": 20216,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1800000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Ghostdancer Staff bonus 10",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 941,
+                "quantity": 420
+            },
+            {
+                "itemId": 950,
+                "quantity": 290
+            },
+            {
+                "itemId": 20216,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1500000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Hira Shurikat bonus 1",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7194,
+                "quantity": 300
+            },
+            {
+                "itemId": 7205,
+                "quantity": 440
+            },
+            {
+                "itemId": 20214,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1400000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Hira Shurikat bonus 2",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7751,
+                "quantity": 310
+            },
+            {
+                "itemId": 6021,
+                "quantity": 310
+            },
+            {
+                "itemId": 20214,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1100000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Hira Shurikat bonus 3",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1061,
+                "quantity": 270
+            },
+            {
+                "itemId": 949,
+                "quantity": 440
+            },
+            {
+                "itemId": 20214,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1400000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Hira Shurikat bonus 4",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7186,
+                "quantity": 390
+            },
+            {
+                "itemId": 7027,
+                "quantity": 350
+            },
+            {
+                "itemId": 20214,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1400000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Hira Shurikat bonus 5",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 904,
+                "quantity": 390
+            },
+            {
+                "itemId": 903,
+                "quantity": 420
+            },
+            {
+                "itemId": 20214,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Hira Shurikat bonus 6",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7069,
+                "quantity": 330
+            },
+            {
+                "itemId": 956,
+                "quantity": 380
+            },
+            {
+                "itemId": 20214,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1100000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Hira Shurikat bonus 7",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1016,
+                "quantity": 430
+            },
+            {
+                "itemId": 7315,
+                "quantity": 390
+            },
+            {
+                "itemId": 20214,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1900000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Hira Shurikat bonus 8",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7317,
+                "quantity": 300
+            },
+            {
+                "itemId": 7325,
+                "quantity": 270
+            },
+            {
+                "itemId": 20214,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1800000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Hira Shurikat bonus 9",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 931,
+                "quantity": 490
+            },
+            {
+                "itemId": 1027,
+                "quantity": 280
+            },
+            {
+                "itemId": 20214,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1200000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Hira Shurikat bonus 10",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1066,
+                "quantity": 300
+            },
+            {
+                "itemId": 7125,
+                "quantity": 470
+            },
+            {
+                "itemId": 20214,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Mjolnir bonus 1",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 936,
+                "quantity": 390
+            },
+            {
+                "itemId": 7158,
+                "quantity": 480
+            },
+            {
+                "itemId": 20203,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1100000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Mjolnir bonus 2",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 946,
+                "quantity": 420
+            },
+            {
+                "itemId": 955,
+                "quantity": 330
+            },
+            {
+                "itemId": 20203,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1900000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Mjolnir bonus 3",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7165,
+                "quantity": 280
+            },
+            {
+                "itemId": 7189,
+                "quantity": 330
+            },
+            {
+                "itemId": 20203,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1900000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Mjolnir bonus 4",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1034,
+                "quantity": 300
+            },
+            {
+                "itemId": 7216,
+                "quantity": 300
+            },
+            {
+                "itemId": 20203,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Mjolnir bonus 5",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7798,
+                "quantity": 380
+            },
+            {
+                "itemId": 7047,
+                "quantity": 280
+            },
+            {
+                "itemId": 20203,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1500000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Mjolnir bonus 6",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7752,
+                "quantity": 420
+            },
+            {
+                "itemId": 7166,
+                "quantity": 430
+            },
+            {
+                "itemId": 20203,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1200000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Mjolnir bonus 7",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7172,
+                "quantity": 380
+            },
+            {
+                "itemId": 7165,
+                "quantity": 480
+            },
+            {
+                "itemId": 20203,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1500000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Mjolnir bonus 8",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1041,
+                "quantity": 370
+            },
+            {
+                "itemId": 7198,
+                "quantity": 340
+            },
+            {
+                "itemId": 20203,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1900000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Mjolnir bonus 9",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7210,
+                "quantity": 410
+            },
+            {
+                "itemId": 940,
+                "quantity": 430
+            },
+            {
+                "itemId": 20203,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1100000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Mjolnir bonus 10",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1054,
+                "quantity": 440
+            },
+            {
+                "itemId": 938,
+                "quantity": 450
+            },
+            {
+                "itemId": 20203,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1500000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Nibelungen bonus 1",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1031,
+                "quantity": 290
+            },
+            {
+                "itemId": 1021,
+                "quantity": 280
+            },
+            {
+                "itemId": 20200,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1400000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Nibelungen bonus 2",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7263,
+                "quantity": 270
+            },
+            {
+                "itemId": 7004,
+                "quantity": 410
+            },
+            {
+                "itemId": 20200,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Nibelungen bonus 3",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1022,
+                "quantity": 290
+            },
+            {
+                "itemId": 7568,
+                "quantity": 490
+            },
+            {
+                "itemId": 20200,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 2000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Nibelungen bonus 4",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 932,
+                "quantity": 290
+            },
+            {
+                "itemId": 1037,
+                "quantity": 490
+            },
+            {
+                "itemId": 20200,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1200000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Nibelungen bonus 5",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1057,
+                "quantity": 410
+            },
+            {
+                "itemId": 1048,
+                "quantity": 320
+            },
+            {
+                "itemId": 20200,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1200000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Nibelungen bonus 6",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 6021,
+                "quantity": 380
+            },
+            {
+                "itemId": 7158,
+                "quantity": 470
+            },
+            {
+                "itemId": 20200,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1700000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Nibelungen bonus 7",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1023,
+                "quantity": 490
+            },
+            {
+                "itemId": 7121,
+                "quantity": 390
+            },
+            {
+                "itemId": 20200,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1600000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Nibelungen bonus 8",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7202,
+                "quantity": 290
+            },
+            {
+                "itemId": 7203,
+                "quantity": 490
+            },
+            {
+                "itemId": 20200,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1400000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Nibelungen bonus 9",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7192,
+                "quantity": 410
+            },
+            {
+                "itemId": 7561,
+                "quantity": 430
+            },
+            {
+                "itemId": 20200,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1700000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Nibelungen bonus 10",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 930,
+                "quantity": 430
+            },
+            {
+                "itemId": 7507,
+                "quantity": 430
+            },
+            {
+                "itemId": 20200,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1200000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Scouter bonus 1",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7163,
+                "quantity": 330
+            },
+            {
+                "itemId": 7221,
+                "quantity": 370
+            },
+            {
+                "itemId": 20213,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1400000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Scouter bonus 2",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7125,
+                "quantity": 320
+            },
+            {
+                "itemId": 7321,
+                "quantity": 390
+            },
+            {
+                "itemId": 20213,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Scouter bonus 3",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1094,
+                "quantity": 260
+            },
+            {
+                "itemId": 966,
+                "quantity": 300
+            },
+            {
+                "itemId": 20213,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1900000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Scouter bonus 4",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 917,
+                "quantity": 270
+            },
+            {
+                "itemId": 7167,
+                "quantity": 370
+            },
+            {
+                "itemId": 20213,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1100000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Scouter bonus 5",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7153,
+                "quantity": 290
+            },
+            {
+                "itemId": 7298,
+                "quantity": 380
+            },
+            {
+                "itemId": 20213,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1800000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Scouter bonus 6",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7065,
+                "quantity": 500
+            },
+            {
+                "itemId": 7043,
+                "quantity": 280
+            },
+            {
+                "itemId": 20213,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1400000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Scouter bonus 7",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1018,
+                "quantity": 260
+            },
+            {
+                "itemId": 953,
+                "quantity": 490
+            },
+            {
+                "itemId": 20213,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Scouter bonus 8",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7112,
+                "quantity": 320
+            },
+            {
+                "itemId": 7003,
+                "quantity": 420
+            },
+            {
+                "itemId": 20213,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1100000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Scouter bonus 9",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 6071,
+                "quantity": 280
+            },
+            {
+                "itemId": 901,
+                "quantity": 400
+            },
+            {
+                "itemId": 20213,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1800000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Scouter bonus 10",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7264,
+                "quantity": 410
+            },
+            {
+                "itemId": 7171,
+                "quantity": 490
+            },
+            {
+                "itemId": 20213,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Sherwood Bow bonus 1",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7124,
+                "quantity": 470
+            },
+            {
+                "itemId": 7212,
+                "quantity": 460
+            },
+            {
+                "itemId": 20208,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Sherwood Bow bonus 2",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 947,
+                "quantity": 440
+            },
+            {
+                "itemId": 7511,
+                "quantity": 370
+            },
+            {
+                "itemId": 20208,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1200000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Sherwood Bow bonus 3",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 6041,
+                "quantity": 350
+            },
+            {
+                "itemId": 7110,
+                "quantity": 470
+            },
+            {
+                "itemId": 20208,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Sherwood Bow bonus 4",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 948,
+                "quantity": 270
+            },
+            {
+                "itemId": 942,
+                "quantity": 280
+            },
+            {
+                "itemId": 20208,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1200000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Sherwood Bow bonus 5",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7157,
+                "quantity": 310
+            },
+            {
+                "itemId": 1037,
+                "quantity": 280
+            },
+            {
+                "itemId": 20208,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1200000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Sherwood Bow bonus 6",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1024,
+                "quantity": 310
+            },
+            {
+                "itemId": 7002,
+                "quantity": 330
+            },
+            {
+                "itemId": 20208,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1600000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Sherwood Bow bonus 7",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7214,
+                "quantity": 500
+            },
+            {
+                "itemId": 7208,
+                "quantity": 280
+            },
+            {
+                "itemId": 20208,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1400000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Sherwood Bow bonus 8",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1012,
+                "quantity": 430
+            },
+            {
+                "itemId": 945,
+                "quantity": 340
+            },
+            {
+                "itemId": 20208,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1500000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Sherwood Bow bonus 9",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1068,
+                "quantity": 340
+            },
+            {
+                "itemId": 920,
+                "quantity": 380
+            },
+            {
+                "itemId": 20208,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1100000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Sherwood Bow bonus 10",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7003,
+                "quantity": 310
+            },
+            {
+                "itemId": 918,
+                "quantity": 330
+            },
+            {
+                "itemId": 20208,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Staff of Magi bonus 1",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 928,
+                "quantity": 330
+            },
+            {
+                "itemId": 908,
+                "quantity": 380
+            },
+            {
+                "itemId": 20202,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1700000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Staff of Magi bonus 2",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7099,
+                "quantity": 470
+            },
+            {
+                "itemId": 1060,
+                "quantity": 360
+            },
+            {
+                "itemId": 20202,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 2000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Staff of Magi bonus 3",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 907,
+                "quantity": 470
+            },
+            {
+                "itemId": 1013,
+                "quantity": 460
+            },
+            {
+                "itemId": 20202,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1500000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Staff of Magi bonus 4",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7122,
+                "quantity": 370
+            },
+            {
+                "itemId": 7195,
+                "quantity": 380
+            },
+            {
+                "itemId": 20202,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 2000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Staff of Magi bonus 5",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1021,
+                "quantity": 360
+            },
+            {
+                "itemId": 1015,
+                "quantity": 290
+            },
+            {
+                "itemId": 20202,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1100000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Staff of Magi bonus 6",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7031,
+                "quantity": 360
+            },
+            {
+                "itemId": 1055,
+                "quantity": 490
+            },
+            {
+                "itemId": 20202,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Staff of Magi bonus 7",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1015,
+                "quantity": 350
+            },
+            {
+                "itemId": 7005,
+                "quantity": 360
+            },
+            {
+                "itemId": 20202,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1900000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Staff of Magi bonus 8",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7187,
+                "quantity": 400
+            },
+            {
+                "itemId": 7098,
+                "quantity": 340
+            },
+            {
+                "itemId": 20202,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1200000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Staff of Magi bonus 9",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7201,
+                "quantity": 260
+            },
+            {
+                "itemId": 907,
+                "quantity": 500
+            },
+            {
+                "itemId": 20202,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1100000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Staff of Magi bonus 10",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7286,
+                "quantity": 420
+            },
+            {
+                "itemId": 913,
+                "quantity": 260
+            },
+            {
+                "itemId": 20202,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1800000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Suiken bonus 1",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 6032,
+                "quantity": 270
+            },
+            {
+                "itemId": 1042,
+                "quantity": 340
+            },
+            {
+                "itemId": 20206,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1600000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Suiken bonus 2",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 960,
+                "quantity": 420
+            },
+            {
+                "itemId": 1056,
+                "quantity": 450
+            },
+            {
+                "itemId": 20206,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Suiken bonus 3",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7567,
+                "quantity": 370
+            },
+            {
+                "itemId": 1044,
+                "quantity": 400
+            },
+            {
+                "itemId": 20206,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1100000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Suiken bonus 4",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7093,
+                "quantity": 280
+            },
+            {
+                "itemId": 7009,
+                "quantity": 420
+            },
+            {
+                "itemId": 20206,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 2000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Suiken bonus 5",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 954,
+                "quantity": 360
+            },
+            {
+                "itemId": 1038,
+                "quantity": 380
+            },
+            {
+                "itemId": 20206,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1700000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Suiken bonus 6",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 915,
+                "quantity": 350
+            },
+            {
+                "itemId": 7298,
+                "quantity": 360
+            },
+            {
+                "itemId": 20206,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1100000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Suiken bonus 7",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1064,
+                "quantity": 280
+            },
+            {
+                "itemId": 7270,
+                "quantity": 420
+            },
+            {
+                "itemId": 20206,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1200000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Suiken bonus 8",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7323,
+                "quantity": 470
+            },
+            {
+                "itemId": 7043,
+                "quantity": 360
+            },
+            {
+                "itemId": 20206,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1500000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Suiken bonus 9",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7111,
+                "quantity": 380
+            },
+            {
+                "itemId": 1063,
+                "quantity": 320
+            },
+            {
+                "itemId": 20206,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1100000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Suiken bonus 10",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 957,
+                "quantity": 470
+            },
+            {
+                "itemId": 7201,
+                "quantity": 490
+            },
+            {
+                "itemId": 20206,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1600000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Tome of Ymir bonus 1",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7762,
+                "quantity": 480
+            },
+            {
+                "itemId": 7345,
+                "quantity": 280
+            },
+            {
+                "itemId": 20207,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1600000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Tome of Ymir bonus 2",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 940,
+                "quantity": 370
+            },
+            {
+                "itemId": 7220,
+                "quantity": 440
+            },
+            {
+                "itemId": 20207,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1900000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Tome of Ymir bonus 3",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7213,
+                "quantity": 370
+            },
+            {
+                "itemId": 1064,
+                "quantity": 350
+            },
+            {
+                "itemId": 20207,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1700000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Tome of Ymir bonus 4",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7119,
+                "quantity": 340
+            },
+            {
+                "itemId": 7151,
+                "quantity": 360
+            },
+            {
+                "itemId": 20207,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1800000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Tome of Ymir bonus 5",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7217,
+                "quantity": 420
+            },
+            {
+                "itemId": 7096,
+                "quantity": 460
+            },
+            {
+                "itemId": 20207,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Tome of Ymir bonus 6",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7012,
+                "quantity": 310
+            },
+            {
+                "itemId": 7162,
+                "quantity": 420
+            },
+            {
+                "itemId": 20207,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Tome of Ymir bonus",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7095,
+                "quantity": 300
+            },
+            {
+                "itemId": 967,
+                "quantity": 440
+            },
+            {
+                "itemId": 20207,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1400000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Tome of Ymir bonus 8",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7063,
+                "quantity": 290
+            },
+            {
+                "itemId": 1012,
+                "quantity": 380
+            },
+            {
+                "itemId": 20207,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1100000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Tome of Ymir bonus 9",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7319,
+                "quantity": 440
+            },
+            {
+                "itemId": 901,
+                "quantity": 320
+            },
+            {
+                "itemId": 20207,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Tome of Ymir bonus 10",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7222,
+                "quantity": 500
+            },
+            {
+                "itemId": 960,
+                "quantity": 310
+            },
+            {
+                "itemId": 20207,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Twin Fang bonus 1",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7267,
+                "quantity": 390
+            },
+            {
+                "itemId": 7126,
+                "quantity": 340
+            },
+            {
+                "itemId": 20217,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1600000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Twin Fang bonus 2",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7565,
+                "quantity": 370
+            },
+            {
+                "itemId": 7053,
+                "quantity": 450
+            },
+            {
+                "itemId": 20217,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1900000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Twin Fang bonus 3",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7207,
+                "quantity": 380
+            },
+            {
+                "itemId": 951,
+                "quantity": 400
+            },
+            {
+                "itemId": 20217,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1800000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Twin Fang bonus 4",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 1019,
+                "quantity": 400
+            },
+            {
+                "itemId": 1043,
+                "quantity": 420
+            },
+            {
+                "itemId": 20217,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1300000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Twin Fang bonus 5",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7097,
+                "quantity": 410
+            },
+            {
+                "itemId": 7564,
+                "quantity": 470
+            },
+            {
+                "itemId": 20217,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1500000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Twin Fang bonus 6",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7120,
+                "quantity": 350
+            },
+            {
+                "itemId": 961,
+                "quantity": 420
+            },
+            {
+                "itemId": 20217,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1680000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Twin Fang bonus 7",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 920,
+                "quantity": 350
+            },
+            {
+                "itemId": 7163,
+                "quantity": 310
+            },
+            {
+                "itemId": 20217,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 2000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Twin Fang bonus 8",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7190,
+                "quantity": 290
+            },
+            {
+                "itemId": 1013,
+                "quantity": 460
+            },
+            {
+                "itemId": 20217,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1600000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Twin Fang bonus 9",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7318,
+                "quantity": 500
+            },
+            {
+                "itemId": 7156,
+                "quantity": 390
+            },
+            {
+                "itemId": 20217,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 2000000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Twin Fang bonus 10",
+        "category": "SQI Bonus",
+        "requirements": [
+            {
+                "itemId": 7799,
+                "quantity": 360
+            },
+            {
+                "itemId": 947,
+                "quantity": 250
+            },
+            {
+                "itemId": 20217,
+                "quantity": 1
+            },
+            {
+                "itemId": 1,
+                "quantity": 1600000
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Betty",
+        "category": "Betty",
+        "requirements": [
+            {
+                "itemId": 1068,
+                "quantity": "10-20"
+            }
+        ],
+        "results": []
+    },
+     {
+    "name": "Barren Trunk",
+    "category": "Betty",
+    "requirements": [{ "itemId": 1068, "quantity": "10-20" }],
+    "results": []
+    },
+    {
+        "name": "Bear's Footskin",
+        "category": "Betty",
+        "requirements": [{ "itemId": 948, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Black Bear Skin",
+        "category": "Betty",
+        "requirements": [{ "itemId": 7161, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Blue Hair",
+        "category": "Betty",
+        "requirements": [{ "itemId": 1034, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Brigan",
+        "category": "Betty",
+        "requirements": [{ "itemId": 7054, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Cyfar",
+        "category": "Betty",
+        "requirements": [{ "itemId": 7053, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Decayed Nail",
+        "category": "Betty",
+        "requirements": [{ "itemId": 957, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Dry Sand",
+        "category": "Betty",
+        "requirements": [{ "itemId": 7264, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Earthworm Peeling",
+        "category": "Betty",
+        "requirements": [{ "itemId": 1055, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Elder Pixie's Moustache",
+        "category": "Betty",
+        "requirements": [{ "itemId": 1040, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Feather",
+        "category": "Betty",
+        "requirements": [{ "itemId": 949, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Fig Leaf",
+        "category": "Betty",
+        "requirements": [{ "itemId": 7298, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Fish Tail",
+        "category": "Betty",
+        "requirements": [{ "itemId": 1023, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Flexible Tube",
+        "category": "Betty",
+        "requirements": [{ "itemId": 7325, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Honey Pot",
+        "category": "Betty",
+        "requirements": [{ "itemId": 7121, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Horn",
+        "category": "Betty",
+        "requirements": [{ "itemId": 947, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Horrendous Hair",
+        "category": "Betty",
+        "requirements": [{ "itemId": 1048, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Horseshoe",
+        "category": "Betty",
+        "requirements": [{ "itemId": 944, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Huge Leaf",
+        "category": "Betty",
+        "requirements": [{ "itemId": 7198, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Insect Feeler",
+        "category": "Betty",
+        "requirements": [{ "itemId": 928, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Jubilee",
+        "category": "Betty",
+        "requirements": [{ "itemId": 7312, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Lantern",
+        "category": "Betty",
+        "requirements": [{ "itemId": 1041, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Little Evil Horn",
+        "category": "Betty",
+        "requirements": [{ "itemId": 1038, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Manacles",
+        "category": "Betty",
+        "requirements": [{ "itemId": 1098, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Mane",
+        "category": "Betty",
+        "requirements": [{ "itemId": 1028, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Maneater Root",
+        "category": "Betty",
+        "requirements": [{ "itemId": 1033, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Mantis Scythe",
+        "category": "Betty",
+        "requirements": [{ "itemId": 1031, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Moth Dust",
+        "category": "Betty",
+        "requirements": [{ "itemId": 1057, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Mud Lump",
+        "category": "Betty",
+        "requirements": [{ "itemId": 7004, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Nose Ring",
+        "category": "Betty",
+        "requirements": [{ "itemId": 941, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Ogre Tooth",
+        "category": "Betty",
+        "requirements": [{ "itemId": 7002, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Oil Paper",
+        "category": "Betty",
+        "requirements": [{ "itemId": 7151, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Old Pick",
+        "category": "Betty",
+        "requirements": [{ "itemId": 7318, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Orc Claw",
+        "category": "Betty",
+        "requirements": [{ "itemId": 1043, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Orc's Fang",
+        "category": "Betty",
+        "requirements": [{ "itemId": 922, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Peco Peco Feather",
+        "category": "Betty",
+        "requirements": [{ "itemId": 7101, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Piece of Bamboo",
+        "category": "Betty",
+        "requirements": [{ "itemId": 7150, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Porcupine Quill",
+        "category": "Betty",
+        "requirements": [{ "itemId": 1027, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Raccoon Leaf",
+        "category": "Betty",
+        "requirements": [{ "itemId": 945, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Round Shell",
+        "category": "Betty",
+        "requirements": [{ "itemId": 1096, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Shell",
+        "category": "Betty",
+        "requirements": [{ "itemId": 935, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Skel-Bone",
+        "category": "Betty",
+        "requirements": [{ "itemId": 932, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Snail's Shell",
+        "category": "Betty",
+        "requirements": [{ "itemId": 946, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Solid Shell",
+        "category": "Betty",
+        "requirements": [{ "itemId": 943, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Sprout",
+        "category": "Betty",
+        "requirements": [{ "itemId": 7193, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Sticky Mucus",
+        "category": "Betty",
+        "requirements": [{ "itemId": 938, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Stone Heart",
+        "category": "Betty",
+        "requirements": [{ "itemId": 953, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Strange Steel Piece",
+        "category": "Betty",
+        "requirements": [{ "itemId": 7167, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Thin Trunk",
+        "category": "Betty",
+        "requirements": [{ "itemId": 7186, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Tough Scalelike Stem",
+        "category": "Betty",
+        "requirements": [{ "itemId": 7012, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Wing of Red Bat",
+        "category": "Betty",
+        "requirements": [{ "itemId": 7006, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Worn-out Prison Uniform",
+        "category": "Betty",
+        "requirements": [{ "itemId": 1099, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Zenorc Fang",
+        "category": "Betty",
+        "requirements": [{ "itemId": 1044, "quantity": "10-20" }],
+        "results": []
     }
 ];
 
