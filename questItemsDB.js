@@ -14209,7 +14209,7 @@ const QUESTS = [
         "category": "SQI Bonus",
         "requirements": [
             {
-                "itemId": 7286,
+                "itemId": 7063,
                 "quantity": 420
             },
             {
@@ -15244,6 +15244,334 @@ const QUESTS = [
         "name": "Zenorc Fang",
         "category": "Betty",
         "requirements": [{ "itemId": 1044, "quantity": "10-20" }],
+        "results": []
+    },
+    {
+        "name": "Temporal Boots (Str)",
+        "category": "Crafting",
+        "requirements": [
+            {
+                "itemId": 6607,
+                "quantity": 25
+            },
+            {
+                "itemId": 6223,
+                "quantity": 50
+            },
+            {
+                "itemId": 6224,
+                "quantity": 25
+            },
+            {
+                "itemId": 2425,
+                "quantity": 1
+            },
+            {
+                "itemId": 6608,
+                "quantity": 30
+            },
+            {
+                "itemId": 1004,
+                "quantity": 20
+            },
+            {
+                "itemId": 7939,
+                "quantity": 20
+            }
+        ],
+        "results": [
+            {
+                "itemId": 22100,
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "name": "Temporal Boots (Agi)",
+        "category": "Crafting",
+        "requirements": [
+            {
+                "itemId": 6607,
+                "quantity": 25
+            },
+            {
+                "itemId": 6223,
+                "quantity": 50
+            },
+            {
+                "itemId": 6224,
+                "quantity": 25
+            },
+            {
+                "itemId": 2425,
+                "quantity": 1
+            },
+            {
+                "itemId": 6608,
+                "quantity": 30
+            },
+            {
+                "itemId": 6086,
+                "quantity": 50
+            },
+            {
+                "itemId": 6087,
+                "quantity": 30
+            }
+        ],
+        "results": [
+            {
+                "itemId": 22104,
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "name": "Temporal Boots (Vit)",
+        "category": "Crafting",
+        "requirements": [
+            {
+                "itemId": 6607,
+                "quantity": 25
+            },
+            {
+                "itemId": 6223,
+                "quantity": 50
+            },
+            {
+                "itemId": 6224,
+                "quantity": 25
+            },
+            {
+                "itemId": 2425,
+                "quantity": 1
+            },
+            {
+                "itemId": 6608,
+                "quantity": 30
+            },
+            {
+                "itemId": 7326,
+                "quantity": 50
+            },
+            {
+                "itemId": 6395,
+                "quantity": 100
+            }
+        ],
+        "results": [
+            {
+                "itemId": 22101,
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "name": "Temporal Boots (Dex)",
+        "category": "Crafting",
+        "requirements": [
+            {
+                "itemId": 6607,
+                "quantity": 25
+            },
+            {
+                "itemId": 6223,
+                "quantity": 50
+            },
+            {
+                "itemId": 6224,
+                "quantity": 25
+            },
+            {
+                "itemId": 2425,
+                "quantity": 1
+            },
+            {
+                "itemId": 6608,
+                "quantity": 30
+            },
+            {
+                "itemId": 6088,
+                "quantity": 50
+            },
+            {
+                "itemId": 7938,
+                "quantity": 100
+            }
+        ],
+        "results": [
+            {
+                "itemId": 22102,
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "name": "Temporal Boots (Int)",
+        "category": "Crafting",
+        "requirements": [
+            {
+                "itemId": 6607,
+                "quantity": 25
+            },
+            {
+                "itemId": 6223,
+                "quantity": 50
+            },
+            {
+                "itemId": 6224,
+                "quantity": 25
+            },
+            {
+                "itemId": 2425,
+                "quantity": 1
+            },
+            {
+                "itemId": 6608,
+                "quantity": 30
+            },
+            {
+                "itemId": 6023,
+                "quantity": 50
+            },
+            {
+                "itemId": 6559,
+                "quantity": 50
+            }
+        ],
+        "results": [
+            {
+                "itemId": 22103,
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "name": "Temporal Boots (Luk)",
+        "category": "Crafting",
+        "requirements": [
+            {
+                "itemId": 6607,
+                "quantity": 25
+            },
+            {
+                "itemId": 6223,
+                "quantity": 50
+            },
+            {
+                "itemId": 6224,
+                "quantity": 25
+            },
+            {
+                "itemId": 2425,
+                "quantity": 1
+            },
+            {
+                "itemId": 6608,
+                "quantity": 30
+            },
+            {
+                "itemId": 6089,
+                "quantity": 50
+            },
+            {
+                "itemId": 6032,
+                "quantity": 80
+            }
+        ],
+        "results": [
+            {
+                "itemId": 22105,
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "name": "Temporal enchantment 1",
+        "category": "Enchantment",
+        "requirements": [
+            {
+                "itemId": 6608,
+                "quantity": 400
+            },
+            {
+                "itemId": 6607,
+                "quantity": 10
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Temporal enchantment 2 (random)",
+        "category": "Enchantment",
+        "requirements": [
+            {
+                "itemId": 6607,
+                "quantity": 25
+            },
+            {
+                "itemId": 6755,
+                "quantity": 50
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Temporal enchantment 2 (guaranteed)",
+        "category": "Enchantment",
+        "requirements": [
+            {
+                "itemId": 6607,
+                "quantity": 185
+            },
+            {
+                "itemId": 6755,
+                "quantity": 375
+            }
+        ],
+        "results": []
+    },
+    {
+        "name": "Temporal enchantment Final",
+        "category": "Enchantment",
+        "requirements": [
+            {
+                "itemId": 6607,
+                "quantity": 100
+            },
+            {
+                "itemId": 6223,
+                "quantity": 200
+            },
+            {
+                "itemId": 6224,
+                "quantity": 100
+            },
+            {
+                "itemId": 2421,
+                "quantity": 1
+            },
+            {
+                "itemId": 7566,
+                "quantity": 15
+            },
+            {
+                "itemId": "Any Temporal Boots",
+                "quantity": 1
+            },
+            {
+                "itemId": 6755,
+                "quantity": "100/125/150/175/200"
+            },
+            {
+                "itemId": 1,
+                "quantity": 20000000
+            },
+            {
+                "itemId": 8049,
+                "quantity": 1
+            }
+        ],
         "results": []
     }
 ];

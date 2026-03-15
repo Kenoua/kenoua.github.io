@@ -144,7 +144,7 @@ input#search {
   // Helper to find Item Name from ID
   function getItemName(id) {
     const item = ITEMS.find(i => i.id === id);
-    return item ? item.name : `Unknown Item (${id})`;
+    return item ? item.name : `${id}`;
   }
 
   // -----------------------
