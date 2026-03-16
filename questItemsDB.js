@@ -9731,9 +9731,9 @@ const ITEMS = [
 // QUEST DATABASE
 const QUESTS = [
   {
-    name: "Aegis Shield [1]",
-    category: "SQI",
-    requirements: [
+    "name": "Aegis Shield [1]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 2128, "quantity": 1},
       {"itemId": 2133, "quantity": 1},
       {"itemId": 2153, "quantity": 1},
@@ -9746,14 +9746,14 @@ const QUESTS = [
       {"itemId": 7108, "quantity": 10},
       {"itemId": 1, "quantity": 100000000}
     ],
-    results: [
+    "results": [
       {"itemId": 2150, "quantity": 1}
     ]
   },
   {
-    name: "Artemis Bow [3]",
-    category: "SQI",
-    requirements: [
+    "name": "Artemis Bow [3]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 1720, "quantity": 1},
       {"itemId": 1722, "quantity": 1},
       {"itemId": 18110, "quantity": 1},
@@ -9767,14 +9767,14 @@ const QUESTS = [
       {"itemId": 6326, "quantity": 5},
       {"itemId": 1, "quantity": 100000000}
     ],
-    results: [
+    "results": [
       {"itemId": 1745, "quantity": 1}
     ]
   },
   {
-    name: "Belmont Whip [3]",
-    category: "SQI",
-    requirements: [
+    "name": "Belmont Whip [3]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 1985, "quantity": 1},
       {"itemId": 1964, "quantity": 1},
       {"itemId": 1976, "quantity": 1},
@@ -9787,14 +9787,14 @@ const QUESTS = [
       {"itemId": 7451, "quantity": 5},
       {"itemId": 1, "quantity": 100000000}
     ],
-    results: [
+    "results": [
       {"itemId": 1990, "quantity": 1}
     ]
   },
   {
-    name: "Blade of Angels [3]",
-    category: "SQI",
-    requirements: [
+    "name": "Blade of Angels [3]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 1244, "quantity": 1},
       {"itemId": 13039, "quantity": 1},
       {"itemId": 1246, "quantity": 1},
@@ -9808,14 +9808,14 @@ const QUESTS = [
       {"itemId": 7566, "quantity": 5},
       {"itemId": 1, "quantity": 100000000}
     ],
-    results: [
+    "results": [
       {"itemId": 1190, "quantity": 1}
     ]
   },
   {
-    name: "Djinn [3]",
-    category: "SQI",
-    requirements: [
+    "name": "Djinn [3]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 1306, "quantity": 1},
       {"itemId": 1363, "quantity": 1},
       {"itemId": 16010, "quantity": 1},
@@ -9828,14 +9828,14 @@ const QUESTS = [
       {"itemId": 6022, "quantity": 5},
       {"itemId": 1, "quantity": 100000000}
     ],
-    results: [
+    "results": [
       {"itemId": 1320, "quantity": 1}
     ]
   },
   {
-    name: "Electric Guitar [3]",
-    category: "SQI",
-    requirements: [
+    "name": "Electric Guitar [3]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 1912, "quantity": 1},
       {"itemId": 1908, "quantity": 1},
       {"itemId": 1922, "quantity": 1},
@@ -9849,14 +9849,14 @@ const QUESTS = [
       {"itemId": 22008, "quantity": 5},
       {"itemId": 1, "quantity": 100000000}
     ],
-    results: [
+    "results": [
       {"itemId": 1913, "quantity": 1}
     ]
   },
   {
-    name: "Evangelist [3]",
-    category: "SQI",
-    requirements: [
+    "name": "Evangelist [3]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 1540, "quantity": 1},
       {"itemId": 1647, "quantity": 1},
       {"itemId": 2327, "quantity": 1},
@@ -9869,14 +9869,14 @@ const QUESTS = [
       {"itemId": 7036, "quantity": 10},
       {"itemId": 1, "quantity": 100000000}
     ],
-    results: [
+    "results": [
       {"itemId": 1549, "quantity": 1}
     ]
   },
   {
-    name: "Eversong Greaves [1]",
-    category: "SQI",
-    requirements: [
+    "name": "Eversong Greaves [1]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 22014, "quantity": 1},
       {"itemId": 2421, "quantity": 1},
       {"itemId": 2412, "quantity": 1},
@@ -9890,14 +9890,14 @@ const QUESTS = [
       {"itemId": 968, "quantity": 10},
       {"itemId": 1, "quantity": 100000000}
     ],
-    results: [
+    "results": [
       {"itemId": 2480, "quantity": 1}
     ]
   },
   {
-    name: "Ghostdancer Staff [3]",
-    category: "SQI",
-    requirements: [
+    "name": "Ghostdancer Staff [3]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 1615, "quantity": 1},
       {"itemId": 1620, "quantity": 1},
       {"itemId": 1629, "quantity": 1},
@@ -9910,14 +9910,14 @@ const QUESTS = [
       {"itemId": 7169, "quantity": 10},
       {"itemId": 1, "quantity": 100000000}
     ],
-    results: [
+    "results": [
       {"itemId": 1651, "quantity": 1}
     ]
   },
   {
-    name: "Hira Shurikat [4]",
-    category: "SQI",
-    requirements: [
+    "name": "Hira Shurikat [4]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 13303, "quantity": 1},
       {"itemId": 13300, "quantity": 1},
       {"itemId": 13302, "quantity": 1},
@@ -9930,14 +9930,14 @@ const QUESTS = [
       {"itemId": 22013, "quantity": 5},
       {"itemId": 1, "quantity": 100000000}
     ],
-    results: [
+    "results": [
       {"itemId": 13320, "quantity": 1}
     ]
   },
   {
-    name: "Mjolnir [3]",
-    category: "SQI",
-    requirements: [
+    "name": "Mjolnir [3]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 1368, "quantity": 1},
       {"itemId": 1385, "quantity": 1},
       {"itemId": 1524, "quantity": 1},
@@ -9952,14 +9952,14 @@ const QUESTS = [
       {"itemId": 22010, "quantity": 5},
       {"itemId": 1, "quantity": 100000000}
     ],
-    results: [
+    "results": [
       {"itemId": 1530, "quantity": 1}
     ]
   },
   {
-    name: "Nibelungen [3]",
-    category: "SQI",
-    requirements: [
+    "name": "Nibelungen [3]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 1483, "quantity": 1},
       {"itemId": 1435, "quantity": 1},
       {"itemId": 1413, "quantity": 1},
@@ -9972,14 +9972,14 @@ const QUESTS = [
       {"itemId": 22006, "quantity": 5},
       {"itemId": 1, "quantity": 100000000}
     ],
-    results: [
+    "results": [
       {"itemId": 1430, "quantity": 1}
     ]
   },
   {
-    name: "Scouter [1]",
-    category: "SQI",
-    requirements: [
+    "name": "Scouter [1]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 1531, "quantity": 1},
       {"itemId": 5001, "quantity": 1},
       {"itemId": 2659, "quantity": 1},
@@ -9993,14 +9993,14 @@ const QUESTS = [
       {"itemId": 22016, "quantity": 5},
       {"itemId": 1, "quantity": 100000000}
     ],
-    results: [
+    "results": [
       {"itemId": 5600, "quantity": 1}
     ]
   },
   {
-    name: "Sherwood Bow [3]",
-    category: "SQI",
-    requirements: [
+    "name": "Sherwood Bow [3]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 18111, "quantity": 1},
       {"itemId": 18109, "quantity": 1},
       {"itemId": 1719, "quantity": 1},
@@ -10013,14 +10013,14 @@ const QUESTS = [
       {"itemId": 22012, "quantity": 5},
       {"itemId": 1, "quantity": 100000000}
     ],
-    results: [
+    "results": [
       {"itemId": 1746, "quantity": 1}
     ]
   },
   {
-    name: "Staff of Magi [3]",
-    category: "SQI",
-    requirements: [
+    "name": "Staff of Magi [3]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 2004, "quantity": 1},
       {"itemId": 1473, "quantity": 1},
       {"itemId": 1646, "quantity": 1},
@@ -10033,14 +10033,14 @@ const QUESTS = [
       {"itemId": 7513, "quantity": 5},
       {"itemId": 1, "quantity": 100000000}
     ],
-    results: [
+    "results": [
       {"itemId": 1650, "quantity": 1}
     ]
   },
   {
-    name: "Suiken [3]",
-    category: "SQI",
-    requirements: [
+    "name": "Suiken [3]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 1816, "quantity": 1},
       {"itemId": 1813, "quantity": 1},
       {"itemId": 1802, "quantity": 1},
@@ -10054,14 +10054,14 @@ const QUESTS = [
       {"itemId": 7300, "quantity": 20},
       {"itemId": 1, "quantity": 100000000}
     ],
-    results: [
+    "results": [
       {"itemId": 1840, "quantity": 1}
     ]
   },
   {
-    name: "Tome of Ymir [3]",
-    category: "SQI",
-    requirements: [
+    "name": "Tome of Ymir [3]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 1560, "quantity": 1},
       {"itemId": 1565, "quantity": 1},
       {"itemId": 1557, "quantity": 1},
@@ -10074,14 +10074,14 @@ const QUESTS = [
       {"itemId": 7211, "quantity": 10},
       {"itemId": 1, "quantity": 100000000}
     ],
-    results: [
+    "results": [
       {"itemId": 1590, "quantity": 1}
     ]
   },
   {
-    name: "Twin Fang [4]",
-    category: "SQI",
-    requirements: [
+    "name": "Twin Fang [4]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 18774, "quantity": 1},
       {"itemId": 1291, "quantity": 1},
       {"itemId": 1266, "quantity": 1},
@@ -10095,14 +10095,14 @@ const QUESTS = [
       {"itemId": 22011, "quantity": 5},
       {"itemId": 1, "quantity": 100000000}
     ],
-    results: [
+    "results": [
       {"itemId": 1290, "quantity": 1}
     ]
   },
   {
-    name: "Brisingamen [1]",
-    category: "SQI",
-    requirements: [
+    "name": "Brisingamen [1]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 2621, "quantity": 4},
       {"itemId": 2622, "quantity": 4},
       {"itemId": 2623, "quantity": 4},
@@ -10111,14 +10111,14 @@ const QUESTS = [
       {"itemId": 2626, "quantity": 4},
       {"itemId": 1, "quantity": 120000000}
     ],
-    results: [
+    "results": [
       {"itemId": 2630, "quantity": 1}
     ]
   },
   {
-    name: "Megingjard",
-    category: "SQI",
-    requirements: [
+    "name": "Megingjard",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 2650, "quantity": 1},
       {"itemId": 2254, "quantity": 1},
       {"itemId": 4028, "quantity": 1},
@@ -10131,26 +10131,26 @@ const QUESTS = [
       {"itemId": 2621, "quantity": 10},
       {"itemId": 1, "quantity": 150000000}
     ],
-    results: [
+    "results": [
       {"itemId": 2629, "quantity": 1}
     ]
   },
   {
-    name: "Sleipnir [1]",
-    category: "SQI",
-    requirements: [
+    "name": "Sleipnir [1]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 2410, "quantity": 1},
       {"itemId": 2412, "quantity": 1},
       {"itemId": 1, "quantity": 50000000}
     ],
-    results: [
+    "results": [
       {"itemId": 8049, "quantity": 1}
     ]
   },
   {
-    name: "Valkyrie Helm [1]",
-    category: "SQI",
-    requirements: [
+    "name": "Valkyrie Helm [1]",
+    "category": "SQI",
+    "requirements": [
       {"itemId": 2254, "quantity": 1},
       {"itemId": 5074, "quantity": 1},
       {"itemId": 5025, "quantity": 1},
@@ -10160,14 +10160,14 @@ const QUESTS = [
       {"itemId": 5017, "quantity": 1},
       {"itemId": 1, "quantity": 130000000}
     ],
-    results: [
+    "results": [
       {"itemId": 8048, "quantity": 1}
     ]
   },
   {
-    name: "Sleipnir",
-    category: "Crafting",
-    requirements: [
+    "name": "Sleipnir",
+    "category": "Crafting",
+    "requirements": [
       {"itemId": 2406, "quantity": 1},
       {"itemId": 4107, "quantity": 1},
       {"itemId": 4097, "quantity": 1},
@@ -10176,2426 +10176,2426 @@ const QUESTS = [
       {"itemId": 999, "quantity": 100},
       {"itemId": 1, "quantity": 10000000}
     ],
-    results: [
+    "results": [
       {"itemId": 2410, "quantity": 1}
     ]
   },
   {
-    name: "Aegis shield bonus 1",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Aegis shield bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 959, "quantity": 450},
       {"itemId": 7149, "quantity": 320},
       {"itemId": 20205, "quantity": 1},
       {"itemId": 1, "quantity": 1000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Aegis shield bonus 2",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Aegis shield bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7161, "quantity": 410},
       {"itemId": 916, "quantity": 310},
       {"itemId": 20205, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Aegis shield bonus 3",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Aegis shield bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7323, "quantity": 250},
       {"itemId": 918, "quantity": 490},
       {"itemId": 20205, "quantity": 1},
       {"itemId": 1, "quantity": 1200000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Aegis shield bonus 4",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Aegis shield bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1043, "quantity": 270},
       {"itemId": 7065, "quantity": 370},
       {"itemId": 20205, "quantity": 1},
       {"itemId": 1, "quantity": 1600000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Aegis shield bonus 5",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Aegis shield bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1053, "quantity": 350},
       {"itemId": 1096, "quantity": 490},
       {"itemId": 20205, "quantity": 1},
       {"itemId": 1, "quantity": 1200000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Aegis shield bonus 6",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Aegis shield bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1099, "quantity": 440},
       {"itemId": 941, "quantity": 490},
       {"itemId": 20205, "quantity": 1},
       {"itemId": 1, "quantity": 1700000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Aegis shield bonus 7",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Aegis shield bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7262, "quantity": 340},
       {"itemId": 916, "quantity": 350},
       {"itemId": 20205, "quantity": 1},
       {"itemId": 1, "quantity": 1500000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Aegis shield bonus 8",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Aegis shield bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7511, "quantity": 420},
       {"itemId": 7219, "quantity": 410},
       {"itemId": 20205, "quantity": 1},
       {"itemId": 1, "quantity": 1800000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Aegis shield bonus 9",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Aegis shield bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7220, "quantity": 310},
       {"itemId": 936, "quantity": 300},
       {"itemId": 20205, "quantity": 1},
       {"itemId": 1, "quantity": 1700000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Aegis shield bonus 10",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Aegis shield bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 955, "quantity": 270},
       {"itemId": 928, "quantity": 410},
       {"itemId": 20205, "quantity": 1},
       {"itemId": 1, "quantity": 1500000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Artemis Bow bonus 1",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Artemis Bow bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 937, "quantity": 420},
       {"itemId": 7512, "quantity": 350},
       {"itemId": 20204, "quantity": 1},
       {"itemId": 1, "quantity": 1800000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Artemis Bow bonus 2",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Artemis Bow bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7094, "quantity": 250},
       {"itemId": 7225, "quantity": 460},
       {"itemId": 20204, "quantity": 1},
       {"itemId": 1, "quantity": 1000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Artemis Bow bonus 3",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Artemis Bow bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1036, "quantity": 390},
       {"itemId": 1028, "quantity": 350},
       {"itemId": 20204, "quantity": 1},
       {"itemId": 1, "quantity": 1900000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Artemis Bow bonus 4",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Artemis Bow bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7096, "quantity": 280},
       {"itemId": 7563, "quantity": 280},
       {"itemId": 20204, "quantity": 1},
       {"itemId": 1, "quantity": 1900000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Artemis Bow bonus 5",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Artemis Bow bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7053, "quantity": 320},
       {"itemId": 7197, "quantity": 460},
       {"itemId": 20204, "quantity": 1},
       {"itemId": 1, "quantity": 1500000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Artemis Bow bonus 6",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Artemis Bow bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7038, "quantity": 270},
       {"itemId": 7123, "quantity": 350},
       {"itemId": 20204, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Artemis Bow bonus 7",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Artemis Bow bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7221, "quantity": 270},
       {"itemId": 7122, "quantity": 480},
       {"itemId": 20204, "quantity": 1},
       {"itemId": 1, "quantity": 1900000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Artemis Bow bonus 8",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Artemis Bow bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7753, "quantity": 260},
       {"itemId": 1022, "quantity": 330},
       {"itemId": 20204, "quantity": 1},
       {"itemId": 1, "quantity": 1100000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Artemis Bow bonus 9",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Artemis Bow bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1026, "quantity": 430},
       {"itemId": 7054, "quantity": 450},
       {"itemId": 20204, "quantity": 1},
       {"itemId": 1, "quantity": 1100000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Artemis Bow bonus 10",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Artemis Bow bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7568, "quantity": 310},
       {"itemId": 932, "quantity": 260},
       {"itemId": 20204, "quantity": 1},
       {"itemId": 1, "quantity": 1600000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Belmont Whip bonus 1",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Belmont Whip bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7068, "quantity": 350},
       {"itemId": 6041, "quantity": 270},
       {"itemId": 20211, "quantity": 1},
       {"itemId": 1, "quantity": 1100000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Belmont Whip bonus 2",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Belmont Whip bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7215, "quantity": 500},
       {"itemId": 922, "quantity": 310},
       {"itemId": 20211, "quantity": 1},
       {"itemId": 1, "quantity": 1200000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Belmont Whip bonus 3",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Belmont Whip bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7006, "quantity": 420},
       {"itemId": 7320, "quantity": 270},
       {"itemId": 20211, "quantity": 1},
       {"itemId": 1, "quantity": 1600000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Belmont Whip bonus 4",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Belmont Whip bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7001, "quantity": 450},
       {"itemId": 7222, "quantity": 460},
       {"itemId": 20211, "quantity": 1},
       {"itemId": 1, "quantity": 1700000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Belmont Whip bonus 5",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Belmont Whip bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7156, "quantity": 400},
       {"itemId": 931, "quantity": 310},
       {"itemId": 20211, "quantity": 1},
       {"itemId": 1, "quantity": 1200000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Belmont Whip bonus 6",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Belmont Whip bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7193, "quantity": 260},
       {"itemId": 7012, "quantity": 260},
       {"itemId": 20211, "quantity": 1},
       {"itemId": 1, "quantity": 1900000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Belmont Whip bonus 7",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Belmont Whip bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1067, "quantity": 400},
       {"itemId": 7111, "quantity": 370},
       {"itemId": 20211, "quantity": 1},
       {"itemId": 1, "quantity": 1900000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Belmont Whip bonus 8",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Belmont Whip bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1057, "quantity": 390},
       {"itemId": 1023, "quantity": 250},
       {"itemId": 20211, "quantity": 1},
       {"itemId": 1, "quantity": 2000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Belmont Whip bonus 9",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Belmont Whip bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7002, "quantity": 330},
       {"itemId": 1048, "quantity": 330},
       {"itemId": 20211, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Belmont Whip bonus 10",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Belmont Whip bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7164, "quantity": 300},
       {"itemId": 7219, "quantity": 370},
       {"itemId": 20211, "quantity": 1},
       {"itemId": 1, "quantity": 1600000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Blade of Angels bonus 1",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Blade of Angels bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1055, "quantity": 410},
       {"itemId": 7195, "quantity": 440},
       {"itemId": 20212, "quantity": 1},
       {"itemId": 1, "quantity": 1900000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Blade of Angels bonus 2",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Blade of Angels bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7512, "quantity": 280},
       {"itemId": 7159, "quantity": 400},
       {"itemId": 20212, "quantity": 1},
       {"itemId": 1, "quantity": 1700000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Blade of Angels bonus 3",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Blade of Angels bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7064, "quantity": 350},
       {"itemId": 1063, "quantity": 320},
       {"itemId": 20212, "quantity": 1},
       {"itemId": 1, "quantity": 1700000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Blade of Angels bonus 4",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Blade of Angels bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7322, "quantity": 340},
       {"itemId": 7116, "quantity": 340},
       {"itemId": 20212, "quantity": 1},
       {"itemId": 1, "quantity": 1800000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Blade of Angels bonus 5",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Blade of Angels bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 966, "quantity": 290},
       {"itemId": 913, "quantity": 400},
       {"itemId": 20212, "quantity": 1},
       {"itemId": 1, "quantity": 1100000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Blade of Angels bonus 6",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Blade of Angels bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1056, "quantity": 390},
       {"itemId": 7168, "quantity": 340},
       {"itemId": 20212, "quantity": 1},
       {"itemId": 1, "quantity": 1100000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Blade of Angels bonus 7",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Blade of Angels bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7265, "quantity": 400},
       {"itemId": 7153, "quantity": 440},
       {"itemId": 20212, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Blade of Angels bonus 8",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Blade of Angels bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 942, "quantity": 490},
       {"itemId": 945, "quantity": 390},
       {"itemId": 20212, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Blade of Angels bonus 9",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Blade of Angels bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7150, "quantity": 450},
       {"itemId": 7172, "quantity": 270},
       {"itemId": 20212, "quantity": 1},
       {"itemId": 1, "quantity": 1400000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Blade of Angels bonus 10",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Blade of Angels bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7115, "quantity": 400},
       {"itemId": 7299, "quantity": 480},
       {"itemId": 20212, "quantity": 1},
       {"itemId": 1, "quantity": 2000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Djinn bonus 1",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Djinn bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 961, "quantity": 370},
       {"itemId": 1026, "quantity": 300},
       {"itemId": 20209, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Djinn bonus 2",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Djinn bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1035, "quantity": 280},
       {"itemId": 7197, "quantity": 370},
       {"itemId": 20209, "quantity": 1},
       {"itemId": 1, "quantity": 1500000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Djinn bonus 3",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Djinn bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 924, "quantity": 430},
       {"itemId": 7150, "quantity": 450},
       {"itemId": 20209, "quantity": 1},
       {"itemId": 1, "quantity": 1900000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Djinn bonus 4",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Djinn bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7030, "quantity": 340},
       {"itemId": 7340, "quantity": 460},
       {"itemId": 20209, "quantity": 1},
       {"itemId": 1, "quantity": 1800000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Djinn bonus 5",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Djinn bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7007, "quantity": 390},
       {"itemId": 7217, "quantity": 310},
       {"itemId": 20209, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Djinn bonus 6",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Djinn bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 938, "quantity": 300},
       {"itemId": 1016, "quantity": 410},
       {"itemId": 20209, "quantity": 1},
       {"itemId": 1, "quantity": 1700000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Djinn bonus 7",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Djinn bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7212, "quantity": 420},
       {"itemId": 7752, "quantity": 300},
       {"itemId": 20209, "quantity": 1},
       {"itemId": 1, "quantity": 1600000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Djinn bonus 8",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Djinn bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7301, "quantity": 380},
       {"itemId": 7100, "quantity": 270},
       {"itemId": 20209, "quantity": 1},
       {"itemId": 1, "quantity": 2000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Djinn bonus 9",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Djinn bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1044, "quantity": 480},
       {"itemId": 7027, "quantity": 280},
       {"itemId": 20209, "quantity": 1},
       {"itemId": 1, "quantity": 1200000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Djinn bonus 10",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Djinn bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7223, "quantity": 480},
       {"itemId": 7198, "quantity": 460},
       {"itemId": 20209, "quantity": 1},
       {"itemId": 1, "quantity": 1600000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Electric Guitar bonus 1",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Electric Guitar bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7121, "quantity": 450},
       {"itemId": 1020, "quantity": 450},
       {"itemId": 20210, "quantity": 1},
       {"itemId": 1, "quantity": 2000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Electric Guitar bonus 2",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Electric Guitar bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1000, "quantity": 350},
       {"itemId": 7225, "quantity": 480},
       {"itemId": 20210, "quantity": 1},
       {"itemId": 1, "quantity": 1900000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Electric Guitar bonus 3",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Electric Guitar bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7312, "quantity": 490},
       {"itemId": 1040, "quantity": 310},
       {"itemId": 20210, "quantity": 1},
       {"itemId": 1, "quantity": 1600000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Electric Guitar bonus 4",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Electric Guitar bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7118, "quantity": 270},
       {"itemId": 1045, "quantity": 300},
       {"itemId": 20210, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Electric Guitar bonus 5",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Electric Guitar bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7009, "quantity": 340},
       {"itemId": 1042, "quantity": 450},
       {"itemId": 20210, "quantity": 1},
       {"itemId": 1, "quantity": 1800000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Electric Guitar bonus 6",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Electric Guitar bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7263, "quantity": 360},
       {"itemId": 935, "quantity": 460},
       {"itemId": 20210, "quantity": 1},
       {"itemId": 1, "quantity": 2000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Electric Guitar bonus 7",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Electric Guitar bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7188, "quantity": 310},
       {"itemId": 7005, "quantity": 290},
       {"itemId": 20210, "quantity": 1},
       {"itemId": 1, "quantity": 1200000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Electric Guitar bonus 8",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Electric Guitar bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 939, "quantity": 350},
       {"itemId": 7071, "quantity": 250},
       {"itemId": 20210, "quantity": 1},
       {"itemId": 1, "quantity": 1700000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Electric Guitar bonus 9",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Electric Guitar bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1098, "quantity": 390},
       {"itemId": 7561, "quantity": 290},
       {"itemId": 20210, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Electric Guitar bonus 10",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Electric Guitar bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7107, "quantity": 480},
       {"itemId": 7317, "quantity": 410},
       {"itemId": 20210, "quantity": 1},
       {"itemId": 1, "quantity": 1700000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Evangelist bonus 1",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Evangelist bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7209, "quantity": 290},
       {"itemId": 7004, "quantity": 460},
       {"itemId": 20201, "quantity": 1},
       {"itemId": 1, "quantity": 1700000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Evangelist bonus 2",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Evangelist bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7152, "quantity": 280},
       {"itemId": 7799, "quantity": 470},
       {"itemId": 20201, "quantity": 1},
       {"itemId": 1, "quantity": 2000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Evangelist bonus 3",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Evangelist bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7098, "quantity": 370},
       {"itemId": 962, "quantity": 430},
       {"itemId": 20201, "quantity": 1},
       {"itemId": 1, "quantity": 1700000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Evangelist bonus 4",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Evangelist bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7200, "quantity": 300},
       {"itemId": 7567, "quantity": 380},
       {"itemId": 20201, "quantity": 1},
       {"itemId": 1, "quantity": 1900000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Evangelist bonus 5",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Evangelist bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 916, "quantity": 430},
       {"itemId": 954, "quantity": 420},
       {"itemId": 20201, "quantity": 1},
       {"itemId": 1, "quantity": 1400000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Evangelist bonus 6",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Evangelist bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7149, "quantity": 330},
       {"itemId": 1035, "quantity": 300},
       {"itemId": 20201, "quantity": 1},
       {"itemId": 1, "quantity": 1200000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Evangelist bonus 7",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Evangelist bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7158, "quantity": 400},
       {"itemId": 7266, "quantity": 390},
       {"itemId": 20201, "quantity": 1},
       {"itemId": 1, "quantity": 1800000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Evangelist bonus 8",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Evangelist bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7218, "quantity": 410},
       {"itemId": 7095, "quantity": 460},
       {"itemId": 20201, "quantity": 1},
       {"itemId": 1, "quantity": 1900000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Evangelist bonus 9",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Evangelist bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7315, "quantity": 320},
       {"itemId": 1034, "quantity": 390},
       {"itemId": 20201, "quantity": 1},
       {"itemId": 1, "quantity": 1600000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Evangelist bonus 10",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Evangelist bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 953, "quantity": 470},
       {"itemId": 7155, "quantity": 420},
       {"itemId": 20201, "quantity": 1},
       {"itemId": 1, "quantity": 1600000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Eversong Greaves bonus 1",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Eversong Greaves bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 951, "quantity": 370},
       {"itemId": 7798, "quantity": 410},
       {"itemId": 20215, "quantity": 1},
       {"itemId": 1, "quantity": 1800000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Eversong Greaves bonus 2",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Eversong Greaves bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 926, "quantity": 310},
       {"itemId": 967, "quantity": 460},
       {"itemId": 20215, "quantity": 1},
       {"itemId": 1, "quantity": 1600000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Eversong Greaves bonus 3",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Eversong Greaves bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7205, "quantity": 420},
       {"itemId": 1095, "quantity": 490},
       {"itemId": 20215, "quantity": 1},
       {"itemId": 1, "quantity": 1100000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Eversong Greaves bonus 4",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Eversong Greaves bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 963, "quantity": 350},
       {"itemId": 1045, "quantity": 260},
       {"itemId": 20215, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Eversong Greaves bonus 5",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Eversong Greaves bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7320, "quantity": 410},
       {"itemId": 950, "quantity": 390},
       {"itemId": 20215, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Eversong Greaves bonus 6",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Eversong Greaves bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7340, "quantity": 420},
       {"itemId": 7031, "quantity": 310},
       {"itemId": 20215, "quantity": 1},
       {"itemId": 1, "quantity": 1200000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Eversong Greaves bonus 7",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Eversong Greaves bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7347, "quantity": 430},
       {"itemId": 1094, "quantity": 280},
       {"itemId": 20215, "quantity": 1},
       {"itemId": 1, "quantity": 1000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Eversong Greaves bonus 8",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Eversong Greaves bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1033, "quantity": 440},
       {"itemId": 7168, "quantity": 310},
       {"itemId": 20215, "quantity": 1},
       {"itemId": 1, "quantity": 1600000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Eversong Greaves bonus 9",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Eversong Greaves bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7013, "quantity": 500},
       {"itemId": 7117, "quantity": 260},
       {"itemId": 20215, "quantity": 1},
       {"itemId": 1, "quantity": 1400000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Eversong Greaves bonus 10",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Eversong Greaves bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1027, "quantity": 420},
       {"itemId": 7100, "quantity": 450},
       {"itemId": 20215, "quantity": 1},
       {"itemId": 1, "quantity": 1800000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Ghostdancer Staff bonus 1",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Ghostdancer Staff bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 949, "quantity": 430},
       {"itemId": 958, "quantity": 340},
       {"itemId": 20216, "quantity": 1},
       {"itemId": 1, "quantity": 1200000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Ghostdancer Staff bonus 2",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Ghostdancer Staff bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7117, "quantity": 310},
       {"itemId": 7564, "quantity": 320},
       {"itemId": 20216, "quantity": 1},
       {"itemId": 1, "quantity": 1700000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Ghostdancer Staff bonus 3",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Ghostdancer Staff bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 6023, "quantity": 340},
       {"itemId": 943, "quantity": 310},
       {"itemId": 20216, "quantity": 1},
       {"itemId": 1, "quantity": 1000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Ghostdancer Staff bonus 4",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Ghostdancer Staff bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 6020, "quantity": 290},
       {"itemId": 943, "quantity": 310},
       {"itemId": 20216, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Ghostdancer Staff bonus 5",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Ghostdancer Staff bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7216, "quantity": 440},
       {"itemId": 939, "quantity": 360},
       {"itemId": 20216, "quantity": 1},
       {"itemId": 1, "quantity": 1400000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Ghostdancer Staff bonus 6",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Ghostdancer Staff bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7071, "quantity": 370},
       {"itemId": 7188, "quantity": 360},
       {"itemId": 20216, "quantity": 1},
       {"itemId": 1, "quantity": 1000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Ghostdancer Staff bonus 7",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Ghostdancer Staff bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7269, "quantity": 270},
       {"itemId": 948, "quantity": 450},
       {"itemId": 20216, "quantity": 1},
       {"itemId": 1, "quantity": 1000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Ghostdancer Staff bonus 8",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Ghostdancer Staff bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 944, "quantity": 480},
       {"itemId": 7345, "quantity": 420},
       {"itemId": 20216, "quantity": 1},
       {"itemId": 1, "quantity": 1800000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Ghostdancer Staff bonus 9",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Ghostdancer Staff bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7266, "quantity": 470},
       {"itemId": 7116, "quantity": 260},
       {"itemId": 20216, "quantity": 1},
       {"itemId": 1, "quantity": 1800000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Ghostdancer Staff bonus 10",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Ghostdancer Staff bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 941, "quantity": 420},
       {"itemId": 950, "quantity": 290},
       {"itemId": 20216, "quantity": 1},
       {"itemId": 1, "quantity": 1500000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Hira Shurikat bonus 1",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Hira Shurikat bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7194, "quantity": 300},
       {"itemId": 7205, "quantity": 440},
       {"itemId": 20214, "quantity": 1},
       {"itemId": 1, "quantity": 1400000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Hira Shurikat bonus 2",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Hira Shurikat bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7751, "quantity": 310},
       {"itemId": 6021, "quantity": 310},
       {"itemId": 20214, "quantity": 1},
       {"itemId": 1, "quantity": 1100000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Hira Shurikat bonus 3",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Hira Shurikat bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1061, "quantity": 270},
       {"itemId": 949, "quantity": 440},
       {"itemId": 20214, "quantity": 1},
       {"itemId": 1, "quantity": 1400000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Hira Shurikat bonus 4",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Hira Shurikat bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7186, "quantity": 390},
       {"itemId": 7027, "quantity": 350},
       {"itemId": 20214, "quantity": 1},
       {"itemId": 1, "quantity": 1400000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Hira Shurikat bonus 5",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Hira Shurikat bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 904, "quantity": 390},
       {"itemId": 903, "quantity": 420},
       {"itemId": 20214, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Hira Shurikat bonus 6",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Hira Shurikat bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7069, "quantity": 330},
       {"itemId": 956, "quantity": 380},
       {"itemId": 20214, "quantity": 1},
       {"itemId": 1, "quantity": 1100000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Hira Shurikat bonus 7",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Hira Shurikat bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1016, "quantity": 430},
       {"itemId": 7315, "quantity": 390},
       {"itemId": 20214, "quantity": 1},
       {"itemId": 1, "quantity": 1900000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Hira Shurikat bonus 8",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Hira Shurikat bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7317, "quantity": 300},
       {"itemId": 7325, "quantity": 270},
       {"itemId": 20214, "quantity": 1},
       {"itemId": 1, "quantity": 1800000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Hira Shurikat bonus 9",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Hira Shurikat bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 931, "quantity": 490},
       {"itemId": 1027, "quantity": 280},
       {"itemId": 20214, "quantity": 1},
       {"itemId": 1, "quantity": 1200000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Hira Shurikat bonus 10",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Hira Shurikat bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1066, "quantity": 300},
       {"itemId": 7125, "quantity": 470},
       {"itemId": 20214, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Mjolnir bonus 1",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Mjolnir bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 936, "quantity": 390},
       {"itemId": 7158, "quantity": 480},
       {"itemId": 20203, "quantity": 1},
       {"itemId": 1, "quantity": 1100000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Mjolnir bonus 2",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Mjolnir bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 946, "quantity": 420},
       {"itemId": 955, "quantity": 330},
       {"itemId": 20203, "quantity": 1},
       {"itemId": 1, "quantity": 1900000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Mjolnir bonus 3",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Mjolnir bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7165, "quantity": 280},
       {"itemId": 7189, "quantity": 330},
       {"itemId": 20203, "quantity": 1},
       {"itemId": 1, "quantity": 1900000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Mjolnir bonus 4",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Mjolnir bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1034, "quantity": 300},
       {"itemId": 7216, "quantity": 300},
       {"itemId": 20203, "quantity": 1},
       {"itemId": 1, "quantity": 1000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Mjolnir bonus 5",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Mjolnir bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7798, "quantity": 380},
       {"itemId": 7047, "quantity": 280},
       {"itemId": 20203, "quantity": 1},
       {"itemId": 1, "quantity": 1500000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Mjolnir bonus 6",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Mjolnir bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7752, "quantity": 420},
       {"itemId": 7166, "quantity": 430},
       {"itemId": 20203, "quantity": 1},
       {"itemId": 1, "quantity": 1200000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Mjolnir bonus 7",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Mjolnir bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7172, "quantity": 380},
       {"itemId": 7165, "quantity": 480},
       {"itemId": 20203, "quantity": 1},
       {"itemId": 1, "quantity": 1500000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Mjolnir bonus 8",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Mjolnir bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1041, "quantity": 370},
       {"itemId": 7198, "quantity": 340},
       {"itemId": 20203, "quantity": 1},
       {"itemId": 1, "quantity": 1900000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Mjolnir bonus 9",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Mjolnir bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7210, "quantity": 410},
       {"itemId": 940, "quantity": 430},
       {"itemId": 20203, "quantity": 1},
       {"itemId": 1, "quantity": 1100000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Mjolnir bonus 10",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Mjolnir bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1054, "quantity": 440},
       {"itemId": 938, "quantity": 450},
       {"itemId": 20203, "quantity": 1},
       {"itemId": 1, "quantity": 1500000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Nibelungen bonus 1",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Nibelungen bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1031, "quantity": 290},
       {"itemId": 1021, "quantity": 280},
       {"itemId": 20200, "quantity": 1},
       {"itemId": 1, "quantity": 1400000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Nibelungen bonus 2",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Nibelungen bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7263, "quantity": 270},
       {"itemId": 7004, "quantity": 410},
       {"itemId": 20200, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Nibelungen bonus 3",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Nibelungen bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1022, "quantity": 290},
       {"itemId": 7568, "quantity": 490},
       {"itemId": 20200, "quantity": 1},
       {"itemId": 1, "quantity": 2000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Nibelungen bonus 4",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Nibelungen bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 932, "quantity": 290},
       {"itemId": 1037, "quantity": 490},
       {"itemId": 20200, "quantity": 1},
       {"itemId": 1, "quantity": 1200000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Nibelungen bonus 5",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Nibelungen bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1057, "quantity": 410},
       {"itemId": 1048, "quantity": 320},
       {"itemId": 20200, "quantity": 1},
       {"itemId": 1, "quantity": 1200000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Nibelungen bonus 6",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Nibelungen bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 6021, "quantity": 380},
       {"itemId": 7158, "quantity": 470},
       {"itemId": 20200, "quantity": 1},
       {"itemId": 1, "quantity": 1700000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Nibelungen bonus 7",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Nibelungen bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1023, "quantity": 490},
       {"itemId": 7121, "quantity": 390},
       {"itemId": 20200, "quantity": 1},
       {"itemId": 1, "quantity": 1600000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Nibelungen bonus 8",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Nibelungen bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7202, "quantity": 290},
       {"itemId": 7203, "quantity": 490},
       {"itemId": 20200, "quantity": 1},
       {"itemId": 1, "quantity": 1400000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Nibelungen bonus 9",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Nibelungen bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7192, "quantity": 410},
       {"itemId": 7561, "quantity": 430},
       {"itemId": 20200, "quantity": 1},
       {"itemId": 1, "quantity": 1700000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Nibelungen bonus 10",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Nibelungen bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 930, "quantity": 430},
       {"itemId": 7507, "quantity": 430},
       {"itemId": 20200, "quantity": 1},
       {"itemId": 1, "quantity": 1200000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Scouter bonus 1",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Scouter bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7163, "quantity": 330},
       {"itemId": 7221, "quantity": 370},
       {"itemId": 20213, "quantity": 1},
       {"itemId": 1, "quantity": 1400000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Scouter bonus 2",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Scouter bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7125, "quantity": 320},
       {"itemId": 7321, "quantity": 390},
       {"itemId": 20213, "quantity": 1},
       {"itemId": 1, "quantity": 1000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Scouter bonus 3",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Scouter bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1094, "quantity": 260},
       {"itemId": 966, "quantity": 300},
       {"itemId": 20213, "quantity": 1},
       {"itemId": 1, "quantity": 1900000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Scouter bonus 4",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Scouter bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 917, "quantity": 270},
       {"itemId": 7167, "quantity": 370},
       {"itemId": 20213, "quantity": 1},
       {"itemId": 1, "quantity": 1100000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Scouter bonus 5",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Scouter bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7153, "quantity": 290},
       {"itemId": 7298, "quantity": 380},
       {"itemId": 20213, "quantity": 1},
       {"itemId": 1, "quantity": 1800000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Scouter bonus 6",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Scouter bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7065, "quantity": 500},
       {"itemId": 7043, "quantity": 280},
       {"itemId": 20213, "quantity": 1},
       {"itemId": 1, "quantity": 1400000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Scouter bonus 7",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Scouter bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1018, "quantity": 260},
       {"itemId": 953, "quantity": 490},
       {"itemId": 20213, "quantity": 1},
       {"itemId": 1, "quantity": 1000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Scouter bonus 8",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Scouter bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7112, "quantity": 320},
       {"itemId": 7003, "quantity": 420},
       {"itemId": 20213, "quantity": 1},
       {"itemId": 1, "quantity": 1100000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Scouter bonus 9",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Scouter bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 6071, "quantity": 280},
       {"itemId": 901, "quantity": 400},
       {"itemId": 20213, "quantity": 1},
       {"itemId": 1, "quantity": 1800000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Scouter bonus 10",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Scouter bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7264, "quantity": 410},
       {"itemId": 7171, "quantity": 490},
       {"itemId": 20213, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Sherwood Bow bonus 1",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Sherwood Bow bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7124, "quantity": 470},
       {"itemId": 7212, "quantity": 460},
       {"itemId": 20208, "quantity": 1},
       {"itemId": 1, "quantity": 1000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Sherwood Bow bonus 2",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Sherwood Bow bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 947, "quantity": 440},
       {"itemId": 7511, "quantity": 370},
       {"itemId": 20208, "quantity": 1},
       {"itemId": 1, "quantity": 1200000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Sherwood Bow bonus 3",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Sherwood Bow bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 6041, "quantity": 350},
       {"itemId": 7110, "quantity": 470},
       {"itemId": 20208, "quantity": 1},
       {"itemId": 1, "quantity": 1000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Sherwood Bow bonus 4",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Sherwood Bow bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 948, "quantity": 270},
       {"itemId": 942, "quantity": 280},
       {"itemId": 20208, "quantity": 1},
       {"itemId": 1, "quantity": 1200000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Sherwood Bow bonus 5",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Sherwood Bow bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7157, "quantity": 310},
       {"itemId": 1037, "quantity": 280},
       {"itemId": 20208, "quantity": 1},
       {"itemId": 1, "quantity": 1200000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Sherwood Bow bonus 6",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Sherwood Bow bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1024, "quantity": 310},
       {"itemId": 7002, "quantity": 330},
       {"itemId": 20208, "quantity": 1},
       {"itemId": 1, "quantity": 1600000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Sherwood Bow bonus 7",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Sherwood Bow bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7214, "quantity": 500},
       {"itemId": 7208, "quantity": 280},
       {"itemId": 20208, "quantity": 1},
       {"itemId": 1, "quantity": 1400000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Sherwood Bow bonus 8",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Sherwood Bow bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1012, "quantity": 430},
       {"itemId": 945, "quantity": 340},
       {"itemId": 20208, "quantity": 1},
       {"itemId": 1, "quantity": 1500000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Sherwood Bow bonus 9",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Sherwood Bow bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1068, "quantity": 340},
       {"itemId": 920, "quantity": 380},
       {"itemId": 20208, "quantity": 1},
       {"itemId": 1, "quantity": 1100000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Sherwood Bow bonus 10",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Sherwood Bow bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7003, "quantity": 310},
       {"itemId": 918, "quantity": 330},
       {"itemId": 20208, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Staff of Magi bonus 1",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Staff of Magi bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 928, "quantity": 330},
       {"itemId": 908, "quantity": 380},
       {"itemId": 20202, "quantity": 1},
       {"itemId": 1, "quantity": 1700000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Staff of Magi bonus 2",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Staff of Magi bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7099, "quantity": 470},
       {"itemId": 1060, "quantity": 360},
       {"itemId": 20202, "quantity": 1},
       {"itemId": 1, "quantity": 2000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Staff of Magi bonus 3",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Staff of Magi bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 907, "quantity": 470},
       {"itemId": 1013, "quantity": 460},
       {"itemId": 20202, "quantity": 1},
       {"itemId": 1, "quantity": 1500000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Staff of Magi bonus 4",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Staff of Magi bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7122, "quantity": 370},
       {"itemId": 7195, "quantity": 380},
       {"itemId": 20202, "quantity": 1},
       {"itemId": 1, "quantity": 2000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Staff of Magi bonus 5",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Staff of Magi bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1021, "quantity": 360},
       {"itemId": 1015, "quantity": 290},
       {"itemId": 20202, "quantity": 1},
       {"itemId": 1, "quantity": 1100000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Staff of Magi bonus 6",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Staff of Magi bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7031, "quantity": 360},
       {"itemId": 1055, "quantity": 490},
       {"itemId": 20202, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Staff of Magi bonus 7",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Staff of Magi bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1015, "quantity": 350},
       {"itemId": 7005, "quantity": 360},
       {"itemId": 20202, "quantity": 1},
       {"itemId": 1, "quantity": 1900000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Staff of Magi bonus 8",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Staff of Magi bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7187, "quantity": 400},
       {"itemId": 7098, "quantity": 340},
       {"itemId": 20202, "quantity": 1},
       {"itemId": 1, "quantity": 1200000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Staff of Magi bonus 9",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Staff of Magi bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7201, "quantity": 260},
       {"itemId": 907, "quantity": 500},
       {"itemId": 20202, "quantity": 1},
       {"itemId": 1, "quantity": 1100000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Staff of Magi bonus 10",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Staff of Magi bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7286, "quantity": 420},
       {"itemId": 913, "quantity": 260},
       {"itemId": 20202, "quantity": 1},
       {"itemId": 1, "quantity": 1800000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Suiken bonus 1",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Suiken bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 6032, "quantity": 270},
       {"itemId": 1042, "quantity": 340},
       {"itemId": 20206, "quantity": 1},
       {"itemId": 1, "quantity": 1600000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Suiken bonus 2",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Suiken bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 960, "quantity": 420},
       {"itemId": 1056, "quantity": 450},
       {"itemId": 20206, "quantity": 1},
       {"itemId": 1, "quantity": 1000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Suiken bonus 3",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Suiken bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7567, "quantity": 370},
       {"itemId": 1044, "quantity": 400},
       {"itemId": 20206, "quantity": 1},
       {"itemId": 1, "quantity": 1100000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Suiken bonus 4",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Suiken bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7093, "quantity": 280},
       {"itemId": 7009, "quantity": 420},
       {"itemId": 20206, "quantity": 1},
       {"itemId": 1, "quantity": 2000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Suiken bonus 5",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Suiken bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 954, "quantity": 360},
       {"itemId": 1038, "quantity": 380},
       {"itemId": 20206, "quantity": 1},
       {"itemId": 1, "quantity": 1700000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Suiken bonus 6",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Suiken bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 915, "quantity": 350},
       {"itemId": 7298, "quantity": 360},
       {"itemId": 20206, "quantity": 1},
       {"itemId": 1, "quantity": 1100000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Suiken bonus 7",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Suiken bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1064, "quantity": 280},
       {"itemId": 7270, "quantity": 420},
       {"itemId": 20206, "quantity": 1},
       {"itemId": 1, "quantity": 1200000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Suiken bonus 8",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Suiken bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7323, "quantity": 470},
       {"itemId": 7043, "quantity": 360},
       {"itemId": 20206, "quantity": 1},
       {"itemId": 1, "quantity": 1500000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Suiken bonus 9",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Suiken bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7111, "quantity": 380},
       {"itemId": 1063, "quantity": 320},
       {"itemId": 20206, "quantity": 1},
       {"itemId": 1, "quantity": 1100000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Suiken bonus 10",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Suiken bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 957, "quantity": 470},
       {"itemId": 7201, "quantity": 490},
       {"itemId": 20206, "quantity": 1},
       {"itemId": 1, "quantity": 1600000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Tome of Ymir bonus 1",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Tome of Ymir bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7762, "quantity": 480},
       {"itemId": 7345, "quantity": 280},
       {"itemId": 20207, "quantity": 1},
       {"itemId": 1, "quantity": 1600000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Tome of Ymir bonus 2",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Tome of Ymir bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 940, "quantity": 370},
       {"itemId": 7220, "quantity": 440},
       {"itemId": 20207, "quantity": 1},
       {"itemId": 1, "quantity": 1900000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Tome of Ymir bonus 3",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Tome of Ymir bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7213, "quantity": 370},
       {"itemId": 1064, "quantity": 350},
       {"itemId": 20207, "quantity": 1},
       {"itemId": 1, "quantity": 1700000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Tome of Ymir bonus 4",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Tome of Ymir bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7119, "quantity": 340},
       {"itemId": 7151, "quantity": 360},
       {"itemId": 20207, "quantity": 1},
       {"itemId": 1, "quantity": 1800000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Tome of Ymir bonus 5",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Tome of Ymir bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7217, "quantity": 420},
       {"itemId": 7096, "quantity": 460},
       {"itemId": 20207, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Tome of Ymir bonus 6",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Tome of Ymir bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7012, "quantity": 310},
       {"itemId": 7162, "quantity": 420},
       {"itemId": 20207, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Tome of Ymir bonus",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Tome of Ymir bonus",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7095, "quantity": 300},
       {"itemId": 967, "quantity": 440},
       {"itemId": 20207, "quantity": 1},
       {"itemId": 1, "quantity": 1400000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Tome of Ymir bonus 8",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Tome of Ymir bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7063, "quantity": 290},
       {"itemId": 1012, "quantity": 380},
       {"itemId": 20207, "quantity": 1},
       {"itemId": 1, "quantity": 1100000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Tome of Ymir bonus 9",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Tome of Ymir bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7319, "quantity": 440},
       {"itemId": 901, "quantity": 320},
       {"itemId": 20207, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Tome of Ymir bonus 10",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Tome of Ymir bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7222, "quantity": 500},
       {"itemId": 960, "quantity": 310},
       {"itemId": 20207, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Twin Fang bonus 1",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Twin Fang bonus 1",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7267, "quantity": 390},
       {"itemId": 7126, "quantity": 340},
       {"itemId": 20217, "quantity": 1},
       {"itemId": 1, "quantity": 1600000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Twin Fang bonus 2",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Twin Fang bonus 2",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7565, "quantity": 370},
       {"itemId": 7053, "quantity": 450},
       {"itemId": 20217, "quantity": 1},
       {"itemId": 1, "quantity": 1900000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Twin Fang bonus 3",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Twin Fang bonus 3",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7207, "quantity": 380},
       {"itemId": 951, "quantity": 400},
       {"itemId": 20217, "quantity": 1},
       {"itemId": 1, "quantity": 1800000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Twin Fang bonus 4",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Twin Fang bonus 4",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 1019, "quantity": 400},
       {"itemId": 1043, "quantity": 420},
       {"itemId": 20217, "quantity": 1},
       {"itemId": 1, "quantity": 1300000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Twin Fang bonus 5",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Twin Fang bonus 5",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7097, "quantity": 410},
       {"itemId": 7564, "quantity": 470},
       {"itemId": 20217, "quantity": 1},
       {"itemId": 1, "quantity": 1500000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Twin Fang bonus 6",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Twin Fang bonus 6",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7120, "quantity": 350},
       {"itemId": 961, "quantity": 420},
       {"itemId": 20217, "quantity": 1},
       {"itemId": 1, "quantity": 1680000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Twin Fang bonus 7",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Twin Fang bonus 7",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 920, "quantity": 350},
       {"itemId": 7163, "quantity": 310},
       {"itemId": 20217, "quantity": 1},
       {"itemId": 1, "quantity": 2000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Twin Fang bonus 8",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Twin Fang bonus 8",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7190, "quantity": 290},
       {"itemId": 1013, "quantity": 460},
       {"itemId": 20217, "quantity": 1},
       {"itemId": 1, "quantity": 1600000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Twin Fang bonus 9",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Twin Fang bonus 9",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7318, "quantity": 500},
       {"itemId": 7156, "quantity": 390},
       {"itemId": 20217, "quantity": 1},
       {"itemId": 1, "quantity": 2000000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Twin Fang bonus 10",
-    category: "SQI Bonus",
-    requirements: [
+    "name": "Twin Fang bonus 10",
+    "category": "SQI Bonus",
+    "requirements": [
       {"itemId": 7799, "quantity": 360},
       {"itemId": 947, "quantity": 250},
       {"itemId": 20217, "quantity": 1},
       {"itemId": 1, "quantity": 1600000}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Betty",
-    category: "Betty",
-    requirements: [
+    "name": "Betty",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 1068, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Barren Trunk",
-    category: "Betty",
-    requirements: [
+    "name": "Barren Trunk",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 1068, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Bear's Footskin",
-    category: "Betty",
-    requirements: [
+    "name": "Bear's Footskin",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 948, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Black Bear Skin",
-    category: "Betty",
-    requirements: [
+    "name": "Black Bear Skin",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 7161, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Blue Hair",
-    category: "Betty",
-    requirements: [
+    "name": "Blue Hair",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 1034, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Brigan",
-    category: "Betty",
-    requirements: [
+    "name": "Brigan",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 7054, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Cyfar",
-    category: "Betty",
-    requirements: [
+    "name": "Cyfar",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 7053, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Decayed Nail",
-    category: "Betty",
-    requirements: [
+    "name": "Decayed Nail",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 957, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Dry Sand",
-    category: "Betty",
-    requirements: [
+    "name": "Dry Sand",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 7264, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Earthworm Peeling",
-    category: "Betty",
-    requirements: [
+    "name": "Earthworm Peeling",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 1055, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Elder Pixie's Moustache",
-    category: "Betty",
-    requirements: [
+    "name": "Elder Pixie's Moustache",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 1040, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Feather",
-    category: "Betty",
-    requirements: [
+    "name": "Feather",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 949, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Fig Leaf",
-    category: "Betty",
-    requirements: [
+    "name": "Fig Leaf",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 7298, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Fish Tail",
-    category: "Betty",
-    requirements: [
+    "name": "Fish Tail",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 1023, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Flexible Tube",
-    category: "Betty",
-    requirements: [
+    "name": "Flexible Tube",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 7325, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Honey Pot",
-    category: "Betty",
-    requirements: [
+    "name": "Honey Pot",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 7121, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Horn",
-    category: "Betty",
-    requirements: [
+    "name": "Horn",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 947, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Horrendous Hair",
-    category: "Betty",
-    requirements: [
+    "name": "Horrendous Hair",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 1048, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Horseshoe",
-    category: "Betty",
-    requirements: [
+    "name": "Horseshoe",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 944, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Huge Leaf",
-    category: "Betty",
-    requirements: [
+    "name": "Huge Leaf",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 7198, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Insect Feeler",
-    category: "Betty",
-    requirements: [
+    "name": "Insect Feeler",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 928, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Jubilee",
-    category: "Betty",
-    requirements: [
+    "name": "Jubilee",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 7312, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Lantern",
-    category: "Betty",
-    requirements: [
+    "name": "Lantern",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 1041, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Little Evil Horn",
-    category: "Betty",
-    requirements: [
+    "name": "Little Evil Horn",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 1038, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Manacles",
-    category: "Betty",
-    requirements: [
+    "name": "Manacles",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 1098, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Mane",
-    category: "Betty",
-    requirements: [
+    "name": "Mane",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 1028, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Maneater Root",
-    category: "Betty",
-    requirements: [
+    "name": "Maneater Root",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 1033, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Mantis Scythe",
-    category: "Betty",
-    requirements: [
+    "name": "Mantis Scythe",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 1031, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Moth Dust",
-    category: "Betty",
-    requirements: [
+    "name": "Moth Dust",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 1057, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Mud Lump",
-    category: "Betty",
-    requirements: [
+    "name": "Mud Lump",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 7004, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Nose Ring",
-    category: "Betty",
-    requirements: [
+    "name": "Nose Ring",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 941, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Ogre Tooth",
-    category: "Betty",
-    requirements: [
+    "name": "Ogre Tooth",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 7002, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Oil Paper",
-    category: "Betty",
-    requirements: [
+    "name": "Oil Paper",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 7151, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Old Pick",
-    category: "Betty",
-    requirements: [
+    "name": "Old Pick",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 7318, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Orc Claw",
-    category: "Betty",
-    requirements: [
+    "name": "Orc Claw",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 1043, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Orc's Fang",
-    category: "Betty",
-    requirements: [
+    "name": "Orc's Fang",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 922, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Peco Peco Feather",
-    category: "Betty",
-    requirements: [
+    "name": "Peco Peco Feather",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 7101, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Piece of Bamboo",
-    category: "Betty",
-    requirements: [
+    "name": "Piece of Bamboo",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 7150, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Porcupine Quill",
-    category: "Betty",
-    requirements: [
+    "name": "Porcupine Quill",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 1027, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Raccoon Leaf",
-    category: "Betty",
-    requirements: [
+    "name": "Raccoon Leaf",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 945, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Round Shell",
-    category: "Betty",
-    requirements: [
+    "name": "Round Shell",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 1096, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Shell",
-    category: "Betty",
-    requirements: [
+    "name": "Shell",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 935, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Skel-Bone",
-    category: "Betty",
-    requirements: [
+    "name": "Skel-Bone",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 932, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Snail's Shell",
-    category: "Betty",
-    requirements: [
+    "name": "Snail's Shell",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 946, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Solid Shell",
-    category: "Betty",
-    requirements: [
+    "name": "Solid Shell",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 943, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Sprout",
-    category: "Betty",
-    requirements: [
+    "name": "Sprout",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 7193, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Sticky Mucus",
-    category: "Betty",
-    requirements: [
+    "name": "Sticky Mucus",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 938, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Stone Heart",
-    category: "Betty",
-    requirements: [
+    "name": "Stone Heart",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 953, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Strange Steel Piece",
-    category: "Betty",
-    requirements: [
+    "name": "Strange Steel Piece",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 7167, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Thin Trunk",
-    category: "Betty",
-    requirements: [
+    "name": "Thin Trunk",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 7186, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Tough Scalelike Stem",
-    category: "Betty",
-    requirements: [
+    "name": "Tough Scalelike Stem",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 7012, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Wing of Red Bat",
-    category: "Betty",
-    requirements: [
+    "name": "Wing of Red Bat",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 7006, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Worn-out Prison Uniform",
-    category: "Betty",
-    requirements: [
+    "name": "Worn-out Prison Uniform",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 1099, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Zenorc Fang",
-    category: "Betty",
-    requirements: [
+    "name": "Zenorc Fang",
+    "category": "Betty",
+    "requirements": [
       {"itemId": 1044, "quantity": "10-20"}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Temporal Boots (Str)",
-    category: "Crafting",
-    requirements: [
+    "name": "Temporal Boots (Str)",
+    "category": "Crafting",
+    "requirements": [
       {"itemId": 6607, "quantity": 25},
       {"itemId": 6223, "quantity": 50},
       {"itemId": 6224, "quantity": 25},
@@ -12604,14 +12604,14 @@ const QUESTS = [
       {"itemId": 1004, "quantity": 20},
       {"itemId": 7939, "quantity": 20}
     ],
-    results: [
+    "results": [
       {"itemId": 22100, "quantity": 1}
     ]
   },
   {
-    name: "Temporal Boots (Agi)",
-    category: "Crafting",
-    requirements: [
+    "name": "Temporal Boots (Agi)",
+    "category": "Crafting",
+    "requirements": [
       {"itemId": 6607, "quantity": 25},
       {"itemId": 6223, "quantity": 50},
       {"itemId": 6224, "quantity": 25},
@@ -12620,14 +12620,14 @@ const QUESTS = [
       {"itemId": 6086, "quantity": 50},
       {"itemId": 6087, "quantity": 30}
     ],
-    results: [
+    "results": [
       {"itemId": 22104, "quantity": 1}
     ]
   },
   {
-    name: "Temporal Boots (Vit)",
-    category: "Crafting",
-    requirements: [
+    "name": "Temporal Boots (Vit)",
+    "category": "Crafting",
+    "requirements": [
       {"itemId": 6607, "quantity": 25},
       {"itemId": 6223, "quantity": 50},
       {"itemId": 6224, "quantity": 25},
@@ -12636,14 +12636,14 @@ const QUESTS = [
       {"itemId": 7326, "quantity": 50},
       {"itemId": 6395, "quantity": 100}
     ],
-    results: [
+    "results": [
       {"itemId": 22101, "quantity": 1}
     ]
   },
   {
-    name: "Temporal Boots (Dex)",
-    category: "Crafting",
-    requirements: [
+    "name": "Temporal Boots (Dex)",
+    "category": "Crafting",
+    "requirements": [
       {"itemId": 6607, "quantity": 25},
       {"itemId": 6223, "quantity": 50},
       {"itemId": 6224, "quantity": 25},
@@ -12652,14 +12652,14 @@ const QUESTS = [
       {"itemId": 6088, "quantity": 50},
       {"itemId": 7938, "quantity": 100}
     ],
-    results: [
+    "results": [
       {"itemId": 22102, "quantity": 1}
     ]
   },
   {
-    name: "Temporal Boots (Int)",
-    category: "Crafting",
-    requirements: [
+    "name": "Temporal Boots (Int)",
+    "category": "Crafting",
+    "requirements": [
       {"itemId": 6607, "quantity": 25},
       {"itemId": 6223, "quantity": 50},
       {"itemId": 6224, "quantity": 25},
@@ -12668,14 +12668,14 @@ const QUESTS = [
       {"itemId": 6023, "quantity": 50},
       {"itemId": 6559, "quantity": 50}
     ],
-    results: [
+    "results": [
       {"itemId": 22103, "quantity": 1}
     ]
   },
   {
-    name: "Temporal Boots (Luk)",
-    category: "Crafting",
-    requirements: [
+    "name": "Temporal Boots (Luk)",
+    "category": "Crafting",
+    "requirements": [
       {"itemId": 6607, "quantity": 25},
       {"itemId": 6223, "quantity": 50},
       {"itemId": 6224, "quantity": 25},
@@ -12684,41 +12684,41 @@ const QUESTS = [
       {"itemId": 6089, "quantity": 50},
       {"itemId": 6032, "quantity": 80}
     ],
-    results: [
+    "results": [
       {"itemId": 22105, "quantity": 1}
     ]
   },
   {
-    name: "Temporal enchantment 1",
-    category: "Enchantment",
-    requirements: [
+    "name": "Temporal enchantment 1",
+    "category": "Enchantment",
+    "requirements": [
       {"itemId": 6608, "quantity": 400},
       {"itemId": 6607, "quantity": 10}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Temporal enchantment 2 (random)",
-    category: "Enchantment",
-    requirements: [
+    "name": "Temporal enchantment 2 (random)",
+    "category": "Enchantment",
+    "requirements": [
       {"itemId": 6607, "quantity": 25},
       {"itemId": 6755, "quantity": 50}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Temporal enchantment 2 (guaranteed)",
-    category: "Enchantment",
-    requirements: [
+    "name": "Temporal enchantment 2 (guaranteed)",
+    "category": "Enchantment",
+    "requirements": [
       {"itemId": 6607, "quantity": 185},
       {"itemId": 6755, "quantity": 375}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Temporal enchantment Final",
-    category: "Enchantment",
-    requirements: [
+    "name": "Temporal enchantment Final",
+    "category": "Enchantment",
+    "requirements": [
       {"itemId": 6607, "quantity": 100},
       {"itemId": 6223, "quantity": 200},
       {"itemId": 6224, "quantity": 100},
@@ -12729,51 +12729,51 @@ const QUESTS = [
       {"itemId": 1, "quantity": 20000000},
       {"itemId": 8049, "quantity": 1}
     ],
-    results: []
+    "results": []
   },
   {
-    name: "Cooking Str 1",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Str 1",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 940, "quantity": 5},
       {"itemId": 7031, "quantity": 1},
       {"itemId": 7457, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12041, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Str 2",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Str 2",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 918, "quantity": 20},
       {"itemId": 511, "quantity": 10},
       {"itemId": 508, "quantity": 10},
       {"itemId": 7454, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12042, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Str 3",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Str 3",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 7031, "quantity": 1},
       {"itemId": 511, "quantity": 10},
       {"itemId": 7286, "quantity": 5},
       {"itemId": 517, "quantity": 4},
       {"itemId": 7455, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12043, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Str 4",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Str 4",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 507, "quantity": 3},
       {"itemId": 508, "quantity": 2},
       {"itemId": 511, "quantity": 3},
@@ -12781,42 +12781,42 @@ const QUESTS = [
       {"itemId": 517, "quantity": 5},
       {"itemId": 7453, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12044, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Str 5",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Str 5",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 518, "quantity": 2},
       {"itemId": 516, "quantity": 10},
       {"itemId": 7457, "quantity": 1},
       {"itemId": 515, "quantity": 3},
       {"itemId": 577, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12045, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Str 6",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Str 6",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 518, "quantity": 2},
       {"itemId": 508, "quantity": 1},
       {"itemId": 954, "quantity": 20},
       {"itemId": 517, "quantity": 10},
       {"itemId": 522, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12071, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Str 7",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Str 7",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 7098, "quantity": 1},
       {"itemId": 1003, "quantity": 2},
       {"itemId": 1019, "quantity": 15},
@@ -12824,14 +12824,14 @@ const QUESTS = [
       {"itemId": 517, "quantity": 10},
       {"itemId": 7455, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12072, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Str 8",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Str 8",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 948, "quantity": 20},
       {"itemId": 521, "quantity": 2},
       {"itemId": 520, "quantity": 1},
@@ -12839,14 +12839,14 @@ const QUESTS = [
       {"itemId": 1062, "quantity": 10},
       {"itemId": 7454, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12073, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Str 9",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Str 9",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 1050, "quantity": 40},
       {"itemId": 548, "quantity": 10},
       {"itemId": 1003, "quantity": 2},
@@ -12855,14 +12855,14 @@ const QUESTS = [
       {"itemId": 7482, "quantity": 1},
       {"itemId": 7455, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12074, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Str 10",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Str 10",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 1015, "quantity": 20},
       {"itemId": 970, "quantity": 1},
       {"itemId": 606, "quantity": 2},
@@ -12872,94 +12872,94 @@ const QUESTS = [
       {"itemId": 7455, "quantity": 1},
       {"itemId": 610, "quantity": 10}
     ],
-    results: [
+    "results": [
       {"itemId": 12075, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Vit 1",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Vit 1",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 960, "quantity": 10},
       {"itemId": 511, "quantity": 10},
       {"itemId": 503, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12051, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Vit 2",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Vit 2",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 966, "quantity": 10},
       {"itemId": 951, "quantity": 5},
       {"itemId": 956, "quantity": 5},
       {"itemId": 579, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12052, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Vit 3",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Vit 3",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 966, "quantity": 20},
       {"itemId": 961, "quantity": 10},
       {"itemId": 518, "quantity": 1},
       {"itemId": 7453, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12053, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Vit 4",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Vit 4",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 962, "quantity": 30},
       {"itemId": 509, "quantity": 10},
       {"itemId": 7194, "quantity": 10},
       {"itemId": 7031, "quantity": 1},
       {"itemId": 1024, "quantity": 20}
     ],
-    results: [
+    "results": [
       {"itemId": 12054, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Vit 5",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Vit 5",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 553, "quantity": 20},
       {"itemId": 508, "quantity": 10},
       {"itemId": 511, "quantity": 20},
       {"itemId": 7455, "quantity": 1},
       {"itemId": 7456, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12055, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Vit 6",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Vit 6",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 7188, "quantity": 20},
       {"itemId": 1033, "quantity": 10},
       {"itemId": 921, "quantity": 20},
       {"itemId": 518, "quantity": 2},
       {"itemId": 581, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12081, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Vit 7",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Vit 7",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 1023, "quantity": 10},
       {"itemId": 521, "quantity": 5},
       {"itemId": 1028, "quantity": 10},
@@ -12967,14 +12967,14 @@ const QUESTS = [
       {"itemId": 537, "quantity": 10},
       {"itemId": 7453, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12082, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Vit 8",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Vit 8",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 7298, "quantity": 20},
       {"itemId": 622, "quantity": 5},
       {"itemId": 517, "quantity": 20},
@@ -12982,14 +12982,14 @@ const QUESTS = [
       {"itemId": 7454, "quantity": 1},
       {"itemId": 577, "quantity": 2}
     ],
-    results: [
+    "results": [
       {"itemId": 12083, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Vit 9",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Vit 9",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 7123, "quantity": 10},
       {"itemId": 1037, "quantity": 20},
       {"itemId": 526, "quantity": 6},
@@ -12998,14 +12998,14 @@ const QUESTS = [
       {"itemId": 610, "quantity": 3},
       {"itemId": 7456, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12084, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Vit 10",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Vit 10",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 929, "quantity": 10},
       {"itemId": 608, "quantity": 1},
       {"itemId": 605, "quantity": 2},
@@ -13015,105 +13015,105 @@ const QUESTS = [
       {"itemId": 934, "quantity": 10},
       {"itemId": 7455, "quantity": 2}
     ],
-    results: [
+    "results": [
       {"itemId": 12085, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Int 1",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Int 1",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 514, "quantity": 3},
       {"itemId": 501, "quantity": 2}
     ],
-    results: [
+    "results": [
       {"itemId": 12046, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Int 2",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Int 2",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 510, "quantity": 5},
       {"itemId": 507, "quantity": 10},
       {"itemId": 508, "quantity": 10}
     ],
-    results: [
+    "results": [
       {"itemId": 12047, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Int 3",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Int 3",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 518, "quantity": 2},
       {"itemId": 509, "quantity": 10},
       {"itemId": 7452, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12048, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Int 4",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Int 4",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 578, "quantity": 10},
       {"itemId": 568, "quantity": 4},
       {"itemId": 582, "quantity": 10},
       {"itemId": 970, "quantity": 2},
       {"itemId": 514, "quantity": 5}
     ],
-    results: [
+    "results": [
       {"itemId": 12049, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Int 5",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Int 5",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 505, "quantity": 1},
       {"itemId": 970, "quantity": 2},
       {"itemId": 568, "quantity": 2},
       {"itemId": 522, "quantity": 4},
       {"itemId": 7452, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12050, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Int 6",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Int 6",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 533, "quantity": 3},
       {"itemId": 921, "quantity": 20},
       {"itemId": 970, "quantity": 1},
       {"itemId": 581, "quantity": 3},
       {"itemId": 7456, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12076, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Int 7",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Int 7",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 526, "quantity": 4},
       {"itemId": 518, "quantity": 2},
       {"itemId": 509, "quantity": 5},
       {"itemId": 520, "quantity": 10},
       {"itemId": 7452, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12077, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Int 8",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Int 8",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 576, "quantity": 4},
       {"itemId": 520, "quantity": 10},
       {"itemId": 521, "quantity": 10},
@@ -13121,14 +13121,14 @@ const QUESTS = [
       {"itemId": 610, "quantity": 3},
       {"itemId": 7452, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12078, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Int 9",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Int 9",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 582, "quantity": 10},
       {"itemId": 970, "quantity": 5},
       {"itemId": 526, "quantity": 4},
@@ -13137,14 +13137,14 @@ const QUESTS = [
       {"itemId": 610, "quantity": 10},
       {"itemId": 7452, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12079, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Int 10",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Int 10",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 1033, "quantity": 10},
       {"itemId": 510, "quantity": 10},
       {"itemId": 707, "quantity": 1},
@@ -13154,53 +13154,53 @@ const QUESTS = [
       {"itemId": 576, "quantity": 5},
       {"itemId": 607, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12080, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Dex 1",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Dex 1",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 518, "quantity": 1},
       {"itemId": 514, "quantity": 2},
       {"itemId": 501, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12061, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Dex 2",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Dex 2",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 7182, "quantity": 10},
       {"itemId": 539, "quantity": 1},
       {"itemId": 519, "quantity": 1},
       {"itemId": 736, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12062, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Dex 3",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Dex 3",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 582, "quantity": 5},
       {"itemId": 578, "quantity": 5},
       {"itemId": 512, "quantity": 5},
       {"itemId": 513, "quantity": 5},
       {"itemId": 7452, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12063, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Dex 4",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Dex 4",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 580, "quantity": 5},
       {"itemId": 548, "quantity": 10},
       {"itemId": 508, "quantity": 10},
@@ -13208,14 +13208,14 @@ const QUESTS = [
       {"itemId": 517, "quantity": 1},
       {"itemId": 7453, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12064, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Dex 5",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Dex 5",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 520, "quantity": 2},
       {"itemId": 521, "quantity": 3},
       {"itemId": 7100, "quantity": 10},
@@ -13223,14 +13223,14 @@ const QUESTS = [
       {"itemId": 7453, "quantity": 1},
       {"itemId": 7452, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12065, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Dex 6",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Dex 6",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 7164, "quantity": 20},
       {"itemId": 539, "quantity": 10},
       {"itemId": 548, "quantity": 10},
@@ -13238,14 +13238,14 @@ const QUESTS = [
       {"itemId": 519, "quantity": 10},
       {"itemId": 7453, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12091, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Dex 7",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Dex 7",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 708, "quantity": 5},
       {"itemId": 609, "quantity": 5},
       {"itemId": 619, "quantity": 2},
@@ -13253,14 +13253,14 @@ const QUESTS = [
       {"itemId": 7453, "quantity": 1},
       {"itemId": 522, "quantity": 5}
     ],
-    results: [
+    "results": [
       {"itemId": 12092, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Dex 8",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Dex 8",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 526, "quantity": 2},
       {"itemId": 578, "quantity": 10},
       {"itemId": 548, "quantity": 10},
@@ -13269,14 +13269,14 @@ const QUESTS = [
       {"itemId": 7455, "quantity": 1},
       {"itemId": 7453, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12093, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Dex 9",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Dex 9",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 619, "quantity": 5},
       {"itemId": 582, "quantity": 10},
       {"itemId": 578, "quantity": 10},
@@ -13285,14 +13285,14 @@ const QUESTS = [
       {"itemId": 970, "quantity": 2},
       {"itemId": 7456, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12094, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Dex 10",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Dex 10",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 607, "quantity": 1},
       {"itemId": 7066, "quantity": 10},
       {"itemId": 7119, "quantity": 10},
@@ -13302,93 +13302,93 @@ const QUESTS = [
       {"itemId": 710, "quantity": 1},
       {"itemId": 645, "quantity": 3}
     ],
-    results: [
+    "results": [
       {"itemId": 12095, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Agi 1",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Agi 1",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 908, "quantity": 10},
       {"itemId": 1024, "quantity": 1},
       {"itemId": 577, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12056, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Agi 2",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Agi 2",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 577, "quantity": 1},
       {"itemId": 7454, "quantity": 1},
       {"itemId": 1062, "quantity": 5},
       {"itemId": 515, "quantity": 3}
     ],
-    results: [
+    "results": [
       {"itemId": 12057, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Agi 3",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Agi 3",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 962, "quantity": 10},
       {"itemId": 548, "quantity": 10},
       {"itemId": 549, "quantity": 5},
       {"itemId": 7453, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12058, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Agi 4",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Agi 4",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 7066, "quantity": 10},
       {"itemId": 577, "quantity": 3},
       {"itemId": 7455, "quantity": 1},
       {"itemId": 515, "quantity": 10},
       {"itemId": 1062, "quantity": 10}
     ],
-    results: [
+    "results": [
       {"itemId": 12059, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Agi 5",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Agi 5",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 7006, "quantity": 20},
       {"itemId": 520, "quantity": 10},
       {"itemId": 507, "quantity": 10},
       {"itemId": 1062, "quantity": 20},
       {"itemId": 7482, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12060, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Agi 6",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Agi 6",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 568, "quantity": 20},
       {"itemId": 7286, "quantity": 20},
       {"itemId": 567, "quantity": 20},
       {"itemId": 7453, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12086, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Agi 7",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Agi 7",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 7003, "quantity": 10},
       {"itemId": 521, "quantity": 10},
       {"itemId": 508, "quantity": 10},
@@ -13396,14 +13396,14 @@ const QUESTS = [
       {"itemId": 515, "quantity": 10},
       {"itemId": 7452, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12087, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Agi 8",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Agi 8",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 606, "quantity": 1},
       {"itemId": 520, "quantity": 10},
       {"itemId": 1062, "quantity": 10},
@@ -13411,14 +13411,14 @@ const QUESTS = [
       {"itemId": 7455, "quantity": 1},
       {"itemId": 517, "quantity": 10}
     ],
-    results: [
+    "results": [
       {"itemId": 12088, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Agi 9",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Agi 9",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 526, "quantity": 5},
       {"itemId": 711, "quantity": 20},
       {"itemId": 508, "quantity": 5},
@@ -13427,14 +13427,14 @@ const QUESTS = [
       {"itemId": 517, "quantity": 10},
       {"itemId": 7454, "quantity": 4}
     ],
-    results: [
+    "results": [
       {"itemId": 12089, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Agi 10",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Agi 10",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 904, "quantity": 20},
       {"itemId": 7125, "quantity": 20},
       {"itemId": 606, "quantity": 2},
@@ -13444,94 +13444,94 @@ const QUESTS = [
       {"itemId": 7455, "quantity": 1},
       {"itemId": 7482, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12090, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Luk 1",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Luk 1",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 942, "quantity": 5},
       {"itemId": 7031, "quantity": 1},
       {"itemId": 7457, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12066, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Luk 2",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Luk 2",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 531, "quantity": 1},
       {"itemId": 534, "quantity": 2},
       {"itemId": 533, "quantity": 1},
       {"itemId": 620, "quantity": 2}
     ],
-    results: [
+    "results": [
       {"itemId": 12067, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Luk 3",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Luk 3",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 549, "quantity": 10},
       {"itemId": 633, "quantity": 1},
       {"itemId": 516, "quantity": 10},
       {"itemId": 7453, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12068, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Luk 4",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Luk 4",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 1054, "quantity": 10},
       {"itemId": 945, "quantity": 10},
       {"itemId": 509, "quantity": 10},
       {"itemId": 579, "quantity": 5},
       {"itemId": 7453, "quantity": 2}
     ],
-    results: [
+    "results": [
       {"itemId": 12069, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Luk 5",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Luk 5",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 904, "quantity": 20},
       {"itemId": 1042, "quantity": 10},
       {"itemId": 7198, "quantity": 10},
       {"itemId": 7031, "quantity": 2},
       {"itemId": 7457, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12070, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Luk 6",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Luk 6",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 903, "quantity": 5},
       {"itemId": 1015, "quantity": 5},
       {"itemId": 705, "quantity": 10},
       {"itemId": 1061, "quantity": 10},
       {"itemId": 704, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12096, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Luk 7",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Luk 7",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 936, "quantity": 10},
       {"itemId": 951, "quantity": 5},
       {"itemId": 7194, "quantity": 10},
@@ -13539,14 +13539,14 @@ const QUESTS = [
       {"itemId": 517, "quantity": 5},
       {"itemId": 581, "quantity": 10}
     ],
-    results: [
+    "results": [
       {"itemId": 12097, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Luk 8",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Luk 8",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 578, "quantity": 10},
       {"itemId": 7298, "quantity": 10},
       {"itemId": 577, "quantity": 5},
@@ -13554,14 +13554,14 @@ const QUESTS = [
       {"itemId": 7456, "quantity": 2},
       {"itemId": 7454, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12098, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Luk 9",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Luk 9",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 702, "quantity": 1},
       {"itemId": 605, "quantity": 2},
       {"itemId": 606, "quantity": 2},
@@ -13570,14 +13570,14 @@ const QUESTS = [
       {"itemId": 531, "quantity": 10},
       {"itemId": 7456, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12099, "quantity": 1}
     ]
   },
   {
-    name: "Cooking Luk 10",
-    category: "Cooking",
-    requirements: [
+    "name": "Cooking Luk 10",
+    "category": "Cooking",
+    "requirements": [
       {"itemId": 1022, "quantity": 10},
       {"itemId": 706, "quantity": 2},
       {"itemId": 1033, "quantity": 10},
@@ -13587,7 +13587,7 @@ const QUESTS = [
       {"itemId": 7454, "quantity": 1},
       {"itemId": 7452, "quantity": 1}
     ],
-    results: [
+    "results": [
       {"itemId": 12100, "quantity": 1}
     ]
   },
@@ -14051,6 +14051,1196 @@ const QUESTS = [
     ],
     "results": [
       {"itemId": 28484, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Arm Guard [1]",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 2102, "quantity": 1},
+      {"itemId": 2117, "quantity": 1},
+      {"itemId": 1, "quantity": 10000}
+    ],
+    "results": [
+      {"itemId": 2118, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Advanced Arm Guard",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 2107, "quantity": 1},
+      {"itemId": 2117, "quantity": 1},
+      {"itemId": 1, "quantity": 20000}
+    ],
+    "results": [
+      {"itemId": 2119, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Advanced Arm Guard [1]",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 2119, "quantity": 1},
+      {"itemId": 2104, "quantity": 1},
+      {"itemId": 1, "quantity": 40000}
+    ],
+    "results": [
+      {"itemId": 2120, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Acorn",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 1026, "quantity": 75}
+    ],
+    "results": []
+  },
+  {
+    "name": "Aloe",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 704, "quantity": 1}
+    ],
+    "results": []
+  },
+  {
+    "name": "Aloevera",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 606, "quantity": 3}
+    ],
+    "results": []
+  },
+  {
+    "name": "Aloe Leaflet",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 521, "quantity": 50}
+    ],
+    "results": []
+  },
+  {
+    "name": "Amethyst",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 719, "quantity": 2}
+    ],
+    "results": []
+  },
+  {
+    "name": "Anodyne",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 605, "quantity": 2}
+    ],
+    "results": []
+  },
+  {
+    "name": "Anolian Skin",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7003, "quantity": 65}
+    ],
+    "results": []
+  },
+  {
+    "name": "Ancient Tooth",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 1053, "quantity": 25}
+    ],
+    "results": []
+  },
+  {
+    "name": "Antelope Horn",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7106, "quantity": 60}
+    ],
+    "results": []
+  },
+  {
+    "name": "Antelope Skin",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7107, "quantity": 50}
+    ],
+    "results": []
+  },
+  {
+    "name": "Aquamarine",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 720, "quantity": 4}
+    ],
+    "results": []
+  },
+  {
+    "name": "Authoritative Badge",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 662, "quantity": 12}
+    ],
+    "results": []
+  },
+  {
+    "name": "Bao",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 553, "quantity": 60}
+    ],
+    "results": []
+  },
+  {
+    "name": "Bacillus",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7119, "quantity": 75}
+    ],
+    "results": []
+  },
+  {
+    "name": "Bee Sting",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 939, "quantity": 75}
+    ],
+    "results": []
+  },
+  {
+    "name": "Bitter Herb",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 621, "quantity": 1}
+    ],
+    "results": []
+  },
+  {
+    "name": "Black Cat Doll",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7206, "quantity": 30}
+    ],
+    "results": []
+  },
+  {
+    "name": "Brown Root",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7188, "quantity": 50}
+    ],
+    "results": []
+  },
+  {
+    "name": "Bug Leg",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 1042, "quantity": 70}
+    ],
+    "results": []
+  },
+  {
+    "name": "Burnt Tree",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7068, "quantity": 15}
+    ],
+    "results": []
+  },
+  {
+    "name": "Black Bear Skin",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7161, "quantity": 50}
+    ],
+    "results": []
+  },
+  {
+    "name": "Cacao",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7182, "quantity": 20}
+    ],
+    "results": []
+  },
+  {
+    "name": "Cheese",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 548, "quantity": 60}
+    ],
+    "results": []
+  },
+  {
+    "name": "Clam Flesh",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 966, "quantity": 25}
+    ],
+    "results": []
+  },
+  {
+    "name": "Claw of Desert Wolf",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7030, "quantity": 60}
+    ],
+    "results": []
+  },
+  {
+    "name": "Conch",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 961, "quantity": 75}
+    ],
+    "results": []
+  },
+  {
+    "name": "Coral Reef",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7013, "quantity": 60}
+    ],
+    "results": []
+  },
+  {
+    "name": "Cyfar",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7053, "quantity": 75}
+    ],
+    "results": []
+  },
+  {
+    "name": "Daenggie",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 901, "quantity": 75}
+    ],
+    "results": []
+  },
+  {
+    "name": "Deadly Noxious Herb",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 631, "quantity": 1}
+    ],
+    "results": []
+  },
+  {
+    "name": "Delicious Jelly",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 12624, "quantity": 10}
+    ],
+    "results": []
+  },
+  {
+    "name": "Dokebi Horn",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 1021, "quantity": 75}
+    ],
+    "results": []
+  },
+  {
+    "name": "Dry Sand",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7264, "quantity": 50}
+    ],
+    "results": []
+  },
+  {
+    "name": "Dust Pollutant",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7320, "quantity": 15}
+    ],
+    "results": []
+  },
+  {
+    "name": "Elder Pixie's Moustache",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 1040, "quantity": 65}
+    ],
+    "results": []
+  },
+  {
+    "name": "Fancy Fairy Wing",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 6557, "quantity": 25}
+    ],
+    "results": []
+  },
+  {
+    "name": "Fancy Flower",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 2207, "quantity": 1}
+    ],
+    "results": []
+  },
+  {
+    "name": "Feather of Birds",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 916, "quantity": 75}
+    ],
+    "results": []
+  },
+  {
+    "name": "Festival Mask",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7187, "quantity": 50}
+    ],
+    "results": []
+  },
+  {
+    "name": "Fin",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 951, "quantity": 50}
+    ],
+    "results": []
+  },
+  {
+    "name": "Fish Tail",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 1023, "quantity": 50}
+    ],
+    "results": []
+  },
+  {
+    "name": "Giant Butterfly Wing",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7168, "quantity": 25}
+    ],
+    "results": []
+  },
+  {
+    "name": "Glacial Heart",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7561, "quantity": 50}
+    ],
+    "results": []
+  },
+  {
+    "name": "Glitter Shell",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7009, "quantity": 40}
+    ],
+    "results": []
+  },
+  {
+    "name": "Hard Feeler",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7163, "quantity": 30}
+    ],
+    "results": []
+  },
+  {
+    "name": "Hinalle Leaflet",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 520, "quantity": 65}
+    ],
+    "results": []
+  },
+  {
+    "name": "Huge Leaf",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7198, "quantity": 75}
+    ],
+    "results": []
+  },
+  {
+    "name": "Ice Crystal",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 6257, "quantity": 1}
+    ],
+    "results": []
+  },
+  {
+    "name": "Ice Cubic",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7066, "quantity": 75}
+    ],
+    "results": []
+  },
+  {
+    "name": "Ice Piece",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 6256, "quantity": 1}
+    ],
+    "results": []
+  },
+  {
+    "name": "Inside-out Shirt",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 12700, "quantity": 1}
+    ],
+    "results": []
+  },
+  {
+    "name": "Large Jellopy",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7126, "quantity": 40}
+    ],
+    "results": []
+  },
+  {
+    "name": "Lemon",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 568, "quantity": 10}
+    ],
+    "results": []
+  },
+  {
+    "name": "Level 3 Cold Bolt",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 688, "quantity": 3}
+    ],
+    "results": []
+  },
+  {
+    "name": "Level 3 Fire Bolt",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 690, "quantity": 3}
+    ],
+    "results": []
+  },
+  {
+    "name": "Level 3 Heal",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 12001, "quantity": 3}
+    ],
+    "results": []
+  },
+  {
+    "name": "Light Granule",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7938, "quantity": 10}
+    ],
+    "results": []
+  },
+  {
+    "name": "Log",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7201, "quantity": 50}
+    ],
+    "results": []
+  },
+  {
+    "name": "Mane",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 1028, "quantity": 75}
+    ],
+    "results": []
+  },
+  {
+    "name": "Melon",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 6264, "quantity": 15}
+    ],
+    "results": []
+  },
+  {
+    "name": "Moth Wings",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 1058, "quantity": 18}
+    ],
+    "results": []
+  },
+  {
+    "name": "Nipper",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 960, "quantity": 70}
+    ],
+    "results": []
+  },
+  {
+    "name": "Nose Ring",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 941, "quantity": 75}
+    ],
+    "results": []
+  },
+  {
+    "name": "Nutshell",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 5037, "quantity": 1}
+    ],
+    "results": []
+  },
+  {
+    "name": "Old Frying Pan",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7031, "quantity": 80}
+    ],
+    "results": []
+  },
+  {
+    "name": "Orange",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 582, "quantity": 25}
+    ],
+    "results": []
+  },
+  {
+    "name": "Orange Juice",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 620, "quantity": 2}
+    ],
+    "results": []
+  },
+  {
+    "name": "Pacifier",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 10004, "quantity": 2}
+    ],
+    "results": []
+  },
+  {
+    "name": "Pantie",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 2339, "quantity": 2}
+    ],
+    "results": []
+  },
+  {
+    "name": "Pearl",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 722, "quantity": 7}
+    ],
+    "results": []
+  },
+  {
+    "name": "Piece of Darkness",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 6089, "quantity": 5}
+    ],
+    "results": []
+  },
+  {
+    "name": "Pile Of Acorn",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 6558, "quantity": 25}
+    ],
+    "results": []
+  },
+  {
+    "name": "Pineapple",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 6265, "quantity": 20}
+    ],
+    "results": []
+  },
+  {
+    "name": "Prickly Fruit",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 576, "quantity": 20}
+    ],
+    "results": []
+  },
+  {
+    "name": "Red Chile",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7286, "quantity": 7}
+    ],
+    "results": []
+  },
+  {
+    "name": "Red Prickly Fruit",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 587, "quantity": 20}
+    ],
+    "results": []
+  },
+  {
+    "name": "Reptile Tongue",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 903, "quantity": 45}
+    ],
+    "results": []
+  },
+  {
+    "name": "Resin",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 907, "quantity": 75}
+    ],
+    "results": []
+  },
+  {
+    "name": "Rice Cake",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 550, "quantity": 60}
+    ],
+    "results": []
+  },
+  {
+    "name": "Round Shell",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 1096, "quantity": 30}
+    ],
+    "results": []
+  },
+  {
+    "name": "Royal Jelly",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 526, "quantity": 25}
+    ],
+    "results": []
+  },
+  {
+    "name": "Sardonyx",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 725, "quantity": 2}
+    ],
+    "results": []
+  },
+  {
+    "name": "Scorpion Tail",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 904, "quantity": 50}
+    ],
+    "results": []
+  },
+  {
+    "name": "Sharp Leaf",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7100, "quantity": 50}
+    ],
+    "results": []
+  },
+  {
+    "name": "Sharp Paper",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7112, "quantity": 10}
+    ],
+    "results": []
+  },
+  {
+    "name": "Sharp Scale",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 963, "quantity": 75}
+    ],
+    "results": []
+  },
+  {
+    "name": "Shining Scale",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 954, "quantity": 75}
+    ],
+    "results": []
+  },
+  {
+    "name": "Short Daenggie",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 1094, "quantity": 65}
+    ],
+    "results": []
+  },
+  {
+    "name": "Shrimp",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 567, "quantity": 25}
+    ],
+    "results": []
+  },
+  {
+    "name": "Small Jug",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 12353, "quantity": 1}
+    ],
+    "results": []
+  },
+  {
+    "name": "Snake Scale",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 926, "quantity": 50}
+    ],
+    "results": []
+  },
+  {
+    "name": "Soft Apron",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 661, "quantity": 1}
+    ],
+    "results": []
+  },
+  {
+    "name": "Soft Blade of Grass",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7194, "quantity": 45}
+    ],
+    "results": []
+  },
+  {
+    "name": "Solid Peach",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7164, "quantity": 65}
+    ],
+    "results": []
+  },
+  {
+    "name": "Squid Ink",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 1024, "quantity": 75}
+    ],
+    "results": []
+  },
+  {
+    "name": "Star Crumb",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 1000, "quantity": 25}
+    ],
+    "results": []
+  },
+  {
+    "name": "Star Dust",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 1001, "quantity": 7}
+    ],
+    "results": []
+  },
+  {
+    "name": "Sticky Mucus",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 938, "quantity": 80}
+    ],
+    "results": []
+  },
+  {
+    "name": "Sticky Webfoot",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 918, "quantity": 75}
+    ],
+    "results": []
+  },
+  {
+    "name": "Strange Steel Piece",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7167, "quantity": 50}
+    ],
+    "results": []
+  },
+  {
+    "name": "Strong Branch",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7203, "quantity": 65}
+    ],
+    "results": []
+  },
+  {
+    "name": "Sunflower",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 2253, "quantity": 1}
+    ],
+    "results": []
+  },
+  {
+    "name": "Tiger Panty",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7267, "quantity": 40}
+    ],
+    "results": []
+  },
+  {
+    "name": "Tongue",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 1015, "quantity": 10}
+    ],
+    "results": []
+  },
+  {
+    "name": "Tough Vines",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 7197, "quantity": 50}
+    ],
+    "results": []
+  },
+  {
+    "name": "Tropical Banana",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 634, "quantity": 1}
+    ],
+    "results": []
+  },
+  {
+    "name": "Unripe Acorn",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 12346, "quantity": 25}
+    ],
+    "results": []
+  },
+  {
+    "name": "Unripe Apple",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 619, "quantity": 1}
+    ],
+    "results": []
+  },
+  {
+    "name": "Venom Canine",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 937, "quantity": 45}
+    ],
+    "results": []
+  },
+  {
+    "name": "Yam",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 549, "quantity": 40}
+    ],
+    "results": []
+  },
+  {
+    "name": "Yellow Herb",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 508, "quantity": 75}
+    ],
+    "results": []
+  },
+  {
+    "name": "White Spider Limb",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 6325, "quantity": 8}
+    ],
+    "results": []
+  },
+  {
+    "name": "Wolf Claw",
+    "category": "Summer Race",
+    "requirements": [
+      {"itemId": 920, "quantity": 75}
+    ],
+    "results": []
+  },
+  {
+    "name": "Twilight Alchemy 1",
+    "category": "Alchemy",
+    "requirements": [
+      {"itemId": 509, "quantity": 200},
+      {"itemId": 1093, "quantity": 200},
+      {"itemId": 7134, "quantity": 200}
+    ],
+    "results": [
+      {"itemId": 504, "quantity": 200}
+    ]
+  },
+  {
+    "name": "Twilight Alchemy 2",
+    "category": "Alchemy",
+    "requirements": [
+      {"itemId": 504, "quantity": 200},
+      {"itemId": 1092, "quantity": 200},
+      {"itemId": 1061, "quantity": 200},
+      {"itemId": 7134, "quantity": 200}
+    ],
+    "results": [
+      {"itemId": 547, "quantity": 200}
+    ]
+  },
+  {
+    "name": "Twilight Alchemy 3",
+    "category": "Alchemy",
+    "requirements": [
+      {"itemId": 905, "quantity": 500},
+      {"itemId": 7033, "quantity": 500},
+      {"itemId": 1092, "quantity": 100},
+      {"itemId": 1059, "quantity": 50},
+      {"itemId": 929, "quantity": 50},
+      {"itemId": 970, "quantity": 50},
+      {"itemId": 713, "quantity": 200},
+      {"itemId": 7134, "quantity": 200}
+    ],
+    "results": [
+      {"itemId": 7136, "quantity": 50},
+      {"itemId": 7135, "quantity": 50},
+      {"itemId": 970, "quantity": 100}
+    ]
+  },
+  {
+    "name": "Red Potion",
+    "category": "Alchemy",
+    "requirements": [
+      {"itemId": 7144, "quantity": 1},
+      {"itemId": 7134, "quantity": 1},
+      {"itemId": 507, "quantity": 1},
+      {"itemId": 1093, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 501, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Yellow Potion",
+    "category": "Alchemy",
+    "requirements": [
+      {"itemId": 7144, "quantity": 1},
+      {"itemId": 7134, "quantity": 1},
+      {"itemId": 508, "quantity": 1},
+      {"itemId": 1093, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 503, "quantity": 1}
+    ]
+  },
+  {
+    "name": "White Potion",
+    "category": "Alchemy",
+    "requirements": [
+      {"itemId": 7144, "quantity": 1},
+      {"itemId": 7134, "quantity": 1},
+      {"itemId": 509, "quantity": 1},
+      {"itemId": 1093, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 504, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Blue Potion",
+    "category": "Alchemy",
+    "requirements": [
+      {"itemId": 7144, "quantity": 1},
+      {"itemId": 7134, "quantity": 1},
+      {"itemId": 510, "quantity": 1},
+      {"itemId": 712, "quantity": 1},
+      {"itemId": 1093, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 505, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Green Potion",
+    "category": "Alchemy",
+    "requirements": [
+      {"itemId": 7144, "quantity": 1},
+      {"itemId": 7134, "quantity": 1},
+      {"itemId": 511, "quantity": 1},
+      {"itemId": 1093, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 506, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Condensed Red Potion",
+    "category": "Alchemy",
+    "requirements": [
+      {"itemId": 7133, "quantity": 1},
+      {"itemId": 7134, "quantity": 1},
+      {"itemId": 501, "quantity": 1},
+      {"itemId": 706, "quantity": 1},
+      {"itemId": 1092, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 545, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Condensed Yellow Potion",
+    "category": "Alchemy",
+    "requirements": [
+      {"itemId": 7133, "quantity": 1},
+      {"itemId": 7134, "quantity": 1},
+      {"itemId": 503, "quantity": 1},
+      {"itemId": 1030, "quantity": 1},
+      {"itemId": 1092, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 546, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Condensed White Potion",
+    "category": "Alchemy",
+    "requirements": [
+      {"itemId": 7133, "quantity": 1},
+      {"itemId": 7134, "quantity": 1},
+      {"itemId": 504, "quantity": 1},
+      {"itemId": 1061, "quantity": 1},
+      {"itemId": 1092, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 547, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Alcohol",
+    "category": "Alchemy",
+    "requirements": [
+      {"itemId": 7127, "quantity": 1},
+      {"itemId": 7134, "quantity": 1},
+      {"itemId": 713, "quantity": 1},
+      {"itemId": 703, "quantity": 5},
+      {"itemId": 1092, "quantity": 1},
+      {"itemId": 921, "quantity": 5}
+    ],
+    "results": [
+      {"itemId": 970, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Bottle Grenade",
+    "category": "Alchemy",
+    "requirements": [
+      {"itemId": 7128, "quantity": 1},
+      {"itemId": 7134, "quantity": 1},
+      {"itemId": 713, "quantity": 1},
+      {"itemId": 970, "quantity": 1},
+      {"itemId": 7034, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 7135, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Acid Bottle",
+    "category": "Alchemy",
+    "requirements": [
+      {"itemId": 7129, "quantity": 1},
+      {"itemId": 7134, "quantity": 1},
+      {"itemId": 713, "quantity": 1},
+      {"itemId": 929, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 7136, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Plant Bottle",
+    "category": "Alchemy",
+    "requirements": [
+      {"itemId": 7130, "quantity": 1},
+      {"itemId": 7134, "quantity": 1},
+      {"itemId": 713, "quantity": 1},
+      {"itemId": 1033, "quantity": 2}
+    ],
+    "results": [
+      {"itemId": 7137, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Marine Sphere Bottle",
+    "category": "Alchemy",
+    "requirements": [
+      {"itemId": 7131, "quantity": 1},
+      {"itemId": 7134, "quantity": 1},
+      {"itemId": 713, "quantity": 1},
+      {"itemId": 1050, "quantity": 1},
+      {"itemId": 7139, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 7138, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Glistening Coat",
+    "category": "Alchemy",
+    "requirements": [
+      {"itemId": 7132, "quantity": 1},
+      {"itemId": 7134, "quantity": 1},
+      {"itemId": 713, "quantity": 1},
+      {"itemId": 950, "quantity": 1},
+      {"itemId": 970, "quantity": 1},
+      {"itemId": 1044, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 7139, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Embryo",
+    "category": "Alchemy",
+    "requirements": [
+      {"itemId": 7144, "quantity": 1},
+      {"itemId": 7134, "quantity": 1},
+      {"itemId": 7140, "quantity": 1},
+      {"itemId": 7141, "quantity": 1},
+      {"itemId": 7143, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 7142, "quantity": 1}
     ]
   }
 ];

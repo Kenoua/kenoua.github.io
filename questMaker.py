@@ -10,7 +10,7 @@ class QuestLoggerApp:
         self.root.title("Quest JSON Exporter")
         
         # --- Config & Data ---
-        self.CATEGORIES = ["Quest", "Crafting", "SQI","SQI Bonus", "Betty", "Summer race","Enchantment","Cooking"] # Defined Category Struct
+        self.CATEGORIES = ["Quest", "Crafting", "SQI","SQI Bonus", "Betty", "Summer Race","Enchantment","Cooking","Alchemy"] # Defined Category Struct
         self.item_requirements = []
         self.item_results = []
         self.item_map = self.load_item_db("cleaned_questItemsDB.txt")
