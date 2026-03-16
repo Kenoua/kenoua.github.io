@@ -102,55 +102,51 @@ class QuestLoggerApp:
             messagebox.showerror("Error", "Name and at least one item required.")
             return
 
-        # 1. On prépare l'objet
+        # On s'assure que le Zeny est à la fin des requirements
+        reqs = sorted(self.item_requirements, key=lambda x: x['itemId'] == 1)
+
         new_quest = {
             "name": name,
             "category": self.cat_combo.get(),
-            "requirements": self.item_requirements,
+            "requirements": reqs,
             "results": self.item_results
         }
 
-        # 2. On charge les données existantes
         data = []
         if os.path.exists("quests.json"):
             with open("quests.json", "r", encoding='utf-8') as f:
-                try:
-                    data = json.load(f)
-                except:
-                    data = []
+                try: data = json.load(f)
+                except: data = []
 
         data.append(new_quest)
 
-        # 3. Custom Formatter pour simuler l'indentation compacte
-        formatted_json = "[\n"
-        for i, quest in enumerate(data):
-            # Formatage manuel de l'entrée
-            reqs = ", ".join([json.dumps(r) for r in quest["requirements"]])
-            ress = ", ".join([json.dumps(r) for r in quest["results"]])
-            
-            # Reconstruction de la structure avec les retours à la ligne voulus
-            entry =  '  {\n'
-            entry += f'    "name": "{quest["name"]}",\n'
-            entry += f'    "category": "{quest["category"]}",\n'
-            entry += f'    "requirements": [{reqs}],\n'
-            entry += f'    "results": [{ress}]\n'
-            entry += '  }'
-            
-            formatted_json += entry
-            if i < len(data) - 1:
-                formatted_json += ",\n"
-        
-        formatted_json += "\n]"
+        # Construction manuelle du JSON pour l'indentation hybride
+        json_output = "[\n"
+        for i, q in enumerate(data):
+            # Formatage des requirements (un par ligne, format compact)
+            req_lines = ",\n".join([f'      {json.dumps(r)}' for r in q["requirements"]])
+            # Formatage des results
+            res_lines = ",\n".join([f'      {json.dumps(r)}' for r in q["results"]])
 
-        # 4. Écriture du fichier
+            json_output += "  {\n"
+            json_output += f'    "name": "{q["name"]}",\n'
+            json_output += f'    "category": "{q["category"]}",\n'
+            
+            json_output += '    "requirements": [\n' + req_lines + '\n    ],\n' if q["requirements"] else '    "requirements": [],\n'
+            json_output += '    "results": [\n' + res_lines + '\n    ]\n' if q["results"] else '    "results": []\n'
+            
+            json_output += "  }"
+            if i < len(data) - 1:
+                json_output += ","
+            json_output += "\n"
+        
+        json_output += "]"
+
         with open("quests.json", "w", encoding='utf-8') as f:
-            f.write(formatted_json)
+            f.write(json_output)
 
         messagebox.showinfo("Success", f"Quest '{name}' added to JSON!")
-        self.item_requirements = [] # Reset local lists
-        self.item_results = []
         self.clear_form()
-
 
     def clear_form(self):
         #self.quest_entry.delete(0, tk.END)

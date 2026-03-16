@@ -14599,3 +14599,98 @@
 12292 		Unripe Fruit 	Healing 	None 	500 	250 	20 	0 	0 	0 	0
 12293 		Dried Yggdrasilberry 	Healing 	None 	500 	250 	20 	0 	0 	0 	0
 12322 		Chocolate Pie 	Healing 	None 	0 	0 	5 	0 	0 	0 	0
+1750 		Arrow 	Ammo - Arrow 	Arrow/Ammo 	1 	0 	0.1 	25 	0 	0 	0
+1751 		Silver Arrow 	Ammo - Arrow 	Arrow/Ammo 	3 	1 	0.2 	30 	0 	0 	0
+1752 		Fire Arrow 	Ammo - Arrow 	Arrow/Ammo 	3 	1 	0.2 	30 	0 	0 	0
+1753 		Steel Arrow 	Ammo - Arrow 	Arrow/Ammo 	4 	2 	0.2 	40 	0 	0 	0
+1754 		Crystal Arrow 	Ammo - Arrow 	Arrow/Ammo 	3 	1 	0.2 	30 	0 	0 	0
+1755 		Arrow of Wind 	Ammo - Arrow 	Arrow/Ammo 	3 	1 	0.2 	30 	0 	0 	0
+1756 		Stone Arrow 	Ammo - Arrow 	Arrow/Ammo 	3 	1 	0.2 	30 	0 	0 	0
+1757 		Immaterial Arrow 	Ammo - Arrow 	Arrow/Ammo 	3 	1 	0.1 	30 	0 	0 	0
+1758 		Stun Arrow 	Ammo - Arrow 	Arrow/Ammo 	10 	5 	0.3 	1 	0 	0 	0
+1759 		Frozen Arrow 	Ammo - Arrow 	Arrow/Ammo 	10 	5 	0.3 	1 	0 	0 	0
+1760 		Flash Arrow 	Ammo - Arrow 	Arrow/Ammo 	10 	5 	0.3 	1 	0 	0 	0
+1761 		Cursed Arrow 	Ammo - Arrow 	Arrow/Ammo 	10 	5 	0.3 	1 	0 	0 	0
+1762 		Rusty Arrow 	Ammo - Arrow 	Arrow/Ammo 	3 	1 	0.2 	30 	0 	0 	0
+1763 		Poison Arrow 	Ammo - Arrow 	Arrow/Ammo 	10 	5 	0.3 	1 	0 	0 	0
+1764 		Sharp Arrow 	Ammo - Arrow 	Arrow/Ammo 	20 	10 	0.3 	10 	0 	0 	0
+1765 		Oridecon Arrow 	Ammo - Arrow 	Arrow/Ammo 	30 	15 	0.3 	50 	0 	0 	0
+1766 		Arrow of Counter Evil 	Ammo - Arrow 	Arrow/Ammo 	40 	20 	0.3 	50 	0 	0 	0
+1767 		Arrow of Shadow 	Ammo - Arrow 	Arrow/Ammo 	3 	1 	0.2 	30 	0 	0 	0
+1768 		Sleep Arrow 	Ammo - Arrow 	Arrow/Ammo 	10 	5 	0.3 	1 	0 	0 	0
+1769 		Mute Arrow 	Ammo - Arrow 	Arrow/Ammo 	10 	5 	0.3 	1 	0 	0 	0
+1770 		Iron Arrow 	Ammo - Arrow 	Arrow/Ammo 	2 	1 	0.1 	30 	0 	0 	0
+1771 		Venom Knife 	Ammo - Throwing Dagger 	Arrow/Ammo 	50 	25 	0.5 	30 	0 	0 	0
+1772 		Holy Arrow 	Ammo - Arrow 	Arrow/Ammo 	3 	1 	0.2 	50 	0 	0 	0
+1773 		Elven Arrow 	Ammo - Arrow 	Arrow/Ammo 	10 	5 	0.1 	45 	0 	0 	0
+1774 		Hunting Arrow 	Ammo - Arrow 	Arrow/Ammo 	10 	5 	0.1 	35 	0 	0 	0
+7663 	  	Full Metal Jacket 	Ammo - Bullet 	Arrow/Ammo 	200 	100 	0.2 	10 	0 	0 	0
+7664 	  	Grenade Launcher 	Ammo - Grenade 	Arrow/Ammo 	450 	225 	0.3 	10 	0 	0 	0
+7665 	  	Dragon Tail Missile 	Ammo - Grenade 	Arrow/Ammo 	1,500 	750 	10 	10 	0 	0 	0
+13200 		Bullet 	Ammo - Bullet 	Arrow/Ammo 	1 	0 	0.2 	10 	0 	0 	0
+13201 		Silver Bullet 	Ammo - Bullet 	Arrow/Ammo 	3 	1 	0.2 	15 	0 	0 	0
+13202 		Bloody Shell 	Ammo - Bullet 	Arrow/Ammo 	5 	2 	0.2 	30 	0 	0 	0
+13203 		Flare Sphere 	Ammo - Grenade 	Arrow/Ammo 	80 	40 	0.2 	50 	0 	0 	0
+13204 		Lightning Sphere 	Ammo - Grenade 	Arrow/Ammo 	80 	40 	0.2 	50 	0 	0 	0
+13205 		Poison Sphere 	Ammo - Grenade 	Arrow/Ammo 	80 	40 	0.2 	50 	0 	0 	0
+13206 		Blind Sphere 	Ammo - Grenade 	Arrow/Ammo 	80 	40 	0.2 	50 	0 	0 	0
+13207 		Freezing Sphere 	Ammo - Grenade 	Arrow/Ammo 	80 	40 	0.2 	50 	0 	0 	0
+13208 		Fire Bullet 	Ammo - Bullet 	Arrow/Ammo 	5 	2 	0.2 	15 	0 	0 	0
+13209 		Wind Bullet 	Ammo - Bullet 	Arrow/Ammo 	5 	2 	0.2 	15 	0 	0 	0
+13210 		Earth Bullet 	Ammo - Bullet 	Arrow/Ammo 	5 	2 	0.2 	15 	0 	0 	0
+13211 		Water Bullet 	Ammo - Bullet 	Arrow/Ammo 	5 	2 	0.2 	15 	0 	0 	0
+13212 		GongBug 	Ammo - Bullet 	Arrow/Ammo 	0 	0 	0.5 	50 	0 	0 	0
+13213 		Shadow Bullet 	Ammo - Bullet 	Arrow/Ammo 	5 	2 	0.2 	15 	0 	0 	0
+13214 		Immaterial Bullet 	Ammo - Bullet 	Arrow/Ammo 	5 	2 	0.2 	15 	0 	0 	0
+13220 	  	Purification Shot 	Ammo - Bullet 	Arrow/Ammo 	10 	5 	0.2 	40 	0 	0 	0
+13221 	  	Silver Bullet 	Ammo - Bullet 	Arrow/Ammo 	10 	5 	0.2 	15 	0 	0 	0
+13250 		Shuriken 	Ammo - Shuriken 	Arrow/Ammo 	4 	2 	0.1 	10 	0 	0 	0
+13251 		Raincloud Shuriken 	Ammo - Shuriken 	Arrow/Ammo 	10 	5 	0.1 	30 	0 	0 	0
+13252 		Flash Shuriken 	Ammo - Shuriken 	Arrow/Ammo 	20 	10 	0.1 	45 	0 	0 	0
+13253 		Sharp Leaf Shuriken 	Ammo - Shuriken 	Arrow/Ammo 	40 	20 	0.1 	70 	0 	0 	0
+13254 		Thorn Needle Shuriken 	Ammo - Shuriken 	Arrow/Ammo 	100 	50 	0.1 	100 	0 	0 	0
+13255 		Icicle Kunai 	Ammo - Kunai 	Arrow/Ammo 	10 	5 	0.2 	30 	0 	0 	0
+13256 		Black Earth Kunai 	Ammo - Kunai 	Arrow/Ammo 	10 	5 	0.2 	30 	0 	0 	0
+13257 		High Wind Kunai 	Ammo - Kunai 	Arrow/Ammo 	10 	5 	0.2 	30 	0 	0 	0
+13258 		Heat Wave Kunai 	Ammo - Kunai 	Arrow/Ammo 	10 	5 	0.2 	30 	0 	0 	0
+13259 		Fell Poison Kunai 	Ammo - Kunai 	Arrow/Ammo 	10 	5 	0.2 	30 	0 	0 	0
+13260 		Apple Bomb 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	0.1 	0 	0 	0 	0
+13261 		Coconut Bomb 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	0.1 	0 	0 	0 	0
+13262 		Melon Bomb 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	0.1 	0 	0 	0 	0
+13263 		Pineapple Bomb 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	0.1 	0 	0 	0 	0
+13264 		Banana Bomb 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	0.1 	0 	0 	0 	0
+13265 		Black Lump 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	5 	0 	0 	0 	0
+13266 		Hard Black Lump 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	5 	0 	0 	0 	0
+13267 		Extremely Hard Black Lump 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	5 	0 	0 	0 	0
+13268 		Mysterious Powder 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	1 	0 	0 	0 	0
+13269 		Throwing Boost500 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	1 	0 	0 	0 	0
+13270 		Throwing Full Swing(K) 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	5 	0 	0 	0 	0
+13271 		Throwing Manaplus 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	5 	0 	0 	0 	0
+13272 		Throwing Cure Free 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	5 	0 	0 	0 	0
+13273 		Throwing Muramura(M) 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	1 	0 	0 	0 	0
+13274 		Throwing Falmons(F) 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	1 	0 	0 	0 	0
+13275 		Throwing Increase HP Potion (Small) 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	2 	0 	0 	0 	0
+13276 		Throwing Increase HP Potion (Medium) 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	4 	0 	0 	0 	0
+13277 		Throwing Increase HP Potion (Large) 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	8 	0 	0 	0 	0
+13278 		Throwing Increase SP Potion (Small) 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	2 	0 	0 	0 	0
+13279 		Throwing Increase SP Potion (Medium) 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	4 	0 	0 	0 	0
+13280 		Throwing Increase SP Potion (Large) 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	8 	0 	0 	0 	0
+13281 		Throwing Concentrated White Potion(Z) 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	7 	0 	0 	0 	0
+13282 		Throwing Vitata500 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	5 	0 	0 	0 	0
+13283 		Throwing Ceromain Soup 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	5 	0 	0 	0 	0
+13284 		Throwing Savage Full Roast 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	5 	0 	0 	0 	0
+13285 		Throwing Cocktail Warg Blood 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	5 	0 	0 	0 	0
+13286 		Throwing Minor Stew 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	5 	0 	0 	0 	0
+13287 		Throwing Siroma Iced Tea 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	5 	0 	0 	0 	0
+13288 		Throwing Drosera Herb Salad 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	5 	0 	0 	0 	0
+13289 		Throwing Petite Tail Soup 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	5 	0 	0 	0 	0
+13290 		Throwing Black Mass 	Ammo - Throwable Item (Sling Item) 	Arrow/Ammo 	100 	50 	5 	0 	0 	0 	0
+13291 		Starfish 	Ammo - Shuriken 	Arrow/Ammo 	0 	0 	0.5 	110 	0 	0 	0
+13292 		Dried Squid 	Ammo - Kunai 	Arrow/Ammo 	10 	5 	2 	50 	0 	0 	0
+13293 		Flying Fish 	Ammo - Kunai 	Arrow/Ammo 	10 	5 	2 	50 	0 	0 	0
+13294 	  	Explosive Kunai 	Ammo - Kunai 	Arrow/Ammo 	100 	50 	3 	50 	0 	0 	0
+18000 		Cannon Ball 	Ammo - Cannonballs 	Arrow/Ammo 	100 	50 	1 	100 	0 	0 	0
+18001 		Holy Cannon Ball 	Ammo - Cannonballs 	Arrow/Ammo 	200 	100 	1 	120 	0 	0 	0
+18002 		Dark Cannon Ball 	Ammo - Cannonballs 	Arrow/Ammo 	200 	100 	1 	120 	0 	0 	0
+18003 		Soul Cannon Ball 	Ammo - Cannonballs 	Arrow/Ammo 	200 	100 	1 	120 	0 	0 	0
+18004 		Iron Cannon Ball 	Ammo - Cannonballs 	Arrow/Ammo 	500 	250 	1 	250 	0 	0 	0

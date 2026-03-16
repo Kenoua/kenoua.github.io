@@ -13590,6 +13590,468 @@ const QUESTS = [
     results: [
       {"itemId": 12100, "quantity": 1}
     ]
+  },
+  {
+    "name": "Special Ninja Suit",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 2337, "quantity": 1},
+      {"itemId": 6223, "quantity": 30},
+      {"itemId": 7071, "quantity": 100},
+      {"itemId": 1, "quantity": 2500000}
+    ],
+    "results": [
+      {"itemId": 15056, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Ninja Scale Armor",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 2337, "quantity": 1},
+      {"itemId": 6223, "quantity": 30},
+      {"itemId": 954, "quantity": 100},
+      {"itemId": 1, "quantity": 2500000}
+    ],
+    "results": [
+      {"itemId": 15054, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Tenebris Latitantes",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 2337, "quantity": 1},
+      {"itemId": 6223, "quantity": 30},
+      {"itemId": 6089, "quantity": 100},
+      {"itemId": 1, "quantity": 2500000}
+    ],
+    "results": [
+      {"itemId": 15055, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Fox Arm Guard",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 2120, "quantity": 1},
+      {"itemId": 6223, "quantity": 20},
+      {"itemId": 1022, "quantity": 200},
+      {"itemId": 1, "quantity": 1000000}
+    ],
+    "results": [
+      {"itemId": 2171, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Wolf Arm Guard",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 2120, "quantity": 1},
+      {"itemId": 6223, "quantity": 20},
+      {"itemId": 6252, "quantity": 100},
+      {"itemId": 1, "quantity": 1000000}
+    ],
+    "results": [
+      {"itemId": 2172, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Crescent Arm Guard",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 2120, "quantity": 1},
+      {"itemId": 6223, "quantity": 20},
+      {"itemId": 7321, "quantity": 100},
+      {"itemId": 1, "quantity": 1000000}
+    ],
+    "results": [
+      {"itemId": 2173, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Huuma Swirling Petal",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 13303, "quantity": 1},
+      {"itemId": 6224, "quantity": 25},
+      {"itemId": 7319, "quantity": 50},
+      {"itemId": 7164, "quantity": 100},
+      {"itemId": 997, "quantity": 50},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": [
+      {"itemId": 13313, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Huuma Thunderstorm",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 13303, "quantity": 1},
+      {"itemId": 6224, "quantity": 25},
+      {"itemId": 7319, "quantity": 50},
+      {"itemId": 7164, "quantity": 100},
+      {"itemId": 996, "quantity": 25},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": [
+      {"itemId": 13315, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Huuma Fluttering Snow",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 13303, "quantity": 1},
+      {"itemId": 6224, "quantity": 25},
+      {"itemId": 7319, "quantity": 50},
+      {"itemId": 7164, "quantity": 100},
+      {"itemId": 995, "quantity": 25},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": [
+      {"itemId": 13314, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Huuma Fierce Inferno",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 13303, "quantity": 1},
+      {"itemId": 6224, "quantity": 25},
+      {"itemId": 7319, "quantity": 50},
+      {"itemId": 7164, "quantity": 100},
+      {"itemId": 994, "quantity": 25},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": [
+      {"itemId": 13321, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Shuriken Box",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 13250, "quantity": 500},
+      {"itemId": 1, "quantity": 500}
+    ],
+    "results": [
+      {"itemId": 22025, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Raincloud Shuriken Box",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 13251, "quantity": 500},
+      {"itemId": 1, "quantity": 500}
+    ],
+    "results": [
+      {"itemId": 22026, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Flash Shuriken Box",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 13252, "quantity": 500},
+      {"itemId": 1, "quantity": 500}
+    ],
+    "results": [
+      {"itemId": 22027, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Sharp Leaf Shuriken Box",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 13253, "quantity": 500},
+      {"itemId": 1, "quantity": 500}
+    ],
+    "results": [
+      {"itemId": 22028, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Thorn Needle Shuriken Box",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 13254, "quantity": 500},
+      {"itemId": 1, "quantity": 500}
+    ],
+    "results": [
+      {"itemId": 22029, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Heat Wave Kunai Scroll",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 13258, "quantity": 500},
+      {"itemId": 1, "quantity": 500}
+    ],
+    "results": [
+      {"itemId": 23081, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Icicle Kunai Scroll",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 13255, "quantity": 500},
+      {"itemId": 1, "quantity": 500}
+    ],
+    "results": [
+      {"itemId": 23082, "quantity": 1}
+    ]
+  },
+  {
+    "name": "High Wind Kunai Scroll",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 13257, "quantity": 500},
+      {"itemId": 1, "quantity": 500}
+    ],
+    "results": [
+      {"itemId": 23083, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Black Earth Kunai Scroll",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 13256, "quantity": 500},
+      {"itemId": 1, "quantity": 500}
+    ],
+    "results": [
+      {"itemId": 23084, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Fell Poison Kunai Scroll",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 13259, "quantity": 500},
+      {"itemId": 1, "quantity": 500}
+    ],
+    "results": [
+      {"itemId": 23085, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Altea & Ares",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 6224, "quantity": 25},
+      {"itemId": 7507, "quantity": 50},
+      {"itemId": 7563, "quantity": 25},
+      {"itemId": 1001, "quantity": 50},
+      {"itemId": 1000, "quantity": 25},
+      {"itemId": 13105, "quantity": 1},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": [
+      {"itemId": 13122, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Heaven's Feather & Hell's Fire",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 6224, "quantity": 25},
+      {"itemId": 7507, "quantity": 50},
+      {"itemId": 2279, "quantity": 1},
+      {"itemId": 7063, "quantity": 25},
+      {"itemId": 923, "quantity": 25},
+      {"itemId": 13105, "quantity": 1},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": [
+      {"itemId": 13120, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Color Scope",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 6224, "quantity": 25},
+      {"itemId": 7507, "quantity": 50},
+      {"itemId": 1013, "quantity": 50},
+      {"itemId": 963, "quantity": 50},
+      {"itemId": 6319, "quantity": 50},
+      {"itemId": 13170, "quantity": 1},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": [
+      {"itemId": 13189, "quantity": 1}
+    ]
+  },
+  {
+    "name": "RAG203",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 6224, "quantity": 25},
+      {"itemId": 7507, "quantity": 50},
+      {"itemId": 6090, "quantity": 50},
+      {"itemId": 6319, "quantity": 100},
+      {"itemId": 963, "quantity": 200},
+      {"itemId": 13164, "quantity": 1},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": [
+      {"itemId": 13195, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Drifter [1]",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 999, "quantity": 70},
+      {"itemId": 984, "quantity": 3},
+      {"itemId": 985, "quantity": 5},
+      {"itemId": 1003, "quantity": 70},
+      {"itemId": 7317, "quantity": 50},
+      {"itemId": 1, "quantity": 50000}
+    ],
+    "results": [
+      {"itemId": 13157, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Minigun",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 13157, "quantity": 1},
+      {"itemId": 6224, "quantity": 25},
+      {"itemId": 7507, "quantity": 50},
+      {"itemId": 7093, "quantity": 50},
+      {"itemId": 963, "quantity": 50},
+      {"itemId": 984, "quantity": 25},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": [
+      {"itemId": 13197, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Tempest",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 13157, "quantity": 1},
+      {"itemId": 6224, "quantity": 25},
+      {"itemId": 7507, "quantity": 50},
+      {"itemId": 996, "quantity": 25},
+      {"itemId": 6090, "quantity": 50},
+      {"itemId": 7093, "quantity": 100},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": [
+      {"itemId": 13198, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Rolling Thunder",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 13167, "quantity": 1},
+      {"itemId": 6224, "quantity": 25},
+      {"itemId": 7507, "quantity": 50},
+      {"itemId": 996, "quantity": 20},
+      {"itemId": 995, "quantity": 20},
+      {"itemId": 6319, "quantity": 50},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": [
+      {"itemId": 13193, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Death Fire",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 13156, "quantity": 1},
+      {"itemId": 6224, "quantity": 25},
+      {"itemId": 7507, "quantity": 50},
+      {"itemId": 994, "quantity": 50},
+      {"itemId": 923, "quantity": 50},
+      {"itemId": 6089, "quantity": 50},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": [
+      {"itemId": 13192, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Destroyer",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 7319, "quantity": 50},
+      {"itemId": 984, "quantity": 5},
+      {"itemId": 7317, "quantity": 70},
+      {"itemId": 1, "quantity": 100000}
+    ],
+    "results": [
+      {"itemId": 13160, "quantity": 1}
+    ]
+  },
+  {
+    "name": "End of the Horizon",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 13160, "quantity": 1},
+      {"itemId": 6224, "quantity": 25},
+      {"itemId": 7507, "quantity": 50},
+      {"itemId": 997, "quantity": 50},
+      {"itemId": 7938, "quantity": 25},
+      {"itemId": 7095, "quantity": 50},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": [
+      {"itemId": 28200, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Southern Cross",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 13160, "quantity": 1},
+      {"itemId": 6224, "quantity": 25},
+      {"itemId": 7507, "quantity": 50},
+      {"itemId": 2282, "quantity": 1},
+      {"itemId": 7938, "quantity": 25},
+      {"itemId": 7095, "quantity": 100},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": [
+      {"itemId": 28202, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Mob Scarf",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 5004, "quantity": 1},
+      {"itemId": 5361, "quantity": 1},
+      {"itemId": 983, "quantity": 5},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": [
+      {"itemId": 28502, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Rebelion Scarf",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 2528, "quantity": 1},
+      {"itemId": 2727, "quantity": 1},
+      {"itemId": 983, "quantity": 5},
+      {"itemId": 1, "quantity": 2000000}
+    ],
+    "results": [
+      {"itemId": 28484, "quantity": 1}
+    ]
   }
 ];
 
