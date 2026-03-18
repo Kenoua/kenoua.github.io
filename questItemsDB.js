@@ -15242,6 +15242,126 @@ const QUESTS = [
     "results": [
       {"itemId": 7142, "quantity": 1}
     ]
+  },
+  {
+    "name": "Male Hairstyle note",
+    "category": "Quest",
+    "requirements": [
+      {"itemId": 1034, "quantity": 150}
+    ],
+    "results": [
+      {"itemId": 8888, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Male Hairstyle note",
+    "category": "Quest",
+    "requirements": [
+      {"itemId": 915, "quantity": 150}
+    ],
+    "results": [
+      {"itemId": 8888, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Male Hairstyle note",
+    "category": "Quest",
+    "requirements": [
+      {"itemId": 7156, "quantity": 150}
+    ],
+    "results": [
+      {"itemId": 8888, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Male Hairstyle note",
+    "category": "Quest",
+    "requirements": [
+      {"itemId": 7013, "quantity": 150}
+    ],
+    "results": [
+      {"itemId": 8888, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Male Hairstyle note",
+    "category": "Quest",
+    "requirements": [
+      {"itemId": 7162, "quantity": 150}
+    ],
+    "results": [
+      {"itemId": 8888, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Male Hairstyle note",
+    "category": "Quest",
+    "requirements": [
+      {"itemId": 7122, "quantity": 150}
+    ],
+    "results": [
+      {"itemId": 8888, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Female Hairstyle note",
+    "category": "Quest",
+    "requirements": [
+      {"itemId": 949, "quantity": 150}
+    ],
+    "results": [
+      {"itemId": 8889, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Female Hairstyle note",
+    "category": "Quest",
+    "requirements": [
+      {"itemId": 901, "quantity": 150}
+    ],
+    "results": [
+      {"itemId": 8889, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Female Hairstyle note",
+    "category": "Quest",
+    "requirements": [
+      {"itemId": 7264, "quantity": 150}
+    ],
+    "results": [
+      {"itemId": 8889, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Female Hairstyle note",
+    "category": "Quest",
+    "requirements": [
+      {"itemId": 938, "quantity": 150}
+    ],
+    "results": [
+      {"itemId": 8889, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Female Hairstyle note",
+    "category": "Quest",
+    "requirements": [
+      {"itemId": 907, "quantity": 150}
+    ],
+    "results": [
+      {"itemId": 8889, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Female Hairstyle note",
+    "category": "Quest",
+    "requirements": [
+      {"itemId": 1026, "quantity": 150}
+    ],
+    "results": [
+      {"itemId": 8889, "quantity": 1}
+    ]
   }
 ];
 
