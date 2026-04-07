@@ -2430,14 +2430,6 @@
     "results": []
   },
   {
-    "name": "Betty",
-    "category": "Betty",
-    "requirements": [
-      {"itemId": 1068, "quantity": "10-20"}
-    ],
-    "results": []
-  },
-  {
     "name": "Barren Trunk",
     "category": "Betty",
     "requirements": [
@@ -5791,5 +5783,197 @@
     "results": [
       {"itemId": 678, "quantity": 1}
     ]
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Acorn",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 1026, "quantity": 40 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Ancient Lips",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 1054, "quantity": 25 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Animal Gore",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 702, "quantity": 5 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Bao",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 553, "quantity": 40 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Beautiful Flower",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 6511, "quantity": 15 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Cendrawasih Feather",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 6405, "quantity": 4 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Crystal Tears",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 6075, "quantity": 10 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Cursed Ruby",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 724, "quantity": 1 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Elegant Flower",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 6510, "quantity": 8 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Fluff",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 914, "quantity": 60 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Harpy Feather",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 7115, "quantity": 50 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Huge Leaf",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 7198, "quantity": 40 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Ice Crystal",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 6257, "quantity": 3 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Illusion Flower",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 710, "quantity": 3 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Jejellopy",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 6498, "quantity": 35 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Peco Peco Feather",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 7101, "quantity": 40 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Piece of Bamboo",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 7150, "quantity": 40 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Piece of Eggshell",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 7032, "quantity": 15 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Pineapple",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 6265, "quantity": 25 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Rainbow Shell",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 1013, "quantity": 40 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Rotten Meat",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 7564, "quantity": 40 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Soft Blade Of Grass",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 7194, "quantity": 30 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Sweet Milk",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 627, "quantity": 2 }
+    ],
+    "results": []
+  },
+  {
+    "name": "Cirque du fluff daily hunt - Wilt Flower",
+    "category": "Seasonal Event",
+    "requirements": [
+      { "itemId": 6086, "quantity": 25 }
+    ],
+    "results": []
   }
 ]
