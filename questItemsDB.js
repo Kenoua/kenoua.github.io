@@ -13848,7 +13848,7 @@ const QUESTS = [
       {"itemId": 7563, "quantity": 25},
       {"itemId": 1001, "quantity": 50},
       {"itemId": 1000, "quantity": 25},
-      {"itemId": 13105, "quantity": 1},
+      {"itemId": 13101, "quantity": 1},
       {"itemId": 1, "quantity": 2000000}
     ],
     "results": [
@@ -13864,7 +13864,7 @@ const QUESTS = [
       {"itemId": 2279, "quantity": 1},
       {"itemId": 7063, "quantity": 25},
       {"itemId": 923, "quantity": 25},
-      {"itemId": 13105, "quantity": 1},
+      {"itemId": 13101, "quantity": 1},
       {"itemId": 1, "quantity": 2000000}
     ],
     "results": [
@@ -13880,7 +13880,7 @@ const QUESTS = [
       {"itemId": 1013, "quantity": 50},
       {"itemId": 963, "quantity": 50},
       {"itemId": 6319, "quantity": 50},
-      {"itemId": 13170, "quantity": 1},
+      {"itemId": 13153, "quantity": 1},
       {"itemId": 1, "quantity": 2000000}
     ],
     "results": [
@@ -13896,7 +13896,7 @@ const QUESTS = [
       {"itemId": 6090, "quantity": 50},
       {"itemId": 6319, "quantity": 100},
       {"itemId": 963, "quantity": 200},
-      {"itemId": 13164, "quantity": 1},
+      {"itemId": 13153, "quantity": 1},
       {"itemId": 1, "quantity": 2000000}
     ],
     "results": [
@@ -13954,7 +13954,7 @@ const QUESTS = [
     "name": "Rolling Thunder",
     "category": "Crafting",
     "requirements": [
-      {"itemId": 13167, "quantity": 1},
+      {"itemId": 13156, "quantity": 1},
       {"itemId": 6224, "quantity": 25},
       {"itemId": 7507, "quantity": 50},
       {"itemId": 996, "quantity": 20},
@@ -15361,6 +15361,166 @@ const QUESTS = [
     ],
     "results": [
       {"itemId": 8889, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Scarlet Dyestuffs",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 507, "quantity": 30},
+      {"itemId": 973, "quantity": 1},
+      {"itemId": 713, "quantity": 1},
+      {"itemId": 1, "quantity": 3000}
+    ],
+    "results": [
+      {"itemId": 975, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Lemon Dyestuffs",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 508, "quantity": 30},
+      {"itemId": 973, "quantity": 1},
+      {"itemId": 713, "quantity": 1},
+      {"itemId": 1, "quantity": 3000}
+    ],
+    "results": [
+      {"itemId": 976, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Cobaltblue Dyestuffs",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 510, "quantity": 20},
+      {"itemId": 973, "quantity": 1},
+      {"itemId": 713, "quantity": 1},
+      {"itemId": 1, "quantity": 3500}
+    ],
+    "results": [
+      {"itemId": 978, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Darkgreen Dyestuffs",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 510, "quantity": 5},
+      {"itemId": 511, "quantity": 20},
+      {"itemId": 508, "quantity": 20},
+      {"itemId": 973, "quantity": 1},
+      {"itemId": 974, "quantity": 1},
+      {"itemId": 713, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 979, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Orange Dyestuffs",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 507, "quantity": 20},
+      {"itemId": 508, "quantity": 20},
+      {"itemId": 973, "quantity": 1},
+      {"itemId": 974, "quantity": 1},
+      {"itemId": 713, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 980, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Violet Dyestuffs",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 510, "quantity": 10},
+      {"itemId": 507, "quantity": 30},
+      {"itemId": 973, "quantity": 1},
+      {"itemId": 974, "quantity": 1},
+      {"itemId": 713, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 981, "quantity": 1}
+    ]
+  },
+  {
+    "name": "White Dyestuffs",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 509, "quantity": 30},
+      {"itemId": 973, "quantity": 1},
+      {"itemId": 713, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 982, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Black Dyestuffs",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 507, "quantity": 30},
+      {"itemId": 508, "quantity": 30},
+      {"itemId": 511, "quantity": 30},
+      {"itemId": 510, "quantity": 5},
+      {"itemId": 973, "quantity": 1},
+      {"itemId": 974, "quantity": 1},
+      {"itemId": 713, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 983, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Mixture and counteragent Quest",
+    "category": "Quest",
+    "requirements": [
+      {"itemId": 970, "quantity": 1},
+      {"itemId": 971, "quantity": 1},
+      {"itemId": 972, "quantity": 1}
+    ],
+    "results": []
+  },
+  {
+    "name": "Counteragent",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 970, "quantity": 1},
+      {"itemId": 971, "quantity": 1},
+      {"itemId": 713, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 973, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Mixture",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 970, "quantity": 1},
+      {"itemId": 972, "quantity": 1},
+      {"itemId": 713, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 974, "quantity": 1}
+    ]
+  },
+  {
+    "name": "Poison bottle",
+    "category": "Crafting",
+    "requirements": [
+      {"itemId": 657, "quantity": 1},
+      {"itemId": 713, "quantity": 1},
+      {"itemId": 937, "quantity": 1},
+      {"itemId": 939, "quantity": 1},
+      {"itemId": 952, "quantity": 1},
+      {"itemId": 972, "quantity": 1},
+      {"itemId": 7033, "quantity": 1}
+    ],
+    "results": [
+      {"itemId": 678, "quantity": 1}
     ]
   }
 ];
