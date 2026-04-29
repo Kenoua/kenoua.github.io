@@ -10152,7 +10152,7 @@ const QUESTS = [
     "category": "SQI",
     "requirements": [
       {"itemId": 2254, "quantity": 1},
-      {"itemId": 5074, "quantity": 1},
+      {"itemId": 8008, "quantity": 1},
       {"itemId": 5025, "quantity": 1},
       {"itemId": 2258, "quantity": 1},
       {"itemId": 10006, "quantity": 1},
