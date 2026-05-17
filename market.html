@@ -407,7 +407,10 @@ function renderHistory() {
             card2: r["card 2"],
             card3: r["card 3"],
             card4: r["card 4"],
-            refine: upgrade
+            refine: upgrade,
+            enchant1:r["enchant 1"],
+            enchant2:r["enchant 2"],
+            enchant3:r["enchant 3"]
           })),
           borderColor: colors[index % colors.length],
           backgroundColor: colors[index % colors.length],
@@ -464,6 +467,15 @@ function renderHistory() {
                   }
                   if (point.card4) {
                     lines.push(`Card 4: ${point.card4}`);
+                  }
+                  if (point.enchant1) {
+                    lines.push(`Enchant 1: ${point.enchant1}`);
+                  }
+                  if (point.enchant2) {
+                    lines.push(`Enchant 2: ${point.enchant2}`);
+                  }
+                  if (point.enchant3) {
+                    lines.push(`Enchant 3: ${point.enchant3}`);
                   }
 
                   return lines;
