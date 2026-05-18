@@ -168,6 +168,11 @@ font-weight: bold;
       <button id="search" onclick="loadData()">Load History</button>
       <button id="bgButton" onclick="changeBackground()" style="display:none;">Change background</button>
       <div id="loading">Loading data, please wait...</div>
+      <div id="chartFilters" class="chart-filters-row" style="display: none;">
+        <select id="filterRefine"><option value="">All Refine Levels</option></select>
+        <select id="filterCard"><option value="">All Cards</option></select>
+        <select id="filterEnchant"><option value="">All Enchants</option></select>
+      </div>
       <canvas id="chart"></canvas>
       <div id="stats" class="stats"></div>
     </div>
@@ -328,167 +333,212 @@ function renderHistory() {
   localStorage.setItem("searchHistory", JSON.stringify(history));
 }
 
-  async function loadData(valueFromHistory = null) {
+// 📢 ADD THIS TO YOUR GLOBAL VARIABLES (with your 'chart' variable)
+let masterDatasets = []; 
 
+async function loadData(valueFromHistory = null) {
     const item = valueFromHistory ?? document.getElementById('itemInput').value.trim();
     if (item === "ChocoChonko") {
       document.getElementById("bgButton").style.display = "inline-block";
       return;
     } 
 
-      if (!item) {
-        loading.style.display = 'none';
-        return alert("Enter an item name or ID");
-      }    
+    if (!item) {
+      loading.style.display = 'none';
+      return alert("Enter an item name or ID");
+    }    
 
-      const isID = /^\d+$/.test(item);
-      const monthFilter = document.getElementById('monthFilter').value;
+    const isID = /^\d+$/.test(item);
+    const monthFilter = document.getElementById('monthFilter').value;
 
-      let data;
-      if (isID) {
-        data = parsed.data.filter(row => row["item id"] == item);
-      } else {
-        data = parsed.data.filter(
-          row => row["item name"] &&
-                 row["item name"].toLowerCase() === item.toLowerCase()
-        );
-      }
-
-      data = filterByMonths(data, monthFilter);
-
-      if (!data.length) {
-        loading.style.display = 'none';
-        return alert("No data found for that item and date range.");
-      }
-
-      if (!valueFromHistory) {
-        addToHistory(item);
-      }else{
-        document.getElementById('itemInput').value = item;
-      }
-
-      // 🔹 Sort by date (important for line charts)
-      data.sort((a, b) => new Date(a.date) - new Date(b.date));
-
-      // 🔹 Collect unique dates for the X axis
-      const labels = [...new Set(data.map(e => e.date))];
-
-      // 🔹 Group rows by Upgrade
-      const groupedByUpgrade = {};
-      for (const row of data) {
-        const upgrade = row.upgrade || 'Base';
-        if (!groupedByUpgrade[upgrade]) {
-          groupedByUpgrade[upgrade] = [];
-        }
-        groupedByUpgrade[upgrade].push(row);
-      }
-
-      const ctx = document.getElementById('chart').getContext('2d');
-      const itemname = data[0]["item name"];
-
-      // 🔹 Build one dataset per Upgrade
-      const colors = [
-        '#4CAF50', '#2196F3', '#FF9800',
-        '#E91E63', '#9C27B0', '#00BCD4'
-      ];
-
-      function generateColor(index, total) {
-        const hue = Math.round((index * 360) / total);
-        return `hsl(${hue}, 70%, 50%)`;
-      }
-
-      const datasets = Object.entries(groupedByUpgrade).map(
-        ([upgrade, rows], index) => ({
-          label: `${itemname} (${upgrade})`,
-          data: rows.map(r => ({
-            x: r.date,
-            y: Number(r.price),
-            card1: r["card 1"],
-            card2: r["card 2"],
-            card3: r["card 3"],
-            card4: r["card 4"],
-            refine: upgrade,
-            enchant1:r["enchant 1"],
-            enchant2:r["enchant 2"],
-            enchant3:r["enchant 3"]
-          })),
-          borderColor: colors[index % colors.length],
-          backgroundColor: colors[index % colors.length],
-          tension: 0.2,
-          spanGaps: true 
-        })
+    let data;
+    if (isID) {
+      data = parsed.data.filter(row => row["item id"] == item);
+    } else {
+      data = parsed.data.filter(
+        row => row["item name"] &&
+               row["item name"].toLowerCase() === item.toLowerCase()
       );
+    }
 
-      if (chart) chart.destroy();
+    data = filterByMonths(data, monthFilter);
 
-      chart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels,
-          datasets
+    if (!data.length) {
+      loading.style.display = 'none';
+      return alert("No data found for that item and date range.");
+    }
+
+    if (!valueFromHistory) {
+      addToHistory(item);
+    } else {
+      document.getElementById('itemInput').value = item;
+    }
+
+    // 🔹 Sort by date (important for line charts)
+    data.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+    // 🔹 Collect unique dates for the X axis
+    const labels = [...new Set(data.map(e => e.date))];
+
+    // 🔹 Group rows by Upgrade
+    const groupedByUpgrade = {};
+    for (const row of data) {
+      const upgrade = row.upgrade || 'Base';
+      if (!groupedByUpgrade[upgrade]) {
+        groupedByUpgrade[upgrade] = [];
+      }
+      groupedByUpgrade[upgrade].push(row);
+    }
+
+    const ctx = document.getElementById('chart').getContext('2d');
+    const itemname = data[0]["item name"];
+
+    // 🔹 Build one dataset per Upgrade
+    const colors = [
+      '#4CAF50', '#2196F3', '#FF9800',
+      '#E91E63', '#9C27B0', '#00BCD4'
+    ];
+
+    // 🔹 Store original datasets into our global master copy variable
+    masterDatasets = Object.entries(groupedByUpgrade).map(
+      ([upgrade, rows], index) => ({
+        label: `${itemname} (${upgrade})`,
+        data: rows.map(r => ({
+          x: r.date,
+          y: Number(r.price),
+          card1: r["card 1"],
+          card2: r["card 2"],
+          card3: r["card 3"],
+          card4: r["card 4"],
+          refine: upgrade,
+          enchant1: r["enchant 1"],
+          enchant2: r["enchant 2"],
+          enchant3: r["enchant 3"]
+        })),
+        borderColor: colors[index % colors.length],
+        backgroundColor: colors[index % colors.length],
+        tension: 0.2,
+        spanGaps: true 
+      })
+    );
+
+    if (chart) chart.destroy();
+
+    chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: JSON.parse(JSON.stringify(masterDatasets)) // Pass a copy to avoid mutation
+      },
+      options: {
+        interaction: {
+          mode: 'nearest',
+          intersect: false
         },
-        options: {
-          interaction: {
-            mode: 'nearest',
-            intersect: false
+        plugins: {
+          legend: {
+            onClick(e, legendItem, legend) {
+              Chart.defaults.plugins.legend.onClick.call(this, e, legendItem, legend);
+              updateStatsFromVisible(legend.chart);
+            }
           },
-          plugins: {
-            legend: {
-                onClick(e, legendItem, legend) {
-                // 1️⃣ Call the default Chart.js behavior
-                Chart.defaults.plugins.legend.onClick.call(
-                  this,
-                  e,
-                  legendItem,
-                  legend
-                );
+          tooltip: {
+            callbacks: {
+              label(context) {
+                const point = context.raw;
+                if (!point) return '';
 
-                // 2️⃣ Update stats based on visible datasets
-                updateStatsFromVisible(legend.chart);
-              }},
-            tooltip: {
-              callbacks: {
-                label(context) {
-                  const point = context.raw; // 👈 your custom object
+                let lines = [
+                  `Price: ${point.y.toLocaleString()}`,
+                  `Refine: ${point.refine}`
+                ];
 
-                  let lines = [
-                    `Price: ${point.y.toLocaleString()}`,
-                    `Refine: ${point.refine}`
-                  ];
-
-                  if (point.card1) {
-                    lines.push(`Card 1: ${point.card1}`);
-                  }
-                  if (point.card2) {
-                    lines.push(`Card 2: ${point.card2}`);
-                  }
-                  if (point.card3) {
-                    lines.push(`Card 3: ${point.card3}`);
-                  }
-                  if (point.card4) {
-                    lines.push(`Card 4: ${point.card4}`);
-                  }
-                  if (point.enchant1) {
-                    lines.push(`Enchant 1: ${point.enchant1}`);
-                  }
-                  if (point.enchant2) {
-                    lines.push(`Enchant 2: ${point.enchant2}`);
-                  }
-                  if (point.enchant3) {
-                    lines.push(`Enchant 3: ${point.enchant3}`);
-                  }
-
-                  return lines;
+                for (let i = 1; i <= 4; i++) {
+                  if (point[`card${i}`]) lines.push(`Card ${i}: ${point[`card${i}`]}`);
                 }
+                for (let i = 1; i <= 3; i++) {
+                  if (point[`enchant${i}`]) lines.push(`Enchant ${i}: ${point[`enchant${i}`]}`);
+                }
+
+                return lines;
               }
             }
           }
         }
-      });
-      updateStatsFromVisible(chart);
+      }
+    });
 
+    // 🔹 Populate our UI filter dropdowns and run the initial stats
+    populateFilterDropdowns();
+    updateStatsFromVisible(chart);
+    document.getElementById('chartFilters').style.display = 'flex';
+}
+
+// 🟢 NEW HELPER: Dynamically read data points and populate the HTML select elements
+function populateFilterDropdowns() {
+  const refines = new Set();
+  const cards = new Set();
+  const enchants = new Set();
+
+  masterDatasets.forEach(dataset => {
+    dataset.data.forEach(point => {
+      if (point.refine) refines.add(point.refine);
+      for (let i = 1; i <= 4; i++) if (point[`card${i}`]) cards.add(point[`card${i}`]);
+      for (let i = 1; i <= 3; i++) if (point[`enchant${i}`]) enchants.add(point[`enchant${i}`]);
+    });
+  });
+
+  buildSelectOptions('filterRefine', refines, "All Refine Levels");
+  buildSelectOptions('filterCard', cards, "All Cards");
+  buildSelectOptions('filterEnchant', enchants, "All Enchants");
+}
+
+function buildSelectOptions(elementId, set, defaultText) {
+  const select = document.getElementById(elementId);
+  if (!select) return;
+  
+  select.innerHTML = `<option value="">${defaultText}</option>`; // Reset options
+  Array.from(set).sort().forEach(value => {
+    const opt = document.createElement('option');
+    opt.value = value;
+    opt.textContent = value;
+    select.appendChild(opt);
+  });
+}
+
+// 🟢 NEW HELPER: Filter chart data points based on selected user choices
+function filterChartData() {
+  if (!chart) return;
+
+  const refineVal = document.getElementById('filterRefine')?.value || "";
+  const cardVal = document.getElementById('filterCard')?.value || "";
+  const enchantVal = document.getElementById('filterEnchant')?.value || "";
+
+  chart.data.datasets = masterDatasets.map(masterDataset => {
+    const clonedDataset = JSON.parse(JSON.stringify(masterDataset));
     
-  }
+    clonedDataset.data = clonedDataset.data.filter(point => {
+      const matchesRefine = !refineVal || String(point.refine) === refineVal;
+      const matchesCard = !cardVal || [point.card1, point.card2, point.card3, point.card4].includes(cardVal);
+      const matchesEnchant = !enchantVal || [point.enchant1, point.enchant2, point.enchant3].includes(enchantVal);
+
+      return matchesRefine && matchesCard && matchesEnchant;
+    });
+
+    return clonedDataset;
+  });
+
+  chart.update();
+  updateStatsFromVisible(chart);
+}
+
+// 🟢 NEW HELPER: Watch for changes in dropdown elements
+document.addEventListener("DOMContentLoaded", () => {
+  ['filterRefine', 'filterCard', 'filterEnchant'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('change', filterChartData);
+  });
+});
 
   function updateStatsFromVisible(chart) {
     const values = [];
