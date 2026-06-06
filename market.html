@@ -294,27 +294,73 @@ font-weight: bold;
   renderHistory();
   }
 
-  async function fetchData(){
-    try {
-      //const response = await fetch('Talon Market Master Vendor Data.csv');
-      const loading = document.getElementById('loading');
-      loading.style.display = 'block';
+async function fetchData() {
+  const loading = document.getElementById('loading');
+  loading.style.display = 'block';
+
+  let csvText = "";
+  let opfsAvailable = false;
+  let fileHandle, timeHandle;
+  const todayString = new Date().toDateString();
+
+  try {
+    if (typeof navigator.storage?.getDirectory === "function") {
+      const root = await navigator.storage.getDirectory();
+      fileHandle = await root.getFileHandle("Talon_Market_Master_Vendor_Data.txt", { create: true });
+      timeHandle = await root.getFileHandle("Talon_Market_Timestamp.txt", { create: true });
+      opfsAvailable = true;
+    }
+  } catch (storageError) {
+    console.warn("OPFS storage blocked or unavailable (likely Incognito or file:// protocol). Falling back to direct network fetch.", storageError);
+    opfsAvailable = false;
+  }
+
+  try {
+    let shouldFetch = true;
+    if (opfsAvailable) {
+      let file = await fileHandle.getFile();
+      let timeFile = await timeHandle.getFile();
+
+      if (file.size > 0 && timeFile.size > 0) {
+        const savedDateString = await timeFile.text();
+        if (savedDateString === todayString) {
+          shouldFetch = false;
+        }
+      }
+    }
+
+    if (!shouldFetch && opfsAvailable) {
+      let file = await fileHandle.getFile();
+      csvText = await file.text();
+    } else {
       const response = await fetch('https://dl.dropboxusercontent.com/scl/fo/h0gduuuivf39r83k1k2bq/AKnKe6s8rV2SCfI-cRumOSE/Talon%20Market%20Master%20Vendor%20Data.csv?rlkey=6idfkjrm67xd16y328ji248lg&e=1&dl=1');
-      const csvText = await response.text();
-      parsed = Papa.parse(csvText, { header: true });
-      autocompleteItems = [...new Set(
+      csvText = await response.text();
+      
+      if (opfsAvailable) {
+        const csvWritable = await fileHandle.createWritable();
+        await csvWritable.write(csvText);
+        await csvWritable.close();
+
+        const timeWritable = await timeHandle.createWritable();
+        await timeWritable.write(todayString);
+        await timeWritable.close();
+      }
+    }
+
+    parsed = Papa.parse(csvText, { header: true });
+    autocompleteItems = [...new Set(
       parsed.data
         .map(row => row["item name"]?.trim())
         .filter(Boolean)
-      )];
-    } catch (err) {
-      console.error(err);
-      loading.style.display = 'none';
-      return alert("Could not load 'Talon Market Master Vendor Data.csv' from server root.");
-    }finally {
-      loading.style.display = 'none';
-    }
+    )];
+
+  } catch (err) {
+    console.error(err);
+    return alert("Could not fetch or parse the vendor data.");
+  } finally {
+    loading.style.display = 'none';
   }
+}
 
 function renderHistory() {
   const list = document.getElementById("historyList");
