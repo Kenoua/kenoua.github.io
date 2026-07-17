@@ -217,22 +217,20 @@ font-weight: bold;
       return;
     }
 
-    const matches = autocompleteItems.filter(name =>
-      name.toLowerCase().includes(value)
-    );
+    const matches = autocompleteItems.filter(item => item.name?.toLowerCase().includes(value));
 
     if (!matches.length) {
       box.style.display = "none";
       return;
     }
 
-    matches.forEach(name => {
+    matches.forEach(item => {
       const div = document.createElement("div");
       div.className = "autocomplete-item";
-      div.textContent = name;
+      div.textContent = item.name + " #" + item.id;
 
       div.onclick = () => {
-        input.value = name;
+        input.value = item.name + " #" + item.id;
         box.style.display = "none";
       };
 
@@ -353,6 +351,8 @@ async function fetchData() {
         .map(row => row["item name"]?.trim())
         .filter(Boolean)
     )];
+    autocompleteItems = [...new Set(parsed.data.map(item => JSON.stringify({ id: item["item id"], name: item["item name"] })))].map(str => JSON.parse(str));
+
 
   } catch (err) {
     console.error(err);
@@ -397,11 +397,15 @@ async function loadData(valueFromHistory = null) {
 
     const isID = /^\d+$/.test(item);
     const monthFilter = document.getElementById('monthFilter').value;
-
+    const containsID = item.includes("#");
+    
     let data;
     if (isID) {
       data = parsed.data.filter(row => row["item id"] == item);
-    } else {
+    } else if (containsID) {
+      data = parsed.data.filter(row => row["item id"] == item.split(' #')[1]);
+    }
+    else {
       data = parsed.data.filter(
         row => row["item name"] &&
                row["item name"].toLowerCase() === item.toLowerCase()
@@ -527,6 +531,9 @@ function populateFilterDropdowns() {
   const cards = new Set();
   const enchants = new Set();
 
+  cards.add("-No Card");
+  enchants.add("-No Enchant");
+
   masterDatasets.forEach(dataset => {
     dataset.data.forEach(point => {
       if (point.refine) refines.add(point.refine);
@@ -535,9 +542,11 @@ function populateFilterDropdowns() {
     });
   });
 
-  buildSelectOptions('filterRefine', refines, "All Refine Levels");
-  buildSelectOptions('filterCard', cards, "All Cards");
-  buildSelectOptions('filterEnchant', enchants, "All Enchants");
+
+
+  buildSelectOptions('filterRefine', refines, "-All Refine Levels");
+  buildSelectOptions('filterCard', cards, "-All Cards");
+  buildSelectOptions('filterEnchant', enchants, "-All Enchants");
 }
 
 function buildSelectOptions(elementId, set, defaultText) {
@@ -566,8 +575,13 @@ function filterChartData() {
     
     clonedDataset.data = clonedDataset.data.filter(point => {
       const matchesRefine = !refineVal || String(point.refine) === refineVal;
-      const matchesCard = !cardVal || [point.card1, point.card2, point.card3, point.card4].includes(cardVal);
-      const matchesEnchant = !enchantVal || [point.enchant1, point.enchant2, point.enchant3].includes(enchantVal);
+      const matchesCard = !cardVal || (cardVal === "-No Card" 
+        ? [point.card1, point.card2, point.card3, point.card4].every(card => card === "")
+        : [point.card1, point.card2, point.card3, point.card4].includes(cardVal));
+
+      const matchesEnchant = !enchantVal || (enchantVal === "-No Enchant" 
+        ? [point.enchant1, point.enchant2, point.enchant3].every(enchant => enchant === "")
+        : [point.enchant1, point.enchant2, point.enchant3].includes(enchantVal));
 
       return matchesRefine && matchesCard && matchesEnchant;
     });
