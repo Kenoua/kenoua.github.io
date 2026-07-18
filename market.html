@@ -217,7 +217,7 @@ font-weight: bold;
       return;
     }
 
-    const matches = autocompleteItems.filter(item => item.name?.toLowerCase().includes(value));
+    const matches = autocompleteItems.filter(item => item.name?.toLowerCase().includes(value) || item.id?.includes(value));
 
     if (!matches.length) {
       box.style.display = "none";
