@@ -3,36 +3,200 @@
 <head>
 
 <style>
-table {
-  border-collapse: collapse;
-}
+    /* ====== Fonts & Reset ====== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+    }
 
-table, th, td {
-  border: 1px solid black;
-      text-align: center; /* Center align the content within each cell */
-      vertical-align: middle; /* Vertically center the content within each cell */
-      padding: 10px; /* Add padding for visual aesthetics */
-	  border: 3px solid white;
+    /* ====== Casino Colors ====== */
+    :root {
+      --bg: #0b0f14;
+      --felt: #0f5132;
+      --gold: #f5c542;
+      --gold-glow: rgba(245, 197, 66, 0.6);
+      --red: #b11226;
+      --text: #f8fafc;
+      --muted: #9ca3af;
+      --border: rgba(255, 255, 255, 0.15);
+    }
 
-}
+    /* ====== Body ====== */
+    body {
+      background:
+        radial-gradient(circle at top, #1a1f2b, var(--bg));
+      color: var(--text);
+      min-height: 100vh;
+      padding: 2rem;
+    }
 
-input[type="radio"] {
-  transform: scale(1);
-}
-</style>
-<center>AAAAAAAAAAAAAWelcome to Mr patate's Guess the number solver cuz potato brain hurt<br>
-  Click on the 55000 button to copy the guess number<br>
+    /* ====== Headings ====== */
+    h1, h2 {
+      color: var(--gold);
+      text-shadow: 0 0 10px var(--gold-glow);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      letter-spacing: 0.05em;
+    }
+
+    /* ====== Container ====== */
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* ====== Card / Panel ====== */
+    .panel {
+      background: linear-gradient(145deg, #111827, #020617);
+      border-radius: 18px;
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+      box-shadow:
+        inset 0 0 25px rgba(0, 0, 0, 0.8),
+        0 0 25px rgba(0, 0, 0, 0.6);
+      margin-bottom: 2rem;
+    }
+
+    /* ====== Buttons ====== */
+    button {
+      background: linear-gradient(180deg, var(--gold), #d4a017);
+      color: #1a1300;
+      border: none;
+      padding: 0.7rem 1.3rem;
+      border-radius: 12px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      margin: 0.5rem;
+      box-shadow:
+        0 4px 0 #9f7a10,
+        0 0 15px var(--gold-glow);
+      transition: all 0.15s ease;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow:
+        0 6px 0 #9f7a10,
+        0 0 25px var(--gold-glow);
+    }
+
+    button:active {
+      transform: translateY(2px);
+      box-shadow:
+        0 2px 0 #9f7a10,
+        0 0 10px var(--gold-glow);
+    }
+
+    button.danger {
+      background: linear-gradient(180deg, #e11d48, var(--red));
+      box-shadow:
+        0 4px 0 #7f1d1d,
+        0 0 15px rgba(225, 29, 72, 0.6);
+      color: white;
+    }
+
+    /* ====== Tables ====== */
+    table {
+      margin:auto;
+      width: auto;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      background: radial-gradient(circle at center, #188552, #052e16);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8);
+    }
+
+    th {
+      background: linear-gradient(180deg, #14532d, #052e16);
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.85rem;
+      padding: 0.9rem;
+      border-bottom: 2px solid var(--gold);
+    }
+
+    td {
+      padding: 0.75rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      color: #ecfdf5;
+    }
+
+
+    /* ====== Inputs ====== */
+    input, select {
+      background: #020617;
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 0.6rem;
+      border-radius: 10px;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 2px var(--gold-glow);
+    }
+
+    /* ====== Status Text ====== */
+    .win {
+      color: #22c55e;
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(34, 197, 94, 0.6);
+    }
+
+    .lose {
+      color: #ef4444;
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(239, 68, 68, 0.6);
+    }
+
+    .bigcontainer {
+      text-align: center;
+    }
+
+    .card {
+      text-align: center;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 16px;
+      background: #2f943cab; 
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      border: 10px solid #a00707; 
+    }
+
+    /* ====== Footer ====== */
+    footer {
+      text-align: center;
+      color: var(--muted);
+      margin-top: 3rem;
+      font-size: 0.85rem;
+    }
+  </style>
+<center>Welcome to Mr Patate's Guess the number solver cuz potato brain hurt<br>
+  Click on the NEXT BEST GUESS button to copy the guess number<br>
   Paste your guess in the Guess the number Box.<br>
   Press the correct button according if the right answer is higher/lower and the number of correct digits.<br>
-  For example, if the correct number is higher and you have 2 correct numbers, you press Higher 2<br>
-  This will update to the next best guess and automaticaly copy the guess in your clipboard.<br>
-  Press Reset to reset yes yes
-
+  <br>
+  <br>
+  <br>
 </center>
 <link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-Next best guess : <button style = "font-size: 18px;", id="BinGuess", font-size = "16px", onclick = copy_clipboard_bin(this)>55000</button> Remaining possible guess: <label id="BinGuessRemain">90000</label> Number of guesses:<label id="BinGuessDone">0</label>
+<div class="card">
+Next best guess: <button style = "font-size: 18px;", id="BinGuess", font-size = "16px", onclick = copy_clipboard_bin(this)></button> Remaining possible guess: <label id="BinGuessRemain">90000</label> Number of guesses: <label id="BinGuessDone">0</label>
 <table>
   <tr>
     <td>
@@ -56,7 +220,7 @@ Next best guess : <button style = "font-size: 18px;", id="BinGuess", font-size =
   </tr>
   <tr>
     <td>
-      If the right answer is higer
+      <p style="color: red;">If the right answer is higher</p>
     </td>
     <td>
       <button style = "font-size: 18px;", id="BinHigh", font-size = "16px", onclick = bin_result(1,0)>Higher 0</button>
@@ -76,7 +240,7 @@ Next best guess : <button style = "font-size: 18px;", id="BinGuess", font-size =
   </tr>
   <tr>
     <td>
-      If the right answer is lower
+      <p style="color: green;">If the right answer is lower</p>
     </td>
     <td>
       <button style = "font-size: 18px;", id="BinLow", font-size = "16px", onclick = bin_result(0,0)>Lower 0</button>
@@ -95,12 +259,27 @@ Next best guess : <button style = "font-size: 18px;", id="BinGuess", font-size =
     </td>
   </tr>
 </table>
-
+<br>
 <button style = "font-size: 18px;", id="BinReset", font-size = "16px", onclick = bin_reset()>Reset</button>
+</div>
+<br>
+<br>
+<center>
+<em>
+For example, if the correct number is higher and you have 2 correct numbers, you press Higher 2<br>
+This will update to the next best guess and automaticaly copy the guess in your clipboard.<br>
+Press Reset to reset yes yes <br>
+🎄Update: if you are using for the x-mas instance, Red text means Higher and green text means Lower
+</em>
+</center>
 </body>
 </html>
 
 <script>
+
+  window.addEventListener("load", () => {
+    bin_reset();
+  });
 
 var bin_maxValue = 99999;
 var bin_minValue = 10000;
@@ -109,6 +288,11 @@ var bin_arrayGuess = [];
 var bin_arrayPrevGuesses = [];
 var bin_nbOfGuesses = 0;
 
+function return1()
+{
+  window.location.href = 'test.html';
+  return false;
+}
 
 function copy_clipboard_bin(element)
 {
@@ -131,18 +315,10 @@ function bin_result(isHigher, correctDigit)
   elem = document.getElementById("BinGuess");
   guess = parseInt(elem.textContent.toString());
 
-  if(isHigher)
-  {
-    bin_minValue = guess + 1;
-  }
-  else
-  {
-    bin_maxValue = guess - 1;
-  }
-  bin_buildGuessArray(correctDigit);
+  bin_arrayGuess = prunePool(bin_arrayGuess,guess,isHigher,correctDigit);
   textGuess = document.getElementById("BinGuessRemain");
   textGuess.textContent = bin_arrayGuess.length;
-  bin_nextGuess = bin_arrayGuess[Math.round(bin_arrayGuess.length/2)-1];
+  bin_nextGuess = findBestGuess(bin_arrayGuess);
   elem.textContent = bin_nextGuess;
   bin_nbOfGuesses++;
   textGuessDone = document.getElementById("BinGuessDone");
@@ -150,67 +326,29 @@ function bin_result(isHigher, correctDigit)
   copy_clipboard(bin_nextGuess);
 }
 
-function bin_buildGuessArray(correctDigit)
+function bin_buildGuessArray()
 {
-    if(bin_arrayGuess.length == 0 )
-    {
-      bin_arrayGuess = [];
-      for (let num = bin_minValue; num < bin_maxValue; num++) {
-        bin_arrayGuess.push(num);
-      }
+    bin_arrayGuess = [];
+    for (let num = bin_minValue; num < bin_maxValue; num++) {
+      bin_arrayGuess.push(num);
     }
-
-    var newArr = [];
-    var guessStr = bin_nextGuess.toString();
-    bin_arrayGuess.forEach(element => {
-      var correct = 0;
-
-      for (let index = 0; index < 5; index++) {
-        if(element.toString()[index] == guessStr[index])
-        {
-          correct++;
-        }
-        
-      }
-      if(correctDigit == 0)
-      {
-        if(correct==correctDigit)
-        {
-          if(element>=bin_minValue && element<=bin_maxValue)
-          {
-            newArr.push(element);
-          }
-        }   
-      }
-      else
-      {
-        if(correct>=correctDigit)
-        {
-          if(element>=bin_minValue && element<=bin_maxValue)
-          {
-            newArr.push(element);
-          }
-        }   
-      }
-
-    });
-    bin_arrayGuess = newArr;
- // }
-
+    return;
 }
 
 function bin_reset()
 {
+  bin_buildGuessArray();
+  bin_nextGuess = findBestGuess(bin_arrayGuess);
   guess = document.getElementById("BinGuess");
-  guess.textContent = "55000";
-  bin_maxValue = 99999;
-  bin_minValue = 10000;
-  bin_nextGuess = 55000;
-  bin_arrayGuess = [];
+  guess.textContent = bin_nextGuess;
   textGuess = document.getElementById("BinGuessRemain");
   textGuess.textContent = 90000;
-  copy_clipboard(55000);
+  textGuessDone = document.getElementById("BinGuessDone");
+  textGuessDone.textContent = 0;
+  bin_nbOfGuesses = 0;
+  copy_clipboard(bin_nextGuess);
 }
+
 //copy function, only work with numbers?
 function copy_clipboard(num) {
             // Create a new textarea element and set its value to the text you want to copy
@@ -261,5 +399,91 @@ function copy_clipboard(str) {
             document.body.removeChild(copyText);
 
         }
+
+function prunePool(pool, guess, higherLower, correctDigits) {
+    const guessNum = parseInt(guess, 10);
+    
+    return pool.filter(candidate => {
+        const candidateNum = parseInt(candidate, 10);
+        
+        // 1. Higher/Lower filter
+        if (higherLower == 1 && candidateNum <= guessNum) 
+          return false;
+        if (higherLower == 0 && candidateNum >= guessNum) 
+          return false;
+        
+        // 2. Correct digits filter
+        if (countCorrectDigits(guess, candidate) !== correctDigits) 
+          return false;
+        
+        return true;
+    });
+}
+
+function findBestGuess(pool) {
+    if (pool.length === 1) return pool[0];
+    
+    // Optimisation: if the pool is large, sample it to keep execution instant
+    const sampleSize = Math.min(pool.length, 300);
+    const candidates = [];
+    while (candidates.length < sampleSize) {
+        const randomItem = pool[Math.floor(Math.random() * pool.length)];
+        if (!candidates.includes(randomItem)) candidates.push(randomItem);
+    }
+
+    let bestGuess = pool[0];
+    let maxEntropy = -1;
+
+    for (const guess of candidates) {
+        // Track how many remaining numbers fall into each feedback bucket
+        const buckets = {};
+        
+        for (const target of pool) {
+            const targetNum = parseInt(target, 10);
+            const guessNum = parseInt(guess, 10);
+            
+            let hl = 'equal';
+            if (targetNum > guessNum) hl = 'higher';
+            if (targetNum < guessNum) hl = 'lower';
+            
+            const cd = countCorrectDigits(guess, target);
+            const key = `${hl}_${cd}`;
+            
+            buckets[key] = (buckets[key] || 0) + 1;
+        }
+        
+        // Calculate Entropy: Sum of (-p * log2(p))
+        let entropy = 0;
+        for (const key in buckets) {
+            const p = buckets[key] / pool.length;
+            entropy -= p * Math.log2(p);
+        }
+        
+        if (entropy > maxEntropy) {
+            maxEntropy = entropy;
+            bestGuess = guess;
+        }
+    }
+    
+    return bestGuess;
+}
+function countCorrectDigits(guessNum, candidateNum) {
+    let count = 0;
+    
+    // We loop 5 times since we are dealing strictly with 5-digit numbers
+    for (let i = 0; i < 5; i++) {
+        const guessDigit = guessNum % 10;
+        const candidateDigit = candidateNum % 10;
+        
+        if (guessDigit === candidateDigit) {
+            count++;
+        }
+        
+        // Move to the next digit position (e.g., 54321 -> 5432)
+        guessNum = Math.floor(guessNum / 10);
+        candidateNum = Math.floor(candidateNum / 10);
+    }
+    return count;
+}
 
 </script>
