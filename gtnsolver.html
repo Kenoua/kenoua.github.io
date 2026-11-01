@@ -424,7 +424,12 @@ function findBestGuess(pool) {
     if (pool.length === 1) return pool[0];
     
     // Optimisation: if the pool is large, sample it to keep execution instant
-    const sampleSize = Math.min(pool.length, 300);
+    let sampleSize = 300;
+    if (pool.length > 50000) sampleSize = 15;        // Huge pool -> tiny sample (instant speed)
+      else if (pool.length > 10000) sampleSize = 40;   // Large pool -> small sample
+      else if (pool.length > 1000) sampleSize = 100;   // Medium pool -> medium sample
+      else sampleSize = pool.length;
+
     const candidates = [];
     while (candidates.length < sampleSize) {
         const randomItem = pool[Math.floor(Math.random() * pool.length)];
