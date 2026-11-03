@@ -183,7 +183,7 @@
       margin-top: 3rem;
       font-size: 0.85rem;
     }
-  </style>
+</style>
 <center>Welcome to Mr Patate's Guess the number solver cuz potato brain hurt<br>
   Click on the NEXT BEST GUESS button to copy the guess number<br>
   Paste your guess in the Guess the number Box.<br>
@@ -260,7 +260,9 @@ Next best guess: <button style = "font-size: 18px;", id="BinGuess", font-size = 
   </tr>
 </table>
 <br>
+<button id="undo-btn" onclick="undoMove()" style="background-color: #ffe0b2; font-weight: bold; border-color: #ffb74d;">↩️ Undo Last Move</button>
 <button style = "font-size: 18px;", id="BinReset", font-size = "16px", onclick = bin_reset()>Reset</button>
+<a href="index.html" class="back-button">&larr; Return to Home</a>
 </div>
 <br>
 <br>
@@ -276,7 +278,6 @@ Press Reset to reset yes yes <br>
 </html>
 
 <script>
-
   window.addEventListener("load", () => {
     bin_reset();
   });
@@ -287,6 +288,7 @@ var bin_nextGuess = 55000;
 var bin_arrayGuess = [];
 var bin_arrayPrevGuesses = [];
 var bin_nbOfGuesses = 0;
+var historyStack = [];
 
 function return1()
 {
@@ -312,6 +314,12 @@ function copy_clipboard_bin(element)
 
 function bin_result(isHigher, correctDigit)
 {
+    historyStack.push({
+        pool: [...bin_arrayGuess],
+        currentGuess: bin_nextGuess,
+        totalGuessesMade: bin_nbOfGuesses
+    });
+
   elem = document.getElementById("BinGuess");
   guess = parseInt(elem.textContent.toString());
 
@@ -324,6 +332,25 @@ function bin_result(isHigher, correctDigit)
   textGuessDone = document.getElementById("BinGuessDone");
   textGuessDone.textContent = bin_nbOfGuesses;
   copy_clipboard(bin_nextGuess);
+}
+
+function undoMove() {
+    if (historyStack.length === 0) return;
+
+    // Pop the last snapshot out of our stack
+    const previousState = historyStack.pop();
+
+    // Restore state variables
+    bin_arrayGuess = previousState.pool;
+    bin_nextGuess = previousState.currentGuess;
+    bin_nbOfGuesses = previousState.totalGuessesMade;
+    copy_clipboard(bin_nextGuess);
+    textGuessDone = document.getElementById("BinGuessDone");
+    textGuessDone.textContent = bin_nbOfGuesses;
+    elem = document.getElementById("BinGuess");
+    elem.textContent = bin_nextGuess;
+    textGuess = document.getElementById("BinGuessRemain");
+    textGuess.textContent = bin_arrayGuess.length;
 }
 
 function bin_buildGuessArray()
@@ -347,6 +374,7 @@ function bin_reset()
   textGuessDone.textContent = 0;
   bin_nbOfGuesses = 0;
   copy_clipboard(bin_nextGuess);
+  historyStack = [];
 }
 
 //copy function, only work with numbers?

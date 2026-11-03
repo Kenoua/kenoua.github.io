@@ -1,448 +1,171 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-
-<style>
-    /* ====== Fonts & Reset ====== */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: "Segoe UI", system-ui, sans-serif;
-    }
-
-    /* ====== Casino Colors ====== */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Patate's toolbox</title>
+    <style>
     :root {
-      --bg: #0b0f14;
-      --felt: #0f5132;
-      --gold: #f5c542;
-      --gold-glow: rgba(245, 197, 66, 0.6);
-      --red: #b11226;
-      --text: #f8fafc;
-      --muted: #9ca3af;
-      --border: rgba(255, 255, 255, 0.15);
-    }
+    --bg-color: #fffaf0;            /* Blanc chaud / Crème */
+    --card-bg: #ffebd2;             /* Pêche doux */
+    --card-bg-trans: #fffde7ab;     /* Jaune clair transparent (Market) */
+    --accent-color: #d4a373;        /* Brun-jaune doré */
+    --gold-yellow: #fdd835;         /* Jaune doré vif */
+    --gold-hover: #fbc02d;          /* Jaune doré foncé pour le survol */
+    --text-color: #4a3e3d;          /* Gris chaud foncé pour le texte */
+    --text-muted: #8b7a78;          /* Gris chaud text-muted */
+    --heading-color: #b58228;       /* Jaune doré sombre pour les titres */
+    --input-bg: #fff9c4;            /* Jaune très clair pour les entrées */
+}
 
-    /* ====== Body ====== */
-    body {
-      background:
-        radial-gradient(circle at top, #1a1f2b, var(--bg));
-      color: var(--text);
-      min-height: 100vh;
-      padding: 2rem;
-    }
+body {
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+    background: var(--bg-color) url('Backgrounds/backgroundMarket20.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* Fixe le fond pour tout le site */
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
 
-    /* ====== Headings ====== */
-    h1, h2 {
-      color: var(--gold);
-      text-shadow: 0 0 10px var(--gold-glow);
-      margin-bottom: 1rem;
-    }
+/* ==========================================================================
+   2. BARRE DE NAVIGATION (HEADER)
+   ========================================================================== */
+header {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
 
-    h1 {
-      font-size: 2.4rem;
-      letter-spacing: 0.05em;
-    }
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
 
-    /* ====== Container ====== */
-    .container {
-      max-width: 1200px;
-      margin: auto;
-    }
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
 
-    /* ====== Card / Panel ====== */
-    .panel {
-      background: linear-gradient(145deg, #111827, #020617);
-      border-radius: 18px;
-      padding: 1.5rem;
-      border: 1px solid var(--border);
-      box-shadow:
-        inset 0 0 25px rgba(0, 0, 0, 0.8),
-        0 0 25px rgba(0, 0, 0, 0.6);
-      margin-bottom: 2rem;
-    }
+nav a:hover {
+    color: var(--heading-color);
+}
 
-    /* ====== Buttons ====== */
-    button {
-      background: linear-gradient(180deg, var(--gold), #d4a017);
-      color: #1a1300;
-      border: none;
-      padding: 0.7rem 1.3rem;
-      border-radius: 12px;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      cursor: pointer;
-      margin: 0.5rem;
-      box-shadow:
-        0 4px 0 #9f7a10,
-        0 0 15px var(--gold-glow);
-      transition: all 0.15s ease;
-    }
+/* ==========================================================================
+   3. STRUCTURE DU CONTENU (MAIN)
+   ========================================================================== */
+main {
+    max-width: 1200px;
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
 
-    button:hover {
-      transform: translateY(-2px);
-      box-shadow:
-        0 6px 0 #9f7a10,
-        0 0 25px var(--gold-glow);
-    }
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: var(--heading-color);
+}
 
-    button:active {
-      transform: translateY(2px);
-      box-shadow:
-        0 2px 0 #9f7a10,
-        0 0 10px var(--gold-glow);
-    }
+.subtitle {
+    color: var(--text-muted);
+    font-size: 18px;
+    margin-bottom: 40px;
+}
 
-    button.danger {
-      background: linear-gradient(180deg, #e11d48, var(--red));
-      box-shadow:
-        0 4px 0 #7f1d1d,
-        0 0 15px rgba(225, 29, 72, 0.6);
-      color: white;
-    }
+/* ==========================================================================
+   4. LA GRILLE DE LA PAGE D'ACCUEIL
+   ========================================================================== */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
 
-    /* ====== Tables ====== */
-    table {
-      margin:auto;
-      width: auto;
-      border-collapse: collapse;
-      margin-top: 1rem;
-      background: radial-gradient(circle at center, #188552, #052e16);
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8);
-    }
+.tool-card {
+    background-color: var(--card-bg);
+    border: 3px solid var(--accent-color);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: left;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    box-shadow: 4px 4px 0px var(--accent-color);
+}
 
-    th {
-      background: linear-gradient(180deg, #14532d, #052e16);
-      color: var(--gold);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-size: 0.85rem;
-      padding: 0.9rem;
-      border-bottom: 2px solid var(--gold);
-    }
+.tool-card:hover {
+    transform: translateY(-5px);
+    background-color: #ffe3be;
+}
 
-    td {
-      padding: 0.75rem;
-      text-align: center;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      color: #ecfdf5;
-    }
+.tool-card h2 {
+    margin-top: 0;
+    color: var(--heading-color);
+    font-size: 24px;
+}
 
+.tool-card p {
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 0;
+}    
 
-    /* ====== Inputs ====== */
-    input, select {
-      background: #020617;
-      color: var(--text);
-      border: 1px solid var(--border);
-      padding: 0.6rem;
-      border-radius: 10px;
-      width: 100%;
-      margin-bottom: 1rem;
-    }
-
-    input:focus, select:focus {
-      outline: none;
-      border-color: var(--gold);
-      box-shadow: 0 0 0 2px var(--gold-glow);
-    }
-
-    /* ====== Status Text ====== */
-    .win {
-      color: #22c55e;
-      font-weight: bold;
-      text-shadow: 0 0 10px rgba(34, 197, 94, 0.6);
-    }
-
-    .lose {
-      color: #ef4444;
-      font-weight: bold;
-      text-shadow: 0 0 10px rgba(239, 68, 68, 0.6);
-    }
-
-    .bigcontainer {
-      text-align: center;
-    }
-
-    .card {
-      text-align: center;
-      max-width: 1200px;
-      margin: auto;
-      padding: 20px;
-      border-radius: 16px;
-      background: #2f943cab; 
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-      border: 10px solid #a00707; 
-    }
-
-    /* ====== Footer ====== */
-    footer {
-      text-align: center;
-      color: var(--muted);
-      margin-top: 3rem;
-      font-size: 0.85rem;
-    }
-  </style>
-<center>Welcome to Mr Patate's Guess the number solver cuz potato brain hurt<br>
-  Click on the 55000 button to copy the guess number<br>
-  Paste your guess in the Guess the number Box.<br>
-  Press the correct button according if the right answer is higher/lower and the number of correct digits.<br>
-  <br>
-  <br>
-  <br>
-</center>
-<link href="style.css" type="text/css" rel="stylesheet" />
+.tool-header {
+    background-color: var(--card-bg);
+    border: 3px solid var(--accent-color);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    box-shadow: 4px 4px 0px var(--accent-color);
+}
+</style>
 </head>
 <body>
-<div class="card">
-Next best guess: <button style = "font-size: 18px;", id="BinGuess", font-size = "16px", onclick = copy_clipboard_bin(this)>55000</button> Remaining possible guess: <label id="BinGuessRemain">90000</label> Number of guesses: <label id="BinGuessDone">0</label>
-<table>
-  <tr>
-    <td>
-      Number of correct digits
-    </td>
-    <td>
-      0
-    </td>
-    <td>
-      1
-    </td>
-    <td>
-      2
-    </td>
-    <td>
-      3
-    </td>
-    <td>
-      4
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p style="color: red;">If the right answer is higher</p>
-    </td>
-    <td>
-      <button style = "font-size: 18px;", id="BinHigh", font-size = "16px", onclick = bin_result(1,0)>Higher 0</button>
-    </td>
-    <td>
-      <button style = "font-size: 18px;", id="BinHigh", font-size = "16px", onclick = bin_result(1,1)>Higher 1</button>
-    </td>
-    <td>
-      <button style = "font-size: 18px;", id="BinHigh", font-size = "16px", onclick = bin_result(1,2)>Higher 2</button>
-    </td>
-    <td>
-      <button style = "font-size: 18px;", id="BinHigh", font-size = "16px", onclick = bin_result(1,3)>Higher 3</button>
-    </td>
-    <td>
-      <button style = "font-size: 18px;", id="BinHigh", font-size = "16px", onclick = bin_result(1,4)>Higher 4</button>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p style="color: green;">If the right answer is lower</p>
-    </td>
-    <td>
-      <button style = "font-size: 18px;", id="BinLow", font-size = "16px", onclick = bin_result(0,0)>Lower 0</button>
-    </td>
-    <td>
-      <button style = "font-size: 18px;", id="BinLow", font-size = "16px", onclick = bin_result(0,1)>Lower 1</button>
-    </td>
-    <td>
-      <button style = "font-size: 18px;", id="BinLow", font-size = "16px", onclick = bin_result(0,2)>Lower 2</button>
-    </td>
-    <td>
-      <button style = "font-size: 18px;", id="BinLow", font-size = "16px", onclick = bin_result(0,3)>Lower 3</button>
-    </td>
-    <td>
-      <button style = "font-size: 18px;", id="BinLow", font-size = "16px", onclick = bin_result(0,4)>Lower 4</button>
-    </td>
-  </tr>
-</table>
-<br>
-<button style = "font-size: 18px;", id="BinReset", font-size = "16px", onclick = bin_reset()>Reset</button>
-</div>
-<br>
-<br>
-<center>
-<em>
-For example, if the correct number is higher and you have 2 correct numbers, you press Higher 2<br>
-This will update to the next best guess and automaticaly copy the guess in your clipboard.<br>
-Press Reset to reset yes yes <br>
-🎄Update: if you are using for the x-mas instance, Red text means Higher and green text means Lower
-</em>
-</center>
+    <main>
+        <div class="tool-header">
+            <h1>Mr Patate's toolbox</h1>
+            <p class="subtitle">All the databases, calculators, and tracking tools you need for Talon Tales.</p>
+        </div>
+
+
+        <div class="tools-grid">
+            <a href="gtnsolver.html" class="tool-card">
+                <h2>Guess The Number &rarr;</h2>
+                <p>Perfect tool to solve the Guess the Number minigame.</p>
+            </a>
+
+            <a href="market.html" class="tool-card">
+                <h2>Market Watcher &rarr;</h2>
+                <p>See the price history of items being vended.</p>
+            </a>
+
+            <a href="items.html" class="tool-card">
+                <h2>Item Usage Database &rarr;</h2>
+                <p>Ever wondered if your item is used in a quest or recipe? You can check here!</p>
+            </a>
+        </div>
+    </main>
 </body>
 </html>
-
-<script>
-
-var bin_maxValue = 99999;
-var bin_minValue = 10000;
-var bin_nextGuess = 55000;
-var bin_arrayGuess = [];
-var bin_arrayPrevGuesses = [];
-var bin_nbOfGuesses = 0;
-
-function return1()
-{
-  window.location.href = 'test.html';
-  return false;
-}
-
-function copy_clipboard_bin(element)
-{
-  var copyText = document.createElement("textarea");
-  copyText.value = element.textContent.toString();
-
-  // Append the textarea element to the document
-  document.body.appendChild(copyText);
-
-  // Copy the text from the textarea to the clipboard
-  copyText.select();
-  document.execCommand("copy");
-
-  // Remove the temporary textarea
-  document.body.removeChild(copyText);
-}
-
-function bin_result(isHigher, correctDigit)
-{
-  elem = document.getElementById("BinGuess");
-  guess = parseInt(elem.textContent.toString());
-
-  if(isHigher)
-  {
-    bin_minValue = guess + 1;
-  }
-  else
-  {
-    bin_maxValue = guess - 1;
-  }
-  bin_buildGuessArray(correctDigit);
-  textGuess = document.getElementById("BinGuessRemain");
-  textGuess.textContent = bin_arrayGuess.length;
-  bin_nextGuess = bin_arrayGuess[Math.round(bin_arrayGuess.length/2)-1];
-  elem.textContent = bin_nextGuess;
-  bin_nbOfGuesses++;
-  textGuessDone = document.getElementById("BinGuessDone");
-  textGuessDone.textContent = bin_nbOfGuesses;
-  copy_clipboard(bin_nextGuess);
-}
-
-function bin_buildGuessArray(correctDigit)
-{
-    if(bin_arrayGuess.length == 0 )
-    {
-      bin_arrayGuess = [];
-      for (let num = bin_minValue; num < bin_maxValue; num++) {
-        bin_arrayGuess.push(num);
-      }
-    }
-
-    var newArr = [];
-    var guessStr = bin_nextGuess.toString();
-    bin_arrayGuess.forEach(element => {
-      var correct = 0;
-
-      for (let index = 0; index < 5; index++) {
-        if(element.toString()[index] == guessStr[index])
-        {
-          correct++;
-        }
-        
-      }
-      if(correctDigit == 0)
-      {
-        if(correct==correctDigit)
-        {
-          if(element>=bin_minValue && element<=bin_maxValue)
-          {
-            newArr.push(element);
-          }
-        }   
-      }
-      else
-      {
-        if(correct>=correctDigit)
-        {
-          if(element>=bin_minValue && element<=bin_maxValue)
-          {
-            newArr.push(element);
-          }
-        }   
-      }
-
-    });
-    bin_arrayGuess = newArr;
- // }
-
-}
-
-function bin_reset()
-{
-  guess = document.getElementById("BinGuess");
-  guess.textContent = "55000";
-  bin_maxValue = 99999;
-  bin_minValue = 10000;
-  bin_nextGuess = 55000;
-  bin_arrayGuess = [];
-  textGuess = document.getElementById("BinGuessRemain");
-  textGuess.textContent = 90000;
-  textGuessDone = document.getElementById("BinGuessDone");
-  textGuessDone.textContent = 0;
-  bin_nbOfGuesses = 0;
-  copy_clipboard(55000);
-}
-//copy function, only work with numbers?
-function copy_clipboard(num) {
-            // Create a new textarea element and set its value to the text you want to copy
-            var copyText = document.createElement("textarea");
-            copyText.value = num.toString();
-
-            // Append the textarea element to the document
-            document.body.appendChild(copyText);
-
-            // Copy the text from the textarea to the clipboard
-            copyText.select();
-            document.execCommand("copy");
-
-            // Remove the temporary textarea
-            document.body.removeChild(copyText);
-
-        }
-//copy's the innel html of the final guess area.        
-function copy_inner_html(){
-            // Create a new textarea element and set its value to the text you want to copy
-            var copyText = document.createElement("textarea");
-            copyText.value = document.getElementById("final_guess").innerHTML;
-            
-            // Append the textarea element to the document
-            document.body.appendChild(copyText);
-
-            // Copy the text from the textarea to the clipboard
-            copyText.select();
-            document.execCommand("copy");
-
-            // Remove the temporary textarea
-            document.body.removeChild(copyText);
-}
-//copies a string to the clipboard
-function copy_clipboard(str) {
-            // Create a new textarea element and set its value to the text you want to copy
-            var copyText = document.createElement("textarea");
-            copyText.value = str;
-
-            // Append the textarea element to the document
-            document.body.appendChild(copyText);
-
-            // Copy the text from the textarea to the clipboard
-            copyText.select();
-            document.execCommand("copy");
-
-            // Remove the temporary textarea
-            document.body.removeChild(copyText);
-
-        }
-
-</script>
